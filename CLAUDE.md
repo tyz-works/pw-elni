@@ -1,7 +1,7 @@
 # pw.elni.net — プロレス情報サイト
 
 非公式ファンサイト。データはリポジトリ内 JSON が single source of truth。
-サイトは Astro による静的ビルド。Cloudflare Pages にデプロイ。
+サイトは Astro による静的ビルド。Cloudflare Workers（静的アセット配信）にデプロイ。
 
 ## 最重要原則
 
@@ -16,7 +16,7 @@
 ### やること
 - `data/schema/` に JSON Schema (draft 2020-12) を 7 エンティティ分定義
 - 新日本プロレス / スターダム / DDT の 3 団体ぶん、興行データを手動で各 3 件投入
-- Astro でビルド、Cloudflare Pages にデプロイ
+- Astro でビルド、Cloudflare Workers にデプロイ
 - CI で JSON Schema 検証を必須化
 
 ### やらないこと（Phase B では禁止）
@@ -133,12 +133,16 @@ Phase C 以降の抽出パイプラインは、まず alias 解決を通して�
 
 - Astro（static output。SSR アダプタは入れない）
 - ajv（JSON Schema draft 2020-12）
-- Cloudflare Pages（build: `npm run build` / output: `site/dist`）
+- Cloudflare Workers の静的アセット配信（build: `npm run build` / assets: `site/dist`）
+  - 設定は `wrangler.jsonc`。`main` を書かず assets のみの構成にしてある。
+    **Worker スクリプトは持たない**ので、Astro は static output のままでよい
+  - Cloudflare は静的サイトの受け皿を Pages から Workers Static Assets に寄せている。
+    当初は Pages を想定していたが、実際の接続が Workers だったため合わせた
 - Node 24
 
 Node のバージョンの真実は `.node-version` 1 箇所に集約する。CI は `setup-node` の
-`node-version-file` でここを読み、Cloudflare Pages も同じファイルを読む。
-**Pages のデフォルトは Node 22 系なので、このファイルを消すと本番だけ 22 で焼かれる。**
+`node-version-file` でここを読み、Cloudflare のビルドも同じファイルを読む。
+**Cloudflare 側のデフォルトは Node 22 系なので、このファイルを消すと本番だけ 22 で焼かれる。**
 
 ## 実行環境
 
@@ -179,7 +183,7 @@ Cloudflare Workers の Cron Triggers を検討する。
 ## ドメイン / サブドメイン
 
 `elni.net` はレジストラは外部だが、ネームサーバは Cloudflare に向いておりプロキシ有効。
-Pages のカスタムドメイン追加は DNS 側の手作業なしで通る。
+カスタムドメイン（Workers の Custom Domain）の追加は DNS 側の手作業なしで通る。
 
 | ホスト | 用途 | 時期 |
 |---|---|---|
@@ -192,12 +196,14 @@ Pages のカスタムドメイン追加は DNS 側の手作業なしで通る。
 
 ### ステージング
 
-Phase B〜C は独立サブドメインを作らない。Pages のプレビューデプロイ
-（`<branch>.<project>.pages.dev`）に Cloudflare Access をかけて代用する。
+Phase B〜C は独立サブドメインを作らない。Workers Builds が PR ごとに作る
+プレビュー URL に Cloudflare Access をかけて代用する。
 
 カスタムドメインのステージング（`pw-stg.elni.net`）は **Phase D で自動マージを回し始める
-タイミングで用意する**。Pages のプレビューデプロイにはカスタムドメインを割り当てられないため、
-その際は `staging` ブランチに紐付けた 2 つ目の Pages プロジェクトを作る。
+タイミングで用意する**。その際は `staging` ブランチに紐付けた 2 つ目の Worker を作る。
+
+> **未確認**: この節は Pages 前提で書かれていたものを Workers 向けに書き直した。
+> プレビュー URL の形式と Access の掛け方は Phase D 着手時に実機で確認すること。
 
 ### 初期構築時の確認事項
 
