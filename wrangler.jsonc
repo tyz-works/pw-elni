@@ -3,6 +3,12 @@
   "name": "pw-elni",
   "compatibility_date": "2026-08-16",
 
+  // deploy / versions upload の前に必ずビルドを走らせる。
+  // Cloudflare 側の Build command 設定が空でもここで site/dist が作られる。
+  "build": {
+    "command": "npm run build"
+  },
+
   // Worker スクリプトは持たない（"main" を書かない）静的アセット配信のみの構成。
   // Astro は static output のままで、SSR アダプタは入れていない。
   "assets": {
