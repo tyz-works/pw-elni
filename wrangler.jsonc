@@ -9,6 +9,16 @@
     "command": "npm run build"
   },
 
+  // 本番ドメイン。custom_domain: true にすると Cloudflare が DNS レコードと
+  // 証明書（Advanced Certificate）を自動で作る。DNS 側の手作業は不要。
+  // 既存の CNAME があるホスト名には付けられないので、レコードは手で作らないこと。
+  "routes": [
+    {
+      "pattern": "pw.elni.net",
+      "custom_domain": true
+    }
+  ],
+
   // Worker スクリプトは持たない（"main" を書かない）静的アセット配信のみの構成。
   // Astro は static output のままで、SSR アダプタは入れていない。
   "assets": {

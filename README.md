@@ -60,9 +60,21 @@ Cloudflare Workers の静的アセット配信（Workers Builds が GitHub 連�
 
 | 設定 | 値 |
 |---|---|
-| Build command | `npm run build` |
+| Build command | `npm run build`（`wrangler.jsonc` の `build.command`） |
 | Deploy command | `npx wrangler deploy` |
 | アセットディレクトリ | `site/dist`（`wrangler.jsonc` の `assets.directory`） |
+| 本番ドメイン | `pw.elni.net`（`wrangler.jsonc` の `routes`、`custom_domain: true`） |
+
+ビルドコマンドは Cloudflare のダッシュボードではなく `wrangler.jsonc` に書いている。
+ダッシュボード側の Build command が空でもビルドが走り、かつ deploy の前に必ず
+`npm run build`（＝ `validate`）を通るので、CI を迂回してもスキーマ違反のデータは配信されない。
+
+カスタムドメインも `wrangler.jsonc` で宣言している。Cloudflare が DNS レコードと
+証明書を自動生成するため、DNS 側の手作業は不要。**逆に、手で CNAME を作ってしまうと
+「既存の CNAME があるホスト名には Custom Domain を付けられない」制約に引っかかるので作らないこと。**
+
+なお `wrangler versions upload`（PR ブランチのビルドで走る）はカスタムドメインを作らない。
+ドメインの紐付けが反映されるのは `wrangler deploy` が走る本番ブランチのビルドのみ。
 
 ローカルで設定を確かめるには、デプロイせずに dry-run できる:
 
