@@ -34,12 +34,16 @@
 ```
 /
 ├── CLAUDE.md
+├── README.md
+├── .node-version        # Node のバージョンはここが唯一の真実
 ├── data/
+│   ├── README.md        # 配置規約・データ品質ルール・検証内容
 │   ├── schema/          # JSON Schema 定義
+│   │   ├── common.schema.json   # 共有 $defs（slug/date/sources 等）。エンティティではない
 │   │   ├── promotion.schema.json
 │   │   ├── wrestler.schema.json
 │   │   ├── event.schema.json
-│   │   ├── match.schema.json
+│   │   ├── match.schema.json    # event.matches[] の要素。単体ファイルにはしない
 │   │   ├── move.schema.json
 │   │   ├── venue.schema.json
 │   │   └── news.schema.json
@@ -48,15 +52,19 @@
 │   ├── events/          # {promotion}/{YYYY}/{eventId}.json
 │   ├── moves/           # {slug}.json
 │   ├── venues/          # {slug}.json
-│   └── news/            # {YYYY-MM}/{hash}.json
+│   └── news/            # {YYYY-MM}/{id}.json
 ├── site/                # Astro プロジェクト
 │   ├── src/
-│   │   ├── content/     # data/ を content collections として読む
+│   │   ├── content.config.ts  # data/ を content collections として読む
+│   │   ├── lib/         # 型と表示用ヘルパ
+│   │   ├── components/
 │   │   ├── layouts/
+│   │   ├── styles/
 │   │   └── pages/
 │   └── astro.config.mjs
 ├── tools/
-│   └── validate.mjs     # ajv によるスキーマ検証 + 整合チェック
+│   ├── validate.mjs      # ajv によるスキーマ検証 + 整合チェック
+│   └── validate.test.mjs # 上の検証器が壊れたデータを落とすかのテスト
 └── .github/workflows/
     └── validate.yml
 ```
@@ -103,17 +111,34 @@ Phase C 以降の抽出パイプラインは、まず alias 解決を通して�
 
 スキーマ検証に加えて以下を機械的に検査。1 件でも違反したら CI 失敗。
 
-- 孤立参照: `match.wrestlerIds` が存在しない wrestler を指していないか
+- 孤立参照: `match.sides[].wrestlerIds` が存在しない wrestler を指していないか。
+  会場・団体・技への参照も同様
 - 重複: 同一 eventId、同一 slug の重複
 - 日付整合: `debutDate` > `birthDate`、興行の `doorsOpen` < `bellTime`
 - 必須出典: `realName` / `birthDate` があるのに `sources[]` が空でないか
+- 配置規約: ファイル名がキーと一致するか、興行が `events/{promotion}/{YYYY}/` にあるか
+- eventId 整合: ID の団体部分・日付部分が中身の `promotionSlug` / `date` と一致するか
+- 試合の整合: `order` の重複、同一選手が両陣営に含まれていないか、
+  `singles` が 2 陣営 × 各 1 名か、`winnerSideIndex` が範囲内か、
+  引き分けなのに勝者がいないか、`result` があるのに `confirmed: false` でないか
+- 書式: CRLF の混入、末尾改行、JSON のパース
+
+**試合の参加者は `match.sides[].wrestlerIds` に持つ**（当初案の平坦な `match.wrestlerIds`
+から変更）。タッグの陣営分けと勝敗（`result.winnerSideIndex`）を表現するために必要。
+
+検証器そのものが壊れると CI がザルになるので、`tools/validate.test.mjs` で
+「壊したデータが確実に落ちる」ことをテストし、これも CI で回す。
 
 ## 技術スタック
 
 - Astro（static output。SSR アダプタは入れない）
 - ajv（JSON Schema draft 2020-12）
 - Cloudflare Pages（build: `npm run build` / output: `site/dist`）
-- Node 22
+- Node 24
+
+Node のバージョンの真実は `.node-version` 1 箇所に集約する。CI は `setup-node` の
+`node-version-file` でここを読み、Cloudflare Pages も同じファイルを読む。
+**Pages のデフォルトは Node 22 系なので、このファイルを消すと本番だけ 22 で焼かれる。**
 
 ## 実行環境
 
