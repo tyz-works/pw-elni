@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pw-elni",
+  "compatibility_date": "2026-08-16",
+
+  // Worker スクリプトは持たない（"main" を書かない）静的アセット配信のみの構成。
+  // Astro は static output のままで、SSR アダプタは入れていない。
+  "assets": {
+    "directory": "./site/dist",
+    // 未知のパスは site/dist/404.html を 404 で返す。
+    // SPA ではないので "single-page-application" にはしない。
+    "not_found_handling": "404-page"
+  }
+}

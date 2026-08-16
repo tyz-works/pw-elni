@@ -23,7 +23,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          # バージョンの真実は .node-version 1 箇所。CI と Cloudflare Pages がここを見る。
+          # バージョンの真実は .node-version 1 箇所。CI と Cloudflare のビルドがここを見る。
           node-version-file: .node-version
           cache: npm
 

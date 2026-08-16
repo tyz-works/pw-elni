@@ -53,16 +53,29 @@ site/             Astro プロジェクト
 
 ## デプロイ
 
-Cloudflare Pages。
+Cloudflare Workers の静的アセット配信（Workers Builds が GitHub 連携でビルドする）。
+
+設定は `wrangler.jsonc`。`main`（Worker スクリプト）を持たず、`site/dist` を
+アセットとして配るだけの構成にしてある。SSR アダプタは入れない。
 
 | 設定 | 値 |
 |---|---|
 | Build command | `npm run build` |
-| Build output directory | `site/dist` |
-| Root directory | （リポジトリルート） |
+| Deploy command | `npx wrangler deploy` |
+| アセットディレクトリ | `site/dist`（`wrangler.jsonc` の `assets.directory`） |
 
-Node のバージョンは `.node-version` から読まれる。Pages のデフォルトは 22 系なので、
+ローカルで設定を確かめるには、デプロイせずに dry-run できる:
+
+```bash
+npm run build && npx wrangler deploy --dry-run
+```
+
+Node のバージョンは `.node-version` から読まれる。Cloudflare 側のデフォルトは 22 系なので、
 このファイルを消すと本番だけ Node 22 で焼かれることになる。消さないこと。
+
+当初は Cloudflare Pages を想定していたが、実際の接続が Workers プロジェクトだったため
+Workers に合わせた。Cloudflare 自体が静的サイトの受け皿を Workers Static Assets に
+寄せているため、こちらが既定路線になる。
 
 ## 免責
 
