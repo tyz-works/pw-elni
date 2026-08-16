@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/common.schema.json",
+  "title": "共通定義",
+  "description": "各エンティティスキーマから $ref される共有 $defs。単体では検証に使わない。",
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "minLength": 1,
+      "maxLength": 80,
+      "description": "小文字英数とハイフンのみ"
+    },
+    "eventId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+-[0-9]{8}-[0-9]+$",
+      "description": "{promotion}-{YYYYMMDD}-{seq}。seq は同日複数興行の連番(0 始まり)"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "YYYY-MM-DD"
+    },
+    "nullableDate": {
+      "oneOf": [
+        { "$ref": "#/$defs/date" },
+        { "type": "null" }
+      ]
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+      "description": "HH:MM (24時間表記, JST)"
+    },
+    "nullableTime": {
+      "oneOf": [
+        { "$ref": "#/$defs/time" },
+        { "type": "null" }
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "source": {
+      "type": "object",
+      "description": "出典。推測で埋めたフィールドに出典を付けてはいけない。",
+      "properties": {
+        "url": { "$ref": "#/$defs/url" },
+        "title": { "type": "string", "minLength": 1 },
+        "retrievedAt": { "$ref": "#/$defs/date" }
+      },
+      "required": ["url", "title", "retrievedAt"],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" },
+      "uniqueItems": true
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullableNonEmptyString": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        { "type": "null" }
+      ]
+    },
+    "nullablePositiveInt": {
+      "oneOf": [
+        { "type": "integer", "minimum": 1 },
+        { "type": "null" }
+      ]
+    }
+  }
+}

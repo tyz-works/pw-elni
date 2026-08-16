@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+import EventList from '../components/EventList.astro';
+import { loadAll, byDateAsc, isUpcoming, formatDate } from '../lib/data';
+
+const { promotions, events, news, promotionBySlug, venueBySlug } = await loadAll();
+
+const upcoming = events.filter((e) => isUpcoming(e)).sort(byDateAsc).slice(0, 5);
+const recent = events.filter((e) => !isUpcoming(e)).slice(0, 5);
+---
+
+<Base
+  title="pw.elni.net"
+  description="プロレスの興行・選手・技を出典付きで整理する非公式ファンサイト。"
+>
+  <h1>pw.elni.net</h1>
+  <p class="lede">
+    プロレスの興行・選手・技を出典付きで整理する非公式ファンサイトです。
+  </p>
+
+  <div class="notice">
+    <p><strong>現在は Phase B（骨組み）です。</strong></p>
+    <p>
+      掲載しているデータは構造確認用のサンプルであり、内容は未検証です。
+      実データへの差し替えと出典の付与は今後行います。
+    </p>
+  </div>
+
+  <h2>今後の興行</h2>
+  <EventList
+    events={upcoming}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    emptyLabel="今後の興行は登録されていません。"
+  />
+
+  <h2>終了した興行</h2>
+  <EventList
+    events={recent}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    emptyLabel="終了した興行は登録されていません。"
+  />
+
+  <h2>団体</h2>
+  <ul class="card-list">
+    {
+      promotions.map((p) => (
+        <li class="card">
+          <a href={`/promotions/${p.slug}`}>{p.name}</a>
+          <p class="meta">
+            {events.filter((e) => e.promotionSlug === p.slug).length} 興行を掲載
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>ニュース</h2>
+  {
+    news.length === 0 ? (
+      <p class="empty">ニュースはありません。</p>
+    ) : (
+      <ul class="card-list">
+        {news.slice(0, 5).map((n) => (
+          <li class="card">
+            <a href="/news">{n.title}</a>
+            <p class="meta">{formatDate(n.publishedDate)}</p>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Base>

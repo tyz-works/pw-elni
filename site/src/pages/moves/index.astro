@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll, MOVE_CATEGORY_LABEL } from '../../lib/data';
+
+const { moves } = await loadAll();
+---
+
+<Base title="技" description="掲載している技の一覧。">
+  <h1>技</h1>
+  <p class="lede">全 {moves.length} 技を掲載しています。</p>
+
+  <ul class="card-list">
+    {
+      moves.map((m) => (
+        <li class="card">
+          <a href={`/moves/${m.slug}`}>{m.name}</a>
+          <p class="meta">
+            {MOVE_CATEGORY_LABEL[m.category]}
+            {m.nameEn && <> ／ {m.nameEn}</>}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

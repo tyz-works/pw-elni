@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/wrestler.schema.json",
+  "title": "選手",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug",
+      "description": "ローマ字リングネーム。kazuchika-okada"
+    },
+    "name": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString",
+      "description": "現在のリングネーム(日本語表記)"
+    },
+    "nameEn": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "aliases": {
+      "type": "array",
+      "description": "表記ゆれ・改名・マスク時代・英語表記をすべて入れる。Phase C の抽出は必ずここを通して ID を解決する。",
+      "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+      "uniqueItems": true
+    },
+    "realName": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString",
+      "description": "公式プロフィールで公表されているもののみ。出典必須。無ければ null。"
+    },
+    "birthDate": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableDate",
+      "description": "公式プロフィールで公表されているもののみ。出典必須。無ければ null。"
+    },
+    "birthplace": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "debutDate": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableDate" },
+    "heightCm": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt" },
+    "weightKg": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt" },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive", "retired", "freelance", "unknown"]
+    },
+    "promotionSlugs": {
+      "type": "array",
+      "description": "所属団体。フリーは空配列でよい。",
+      "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "finishingMoveSlugs": {
+      "type": "array",
+      "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "sources": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources" }
+  },
+  "required": [
+    "slug", "name", "nameEn", "aliases", "realName", "birthDate", "birthplace",
+    "debutDate", "heightCm", "weightKg", "status", "promotionSlugs",
+    "finishingMoveSlugs", "sources"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import EventList from '../../components/EventList.astro';
+import { loadAll, byDateAsc, isUpcoming } from '../../lib/data';
+
+const { events, promotionBySlug, venueBySlug } = await loadAll();
+const upcoming = events.filter((e) => isUpcoming(e)).sort(byDateAsc);
+const past = events.filter((e) => !isUpcoming(e));
+---
+
+<Base title="興行" description="掲載している興行の一覧。">
+  <h1>興行</h1>
+  <p class="lede">全 {events.length} 興行を掲載しています。</p>
+
+  <h2>今後の興行（{upcoming.length}）</h2>
+  <EventList
+    events={upcoming}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    emptyLabel="今後の興行は登録されていません。"
+  />
+
+  <h2>終了した興行（{past.length}）</h2>
+  <EventList
+    events={past}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    emptyLabel="終了した興行は登録されていません。"
+  />
+</Base>

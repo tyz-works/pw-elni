@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll, STATUS_LABEL } from '../../lib/data';
+
+const { wrestlers, promotionBySlug } = await loadAll();
+const sorted = [...wrestlers].sort((a, b) => a.name.localeCompare(b.name, 'ja'));
+---
+
+<Base title="選手" description="掲載している選手の一覧。">
+  <h1>選手</h1>
+  <p class="lede">全 {wrestlers.length} 選手を掲載しています。</p>
+
+  <ul class="card-list">
+    {
+      sorted.map((w) => (
+        <li class="card">
+          <a href={`/wrestlers/${w.slug}`}>{w.name}</a>
+          {w.nameEn && <p class="meta">{w.nameEn}</p>}
+          <p class="meta">
+            {STATUS_LABEL[w.status]}
+            {w.promotionSlugs.length > 0 && (
+              <>
+                {' ／ '}
+                {w.promotionSlugs
+                  .map((s) => promotionBySlug.get(s)?.shortName ?? promotionBySlug.get(s)?.name ?? s)
+                  .join('、')}
+              </>
+            )}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

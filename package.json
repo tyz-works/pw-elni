@@ -1,0 +1,22 @@
+{
+  "name": "pw-elni",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "site"
+  ],
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "test": "node --test tools/validate.test.mjs",
+    "build": "npm run validate && npm run build --workspace site",
+    "dev": "npm run dev --workspace site",
+    "preview": "npm run preview --workspace site"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

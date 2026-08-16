@@ -1,0 +1,64 @@
+{
+  "eventId": "stardom-20260112-0",
+  "promotionSlug": "stardom",
+  "name": "大田区大会（サンプル）",
+  "series": null,
+  "date": "2026-01-12",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "tokyo-ota-city-general-gymnasium",
+  "attendance": null,
+  "confirmed": false,
+  "officialUrl": null,
+  "sources": [],
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tam-nakano",
+            "starlight-kid"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "mayu-iwatani"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": false,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mayu-iwatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": false,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/match.schema.json",
+  "title": "試合",
+  "description": "event.matches[] の要素として使う。単体ファイルとしては保存しない。",
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "第 N 試合。1 始まり。"
+    },
+    "matchType": {
+      "type": "string",
+      "enum": ["singles", "tag", "six-man-tag", "eight-man-tag", "multi-man", "battle-royal", "gauntlet", "other"]
+    },
+    "sides": {
+      "type": "array",
+      "description": "対戦する陣営。シングルなら 2 要素で各 1 名。バトルロイヤルは 1 要素に全員でもよい。",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "wrestlerIds": {
+            "type": "array",
+            "description": "wrestler の slug。存在しない slug を指すと CI が落ちる。",
+            "minItems": 1,
+            "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+            "uniqueItems": true
+          },
+          "teamName": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" }
+        },
+        "required": ["wrestlerIds", "teamName"],
+        "additionalProperties": false
+      }
+    },
+    "titleName": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString",
+      "description": "王座戦なら王座名。非王座戦は null。"
+    },
+    "timeLimitMinutes": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt",
+      "description": "時間無制限・未発表は null。"
+    },
+    "result": {
+      "description": "試合前・結果未確定は null。",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "properties": {
+            "winnerSideIndex": {
+              "description": "sides[] のインデックス。引き分け・無効試合は null。",
+              "oneOf": [
+                { "type": "integer", "minimum": 0 },
+                { "type": "null" }
+              ]
+            },
+            "decision": {
+              "type": "string",
+              "enum": ["pinfall", "submission", "knockout", "countout", "disqualification", "draw", "time-limit-draw", "no-contest"]
+            },
+            "finishMoveSlug": {
+              "oneOf": [
+                { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+                { "type": "null" }
+              ]
+            },
+            "durationSeconds": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt" }
+          },
+          "required": ["winnerSideIndex", "decision", "finishMoveSlug", "durationSeconds"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "confirmed": {
+      "type": "boolean",
+      "description": "対戦カードが公式発表済みか。false なら UI 上で「未発表」と明示する。"
+    },
+    "notes": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" }
+  },
+  "required": ["order", "matchType", "sides", "titleName", "timeLimitMinutes", "result", "confirmed", "notes"],
+  "additionalProperties": false
+}

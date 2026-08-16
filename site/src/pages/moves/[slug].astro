@@ -1,0 +1,45 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import SourceList from '../../components/SourceList.astro';
+import { loadAll, MOVE_CATEGORY_LABEL } from '../../lib/data';
+
+export const getStaticPaths = (async () => {
+  const { moves } = await loadAll();
+  return moves.map((move) => ({ params: { slug: move.slug }, props: { move } }));
+}) satisfies GetStaticPaths;
+
+const { move } = Astro.props;
+const { wrestlers } = await loadAll();
+const users = wrestlers.filter((w) => w.finishingMoveSlugs.includes(move.slug));
+---
+
+<Base title={move.name} description={move.description ?? `${move.name}の解説。`}>
+  <h1>{move.name}</h1>
+  {move.nameEn && <p class="lede">{move.nameEn}</p>}
+
+  <h2>基本情報</h2>
+  <dl class="facts">
+    <dt>分類</dt>
+    <dd>{MOVE_CATEGORY_LABEL[move.category]}</dd>
+    <dt>説明</dt>
+    <dd>{move.description ?? <span class="unknown">未登録</span>}</dd>
+  </dl>
+
+  <h2>得意技とする選手（{users.length}）</h2>
+  {
+    users.length === 0 ? (
+      <p class="empty">登録されている選手はいません。</p>
+    ) : (
+      <ul class="inline-list">
+        {users.map((w) => (
+          <li>
+            <a href={`/wrestlers/${w.slug}`}>{w.name}</a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <SourceList sources={move.sources} />
+</Base>

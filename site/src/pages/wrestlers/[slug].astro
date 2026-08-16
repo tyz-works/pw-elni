@@ -1,0 +1,108 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import EventList from '../../components/EventList.astro';
+import SourceList from '../../components/SourceList.astro';
+import { loadAll, formatDate, STATUS_LABEL } from '../../lib/data';
+
+export const getStaticPaths = (async () => {
+  const { wrestlers } = await loadAll();
+  return wrestlers.map((wrestler) => ({ params: { slug: wrestler.slug }, props: { wrestler } }));
+}) satisfies GetStaticPaths;
+
+const { wrestler } = Astro.props;
+const { events, promotionBySlug, venueBySlug, moveBySlug } = await loadAll();
+
+const appearances = events.filter((e) =>
+  e.matches.some((m) => m.sides.some((s) => s.wrestlerIds.includes(wrestler.slug))),
+);
+const finishers = wrestler.finishingMoveSlugs
+  .map((s) => moveBySlug.get(s))
+  .filter((m) => m !== undefined);
+const teams = wrestler.promotionSlugs.map((s) => promotionBySlug.get(s)).filter((p) => p !== undefined);
+---
+
+<Base title={wrestler.name} description={`${wrestler.name}のプロフィールと出場興行。`}>
+  <h1>{wrestler.name}</h1>
+  {wrestler.nameEn && <p class="lede">{wrestler.nameEn}</p>}
+
+  <h2>プロフィール</h2>
+  <dl class="facts">
+    <dt>状態</dt>
+    <dd>{STATUS_LABEL[wrestler.status]}</dd>
+
+    <dt>所属</dt>
+    <dd>
+      {
+        teams.length === 0 ? (
+          <span class="unknown">未登録</span>
+        ) : (
+          teams.map((p, i) => (
+            <>
+              {i > 0 && <span>、</span>}
+              <a href={`/promotions/${p.slug}`}>{p.name}</a>
+            </>
+          ))
+        )
+      }
+    </dd>
+
+    <dt>本名</dt>
+    <dd>{wrestler.realName ?? <span class="unknown">未公表 / 未登録</span>}</dd>
+
+    <dt>生年月日</dt>
+    <dd>
+      {wrestler.birthDate ? formatDate(wrestler.birthDate) : <span class="unknown">未公表 / 未登録</span>}
+    </dd>
+
+    <dt>出身</dt>
+    <dd>{wrestler.birthplace ?? <span class="unknown">未登録</span>}</dd>
+
+    <dt>デビュー</dt>
+    <dd>{wrestler.debutDate ? formatDate(wrestler.debutDate) : <span class="unknown">未登録</span>}</dd>
+
+    <dt>身長</dt>
+    <dd>{wrestler.heightCm !== null ? `${wrestler.heightCm} cm` : <span class="unknown">未登録</span>}</dd>
+
+    <dt>体重</dt>
+    <dd>{wrestler.weightKg !== null ? `${wrestler.weightKg} kg` : <span class="unknown">未登録</span>}</dd>
+  </dl>
+
+  <h2>得意技</h2>
+  {
+    finishers.length === 0 ? (
+      <p class="empty">得意技は登録されていません。</p>
+    ) : (
+      <ul class="inline-list">
+        {finishers.map((m) => (
+          <li>
+            <a href={`/moves/${m.slug}`}>{m.name}</a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <h2>別表記・旧名（{wrestler.aliases.length}）</h2>
+  {
+    wrestler.aliases.length === 0 ? (
+      <p class="empty">別表記は登録されていません。</p>
+    ) : (
+      <ul class="inline-list">
+        {wrestler.aliases.map((a) => (
+          <li>{a}</li>
+        ))}
+      </ul>
+    )
+  }
+
+  <h2>出場興行（{appearances.length}）</h2>
+  <EventList
+    events={appearances}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    emptyLabel="出場が確認できる興行はありません。"
+  />
+
+  <SourceList sources={wrestler.sources} />
+</Base>

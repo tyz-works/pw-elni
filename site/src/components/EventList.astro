@@ -1,0 +1,49 @@
+---
+import type { PWEvent, Promotion, Venue } from '../lib/types';
+import { formatDate } from '../lib/data';
+
+interface Props {
+  events: PWEvent[];
+  promotionBySlug: Map<string, Promotion>;
+  venueBySlug: Map<string, Venue>;
+  /** 団体名を出すか（団体ページでは冗長なので消せる） */
+  showPromotion?: boolean;
+  emptyLabel?: string;
+}
+
+const {
+  events,
+  promotionBySlug,
+  venueBySlug,
+  showPromotion = true,
+  emptyLabel = '該当する興行はありません。',
+} = Astro.props;
+---
+
+{
+  events.length === 0 ? (
+    <p class="empty">{emptyLabel}</p>
+  ) : (
+    <ul class="card-list">
+      {events.map((e) => {
+        const promotion = promotionBySlug.get(e.promotionSlug);
+        const venue = venueBySlug.get(e.venueSlug);
+        return (
+          <li class="card">
+            <a href={`/events/${e.eventId}`}>{e.name}</a>
+            {!e.confirmed && <> <span class="badge unconfirmed">未発表</span></>}
+            <p class="meta">
+              {formatDate(e.date)}
+              {e.bellTime && <> {e.bellTime} 開始</>}
+              {venue && <> ／ {venue.name}</>}
+              {showPromotion && promotion && <> ／ {promotion.shortName ?? promotion.name}</>}
+            </p>
+            <p class="meta">
+              {e.matches.length > 0 ? `全${e.matches.length}試合` : '対戦カード未発表'}
+            </p>
+          </li>
+        );
+      })}
+    </ul>
+  )
+}

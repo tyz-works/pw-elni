@@ -1,0 +1,67 @@
+---
+import type { Match, Wrestler, Move } from '../lib/types';
+import { MATCH_TYPE_LABEL, DECISION_LABEL, formatDuration } from '../lib/data';
+
+interface Props {
+  matches: Match[];
+  wrestlerBySlug: Map<string, Wrestler>;
+  moveBySlug: Map<string, Move>;
+}
+
+const { matches, wrestlerBySlug, moveBySlug } = Astro.props;
+const ordered = [...matches].sort((a, b) => a.order - b.order);
+---
+
+{
+  ordered.length === 0 ? (
+    <p class="empty">対戦カードは未発表です。</p>
+  ) : (
+    <ol class="matches">
+      {ordered.map((m) => {
+        const move = m.result?.finishMoveSlug ? moveBySlug.get(m.result.finishMoveSlug) : null;
+        const duration = formatDuration(m.result?.durationSeconds ?? null);
+        return (
+          <li class="match">
+            <p class="match-head">
+              <span class="match-order">第{m.order}試合</span>
+              <span>{MATCH_TYPE_LABEL[m.matchType]}</span>
+              {m.timeLimitMinutes !== null && <span>{m.timeLimitMinutes}分1本勝負</span>}
+              {m.titleName && <span class="badge title">{m.titleName}</span>}
+              {!m.confirmed && <span class="badge unconfirmed">未発表</span>}
+            </p>
+
+            <div class="sides">
+              {m.sides.map((side, i) => (
+                <>
+                  {i > 0 && <span class="vs">vs</span>}
+                  <span class={`side${m.result?.winnerSideIndex === i ? ' winner' : ''}`}>
+                    {side.teamName && <span class="team">{side.teamName}／</span>}
+                    {side.wrestlerIds.map((id, j) => {
+                      const w = wrestlerBySlug.get(id);
+                      return (
+                        <>
+                          {j > 0 && <span>・</span>}
+                          {w ? <a href={`/wrestlers/${w.slug}`}>{w.name}</a> : <span>{id}</span>}
+                        </>
+                      );
+                    })}
+                  </span>
+                </>
+              ))}
+            </div>
+
+            {m.result && (
+              <p class="match-result">
+                {DECISION_LABEL[m.result.decision]}
+                {move && <> — {move.name}</>}
+                {duration && <>（{duration}）</>}
+              </p>
+            )}
+
+            {m.notes && <p class="match-notes">{m.notes}</p>}
+          </li>
+        );
+      })}
+    </ol>
+  )
+}

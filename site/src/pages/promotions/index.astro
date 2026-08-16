@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll } from '../../lib/data';
+
+const { promotions, events, wrestlers } = await loadAll();
+---
+
+<Base title="団体" description="掲載している団体の一覧。">
+  <h1>団体</h1>
+  <p class="lede">全 {promotions.length} 団体を掲載しています。</p>
+
+  <ul class="card-list">
+    {
+      promotions.map((p) => (
+        <li class="card">
+          <a href={`/promotions/${p.slug}`}>{p.name}</a>
+          {p.nameEn && <p class="meta">{p.nameEn}</p>}
+          <p class="meta">
+            {events.filter((e) => e.promotionSlug === p.slug).length} 興行 ／{' '}
+            {wrestlers.filter((w) => w.promotionSlugs.includes(p.slug)).length} 選手
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

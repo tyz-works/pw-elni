@@ -1,0 +1,48 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# データが正しいことの門はここ。LLM に「確認して」はやらせない。
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: スキーマ検証 + ビルド
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # バージョンの真実は .node-version 1 箇所。CI と Cloudflare Pages がここを見る。
+          node-version-file: .node-version
+          cache: npm
+
+      - name: 依存関係をインストール
+        run: npm ci
+
+      - name: JSON Schema 検証 + 整合チェック
+        run: npm run validate
+
+      - name: 検証器そのもののテスト
+        run: npm test
+
+      - name: 型チェック
+        run: npm run check --workspace site
+
+      - name: 静的ビルド
+        run: npm run build
+
+      - name: ビルド成果物を確認
+        run: |
+          test -f site/dist/index.html
+          echo "生成ページ数: $(find site/dist -name '*.html' | wc -l)"

@@ -1,0 +1,57 @@
+{
+  "eventId": "ddt-20260125-0",
+  "promotionSlug": "ddt",
+  "name": "後楽園ホール大会（サンプル）",
+  "series": null,
+  "date": "2026-01-25",
+  "doorsOpen": "17:00",
+  "bellTime": "18:00",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": false,
+  "officialUrl": null,
+  "sources": [],
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "mao"
+          ],
+          "teamName": "サンプルタッグ"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": false,
+      "notes": "対戦相手未発表"
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": false,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/move.schema.json",
+  "title": "技",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug",
+      "description": "英語表記のローマ字。rainmaker / moonsault-press"
+    },
+    "name": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "nameEn": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "category": {
+      "type": "string",
+      "enum": ["strike", "throw", "submission", "aerial", "pin", "other"],
+      "description": "打撃 / 投げ / 関節 / 飛び技 / 固め / その他"
+    },
+    "description": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "sources": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources" }
+  },
+  "required": ["slug", "name", "nameEn", "category", "description", "sources"],
+  "additionalProperties": false
+}

@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll, formatDate } from '../../lib/data';
+
+const { news, promotionBySlug, wrestlerBySlug, eventById } = await loadAll();
+---
+
+<Base title="ニュース" description="出典付きのニュース要約。">
+  <h1>ニュース</h1>
+  <p class="lede">
+    各項目は当サイトによる要約です。原文の転載は行っていません。詳細は出典元をご覧ください。
+  </p>
+
+  {
+    news.length === 0 ? (
+      <p class="empty">ニュースはありません。</p>
+    ) : (
+      <ul class="card-list">
+        {news.map((n) => (
+          <li class="card">
+            <p style="margin:0;font-weight:600">{n.title}</p>
+            <p class="meta">{formatDate(n.publishedDate)}</p>
+            <p style="margin:0.5rem 0">{n.summary}</p>
+            <p class="meta">
+              出典:{' '}
+              <a href={n.sourceUrl} rel="nofollow noopener external" target="_blank">
+                {n.sourceName}
+              </a>
+            </p>
+            {(n.relatedPromotionSlugs.length > 0 ||
+              n.relatedWrestlerSlugs.length > 0 ||
+              n.relatedEventIds.length > 0) && (
+              <p class="meta">
+                関連:{' '}
+                {[
+                  ...n.relatedPromotionSlugs.map((s) => ({
+                    href: `/promotions/${s}`,
+                    label: promotionBySlug.get(s)?.name ?? s,
+                  })),
+                  ...n.relatedWrestlerSlugs.map((s) => ({
+                    href: `/wrestlers/${s}`,
+                    label: wrestlerBySlug.get(s)?.name ?? s,
+                  })),
+                  ...n.relatedEventIds.map((s) => ({
+                    href: `/events/${s}`,
+                    label: eventById.get(s)?.name ?? s,
+                  })),
+                ].map((l, i) => (
+                  <>
+                    {i > 0 && <span>、</span>}
+                    <a href={l.href}>{l.label}</a>
+                  </>
+                ))}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Base>

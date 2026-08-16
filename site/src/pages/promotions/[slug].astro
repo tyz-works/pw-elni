@@ -1,0 +1,83 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import EventList from '../../components/EventList.astro';
+import SourceList from '../../components/SourceList.astro';
+import { loadAll, byDateAsc, isUpcoming, formatDate, STATUS_LABEL } from '../../lib/data';
+
+export const getStaticPaths = (async () => {
+  const { promotions } = await loadAll();
+  return promotions.map((promotion) => ({ params: { slug: promotion.slug }, props: { promotion } }));
+}) satisfies GetStaticPaths;
+
+const { promotion } = Astro.props;
+const { events, wrestlers, promotionBySlug, venueBySlug } = await loadAll();
+
+const own = events.filter((e) => e.promotionSlug === promotion.slug);
+const upcoming = own.filter((e) => isUpcoming(e)).sort(byDateAsc);
+const past = own.filter((e) => !isUpcoming(e));
+const roster = wrestlers.filter((w) => w.promotionSlugs.includes(promotion.slug));
+---
+
+<Base title={promotion.name} description={promotion.description ?? `${promotion.name}の興行と所属選手。`}>
+  <h1>{promotion.name}</h1>
+  {promotion.nameEn && <p class="lede">{promotion.nameEn}</p>}
+
+  {promotion.description && <p>{promotion.description}</p>}
+
+  <h2>基本情報</h2>
+  <dl class="facts">
+    <dt>設立</dt>
+    <dd>
+      {promotion.foundedDate ? formatDate(promotion.foundedDate) : <span class="unknown">未登録</span>}
+    </dd>
+    <dt>公式サイト</dt>
+    <dd>
+      {
+        promotion.officialUrl ? (
+          <a href={promotion.officialUrl} rel="nofollow noopener external" target="_blank">
+            {promotion.officialUrl}
+          </a>
+        ) : (
+          <span class="unknown">未登録</span>
+        )
+      }
+    </dd>
+  </dl>
+
+  <h2>今後の興行（{upcoming.length}）</h2>
+  <EventList
+    events={upcoming}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    showPromotion={false}
+    emptyLabel="今後の興行は登録されていません。"
+  />
+
+  <h2>終了した興行（{past.length}）</h2>
+  <EventList
+    events={past}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    showPromotion={false}
+    emptyLabel="終了した興行は登録されていません。"
+  />
+
+  <h2>所属選手（{roster.length}）</h2>
+  {
+    roster.length === 0 ? (
+      <p class="empty">所属選手は登録されていません。</p>
+    ) : (
+      <ul class="card-list">
+        {roster.map((w) => (
+          <li class="card">
+            <a href={`/wrestlers/${w.slug}`}>{w.name}</a>
+            <p class="meta">{STATUS_LABEL[w.status]}</p>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <SourceList sources={promotion.sources} />
+</Base>

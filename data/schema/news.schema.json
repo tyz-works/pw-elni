@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/news.schema.json",
+  "title": "ニュース",
+  "description": "自前要約 + 出典リンクのみ。原文の表現を再利用してはいけない。",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug",
+      "description": "ファイル名(拡張子なし)と一致させる。"
+    },
+    "title": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString",
+      "description": "自前で付けた見出し。原文見出しの転載は不可。"
+    },
+    "publishedDate": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/date" },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 400,
+      "description": "自前要約。原文の言い回しをなぞらない。"
+    },
+    "sourceUrl": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/url" },
+    "sourceName": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "relatedPromotionSlugs": {
+      "type": "array",
+      "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "relatedWrestlerSlugs": {
+      "type": "array",
+      "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+      "uniqueItems": true
+    },
+    "relatedEventIds": {
+      "type": "array",
+      "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/eventId" },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id", "title", "publishedDate", "summary", "sourceUrl", "sourceName",
+    "relatedPromotionSlugs", "relatedWrestlerSlugs", "relatedEventIds"
+  ],
+  "additionalProperties": false
+}

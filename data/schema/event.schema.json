@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/event.schema.json",
+  "title": "興行",
+  "type": "object",
+  "properties": {
+    "eventId": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/eventId",
+      "description": "{promotion}-{YYYYMMDD}-{seq}。例 njpw-20260104-0"
+    },
+    "promotionSlug": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+    "name": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "series": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString",
+      "description": "シリーズ名。単発興行は null。"
+    },
+    "date": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/date" },
+    "doorsOpen": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableTime" },
+    "bellTime": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableTime" },
+    "venueSlug": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
+    "attendance": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt" },
+    "confirmed": {
+      "type": "boolean",
+      "description": "興行そのものが公式発表済みか。対戦カード未発表でも日時・会場だけで公開してよい。"
+    },
+    "matches": {
+      "type": "array",
+      "description": "対戦カード未発表なら空配列。",
+      "items": { "$ref": "https://pw.elni.net/schema/match.schema.json" }
+    },
+    "officialUrl": {
+      "oneOf": [
+        { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/url" },
+        { "type": "null" }
+      ]
+    },
+    "sources": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources" }
+  },
+  "required": [
+    "eventId", "promotionSlug", "name", "series", "date", "doorsOpen", "bellTime",
+    "venueSlug", "attendance", "confirmed", "matches", "officialUrl", "sources"
+  ],
+  "additionalProperties": false
+}

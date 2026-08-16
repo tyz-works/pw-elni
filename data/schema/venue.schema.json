@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/venue.schema.json",
+  "title": "会場",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug",
+      "description": "{都市}-{施設}。例 tokyo-korakuen-hall"
+    },
+    "name": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "nameEn": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "city": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "prefecture": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "capacity": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt" },
+    "sources": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources" }
+  },
+  "required": ["slug", "name", "nameEn", "city", "prefecture", "capacity", "sources"],
+  "additionalProperties": false
+}

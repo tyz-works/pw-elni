@@ -1,0 +1,41 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import EventList from '../../components/EventList.astro';
+import SourceList from '../../components/SourceList.astro';
+import { loadAll } from '../../lib/data';
+
+export const getStaticPaths = (async () => {
+  const { venues } = await loadAll();
+  return venues.map((venue) => ({ params: { slug: venue.slug }, props: { venue } }));
+}) satisfies GetStaticPaths;
+
+const { venue } = Astro.props;
+const { events, promotionBySlug, venueBySlug } = await loadAll();
+const held = events.filter((e) => e.venueSlug === venue.slug);
+---
+
+<Base title={venue.name} description={`${venue.name}で開催された興行。`}>
+  <h1>{venue.name}</h1>
+  {venue.nameEn && <p class="lede">{venue.nameEn}</p>}
+
+  <h2>基本情報</h2>
+  <dl class="facts">
+    <dt>所在</dt>
+    <dd>{venue.prefecture}{venue.city}</dd>
+    <dt>収容人数</dt>
+    <dd>
+      {venue.capacity !== null ? `${venue.capacity.toLocaleString('ja-JP')} 人` : <span class="unknown">未登録</span>}
+    </dd>
+  </dl>
+
+  <h2>この会場の興行（{held.length}）</h2>
+  <EventList
+    events={held}
+    promotionBySlug={promotionBySlug}
+    venueBySlug={venueBySlug}
+    emptyLabel="この会場の興行は登録されていません。"
+  />
+
+  <SourceList sources={venue.sources} />
+</Base>

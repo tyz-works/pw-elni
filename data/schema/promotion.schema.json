@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pw.elni.net/schema/promotion.schema.json",
+  "title": "団体",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug",
+      "description": "英字略称。njpw / stardom / ddt"
+    },
+    "name": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
+    "nameEn": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "shortName": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "foundedDate": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableDate" },
+    "officialUrl": {
+      "oneOf": [
+        { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/url" },
+        { "type": "null" }
+      ]
+    },
+    "description": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
+    "sources": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources" }
+  },
+  "required": ["slug", "name", "nameEn", "shortName", "foundedDate", "officialUrl", "description", "sources"],
+  "additionalProperties": false
+}

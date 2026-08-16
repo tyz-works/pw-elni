@@ -1,0 +1,79 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import MatchList from '../../components/MatchList.astro';
+import SourceList from '../../components/SourceList.astro';
+import { loadAll, formatDate } from '../../lib/data';
+
+export const getStaticPaths = (async () => {
+  const { events } = await loadAll();
+  return events.map((event) => ({ params: { eventId: event.eventId }, props: { event } }));
+}) satisfies GetStaticPaths;
+
+const { event } = Astro.props;
+const { promotionBySlug, venueBySlug, wrestlerBySlug, moveBySlug } = await loadAll();
+
+const promotion = promotionBySlug.get(event.promotionSlug);
+const venue = venueBySlug.get(event.venueSlug);
+---
+
+<Base
+  title={event.name}
+  description={`${formatDate(event.date)} ${venue?.name ?? ''} で開催の${promotion?.name ?? ''}興行。`}
+>
+  <h1>
+    {event.name}
+    {!event.confirmed && <> <span class="badge unconfirmed">未発表</span></>}
+  </h1>
+  <p class="lede">
+    {promotion ? <a href={`/promotions/${promotion.slug}`}>{promotion.name}</a> : event.promotionSlug}
+    {event.series && <> ／ {event.series}</>}
+  </p>
+
+  {
+    !event.confirmed && (
+      <div class="notice">
+        <p>この興行は未発表・未確定の情報を含みます。日程や対戦カードは変更される場合があります。</p>
+      </div>
+    )
+  }
+
+  <h2>開催情報</h2>
+  <dl class="facts">
+    <dt>開催日</dt>
+    <dd>{formatDate(event.date)}</dd>
+
+    <dt>会場</dt>
+    <dd>
+      {venue ? <a href={`/venues/${venue.slug}`}>{venue.name}</a> : event.venueSlug}
+      {venue && <>（{venue.prefecture}{venue.city}）</>}
+    </dd>
+
+    <dt>開場</dt>
+    <dd>{event.doorsOpen ?? <span class="unknown">未発表</span>}</dd>
+
+    <dt>開始</dt>
+    <dd>{event.bellTime ?? <span class="unknown">未発表</span>}</dd>
+
+    <dt>観衆</dt>
+    <dd>{event.attendance !== null ? `${event.attendance.toLocaleString('ja-JP')} 人` : <span class="unknown">未発表</span>}</dd>
+
+    <dt>興行 ID</dt>
+    <dd><code>{event.eventId}</code></dd>
+  </dl>
+
+  {
+    event.officialUrl && (
+      <p>
+        <a href={event.officialUrl} rel="nofollow noopener external" target="_blank">
+          公式サイトの大会ページ
+        </a>
+      </p>
+    )
+  }
+
+  <h2>対戦カード</h2>
+  <MatchList matches={event.matches} wrestlerBySlug={wrestlerBySlug} moveBySlug={moveBySlug} />
+
+  <SourceList sources={event.sources} />
+</Base>

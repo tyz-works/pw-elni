@@ -1,0 +1,298 @@
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f5f6f8;
+  --fg: #16181d;
+  --fg-muted: #5c6270;
+  --border: #dfe2e8;
+  --accent: #b4232b;
+  --accent-fg: #ffffff;
+  --warn-bg: #fff6e0;
+  --warn-border: #e8c66a;
+  --warn-fg: #7a5410;
+  --radius: 6px;
+  --maxw: 56rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --bg-subtle: #1c1f25;
+    --fg: #e7e9ee;
+    --fg-muted: #9aa1af;
+    --border: #2e333c;
+    --accent: #e4555d;
+    --accent-fg: #14161a;
+    --warn-bg: #2c2410;
+    --warn-border: #6b5a22;
+    --warn-fg: #e8cd85;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---- header / footer ---- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-subtle);
+}
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  padding-block: 0.9rem;
+}
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+.site-title a {
+  color: var(--fg);
+  text-decoration: none;
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  font-size: 0.9rem;
+}
+.site-nav a {
+  color: var(--fg-muted);
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a[aria-current='page'] {
+  color: var(--accent);
+}
+
+.site-footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--fg-muted);
+  font-size: 0.84rem;
+}
+.site-footer .wrap {
+  padding-block: 1.5rem;
+}
+.site-footer p {
+  margin: 0.35rem 0;
+}
+
+main {
+  padding-block: 2rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.35;
+  margin: 0 0 0.25rem;
+}
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.4rem;
+}
+
+.lede {
+  color: var(--fg-muted);
+  margin: 0 0 1.5rem;
+}
+
+/* ---- 汎用リスト ---- */
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  background: var(--bg);
+}
+.card a {
+  font-weight: 600;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+.card .meta {
+  color: var(--fg-muted);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0;
+}
+
+.inline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+}
+
+/* ---- 定義リスト ---- */
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0;
+  font-size: 0.94rem;
+}
+.facts dt {
+  color: var(--fg-muted);
+}
+.facts dd {
+  margin: 0;
+}
+.facts .unknown {
+  color: var(--fg-muted);
+}
+
+/* ---- バッジ ---- */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--fg-muted);
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.badge.unconfirmed {
+  background: var(--warn-bg);
+  border-color: var(--warn-border);
+  color: var(--warn-fg);
+}
+.badge.title {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* ---- 注意書き ---- */
+.notice {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  color: var(--warn-fg);
+  border-radius: var(--radius);
+  padding: 0.7rem 1rem;
+  font-size: 0.88rem;
+  margin: 0 0 1.5rem;
+}
+.notice p {
+  margin: 0.25rem 0;
+}
+
+/* ---- 試合 ---- */
+.matches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.match {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+}
+.match-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--fg-muted);
+  margin-bottom: 0.35rem;
+}
+.match-order {
+  font-weight: 700;
+  color: var(--fg);
+}
+.sides {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.98rem;
+}
+.side.winner {
+  font-weight: 700;
+}
+.side .team {
+  color: var(--fg-muted);
+  font-size: 0.82rem;
+}
+.vs {
+  color: var(--fg-muted);
+  font-size: 0.8rem;
+}
+.match-result {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+}
+.match-notes {
+  margin: 0.3rem 0 0;
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+}
+
+/* ---- 出典 ---- */
+.sources {
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+}
+.sources ol {
+  margin: 0.3rem 0 0;
+  padding-left: 1.4rem;
+}
+.sources .none {
+  margin: 0.3rem 0 0;
+}
+
+.empty {
+  color: var(--fg-muted);
+  font-style: normal;
+}

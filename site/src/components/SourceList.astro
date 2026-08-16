@@ -1,0 +1,32 @@
+---
+import type { Source } from '../lib/types';
+
+interface Props {
+  sources: Source[];
+  /** 出典が無いときに出す文言 */
+  emptyLabel?: string;
+}
+
+const { sources, emptyLabel = '出典は未登録です。このページの内容は未検証の暫定データを含みます。' } =
+  Astro.props;
+---
+
+<section class="sources" aria-labelledby="sources-heading">
+  <h2 id="sources-heading">出典</h2>
+  {
+    sources.length === 0 ? (
+      <p class="none">{emptyLabel}</p>
+    ) : (
+      <ol>
+        {sources.map((s) => (
+          <li>
+            <a href={s.url} rel="nofollow noopener external" target="_blank">
+              {s.title}
+            </a>
+            <span> — {s.retrievedAt} 取得</span>
+          </li>
+        ))}
+      </ol>
+    )
+  }
+</section>

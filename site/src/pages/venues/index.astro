@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll } from '../../lib/data';
+
+const { venues, events } = await loadAll();
+---
+
+<Base title="会場" description="掲載している会場の一覧。">
+  <h1>会場</h1>
+  <p class="lede">全 {venues.length} 会場を掲載しています。</p>
+
+  <ul class="card-list">
+    {
+      venues.map((v) => (
+        <li class="card">
+          <a href={`/venues/${v.slug}`}>{v.name}</a>
+          <p class="meta">
+            {v.prefecture}
+            {v.city}
+            {' ／ '}
+            {events.filter((e) => e.venueSlug === v.slug).length} 興行
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
