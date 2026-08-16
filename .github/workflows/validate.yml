@@ -19,9 +19,9 @@ jobs:
     name: スキーマ検証 + ビルド
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           # バージョンの真実は .node-version 1 箇所。CI と Cloudflare Pages がここを見る。
           node-version-file: .node-version
