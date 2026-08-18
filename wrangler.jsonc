@@ -9,6 +9,17 @@
     "command": "npm run build"
   },
 
+  // 本番は下の custom domain で配信するので workers.dev は使わない。
+  // routes を書くと workers_dev は暗黙に false と推論されるが、暗黙に頼ると
+  // ダッシュボードで触ったときに次の deploy で戻ってしまうため明示しておく。
+  "workers_dev": false,
+
+  // プレビュー URL（<version>-pw-elni.<subdomain>.workers.dev）を有効にする。
+  // 未指定だと workers_dev に追従して false になり、PR ごとのプレビューが作られない。
+  // Phase B〜C のステージングはこのプレビュー URL に Cloudflare Access をかけて代用する
+  // 方針なので、明示的に true にしておく必要がある。
+  "preview_urls": true,
+
   // 本番ドメイン。custom_domain: true にすると Cloudflare が DNS レコードと
   // 証明書（Advanced Certificate）を自動で作る。DNS 側の手作業は不要。
   // 既存の CNAME があるホスト名には付けられないので、レコードは手で作らないこと。

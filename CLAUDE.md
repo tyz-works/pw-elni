@@ -196,14 +196,19 @@ Cloudflare Workers の Cron Triggers を検討する。
 
 ### ステージング
 
-Phase B〜C は独立サブドメインを作らない。Workers Builds が PR ごとに作る
-プレビュー URL に Cloudflare Access をかけて代用する。
+Phase B〜C は独立サブドメインを作らない。Workers Builds が非本番ブランチのビルドで作る
+プレビュー URL（`<version>-pw-elni.<subdomain>.workers.dev`）に Cloudflare Access を
+かけて代用する。
+
+**プレビュー URL は明示的に有効化しないと出ない。** `wrangler.jsonc` に `routes` を書くと
+`workers_dev` が暗黙に `false` と推論され、`preview_urls` を指定していないとそれに追従して
+プレビュー URL も無効になる。そのため `"preview_urls": true` を明示している。外すと
+Phase D のステージング方針が成立しなくなる。
 
 カスタムドメインのステージング（`pw-stg.elni.net`）は **Phase D で自動マージを回し始める
 タイミングで用意する**。その際は `staging` ブランチに紐付けた 2 つ目の Worker を作る。
 
-> **未確認**: この節は Pages 前提で書かれていたものを Workers 向けに書き直した。
-> プレビュー URL の形式と Access の掛け方は Phase D 着手時に実機で確認すること。
+> **未確認**: Access の掛け方（ホスト名単位か Worker 単位か）は Phase D 着手時に実機で確認する。
 
 ### 初期構築時の確認事項
 
