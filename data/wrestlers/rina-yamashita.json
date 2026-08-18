@@ -1,0 +1,28 @@
+{
+  "slug": "rina-yamashita",
+  "name": "山下りな",
+  "nameEn": "Rina Yamashita",
+  "aliases": [
+    "山下 りな",
+    "RINA YAMASHITA",
+    "Rina Yamashita"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "鹿児島県",
+  "debutDate": null,
+  "heightCm": 165,
+  "weightKg": 70,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/",
+      "title": "選手紹介 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-18"
+    }
+  ]
+}

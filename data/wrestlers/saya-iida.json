@@ -1,26 +1,24 @@
 {
-  "slug": "starlight-kid",
-  "name": "スターライト・キッド",
-  "nameEn": "STARLIGHT KID",
+  "slug": "saya-iida",
+  "name": "飯田沙耶",
+  "nameEn": "Saya Iida",
   "aliases": [
-    "スターライトキッド",
-    "Starlight Kid",
-    "STARLIGHT KID"
+    "飯田 沙耶",
+    "SAYA IIDA",
+    "Saya Iida"
   ],
   "realName": null,
   "birthDate": null,
-  "birthplace": null,
-  "debutDate": "2015-10-11",
-  "heightCm": 150,
-  "weightKg": 48,
+  "birthplace": "千葉県柏市",
+  "debutDate": "2019-01-14",
+  "heightCm": 145,
+  "weightKg": 54,
   "status": "active",
   "promotionSlugs": [
     "stardom"
   ],
   "finishingMoveSlugs": [
-    "star-suplex-hold",
-    "tiger-suplex",
-    "moonsault-press"
+    "vertical-drop-brainbuster"
   ],
   "sources": [
     {

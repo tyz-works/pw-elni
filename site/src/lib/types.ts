@@ -71,7 +71,8 @@ export interface MatchResult {
     | 'disqualification'
     | 'draw'
     | 'time-limit-draw'
-    | 'no-contest';
+    | 'no-contest'
+    | 'unknown';
   finishMoveSlug: string | null;
   durationSeconds: number | null;
 }

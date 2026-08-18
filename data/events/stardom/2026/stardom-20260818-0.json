@@ -1,0 +1,246 @@
+{
+  "eventId": "stardom-20260818-0",
+  "promotionSlug": "stardom",
+  "name": "Sammy presents STARDOM 5★STAR GP 2026 in KORAKUEN Aug.2",
+  "series": "STARDOM 5★STAR GP 2026",
+  "date": "2026-08-18",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": 1610,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20260818_korakuen-2/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260818_korakuen-2/",
+      "title": "Sammy presents STARDOM 5★STAR GP 2026 in KORAKUEN Aug.2 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 838
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント1回戦①（BLUE STARS-A 2位 vs BLUE STARS-B 3位）。決まり手はスターライト・キッドの黒虎脚殺。"
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "azm"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "vertical-drop-brainbuster",
+        "durationSeconds": 622
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント1回戦②（RED STARS-B 2位 vs RED STARS-A 3位）。決まり手は垂直落下式ブレーンバスターから片エビ固め。"
+    },
+    {
+      "order": 3,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 687
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント1回戦③（BLUE STARS-B 2位 vs BLUE STARS-A 3位）。決まり手はダルマ式ジャーマンスープレックスホールド。"
+    },
+    {
+      "order": 4,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rina"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "jackknife-hold",
+        "durationSeconds": 682
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント1回戦④（RED STARS-A 2位 vs RED STARS-B 3位）。決まり手はジャックナイフ式エビ固め。"
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ami-sohrei"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "star-suplex-hold",
+        "durationSeconds": 736
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント2回戦①（BLUE STARS-B 1位 vs 1回戦①勝者）。決まり手はスタースープレックスホールド。"
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-iida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "michinoku-driver-2",
+        "durationSeconds": 769
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント2回戦②（RED STARS-A 1位 vs 1回戦②勝者）。決まり手はリストクラッチ式みちのくドライバーⅡからエビ固め。"
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 613
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント2回戦③（BLUE STARS-A 1位 vs 1回戦③勝者）。決まり手はジャーマンスープレックスホールド。"
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 1037
+      },
+      "confirmed": true,
+      "notes": "決勝トーナメント2回戦④（RED STARS-B 1位 vs 1回戦④勝者）。決まり手は吏南のタイガーリリー。"
+    }
+  ]
+}

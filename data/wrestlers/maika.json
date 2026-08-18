@@ -1,26 +1,24 @@
 {
-  "slug": "starlight-kid",
-  "name": "スターライト・キッド",
-  "nameEn": "STARLIGHT KID",
+  "slug": "maika",
+  "name": "舞華",
+  "nameEn": "MAIKA",
   "aliases": [
-    "スターライトキッド",
-    "Starlight Kid",
-    "STARLIGHT KID"
+    "MAIKA",
+    "Maika"
   ],
   "realName": null,
   "birthDate": null,
-  "birthplace": null,
-  "debutDate": "2015-10-11",
-  "heightCm": 150,
-  "weightKg": 48,
+  "birthplace": "福岡県",
+  "debutDate": "2019-05-07",
+  "heightCm": 162,
+  "weightKg": 65,
   "status": "active",
   "promotionSlugs": [
     "stardom"
   ],
   "finishingMoveSlugs": [
-    "star-suplex-hold",
-    "tiger-suplex",
-    "moonsault-press"
+    "michinoku-driver-2",
+    "avalanche-brainbuster"
   ],
   "sources": [
     {
