@@ -9,8 +9,8 @@
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { cpSync, mkdtempSync, readFileSync, writeFileSync, rmSync, renameSync, mkdirSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { cpSync, mkdtempSync, readdirSync, readFileSync, writeFileSync, rmSync, renameSync, mkdirSync } from 'node:fs';
+import { basename, join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
@@ -40,6 +40,22 @@ test('無改変の data/ は検証を通る', () => {
   const { code, out } = runWithMutation(() => {});
   assert.equal(code, 0, `想定外の失敗:\n${out}`);
 });
+
+/**
+ * 条件を満たす興行 / 選手のファイルを data/ から 1 件選ぶ。
+ * 特定のサンプルデータのファイル名に依存すると、データ差し替えのたびに
+ * 検証器のテストが巻き添えで落ちるため、ここで動的に解決する。
+ */
+function pickJson(dir, pred = () => true) {
+  const hit = readdirSync(dir, { recursive: true })
+    .map(String)
+    .filter((f) => f.endsWith('.json'))
+    .sort()
+    .map((f) => join(dir, f))
+    .find((p) => pred(readJson(p)));
+  assert.ok(hit, `条件に合うファイルが ${dir} にない`);
+  return hit;
+}
 
 const CASES = [
   {
@@ -107,7 +123,7 @@ const CASES = [
     name: '孤立参照: 存在しない技を finishingMoveSlugs に持つ選手',
     expect: '孤立参照',
     mutate: (d) => {
-      const p = join(d, 'wrestlers', 'mayu-iwatani.json');
+      const p = pickJson(join(d, 'wrestlers'));
       const w = readJson(p);
       w.finishingMoveSlugs = ['imaginary-move'];
       writeJson(p, w);
@@ -157,8 +173,9 @@ const CASES = [
     name: '配置規約違反: 興行が誤った年ディレクトリにある',
     expect: '配置',
     mutate: (d) => {
-      const src = join(d, 'events', 'stardom', '2026', 'stardom-20260405-0.json');
-      const dst = join(d, 'events', 'stardom', '2025', 'stardom-20260405-0.json');
+      const src = pickJson(join(d, 'events'));
+      const year = Number(basename(dirname(src)));
+      const dst = join(dirname(dirname(src)), String(year - 1), basename(src));
       mkdirSync(dirname(dst), { recursive: true });
       renameSync(src, dst);
     },
@@ -188,9 +205,11 @@ const CASES = [
     name: '同一選手が両陣営に含まれる',
     expect: '複数の陣営',
     mutate: (d) => {
-      const p = join(d, 'events', 'stardom', '2026', 'stardom-20260112-0.json');
+      const hasTwoSides = (e) =>
+        e.matches.some((m) => m.sides.length >= 2 && m.sides.every((s) => s.wrestlerIds.length > 0));
+      const p = pickJson(join(d, 'events'), hasTwoSides);
       const e = readJson(p);
-      const m = e.matches.find((x) => x.matchType === 'tag');
+      const m = e.matches.find((x) => x.sides.length >= 2 && x.sides.every((s) => s.wrestlerIds.length > 0));
       m.sides[1].wrestlerIds[0] = m.sides[0].wrestlerIds[0];
       writeJson(p, e);
     },

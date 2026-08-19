@@ -1,0 +1,28 @@
+{
+  "slug": "saori-anou",
+  "name": "安納サオリ",
+  "nameEn": "Saori Anou",
+  "aliases": [
+    "安納 サオリ",
+    "SAORI ANOU",
+    "Saori Anou"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "滋賀県大津市",
+  "debutDate": "2015-05-31",
+  "heightCm": 160,
+  "weightKg": 56,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/",
+      "title": "選手紹介 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-18"
+    }
+  ]
+}

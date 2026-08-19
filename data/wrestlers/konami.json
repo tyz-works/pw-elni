@@ -1,26 +1,24 @@
 {
-  "slug": "starlight-kid",
-  "name": "スターライト・キッド",
-  "nameEn": "STARLIGHT KID",
+  "slug": "konami",
+  "name": "小波",
+  "nameEn": "KONAMI",
   "aliases": [
-    "スターライトキッド",
-    "Starlight Kid",
-    "STARLIGHT KID"
+    "KONAMI",
+    "Konami",
+    "こなみ"
   ],
   "realName": null,
   "birthDate": null,
-  "birthplace": null,
-  "debutDate": "2015-10-11",
-  "heightCm": 150,
-  "weightKg": 48,
+  "birthplace": "広島県福山市",
+  "debutDate": "2015-02-25",
+  "heightCm": 156,
+  "weightKg": 55,
   "status": "active",
   "promotionSlugs": [
     "stardom"
   ],
   "finishingMoveSlugs": [
-    "star-suplex-hold",
-    "tiger-suplex",
-    "moonsault-press"
+    "triangle-armlock"
   ],
   "sources": [
     {

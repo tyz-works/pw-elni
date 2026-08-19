@@ -1,0 +1,28 @@
+{
+  "slug": "hanako",
+  "name": "HANAKO",
+  "nameEn": "HANAKO",
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "京都府京都市",
+  "debutDate": "2023-03-25",
+  "heightCm": 181,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [
+    "argentine-backbreaker",
+    "big-boot",
+    "brainbuster"
+  ],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/",
+      "title": "選手紹介 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-18"
+    }
+  ]
+}

@@ -1,26 +1,23 @@
 {
-  "slug": "starlight-kid",
-  "name": "スターライト・キッド",
-  "nameEn": "STARLIGHT KID",
+  "slug": "rina",
+  "name": "吏南",
+  "nameEn": "RINA",
   "aliases": [
-    "スターライトキッド",
-    "Starlight Kid",
-    "STARLIGHT KID"
+    "RINA",
+    "Rina"
   ],
   "realName": null,
   "birthDate": null,
-  "birthplace": null,
-  "debutDate": "2015-10-11",
-  "heightCm": 150,
-  "weightKg": 48,
+  "birthplace": "栃木県下野市",
+  "debutDate": "2018-10-13",
+  "heightCm": 163,
+  "weightKg": 55,
   "status": "active",
   "promotionSlugs": [
     "stardom"
   ],
   "finishingMoveSlugs": [
-    "star-suplex-hold",
-    "tiger-suplex",
-    "moonsault-press"
+    "jackknife-hold"
   ],
   "sources": [
     {

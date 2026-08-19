@@ -1,26 +1,25 @@
 {
-  "slug": "starlight-kid",
-  "name": "スターライト・キッド",
-  "nameEn": "STARLIGHT KID",
+  "slug": "suzu-suzuki",
+  "name": "鈴季すず",
+  "nameEn": "Suzu Suzuki",
   "aliases": [
-    "スターライトキッド",
-    "Starlight Kid",
-    "STARLIGHT KID"
+    "鈴季 すず",
+    "SUZU SUZUKI",
+    "Suzu Suzuki"
   ],
   "realName": null,
   "birthDate": null,
-  "birthplace": null,
-  "debutDate": "2015-10-11",
-  "heightCm": 150,
-  "weightKg": 48,
+  "birthplace": "宮崎県",
+  "debutDate": "2018-12-31",
+  "heightCm": 153,
+  "weightKg": 65,
   "status": "active",
   "promotionSlugs": [
     "stardom"
   ],
   "finishingMoveSlugs": [
-    "star-suplex-hold",
-    "tiger-suplex",
-    "moonsault-press"
+    "german-suplex-hold",
+    "sky-twister-press"
   ],
   "sources": [
     {

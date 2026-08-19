@@ -94,6 +94,7 @@ export const DECISION_LABEL: Record<NonNullable<Match['result']>['decision'], st
   draw: '引き分け',
   'time-limit-draw': '時間切れ引き分け',
   'no-contest': '無効試合',
+  unknown: '決まり手不明',
 };
 
 export const MOVE_CATEGORY_LABEL: Record<Move['category'], string> = {

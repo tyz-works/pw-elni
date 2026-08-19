@@ -1,26 +1,24 @@
 {
-  "slug": "starlight-kid",
-  "name": "スターライト・キッド",
-  "nameEn": "STARLIGHT KID",
+  "slug": "ami-sohrei",
+  "name": "壮麗亜美",
+  "nameEn": "Ami Sohrei",
   "aliases": [
-    "スターライトキッド",
-    "Starlight Kid",
-    "STARLIGHT KID"
+    "壮麗 亜美",
+    "AMI SOHREI",
+    "Ami Sohrei"
   ],
   "realName": null,
   "birthDate": null,
-  "birthplace": null,
-  "debutDate": "2015-10-11",
-  "heightCm": 150,
-  "weightKg": 48,
+  "birthplace": "福島県福島市",
+  "debutDate": "2020-08-14",
+  "heightCm": 170,
+  "weightKg": 70,
   "status": "active",
   "promotionSlugs": [
     "stardom"
   ],
   "finishingMoveSlugs": [
-    "star-suplex-hold",
-    "tiger-suplex",
-    "moonsault-press"
+    "argentine-backbreaker"
   ],
   "sources": [
     {
