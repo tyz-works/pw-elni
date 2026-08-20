@@ -1,0 +1,30 @@
+{
+  "slug": "danshoku-dieno",
+  "name": "男色ディーノ",
+  "nameEn": "Danshoku Dieno",
+  "aliases": [
+    "DANSHOKU DIENO",
+    "男色 ディーノ",
+    "Danshoku Dino"
+  ],
+  "realName": null,
+  "birthDate": "1977-05-18",
+  "birthplace": "広島県尾道市",
+  "debutDate": "2002-04-29",
+  "heightCm": 179,
+  "weightKg": 105,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "danshoku-driver"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd666f9342b300022f3654",
+      "title": "男色ディーノ | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "toru-owashi",
+  "name": "大鷲透",
+  "nameEn": "Toru Owashi",
+  "aliases": [
+    "TORU OWASHI",
+    "大鷲 透"
+  ],
+  "realName": null,
+  "birthDate": "1975-12-24",
+  "birthplace": "長野県佐久市",
+  "debutDate": "2000-09-02",
+  "heightCm": 185,
+  "weightKg": 110,
+  "status": "freelance",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [
+    "running-nodowa-otoshi"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66a39342b300022f3713",
+      "title": "大鷲透 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

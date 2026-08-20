@@ -1,0 +1,30 @@
+{
+  "slug": "mj-paul",
+  "name": "MJポー",
+  "nameEn": "MJ Paul",
+  "aliases": [
+    "MJ PAUL",
+    "Mj Paul",
+    "MJポール"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": "2021-10-17",
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "death-valley-bomb"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66769342b300022f366d",
+      "title": "MJポー | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

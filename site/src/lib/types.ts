@@ -69,6 +69,7 @@ export interface MatchResult {
     | 'knockout'
     | 'countout'
     | 'disqualification'
+    | 'over-the-top-rope'
     | 'draw'
     | 'time-limit-draw'
     | 'no-contest'

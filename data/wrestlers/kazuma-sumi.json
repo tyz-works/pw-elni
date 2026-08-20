@@ -1,0 +1,29 @@
+{
+  "slug": "kazuma-sumi",
+  "name": "須見和馬",
+  "nameEn": "Kazuma Sumi",
+  "aliases": [
+    "KAZUMA SUMI",
+    "須見 和馬"
+  ],
+  "realName": null,
+  "birthDate": "2003-03-27",
+  "birthplace": "三重県津市",
+  "debutDate": "2022-10-23",
+  "heightCm": 163,
+  "weightKg": 65,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "reverse-450-splash"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66b172644a0002e51181",
+      "title": "須見和馬 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

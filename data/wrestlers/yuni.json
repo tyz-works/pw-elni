@@ -1,0 +1,27 @@
+{
+  "slug": "yuni",
+  "name": "夢虹",
+  "nameEn": "Yuni",
+  "aliases": [
+    "YUNI",
+    "ユニ"
+  ],
+  "realName": null,
+  "birthDate": "2008-02-08",
+  "birthplace": "大阪府",
+  "debutDate": "2016-12-04",
+  "heightCm": 160,
+  "weightKg": 53,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66979342b300022f36e6",
+      "title": "夢虹 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

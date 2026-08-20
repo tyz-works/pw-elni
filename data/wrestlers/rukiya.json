@@ -1,0 +1,29 @@
+{
+  "slug": "rukiya",
+  "name": "瑠希也",
+  "nameEn": "Rukiya",
+  "aliases": [
+    "RUKIYA",
+    "ルキヤ"
+  ],
+  "realName": null,
+  "birthDate": "2001-02-25",
+  "birthplace": "大阪府豊中市",
+  "debutDate": "2023-04-09",
+  "heightCm": 177,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "proto-bomb"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66b49342b300022f373e",
+      "title": "瑠希也 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

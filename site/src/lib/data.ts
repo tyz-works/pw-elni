@@ -91,6 +91,7 @@ export const DECISION_LABEL: Record<NonNullable<Match['result']>['decision'], st
   knockout: 'KO勝ち',
   countout: 'リングアウト勝ち',
   disqualification: '反則勝ち',
+  'over-the-top-rope': 'オーバー・ザ・トップロープ',
   draw: '引き分け',
   'time-limit-draw': '時間切れ引き分け',
   'no-contest': '無効試合',

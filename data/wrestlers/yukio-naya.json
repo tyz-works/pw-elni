@@ -1,0 +1,29 @@
+{
+  "slug": "yukio-naya",
+  "name": "納谷幸男",
+  "nameEn": "Yukio Naya",
+  "aliases": [
+    "YUKIO NAYA",
+    "納谷 幸男"
+  ],
+  "realName": null,
+  "birthDate": "1994-08-17",
+  "birthplace": "東京都江東区",
+  "debutDate": "2017-09-14",
+  "heightCm": 201,
+  "weightKg": 110,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "sekaiichi-no-backdrop"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66879342b300022f36aa",
+      "title": "納谷幸男 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

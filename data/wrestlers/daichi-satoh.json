@@ -1,0 +1,30 @@
+{
+  "slug": "daichi-satoh",
+  "name": "佐藤大地",
+  "nameEn": "Daichi Satoh",
+  "aliases": [
+    "DAICHI SATOH",
+    "佐藤 大地",
+    "Daichi Sato"
+  ],
+  "realName": null,
+  "birthDate": "2008-08-29",
+  "birthplace": "神奈川県",
+  "debutDate": "2021-09-17",
+  "heightCm": 180,
+  "weightKg": 115,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "mad-splash"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67f236949b3d96000298ff99",
+      "title": "佐藤大地 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

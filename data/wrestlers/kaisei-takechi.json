@@ -1,0 +1,27 @@
+{
+  "slug": "kaisei-takechi",
+  "name": "武知海青",
+  "nameEn": "Kaisei Takechi",
+  "aliases": [
+    "KAISEI TAKECHI",
+    "武知 海青"
+  ],
+  "realName": null,
+  "birthDate": "1998-02-04",
+  "birthplace": "兵庫県宝塚市",
+  "debutDate": "2024-02-25",
+  "heightCm": 183,
+  "weightKg": 78,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [
+    "break-it-down"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/684033b1b7da2600029bb329",
+      "title": "武知海青 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

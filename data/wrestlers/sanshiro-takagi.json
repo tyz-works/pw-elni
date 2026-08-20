@@ -1,0 +1,30 @@
+{
+  "slug": "sanshiro-takagi",
+  "name": "髙木三四郎",
+  "nameEn": "Sanshiro Takagi",
+  "aliases": [
+    "SANSHIRO TAKAGI",
+    "髙木 三四郎",
+    "高木三四郎"
+  ],
+  "realName": null,
+  "birthDate": "1970-01-13",
+  "birthplace": "大阪府豊中市",
+  "debutDate": "1995-02-16",
+  "heightCm": 175,
+  "weightKg": 105,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "sitdown-himawari-bomb"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66a47be0880002c2f9fd",
+      "title": "髙木三四郎 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "soma-takao",
+  "name": "高尾蒼馬",
+  "nameEn": "Soma Takao",
+  "aliases": [
+    "SOMA TAKAO",
+    "高尾 蒼馬"
+  ],
+  "realName": null,
+  "birthDate": "1988-08-04",
+  "birthplace": "東京都大田区",
+  "debutDate": "2009-08-23",
+  "heightCm": 173,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "gin-tonic"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66a87be0880002c2fa0c",
+      "title": "高尾蒼馬 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "hinata-kasai",
+  "name": "葛西陽向",
+  "nameEn": "Hinata Kasai",
+  "aliases": [
+    "HINATA KASAI",
+    "葛西 陽向"
+  ],
+  "realName": null,
+  "birthDate": "2004-01-02",
+  "birthplace": "神奈川県横浜市",
+  "debutDate": null,
+  "heightCm": 171,
+  "weightKg": 79,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/68afce6f59ba1100026fdb6e",
+      "title": "葛西陽向 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

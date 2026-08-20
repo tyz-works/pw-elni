@@ -3,20 +3,28 @@
   "name": "上野勇希",
   "nameEn": "Yuki Ueno",
   "aliases": [
-    "うえのゆうき",
-    "Yuki Ueno",
-    "上野 勇希"
+    "YUKI UENO",
+    "上野 勇希",
+    "うえのゆうき"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
+  "birthDate": "1995-09-01",
+  "birthplace": "大阪府八尾市",
+  "debutDate": "2016-10-17",
+  "heightCm": 174,
+  "weightKg": 80,
   "status": "active",
   "promotionSlugs": [
     "ddt"
   ],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "finishingMoveSlugs": [
+    "wr"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd666c9342b300022f364a",
+      "title": "上野勇希 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

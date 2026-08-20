@@ -1,0 +1,29 @@
+{
+  "slug": "kazuki-hirata",
+  "name": "平田一喜",
+  "nameEn": "Kazuki Hirata",
+  "aliases": [
+    "KAZUKI HIRATA",
+    "平田 一喜"
+  ],
+  "realName": null,
+  "birthDate": "1987-11-21",
+  "birthplace": "東京都足立区",
+  "debutDate": "2010-03-14",
+  "heightCm": 172,
+  "weightKg": 78,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "kiseki-wo-yobu-ippatsu-gyakuten-kubi-gatame"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66ac7be0880002c2fa19",
+      "title": "平田一喜 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

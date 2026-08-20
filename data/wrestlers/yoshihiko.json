@@ -1,0 +1,28 @@
+{
+  "slug": "yoshihiko",
+  "name": "ヨシヒコ",
+  "nameEn": "Yoshihiko",
+  "aliases": [
+    "YOSHIHIKO"
+  ],
+  "realName": null,
+  "birthDate": "2004-12-25",
+  "birthplace": "新潟県",
+  "debutDate": "2005-02-09",
+  "heightCm": 120,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "rinne-tensei"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66947be0880002c2f9c9",
+      "title": "ヨシヒコ | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

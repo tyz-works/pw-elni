@@ -1,0 +1,29 @@
+{
+  "slug": "yuya-koroku",
+  "name": "高鹿佑也",
+  "nameEn": "Yuya Koroku",
+  "aliases": [
+    "YUYA KOROKU",
+    "高鹿 佑也"
+  ],
+  "realName": null,
+  "birthDate": "1997-11-21",
+  "birthplace": "千葉県",
+  "debutDate": "2021-04-11",
+  "heightCm": 170,
+  "weightKg": 81,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "henkei-triangle-lancer"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd667a9342b300022f367c",
+      "title": "高鹿佑也 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

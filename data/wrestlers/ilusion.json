@@ -1,0 +1,28 @@
+{
+  "slug": "ilusion",
+  "name": "イルシオン",
+  "nameEn": "Ilusion",
+  "aliases": [
+    "ILUSION"
+  ],
+  "realName": null,
+  "birthDate": "2002-12-10",
+  "birthplace": null,
+  "debutDate": "2021-08-21",
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "swanton-bomb"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66799342b300022f3677",
+      "title": "イルシオン | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

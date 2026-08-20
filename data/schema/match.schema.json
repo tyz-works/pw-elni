@@ -58,7 +58,7 @@
             },
             "decision": {
               "type": "string",
-              "enum": ["pinfall", "submission", "knockout", "countout", "disqualification", "draw", "time-limit-draw", "no-contest", "unknown"]
+              "enum": ["pinfall", "submission", "knockout", "countout", "disqualification", "over-the-top-rope", "draw", "time-limit-draw", "no-contest", "unknown"]
             },
             "finishMoveSlug": {
               "oneOf": [

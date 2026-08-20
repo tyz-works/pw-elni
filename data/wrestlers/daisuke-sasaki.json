@@ -1,0 +1,29 @@
+{
+  "slug": "daisuke-sasaki",
+  "name": "佐々木大輔",
+  "nameEn": "Daisuke Sasaki",
+  "aliases": [
+    "DAISUKE SASAKI",
+    "佐々木 大輔"
+  ],
+  "realName": null,
+  "birthDate": "1985-11-22",
+  "birthplace": "東京都練馬区",
+  "debutDate": "2005-10-22",
+  "heightCm": 168,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "crossover-facelock"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66a99342b300022f372f",
+      "title": "佐々木大輔 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

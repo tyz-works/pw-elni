@@ -1,0 +1,29 @@
+{
+  "slug": "takeshi-masada",
+  "name": "正田壮史",
+  "nameEn": "Takeshi Masada",
+  "aliases": [
+    "TAKESHI MASADA",
+    "正田 壮史"
+  ],
+  "realName": null,
+  "birthDate": "2001-10-02",
+  "birthplace": "大阪府堺市",
+  "debutDate": "2022-08-14",
+  "heightCm": 180,
+  "weightKg": 96,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "masada-no-chikara-kobu-mukimuki"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66729342b300022f365e",
+      "title": "正田壮史 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

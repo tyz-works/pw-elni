@@ -1,0 +1,29 @@
+{
+  "slug": "kanon",
+  "name": "KANON",
+  "nameEn": "KANON",
+  "aliases": [
+    "Kanon",
+    "カノン"
+  ],
+  "realName": null,
+  "birthDate": "1996-09-23",
+  "birthplace": "石川県金沢市",
+  "debutDate": "2019-07-08",
+  "heightCm": 180,
+  "weightKg": 103,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "lonely-dezires"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66759342b300022f3668",
+      "title": "KANON | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

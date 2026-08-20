@@ -3,21 +3,27 @@
   "name": "HARASHIMA",
   "nameEn": "HARASHIMA",
   "aliases": [
-    "ハラシマ",
-    "Harashima"
+    "Harashima",
+    "ハラシマ"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
+  "birthDate": "1974-07-06",
+  "birthplace": "東京都",
+  "debutDate": "2001-08-12",
+  "heightCm": 178,
+  "weightKg": 90,
   "status": "active",
   "promotionSlugs": [
     "ddt"
   ],
   "finishingMoveSlugs": [
-    "shining-wizard"
+    "soumato"
   ],
-  "sources": []
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66ab7be0880002c2fa13",
+      "title": "HARASHIMA | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }
