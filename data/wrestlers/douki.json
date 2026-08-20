@@ -1,0 +1,30 @@
+{
+  "slug": "douki",
+  "name": "DOUKI",
+  "nameEn": "DOUKI",
+  "aliases": [
+    "ドウキ",
+    "Douki"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "Arista 36 Col Buenavista MexicoD.F.",
+  "debutDate": null,
+  "heightCm": 170,
+  "weightKg": 85,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "suplex-de-la-luna",
+    "italian-stretch-no-32"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/197837",
+      "title": "DOUKI | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

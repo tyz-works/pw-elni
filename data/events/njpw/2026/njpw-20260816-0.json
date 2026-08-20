@@ -1,0 +1,270 @@
+{
+  "eventId": "njpw-20260816-0",
+  "promotionSlug": "njpw",
+  "name": "新日カードランブル presents G1 CLIMAX 36 最終戦",
+  "series": "新日カードランブル presents G1 CLIMAX 36",
+  "date": "2026-08-16",
+  "doorsOpen": "13:30",
+  "bellTime": "15:00",
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": 7260,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoshi-hashi",
+            "el-desperado",
+            "ryusuke-taguchi",
+            "masatora-yasuda"
+          ],
+          "teamName": "本隊"
+        },
+        {
+          "wrestlerIds": [
+            "yujiro-takahashi",
+            "douki",
+            "sho",
+            "yoshinobu-kanemaru"
+          ],
+          "teamName": "HOUSE OF TORTURE"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": "italian-stretch-no-32",
+        "durationSeconds": 410
+      },
+      "confirmed": true,
+      "notes": "決まり手は DOUKI が安田優虎から奪ったイタリアンストレッチNo.32。"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "togi-makabe",
+            "toru-yano"
+          ],
+          "teamName": "本隊"
+        },
+        {
+          "wrestlerIds": [
+            "francesco-akira",
+            "zane-jay"
+          ],
+          "teamName": "UNITED EMPIRE"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "king-kong-knee-drop",
+        "durationSeconds": 357
+      },
+      "confirmed": true,
+      "notes": "決まり手は真壁刀義がゼイン・ジェイに決めたキングコングニードロップからの体固め。"
+    },
+    {
+      "order": 3,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "boltin-oleg",
+            "master-wato",
+            "tatsuya-matsumoto"
+          ],
+          "teamName": "本隊"
+        },
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr",
+            "hartley-jackson",
+            "kosei-fujita"
+          ],
+          "teamName": "TMDK"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "knockout",
+        "finishMoveSlug": "front-necklock",
+        "durationSeconds": 713
+      },
+      "confirmed": true,
+      "notes": "藤田晃生が松本達哉をフロントネックロックで捕らえレフェリーストップ。当初出場予定だったウルフアロンが体調不良で欠場し、松本が代打出場した。"
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuto-ice",
+            "oskar",
+            "daiki-nagai"
+          ],
+          "teamName": "Unbound Co."
+        },
+        {
+          "wrestlerIds": [
+            "henare",
+            "great-o-khan",
+            "callum-newman"
+          ],
+          "teamName": "UNITED EMPIRE"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "make-way",
+        "durationSeconds": 710
+      },
+      "confirmed": true,
+      "notes": "決まり手はカラム・ニューマンが永井大貴に決めた MAKE WAY からの体固め。"
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "drilla-moloney",
+            "shingo-takagi"
+          ],
+          "teamName": "Unbound Co."
+        },
+        {
+          "wrestlerIds": [
+            "gabe-kidd",
+            "wheeler-yuta"
+          ],
+          "teamName": "AEW"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "last-of-the-dragon",
+        "durationSeconds": 811
+      },
+      "confirmed": true,
+      "notes": "決まり手は鷹木信悟がウィーラー・ユウタに決めたラスト・オブ・ザ・ドラゴンからの片エビ固め。"
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita",
+            "taichi",
+            "satoshi-kojima"
+          ],
+          "teamName": "本隊"
+        },
+        {
+          "wrestlerIds": [
+            "ren-narita",
+            "sanada",
+            "shun-skywalker"
+          ],
+          "teamName": "HOUSE OF TORTURE"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "moonsault-knee-drop",
+        "durationSeconds": 653
+      },
+      "confirmed": true,
+      "notes": "決まり手はシュン・スカイウォーカーが小島聡に決めたムーンサルト・ニードロップからの片エビ固め。シュンは本大会が HOUSE OF TORTURE 加入後の初陣。"
+    },
+    {
+      "order": 7,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hirooki-goto",
+            "yoh"
+          ],
+          "teamName": "本隊"
+        },
+        {
+          "wrestlerIds": [
+            "yota-tsuji",
+            "taiji-ishimori"
+          ],
+          "teamName": "Unbound Co."
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "bloody-cross",
+        "durationSeconds": 500
+      },
+      "confirmed": true,
+      "notes": "決まり手は石森太二が YOH に決めたブラディークロスからの片エビ固め。"
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": "big-rock",
+        "durationSeconds": 2110
+      },
+      "confirmed": true,
+      "notes": "『G1 CLIMAX 36』決勝戦。時間無制限1本勝負。大岩陵平がヘッドロック（ビッグロック）で上村優也からギブアップを奪い初優勝。"
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/642541",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/642541",
+      "title": "新日カードランブル presents G1 CLIMAX 36 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

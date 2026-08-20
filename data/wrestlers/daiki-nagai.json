@@ -1,0 +1,28 @@
+{
+  "slug": "daiki-nagai",
+  "name": "永井大貴",
+  "nameEn": "Daiki Nagai",
+  "aliases": [
+    "永井 大貴",
+    "Daiki Nagai",
+    "ながいだいき"
+  ],
+  "realName": null,
+  "birthDate": "2003-01-16",
+  "birthplace": "神奈川県伊勢原市",
+  "debutDate": "2024-06-16",
+  "heightCm": 170,
+  "weightKg": 84,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/504469",
+      "title": "永井大貴 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

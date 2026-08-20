@@ -1,0 +1,31 @@
+{
+  "slug": "ryohei-oiwa",
+  "name": "大岩陵平",
+  "nameEn": "Ryohei Oiwa",
+  "aliases": [
+    "大岩 陵平",
+    "Ryohei Oiwa",
+    "おおいわりょうへい"
+  ],
+  "realName": null,
+  "birthDate": "1998-11-07",
+  "birthplace": "愛知県江南市",
+  "debutDate": "2021-08-24",
+  "heightCm": 180,
+  "weightKg": 110,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "the-grip",
+    "big-rock"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/310777",
+      "title": "大岩陵平 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

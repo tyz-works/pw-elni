@@ -1,0 +1,27 @@
+{
+  "slug": "zane-jay",
+  "name": "ゼイン・ジェイ",
+  "nameEn": "Zane Jay",
+  "aliases": [
+    "ゼインジェイ",
+    "Zane Jay"
+  ],
+  "realName": null,
+  "birthDate": "1997-10-29",
+  "birthplace": "アメリカ ワシントン州・タックウィラ",
+  "debutDate": "2023-10-07",
+  "heightCm": 183,
+  "weightKg": 98,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/488043",
+      "title": "ゼイン・ジェイ | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

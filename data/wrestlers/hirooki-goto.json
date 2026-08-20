@@ -8,15 +8,23 @@
     "後藤 洋央紀"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
+  "birthDate": "1979-06-25",
+  "birthplace": "三重県桑名市",
+  "debutDate": "2003-07-06",
+  "heightCm": 182,
+  "weightKg": 103,
   "status": "active",
   "promotionSlugs": [
     "njpw"
   ],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "finishingMoveSlugs": [
+    "gtr"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/689",
+      "title": "後藤 洋央紀 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

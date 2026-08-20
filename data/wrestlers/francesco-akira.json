@@ -1,0 +1,29 @@
+{
+  "slug": "francesco-akira",
+  "name": "フランシスコ・アキラ",
+  "nameEn": "Francesco Akira",
+  "aliases": [
+    "フランシスコアキラ",
+    "Francesco Akira"
+  ],
+  "realName": null,
+  "birthDate": "1999-11-12",
+  "birthplace": "イタリア・ロンバルディア州",
+  "debutDate": null,
+  "heightCm": 175,
+  "weightKg": 70,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "fireball"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/353794",
+      "title": "フランシスコ・アキラ | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

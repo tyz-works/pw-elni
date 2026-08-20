@@ -1,0 +1,30 @@
+{
+  "slug": "zack-sabre-jr",
+  "name": "ザック・セイバーJr.",
+  "nameEn": "Zack Sabre Jr.",
+  "aliases": [
+    "ザックセイバーJr.",
+    "Zack Sabre Jr.",
+    "ザック・セイバー・ジュニア"
+  ],
+  "realName": null,
+  "birthDate": "1987-07-24",
+  "birthplace": "イギリス・ケント州シェピー島",
+  "debutDate": "2004-04-20",
+  "heightCm": 186,
+  "weightKg": 96,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "zack-driver"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/498",
+      "title": "ザック・セイバーJr. | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

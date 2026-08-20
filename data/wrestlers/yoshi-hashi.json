@@ -1,0 +1,29 @@
+{
+  "slug": "yoshi-hashi",
+  "name": "YOSHI-HASHI",
+  "nameEn": "YOSHI-HASHI",
+  "aliases": [
+    "ヨシハシ",
+    "Yoshi-Hashi"
+  ],
+  "realName": null,
+  "birthDate": "1982-05-25",
+  "birthplace": "愛知県愛知郡東郷町",
+  "debutDate": "2008-07-06",
+  "heightCm": 180,
+  "weightKg": 102,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "karma"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/723",
+      "title": "YOSHI-HASHI | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

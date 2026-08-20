@@ -1,0 +1,29 @@
+{
+  "slug": "drilla-moloney",
+  "name": "ドリラ・モロニー",
+  "nameEn": "Drilla Moloney",
+  "aliases": [
+    "ドリラモロニー",
+    "Drilla Moloney"
+  ],
+  "realName": null,
+  "birthDate": "1997-02-09",
+  "birthplace": "イギリス・バーミンガム",
+  "debutDate": null,
+  "heightCm": 178,
+  "weightKg": 100,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "drilla-killer"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/430304",
+      "title": "ドリラ・モロニー | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

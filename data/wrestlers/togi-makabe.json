@@ -1,0 +1,30 @@
+{
+  "slug": "togi-makabe",
+  "name": "真壁刀義",
+  "nameEn": "Togi Makabe",
+  "aliases": [
+    "真壁 刀義",
+    "Togi Makabe",
+    "まかべとうぎ"
+  ],
+  "realName": null,
+  "birthDate": "1972-09-29",
+  "birthplace": "神奈川県相模原市",
+  "debutDate": "1997-02-15",
+  "heightCm": 181,
+  "weightKg": 110,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "king-kong-knee-drop"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/697",
+      "title": "真壁刀義 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "callum-newman",
+  "name": "カラム・ニューマン",
+  "nameEn": "Callum Newman",
+  "aliases": [
+    "カラムニューマン",
+    "Callum Newman"
+  ],
+  "realName": null,
+  "birthDate": "2002-08-31",
+  "birthplace": "イギリス",
+  "debutDate": null,
+  "heightCm": 185,
+  "weightKg": 104,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "oscutter-2-0",
+    "make-way"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/442064",
+      "title": "カラム・ニューマン | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

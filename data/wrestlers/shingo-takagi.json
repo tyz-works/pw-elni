@@ -1,0 +1,30 @@
+{
+  "slug": "shingo-takagi",
+  "name": "鷹木信悟",
+  "nameEn": "Shingo Takagi",
+  "aliases": [
+    "鷹木 信悟",
+    "Shingo Takagi",
+    "たかぎしんご"
+  ],
+  "realName": null,
+  "birthDate": "1982-11-21",
+  "birthplace": "山梨県中央市",
+  "debutDate": null,
+  "heightCm": 178,
+  "weightKg": 100,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "last-of-the-dragon"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/550",
+      "title": "鷹木信悟 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

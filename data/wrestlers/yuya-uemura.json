@@ -1,0 +1,30 @@
+{
+  "slug": "yuya-uemura",
+  "name": "上村優也",
+  "nameEn": "Yuya Uemura",
+  "aliases": [
+    "上村 優也",
+    "Yuya Uemura",
+    "うえむらゆうや"
+  ],
+  "realName": null,
+  "birthDate": "1994-11-18",
+  "birthplace": "愛媛県今治市",
+  "debutDate": "2018-04-10",
+  "heightCm": 180,
+  "weightKg": 101,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "kannuki-suplex"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/139487",
+      "title": "上村優也 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

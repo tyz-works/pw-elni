@@ -1,0 +1,30 @@
+{
+  "slug": "great-o-khan",
+  "name": "グレート-O-カーン",
+  "nameEn": "Great-O-Khan",
+  "aliases": [
+    "グレートOカーン",
+    "Great-O-Khan",
+    "オーカーン"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": 188,
+  "weightKg": 120,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "eliminator"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/265105",
+      "title": "グレート-O-カーン | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

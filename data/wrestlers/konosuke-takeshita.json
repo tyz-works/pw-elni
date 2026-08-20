@@ -5,16 +5,28 @@
   "aliases": [
     "たけしたこうのすけ",
     "Konosuke Takeshita",
-    "竹下 幸之介"
+    "竹下 幸之介",
+    "KONOSUKE TAKESHITA"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
-  "status": "unknown",
-  "promotionSlugs": [],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "birthDate": "1995-05-29",
+  "birthplace": "大阪府大阪市",
+  "debutDate": "2012-08-18",
+  "heightCm": 187,
+  "weightKg": 114,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt",
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "raging-fire"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/486952",
+      "title": "KONOSUKE TAKESHITA | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

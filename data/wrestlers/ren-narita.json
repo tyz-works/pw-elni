@@ -1,0 +1,30 @@
+{
+  "slug": "ren-narita",
+  "name": "成田蓮",
+  "nameEn": "Ren Narita",
+  "aliases": [
+    "成田 蓮",
+    "Ren Narita",
+    "なりたれん"
+  ],
+  "realName": null,
+  "birthDate": "1997-11-29",
+  "birthplace": "青森県青森市",
+  "debutDate": "2017-07-04",
+  "heightCm": 182,
+  "weightKg": 100,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "double-cross"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/101824",
+      "title": "成田蓮 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -8,15 +8,23 @@
     "真田聖也"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
+  "birthDate": "1988-01-28",
+  "birthplace": "新潟県新潟市",
+  "debutDate": "2007-03-13",
+  "heightCm": 182,
+  "weightKg": 100,
   "status": "active",
   "promotionSlugs": [
     "njpw"
   ],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "finishingMoveSlugs": [
+    "deadfall"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/753",
+      "title": "SANADA | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

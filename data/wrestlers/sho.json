@@ -1,0 +1,30 @@
+{
+  "slug": "sho",
+  "name": "SHO",
+  "nameEn": "SHO",
+  "aliases": [
+    "ショウ",
+    "Sho",
+    "小松洋平"
+  ],
+  "realName": null,
+  "birthDate": "1989-08-27",
+  "birthplace": "愛媛県宇和島市",
+  "debutDate": "2012-11-15",
+  "heightCm": 173,
+  "weightKg": 93,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "uwajima-pimps"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/117050",
+      "title": "SHO | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

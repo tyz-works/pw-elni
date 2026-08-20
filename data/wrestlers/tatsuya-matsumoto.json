@@ -1,0 +1,28 @@
+{
+  "slug": "tatsuya-matsumoto",
+  "name": "松本達哉",
+  "nameEn": "Tatsuya Matsumoto",
+  "aliases": [
+    "松本 達哉",
+    "Tatsuya Matsumoto",
+    "まつもとたつや"
+  ],
+  "realName": null,
+  "birthDate": "2000-10-16",
+  "birthplace": "神奈川県横浜市",
+  "debutDate": "2025-06-18",
+  "heightCm": 180,
+  "weightKg": 85,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/580597",
+      "title": "松本達哉 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

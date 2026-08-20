@@ -1,0 +1,29 @@
+{
+  "slug": "henare",
+  "name": "HENARE",
+  "nameEn": "HENARE",
+  "aliases": [
+    "ヘナーレ",
+    "Henare"
+  ],
+  "realName": null,
+  "birthDate": "1992-08-05",
+  "birthplace": "ニュージーランド・オークランド",
+  "debutDate": "2012-09-01",
+  "heightCm": 180,
+  "weightKg": 105,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "streets-of-rage"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/435306",
+      "title": "HENARE | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

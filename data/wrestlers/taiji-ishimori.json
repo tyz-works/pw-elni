@@ -1,0 +1,31 @@
+{
+  "slug": "taiji-ishimori",
+  "name": "石森太二",
+  "nameEn": "Taiji Ishimori",
+  "aliases": [
+    "石森 太二",
+    "Taiji Ishimori",
+    "いしもりたいじ",
+    "Bone Soldier"
+  ],
+  "realName": null,
+  "birthDate": "1983-02-10",
+  "birthplace": "宮城県多賀城市",
+  "debutDate": "2002-05-11",
+  "heightCm": 163,
+  "weightKg": 75,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "bloody-cross"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/359",
+      "title": "石森太二 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

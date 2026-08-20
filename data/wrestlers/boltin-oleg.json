@@ -1,0 +1,30 @@
+{
+  "slug": "boltin-oleg",
+  "name": "ボルチン・オレッグ",
+  "nameEn": "Boltin Oleg",
+  "aliases": [
+    "ボルチンオレッグ",
+    "Boltin Oleg",
+    "オレッグ・ボルチン"
+  ],
+  "realName": null,
+  "birthDate": "1993-02-10",
+  "birthplace": "カザフスタン",
+  "debutDate": "2023-04-02",
+  "heightCm": 187,
+  "weightKg": 120,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "kamikaze"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/396997",
+      "title": "ボルチン・オレッグ | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

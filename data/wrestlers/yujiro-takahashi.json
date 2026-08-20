@@ -1,0 +1,30 @@
+{
+  "slug": "yujiro-takahashi",
+  "name": "高橋裕二郎",
+  "nameEn": "Yujiro Takahashi",
+  "aliases": [
+    "高橋 裕二郎",
+    "Yujiro Takahashi",
+    "たかはしゆうじろう"
+  ],
+  "realName": null,
+  "birthDate": "1981-01-13",
+  "birthplace": "新潟県新潟市",
+  "debutDate": "2004-07-26",
+  "heightCm": 178,
+  "weightKg": 95,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "big-juice"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/699",
+      "title": "高橋裕二郎 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}
