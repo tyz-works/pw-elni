@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "validate": "node tools/validate.mjs",
-    "test": "node --test tools/validate.test.mjs",
+    "test": "node --test 'tools/**/*.test.mjs'",
     "build": "npm run validate && npm run build --workspace site",
     "dev": "npm run dev --workspace site",
     "preview": "npm run preview --workspace site"
