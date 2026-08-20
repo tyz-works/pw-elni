@@ -1,0 +1,30 @@
+{
+  "slug": "to-y",
+  "name": "To-y",
+  "nameEn": "To-y",
+  "aliases": [
+    "TO-Y",
+    "トーイ",
+    "To-Y"
+  ],
+  "realName": null,
+  "birthDate": "1999-12-08",
+  "birthplace": "埼玉県",
+  "debutDate": "2020-12-27",
+  "heightCm": 177,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "kojima-impact"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd667e9342b300022f368b",
+      "title": "To-y | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

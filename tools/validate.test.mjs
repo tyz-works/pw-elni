@@ -113,7 +113,7 @@ const CASES = [
     name: '孤立参照: 存在しない会場を指す興行',
     expect: '孤立参照',
     mutate: (d) => {
-      const p = join(d, 'events', 'ddt', '2026', 'ddt-20260308-0.json');
+      const p = pickJson(join(d, 'events'));
       const e = readJson(p);
       e.venueSlug = 'nowhere-arena';
       writeJson(p, e);
@@ -185,9 +185,12 @@ const CASES = [
     name: 'eventId の日付部分が date と食い違う',
     expect: 'eventId の日付部分',
     mutate: (d) => {
-      const p = join(d, 'events', 'ddt', '2026', 'ddt-20260308-0.json');
+      const p = pickJson(join(d, 'events'));
       const e = readJson(p);
-      e.date = '2026-03-09'; // eventId は 20260308 のまま
+      // 日だけ差し替える。eventId の日付部分は元のまま。
+      // 年月を動かさないので events/{YYYY}/ の配置規約には引っかからない
+      const [y, m, dd] = e.date.split('-');
+      e.date = `${y}-${m}-${dd === '01' ? '02' : '01'}`;
       writeJson(p, e);
     },
   },

@@ -1,0 +1,30 @@
+{
+  "slug": "shunma-katsumata",
+  "name": "勝俣瞬馬",
+  "nameEn": "Shunma Katsumata",
+  "aliases": [
+    "SHUNMA KATSUMATA",
+    "勝俣 瞬馬"
+  ],
+  "realName": null,
+  "birthDate": "1992-12-09",
+  "birthplace": "千葉県柏市",
+  "debutDate": "2014-04-29",
+  "heightCm": 167,
+  "weightKg": 75,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "firebird-splash",
+    "totonoe-splash"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66929342b300022f36d3",
+      "title": "勝俣瞬馬 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

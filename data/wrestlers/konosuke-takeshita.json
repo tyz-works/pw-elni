@@ -1,12 +1,11 @@
 {
   "slug": "konosuke-takeshita",
-  "name": "竹下幸之介",
+  "name": "KONOSUKE TAKESHITA",
   "nameEn": "Konosuke Takeshita",
   "aliases": [
-    "たけしたこうのすけ",
-    "Konosuke Takeshita",
+    "竹下幸之介",
     "竹下 幸之介",
-    "KONOSUKE TAKESHITA"
+    "たけしたこうのすけ"
   ],
   "realName": null,
   "birthDate": "1995-05-29",
@@ -23,6 +22,11 @@
     "raging-fire"
   ],
   "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66b59342b300022f3742",
+      "title": "KONOSUKE TAKESHITA | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    },
     {
       "url": "https://www.njpw.co.jp/profile/486952",
       "title": "KONOSUKE TAKESHITA | 新日本プロレスリング株式会社",

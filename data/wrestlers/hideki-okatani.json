@@ -1,0 +1,29 @@
+{
+  "slug": "hideki-okatani",
+  "name": "岡谷英樹",
+  "nameEn": "Hideki Okatani",
+  "aliases": [
+    "HIDEKI OKATANI",
+    "岡谷 英樹"
+  ],
+  "realName": null,
+  "birthDate": "2000-11-12",
+  "birthplace": "高知県",
+  "debutDate": "2020-03-20",
+  "heightCm": 175,
+  "weightKg": 81,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "vertical-drop-brainbuster"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66837be0880002c2f998",
+      "title": "岡谷英樹 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "antonio-honda",
+  "name": "アントーニオ本多",
+  "nameEn": "Antonio Honda",
+  "aliases": [
+    "ANTONIO HONDA",
+    "アントーニオほんだ"
+  ],
+  "realName": null,
+  "birthDate": "1978-01-02",
+  "birthplace": "東京都武蔵野市",
+  "debutDate": "2005-01-04",
+  "heightCm": 167,
+  "weightKg": 80,
+  "status": "freelance",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [
+    "gongitsune"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66a09342b300022f3709",
+      "title": "アントーニオ本多 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

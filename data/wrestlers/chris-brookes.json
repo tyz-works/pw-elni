@@ -1,0 +1,28 @@
+{
+  "slug": "chris-brookes",
+  "name": "クリス・ブルックス",
+  "nameEn": "Chris Brookes",
+  "aliases": [
+    "クリスブルックス"
+  ],
+  "realName": null,
+  "birthDate": "1991-08-24",
+  "birthplace": "イギリス・ティプトン",
+  "debutDate": null,
+  "heightCm": 198,
+  "weightKg": 91,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "praying-mantis-bomb"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd666a9342b300022f3645",
+      "title": "クリス・ブルックス | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

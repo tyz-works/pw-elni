@@ -1,0 +1,29 @@
+{
+  "slug": "naomi-yoshimura",
+  "name": "吉村直巳",
+  "nameEn": "Naomi Yoshimura",
+  "aliases": [
+    "NAOMI YOSHIMURA",
+    "吉村 直巳"
+  ],
+  "realName": null,
+  "birthDate": "1995-04-21",
+  "birthplace": "大阪府大阪市",
+  "debutDate": "2016-12-04",
+  "heightCm": 180,
+  "weightKg": 125,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "osaka-pride"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66917be0880002c2f9ba",
+      "title": "吉村直巳 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

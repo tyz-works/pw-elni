@@ -1,0 +1,24 @@
+{
+  "slug": "kumadori",
+  "name": "隈取",
+  "nameEn": "Kumadori",
+  "aliases": [
+    "クマドリ"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/693146cb3700d20002d1cdad",
+      "title": "東京・後楽園ホール「LAST SUMMER STANDING ～夏の答え合わせ～」 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "masami-inahata",
+  "name": "稲畑誠己",
+  "nameEn": "Masami Inahata",
+  "aliases": [
+    "MASAMI INAHATA",
+    "稲畑 誠己"
+  ],
+  "realName": null,
+  "birthDate": "2005-07-05",
+  "birthplace": "大阪府豊中市",
+  "debutDate": "2024-07-15",
+  "heightCm": 182,
+  "weightKg": 95,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "double-arm-suplex"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/6995522c9dcca900026fb24c",
+      "title": "稲畑誠己 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

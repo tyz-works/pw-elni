@@ -1,0 +1,24 @@
+{
+  "slug": "yamato",
+  "name": "YAMATO",
+  "nameEn": "YAMATO",
+  "aliases": [
+    "ヤマト"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a7b05a1a862f20002deed36",
+      "title": "WRESTLE PETER PAN 2026 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "yuki-iino",
+  "name": "飯野雄貴",
+  "nameEn": "Yuki Iino",
+  "aliases": [
+    "YUKI IINO",
+    "飯野 雄貴"
+  ],
+  "realName": null,
+  "birthDate": "1994-10-24",
+  "birthplace": "東京都多摩市",
+  "debutDate": "2017-08-20",
+  "heightCm": 178,
+  "weightKg": 115,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "spear"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd668f9342b300022f36c9",
+      "title": "飯野雄貴 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "eventId": "ddt-20260811-0",
+  "promotionSlug": "ddt",
+  "name": "WRESTLE PETER PAN 2026",
+  "series": null,
+  "date": "2026-08-11",
+  "doorsOpen": "12:30",
+  "bellTime": "14:00",
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": "paleyouth"
+        },
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": "STRANGE LOVE CONNECTION"
+        }
+      ],
+      "titleName": "KO-D6人タッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 715
+      },
+      "confirmed": true,
+      "notes": "オープニングマッチ。決まり手はビエント・レバンテが正田壮史から奪った押さえ込み。paleyouth の 7 度目の防衛は失敗し、KANON 組が第 61 代王者組となった。KANON 組には KIMIHIRO と YUZUKI がセコンドに付いた。"
+    },
+    {
+      "order": 2,
+      "matchType": "battle-royal",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "akito",
+            "yuki-ishida",
+            "soma-takao",
+            "naomi-yoshimura",
+            "fuminori-abe",
+            "yuki-iino",
+            "toru-owashi",
+            "yuni",
+            "ilusion",
+            "masami-inahata",
+            "mj-paul",
+            "super-sasadango-machine",
+            "yoshihiko"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "over-the-top-rope",
+        "finishMoveSlug": null,
+        "durationSeconds": 1126
+      },
+      "confirmed": true,
+      "notes": "時間差入場バトルロイヤル。イルシオン（入場 9 番）が王者ヨシヒコ（同 13 番）をオーバー・ザ・トップロープで排除し、第 1892 代王者となった。入場 12 番は公式発表に記載がない。同王座は本大会の前後にも場外で複数回移動しているが、公式が「第 N 試合」として掲載しているのは本試合のみのため、それらは収録していない。"
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "minoru-suzuki",
+            "sanshiro-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "stone-cold-stunner",
+        "durationSeconds": 636
+      },
+      "confirmed": true,
+      "notes": "スペシャルタッグマッチ。決まり手は髙木三四郎が To-y に決めたストーンコールド・スタナーからの片エビ固め。To-y が保持していた「いつでもどこでも挑戦権」（青）が髙木に移動した。"
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-kasai",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "r-fishermans-buster",
+        "durationSeconds": 679
+      },
+      "confirmed": true,
+      "notes": "葛西陽向デビュー 1 周年記念試合〜スペシャルタッグマッチ。決まり手は瑠希也の R・フィッシャーマンバスターからの片エビ固め。"
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT EXTREME級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "totonoe-splash",
+        "durationSeconds": 832
+      },
+      "confirmed": true,
+      "notes": "有刺鉄線デスマッチ。決まり手は勝俣瞬馬のととのえスプラッシュ・ウィズ・有刺鉄線からの片エビ固め。岡谷の 5 度目の防衛は失敗し、勝俣が第 65 代王者となるとともに、岡谷が保持していた「いつでもどこでも挑戦権」（赤）も勝俣に移動した。"
+    },
+    {
+      "order": 6,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shinya-aoki",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-Dタッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "sunshine-clutch",
+        "durationSeconds": 741
+      },
+      "confirmed": true,
+      "notes": "決まり手は宮脇純太のサンシャインクラッチ。クリス組の 4 度目の防衛は失敗し、青木組が第 90 代王者組となった。"
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yamato"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": "cbv",
+        "durationSeconds": 727
+      },
+      "confirmed": true,
+      "notes": "スペシャルシングルマッチ。公式発表の決まり手は「CBV」のみで、決着の種類は判断できない。男色ディーノにはヨースケ♡サンタマリアがセコンドに付いた。"
+    },
+    {
+      "order": 8,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "douki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda",
+            "tetsuya-endo"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": "cross-facelock",
+        "durationSeconds": 960
+      },
+      "confirmed": true,
+      "notes": "スペシャルタッグマッチ。決まり手は佐々木大輔のミスティカ式クロス・フェースロック。"
+    },
+    {
+      "order": 9,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT UNIVERSAL選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "dodon",
+        "durationSeconds": 1082
+      },
+      "confirmed": true,
+      "notes": "決まり手は田口隆祐のどどんからのエビ固め。須見の 3 度目の防衛は失敗し、田口が第 22 代王者となった。"
+    },
+    {
+      "order": 10,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kaisei-takechi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "raging-fire",
+        "durationSeconds": 1046
+      },
+      "confirmed": true,
+      "notes": "セミファイナル。ドラマティック・ドリームマッチ。決まり手は KONOSUKE TAKESHITA のレイジングファイヤーからの片エビ固め。"
+    },
+    {
+      "order": 11,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D無差別級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "cannonball-450",
+        "durationSeconds": 2027
+      },
+      "confirmed": true,
+      "notes": "メインイベント。グッドコムアセット presents。決まり手は MAO のキャノンボール450°からの片エビ固め。上野の 9 度目の防衛は失敗し、MAO が第 89 代王者となった。"
+    },
+    {
+      "order": 12,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D無差別級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kubi-gatame",
+        "durationSeconds": 269
+      },
+      "confirmed": true,
+      "notes": "緊急決定試合。メインイベント終了後に髙木三四郎が「いつでもどこでも挑戦権」を行使して成立。決まり手は MAO の首固め。第 89 代王者が初防衛に成功した。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a7b05a1a862f20002deed36",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a7b05a1a862f20002deed36",
+      "title": "WRESTLE PETER PAN 2026 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    },
+    {
+      "url": "https://www.ddtpro.jp/schedules/694d027f967045000252f65b",
+      "title": "東京・両国国技館「WRESTLE PETER PAN 2026」 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

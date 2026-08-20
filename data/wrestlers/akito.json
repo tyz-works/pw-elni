@@ -1,0 +1,28 @@
+{
+  "slug": "akito",
+  "name": "彰人",
+  "nameEn": "AKITO",
+  "aliases": [
+    "Akito"
+  ],
+  "realName": null,
+  "birthDate": "1987-02-28",
+  "birthplace": "愛知県名古屋市守山区",
+  "debutDate": "2009-11-23",
+  "heightCm": 175,
+  "weightKg": 84,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "kinniku-daiido"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66ae7be0880002c2fa1f",
+      "title": "彰人 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

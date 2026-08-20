@@ -1,0 +1,29 @@
+{
+  "slug": "tetsuya-endo",
+  "name": "遠藤哲哉",
+  "nameEn": "Tetsuya Endo",
+  "aliases": [
+    "TETSUYA ENDO",
+    "遠藤 哲哉"
+  ],
+  "realName": null,
+  "birthDate": "1991-08-11",
+  "birthplace": "宮城県白石市",
+  "debutDate": "2012-04-01",
+  "heightCm": 180,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [
+    "burning-star-press"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd66719342b300022f3659",
+      "title": "遠藤哲哉 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

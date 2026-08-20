@@ -3,19 +3,27 @@
   "name": "MAO",
   "nameEn": "MAO",
   "aliases": [
-    "マオ",
-    "Mao"
+    "Mao",
+    "マオ"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
+  "birthDate": "1997-01-28",
+  "birthplace": "宮城県大崎市",
+  "debutDate": "2015-08-23",
+  "heightCm": 180,
+  "weightKg": 95,
   "status": "active",
   "promotionSlugs": [
     "ddt"
   ],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "finishingMoveSlugs": [
+    "cannonball-450"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd666e9342b300022f364f",
+      "title": "MAO | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

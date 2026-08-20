@@ -1,0 +1,27 @@
+{
+  "slug": "shinya-aoki",
+  "name": "青木真也",
+  "nameEn": "Shinya Aoki",
+  "aliases": [
+    "SHINYA AOKI",
+    "青木 真也"
+  ],
+  "realName": null,
+  "birthDate": "1983-05-09",
+  "birthplace": "静岡県",
+  "debutDate": "2004-07-03",
+  "heightCm": 180,
+  "weightKg": 75,
+  "status": "freelance",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [
+    "aoki-clutch"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd667d9342b300022f3686",
+      "title": "青木真也 | DDT プロレスリング公式サイト",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}
