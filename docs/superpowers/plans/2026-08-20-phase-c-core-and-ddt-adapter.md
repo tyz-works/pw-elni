@@ -24,7 +24,9 @@
 
 ## この計画の範囲
 
-**含む**: `core/merge.mjs` / `core/aliases.mjs` / `core/snapshot.mjs` / `core/report.mjs` / `core/llm.mjs` / `fetch.mjs` / `adapters/ddt.mjs` / `run.mjs` / `validate.mjs` への 1 チェック追加 / `collect.yml`（`workflow_dispatch` のみ）
+**含む**: `core/merge.mjs` / `core/aliases.mjs` / `core/snapshot.mjs` / `core/report.mjs` / `fetch.mjs` / `adapters/ddt.mjs` / `run.mjs` / `validate.mjs` への 1 チェック追加 / `collect.yml`（`workflow_dispatch` のみ）
+
+**条件付き**: `core/llm.mjs`（Task 9）。Task 8 まで終えて `unresolved` の件数を実測してから、作るかどうかを決める。作らなくても Phase C は成立する（spec §6-5）。
 
 **含まない**: `adapters/njpw.mjs` と `adapters/stardom.mjs`。両団体のページ構造を確認してから別の計画にする。cron の有効化も別（spec §10）。
 
@@ -1676,20 +1678,44 @@ EOF
 
 ---
 
-### Task 9: LLM フォールバック（`core/llm.mjs`）
+### Task 9: LLM フォールバック（`core/llm.mjs`）— 条件付き
+
+> **着手前にゲートがある。無条件には作らない。**
+>
+> spec §6-5 のとおり LLM 無しでもパイプラインは完走する。Task 1〜8 を LLM 無しで組み終えたら、
+> まず DDT を実際に流して **`unparsed` / `unresolved` が何件出るか**を見ること。
+>
+> - 手で直して苦にならない件数（目安: 1 興行あたり 0〜2 件） → **Task 9 は実装しない。**
+>   計画から落として次の計画（njpw / stardom アダプタ）に進む。運用対象と課金口座が 1 つずつ減る
+> - 無視できない件数 → 実装する。その時点で snapshot（Task 4）が溜まっているので、
+>   **固定入力で複数プロバイダを比較してから**モデルを決められる
+>
+> どちらに転んでも Task 1〜8 と Task 10 は完成しており、パイプラインとしては成立している。
 
 **Files:**
 - Create: `tools/collect/core/llm.mjs`
 - Test: `tools/collect/core/llm.test.mjs`
-- Modify: `package.json`（`@anthropic-ai/sdk` を devDependencies に）
+- Modify: `package.json`（選んだ SDK を devDependencies に）
 
 **Interfaces:**
 - Consumes: `data/schema/match.schema.json`
 - Produces: `extract(textFragment, schemaName) → Promise<{ match: RawMatch, model: string } | null>`
 
-- [ ] **Step 1: `@anthropic-ai/sdk` を足す**
+- [ ] **Step 1: プロバイダを決めて SDK を足す**
 
-Run: `npm install --save-dev @anthropic-ai/sdk`
+第一候補は **Gemini API 無料枠の Flash-Lite**（spec §6 実装メモ）。この用途は最悪でも 1 日 12
+リクエストで、無料枠の 1,000 RPD に対して 80 倍以上の余裕がある。
+
+Run: `npm install --save-dev @google/genai`
+
+**SDK の呼び出し形（`config` のキー名、JSON Schema の渡し方）は現行ドキュメントで確認してから
+書くこと。この計画に書き起こさないのは、憶測を計画に固定しないため。** 構造化出力に JSON Schema
+を渡せること、JS SDK が `@google/genai` であることまでが確認済み。
+
+誤爆が実測で問題になった場合の次の候補は Claude API。その場合は
+`npm install --save-dev @anthropic-ai/sdk` に替え、Step 4 は下の**候補B**をそのまま使う。
+
+いずれの場合も **モデル ID は `PW_LLM_MODEL` から読み、既定値をコードに持つ**。
 
 - [ ] **Step 2: 失敗するテストを書く**
 
@@ -1727,6 +1753,11 @@ Run: `npm test`
 Expected: FAIL（`Cannot find module './llm.mjs'`）
 
 - [ ] **Step 4: 実装する**
+
+> **以下は候補B（Claude API）を選んだ場合の参考実装。** Gemini を選んだ場合に変わるのは
+> クライアント生成と構造化出力の指定だけ。**Step 2/3/5 のテスト（鍵が無いときの挙動、
+> ajv 再検証、リトライ）はプロバイダに依存しないのでそのまま使える。**
+> spec §6 の契約 6 項目もどちらでも変わらない。
 
 `tools/collect/core/llm.mjs`:
 
