@@ -1,0 +1,29 @@
+{
+  "slug": "gabe-kidd",
+  "name": "ゲイブ・キッド",
+  "nameEn": "Gabe Kidd",
+  "aliases": [
+    "ゲイブキッド",
+    "Gabe Kidd"
+  ],
+  "realName": null,
+  "birthDate": "1997-04-24",
+  "birthplace": "イギリス・ノッティンガム",
+  "debutDate": "2020-01-25",
+  "heightCm": 183,
+  "weightKg": 102,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "leg-trap-piledriver"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/430339",
+      "title": "ゲイブ・キッド | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

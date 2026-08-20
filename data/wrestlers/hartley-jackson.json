@@ -1,0 +1,29 @@
+{
+  "slug": "hartley-jackson",
+  "name": "ハートリー・ジャクソン",
+  "nameEn": "Hartley Jackson",
+  "aliases": [
+    "ハートリージャクソン",
+    "Hartley Jackson"
+  ],
+  "realName": null,
+  "birthDate": "1980-04-17",
+  "birthplace": "オーストラリア",
+  "debutDate": "1999-10-04",
+  "heightCm": 185,
+  "weightKg": 135,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "death-valley-driver"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/252",
+      "title": "ハートリー・ジャクソン | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

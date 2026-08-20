@@ -103,7 +103,7 @@ const CASES = [
     name: '孤立参照: 存在しない選手を指す試合',
     expect: '孤立参照',
     mutate: (d) => {
-      const p = join(d, 'events', 'njpw', '2026', 'njpw-20260104-0.json');
+      const p = pickJson(join(d, 'events'), (e) => e.matches.length > 0);
       const e = readJson(p);
       e.matches[0].sides[0].wrestlerIds = ['nonexistent-wrestler'];
       writeJson(p, e);
@@ -133,8 +133,9 @@ const CASES = [
     name: '重複: 同一 eventId が 2 ファイルに存在',
     expect: '重複',
     mutate: (d) => {
-      const src = join(d, 'events', 'njpw', '2026', 'njpw-20260104-0.json');
-      const dst = join(d, 'events', 'njpw', '2025', 'njpw-20260104-0.json');
+      const src = pickJson(join(d, 'events'));
+      const year = Number(basename(dirname(src)));
+      const dst = join(dirname(dirname(src)), String(year - 1), basename(src));
       mkdirSync(dirname(dst), { recursive: true });
       cpSync(src, dst);
     },
@@ -143,7 +144,7 @@ const CASES = [
     name: '日付整合: doorsOpen が bellTime 以降',
     expect: '日付整合',
     mutate: (d) => {
-      const p = join(d, 'events', 'njpw', '2026', 'njpw-20260104-0.json');
+      const p = pickJson(join(d, 'events'));
       const e = readJson(p);
       e.doorsOpen = '18:00';
       e.bellTime = '17:00';
@@ -194,10 +195,16 @@ const CASES = [
     name: 'singles なのに 3 人',
     expect: 'singles',
     mutate: (d) => {
-      const p = join(d, 'events', 'njpw', '2026', 'njpw-20260104-0.json');
+      const p = pickJson(join(d, 'events'), (e) => e.matches.some((x) => x.matchType === 'singles'));
       const e = readJson(p);
       const m = e.matches.find((x) => x.matchType === 'singles');
-      m.sides[0].wrestlerIds = ['hiromu-takahashi', 'sanada'];
+      // この興行に出ていない選手を足す。両陣営重複など別ルールを巻き込まないようにする。
+      const used = new Set(e.matches.flatMap((x) => x.sides.flatMap((s) => s.wrestlerIds)));
+      const spare = readdirSync(join(d, 'wrestlers'))
+        .map((f) => basename(String(f), '.json'))
+        .find((slug) => !used.has(slug));
+      assert.ok(spare, '興行に出ていない選手が data/wrestlers にない');
+      m.sides[0].wrestlerIds = [m.sides[0].wrestlerIds[0], spare];
       writeJson(p, e);
     },
   },
@@ -218,7 +225,7 @@ const CASES = [
     name: 'result があるのに confirmed が false',
     expect: 'confirmed が false',
     mutate: (d) => {
-      const p = join(d, 'events', 'njpw', '2026', 'njpw-20260104-0.json');
+      const p = pickJson(join(d, 'events'), (e) => e.matches.length > 0);
       const e = readJson(p);
       e.matches[0].confirmed = false;
       e.matches[0].result = {
@@ -234,7 +241,7 @@ const CASES = [
     name: '引き分けなのに勝者がいる',
     expect: 'winnerSideIndex が null でない',
     mutate: (d) => {
-      const p = join(d, 'events', 'njpw', '2026', 'njpw-20260104-0.json');
+      const p = pickJson(join(d, 'events'), (e) => e.matches.length > 0);
       const e = readJson(p);
       e.matches[0].confirmed = true;
       e.matches[0].result = {

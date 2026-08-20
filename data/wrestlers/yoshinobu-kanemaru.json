@@ -1,0 +1,30 @@
+{
+  "slug": "yoshinobu-kanemaru",
+  "name": "金丸義信",
+  "nameEn": "Yoshinobu Kanemaru",
+  "aliases": [
+    "金丸 義信",
+    "Yoshinobu Kanemaru",
+    "かねまるよしのぶ"
+  ],
+  "realName": null,
+  "birthDate": "1976-09-23",
+  "birthplace": "山梨県甲府市",
+  "debutDate": "1996-07-06",
+  "heightCm": 173,
+  "weightKg": 85,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "touch-out"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/229",
+      "title": "金丸義信 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

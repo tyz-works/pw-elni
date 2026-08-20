@@ -1,0 +1,28 @@
+{
+  "slug": "yuto-ice",
+  "name": "Yuto-Ice",
+  "nameEn": "Yuto-Ice",
+  "aliases": [
+    "ユートアイス",
+    "Yuto Ice",
+    "YUTO-ICE"
+  ],
+  "realName": null,
+  "birthDate": "1997-01-07",
+  "birthplace": "岐阜県大垣市",
+  "debutDate": "2021-02-14",
+  "heightCm": 180,
+  "weightKg": 105,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/594973",
+      "title": "Yuto-Ice | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

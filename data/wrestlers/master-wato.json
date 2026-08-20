@@ -1,0 +1,30 @@
+{
+  "slug": "master-wato",
+  "name": "マスター・ワト",
+  "nameEn": "Master Wato",
+  "aliases": [
+    "マスターワト",
+    "Master Wato",
+    "ワト"
+  ],
+  "realName": null,
+  "birthDate": "1997-03-13",
+  "birthplace": "大阪府池田市",
+  "debutDate": "2020-07-11",
+  "heightCm": 177,
+  "weightKg": 87,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "rpp"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/251349",
+      "title": "マスター・ワト | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

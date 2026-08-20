@@ -10,13 +10,21 @@
   "realName": null,
   "birthDate": null,
   "birthplace": null,
-  "debutDate": null,
+  "debutDate": "2014-01-05",
   "heightCm": null,
   "weightKg": null,
   "status": "active",
   "promotionSlugs": [
     "njpw"
   ],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "finishingMoveSlugs": [
+    "pinche-loco"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/732",
+      "title": "エル・デスペラード | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

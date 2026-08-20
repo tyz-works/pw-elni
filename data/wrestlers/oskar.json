@@ -1,0 +1,27 @@
+{
+  "slug": "oskar",
+  "name": "OSKAR",
+  "nameEn": "OSKAR",
+  "aliases": [
+    "オスカー",
+    "Oskar"
+  ],
+  "realName": null,
+  "birthDate": "1998-07-14",
+  "birthplace": "ドイツ・ハンブルグ",
+  "debutDate": null,
+  "heightCm": 201,
+  "weightKg": 115,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/594976",
+      "title": "OSKAR | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

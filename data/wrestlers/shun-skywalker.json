@@ -1,0 +1,27 @@
+{
+  "slug": "shun-skywalker",
+  "name": "シュン・スカイウォーカー",
+  "nameEn": "Shun Skywalker",
+  "aliases": [
+    "シュンスカイウォーカー",
+    "Shun Skywalker"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [
+    "moonsault-knee-drop"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/card-result/666517",
+      "title": "新日カードランブル presents G1 CLIMAX 36 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

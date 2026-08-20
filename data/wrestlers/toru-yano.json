@@ -1,0 +1,30 @@
+{
+  "slug": "toru-yano",
+  "name": "矢野通",
+  "nameEn": "Toru Yano",
+  "aliases": [
+    "矢野 通",
+    "Toru Yano",
+    "やのとおる"
+  ],
+  "realName": null,
+  "birthDate": "1978-05-18",
+  "birthplace": "東京都荒川区",
+  "debutDate": "2002-05-18",
+  "heightCm": 186,
+  "weightKg": 115,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "onigoroshi"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/698",
+      "title": "矢野通 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

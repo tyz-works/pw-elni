@@ -1,0 +1,30 @@
+{
+  "slug": "satoshi-kojima",
+  "name": "小島聡",
+  "nameEn": "Satoshi Kojima",
+  "aliases": [
+    "小島 聡",
+    "Satoshi Kojima",
+    "こじまさとし"
+  ],
+  "realName": null,
+  "birthDate": "1970-09-14",
+  "birthplace": "東京都江東区",
+  "debutDate": "1991-07-16",
+  "heightCm": 183,
+  "weightKg": 108,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "lariat"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/703",
+      "title": "小島聡 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}

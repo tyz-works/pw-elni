@@ -8,15 +8,23 @@
     "辻 陽太"
   ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
+  "birthDate": "1993-09-08",
+  "birthplace": "神奈川県横浜市",
+  "debutDate": "2018-04-10",
+  "heightCm": 182,
+  "weightKg": 103,
   "status": "active",
   "promotionSlugs": [
     "njpw"
   ],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "finishingMoveSlugs": [
+    "gene-blaster"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/139488",
+      "title": "辻 陽太 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "slug": "ryusuke-taguchi",
+  "name": "田口隆祐",
+  "nameEn": "Ryusuke Taguchi",
+  "aliases": [
+    "田口 隆祐",
+    "Ryusuke Taguchi",
+    "たぐちりゅうすけ"
+  ],
+  "realName": null,
+  "birthDate": "1979-04-15",
+  "birthplace": "宮城県岩沼市",
+  "debutDate": "2002-11-22",
+  "heightCm": 180,
+  "weightKg": 91,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "oh-my-and-garankle"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/692",
+      "title": "田口隆祐 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
+}
