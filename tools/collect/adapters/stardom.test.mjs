@@ -26,9 +26,9 @@ test('観衆を数字として取る', () => {
   assert.equal(event.attendance, 1610);
 });
 
-test('試合を 3 つ取り order を振る', () => {
+test('試合を 4 つ取り order を振る', () => {
   const { event } = parse(RAW, TARGET);
-  assert.deepEqual(event.matches.map((m) => m.order), [1, 2, 3]);
+  assert.deepEqual(event.matches.map((m) => m.order), [1, 2, 3, 4]);
 });
 
 test('陣営を VS で割り、試合名を選手にしない', () => {
@@ -67,4 +67,21 @@ test('選手権試合から王座名を取る', () => {
 test('フィクスチャでは取りこぼしが出ない', () => {
   const { unparsed } = parse(RAW, TARGET);
   assert.deepEqual(unparsed, []);
+});
+
+// 時間切れ引き分けは時間が「15分」と秒なしで書かれる。
+test('時間切れ引き分けを取る', () => {
+  const { event } = parse(RAW, TARGET);
+  const m = event.matches[3];
+  assert.equal(m.result.durationSeconds, 900);
+  assert.equal(m.result.decision, 'time-limit-draw');
+  assert.equal(m.result.winnerSideIndex, null);
+  assert.deepEqual(m.sides.map((s) => s.names), [['架空はな'], ['架空すず']]);
+});
+
+// 星取表の行は決まり手の後に来る。選手名として拾ってはいけない。
+test('星取表の行を選手名にしない', () => {
+  const { event } = parse(RAW, TARGET);
+  const names = event.matches.flatMap((m) => m.sides.flatMap((s) => s.names));
+  assert.ok(!names.some((n) => n.includes('勝')), `星取表が混ざっている: ${names}`);
 });
