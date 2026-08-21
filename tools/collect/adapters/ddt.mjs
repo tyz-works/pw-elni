@@ -36,6 +36,10 @@ const DURATION_RE = /^(\d+)分(\d+)秒$/;
 // 使える。認識しないとそこで試合が切れず、次の試合の中身が混ざる。
 const TIME_LINE_RE = /^(?:\d+分\d+秒|\d+時\d+分)$/;
 
+// 選手名・ラベルはどれも短い。これより長い行が選手の並びに混じっていたら、
+// それは記事本文であってブロックの切り方を間違えている。
+const NARRATIVE_MIN_LENGTH = 30;
+
 // 結果一覧に載っている分をすべて返す。マージが冪等なので取りすぎても
 // 2 回目以降は差分ゼロになる。「直近 N 日」の絞り込みは spec §10 の保留事項。
 /** @returns {Promise<Target[]>} */
@@ -161,7 +165,13 @@ function parseMatch(block, order) {
   const finishText = noteLine ? (/^※([^。]+)。/.exec(noteLine)?.[1] ?? null) : null;
 
   // 見出し行と副題行は陣営の組み立てに渡さない。渡すと選手名として拾われる。
-  const { sides, winnerSideIndex } = parseSides(block.slice(subtitle ? 2 : 1, durIdx));
+  const body = block.slice(subtitle ? 2 : 1, durIdx);
+
+  // 選手の並びに記事本文が混じるのは、見出しを取りこぼしてブロックが
+  // 大きくなりすぎたとき。中身を推測で切り出さず、丸ごと取りこぼしに回す。
+  if (body.some((l) => l.length > NARRATIVE_MIN_LENGTH)) return null;
+
+  const { sides, winnerSideIndex } = parseSides(body);
   if (sides.length < 1) return null;
 
   return {

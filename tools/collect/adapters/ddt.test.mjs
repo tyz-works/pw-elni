@@ -47,9 +47,10 @@ test('見出しの語彙を列挙せず「勝負」で終わる行を見出し�
 test('目次の見出しは試合にも取りこぼしにも数えない', () => {
   const { event, unparsed } = parse(RAW, TARGET);
   assert.equal(event.matches.length, 7);
+  // 取りこぼしは中身のあるものだけ。見出しだけの目次行は出てこない。
   assert.ok(
-    unparsed.every((u) => u.includes('架空十七郎')),
-    `目次が取りこぼしとして出ている: ${JSON.stringify(unparsed)}`,
+    unparsed.every((u) => /架空十[七九]郎/.test(u)),
+    `中身の無い断片が取りこぼしとして出ている: ${JSON.stringify(unparsed)}`,
   );
 });
 
@@ -139,9 +140,10 @@ test('補足行を notes に残す', () => {
 // 足りず、黙って消えてもいけない。
 test('取りこぼした試合を unparsed に上げる', () => {
   const { unparsed } = parse(RAW, TARGET);
-  assert.equal(unparsed.length, 1);
-  assert.match(unparsed[0], /リング撤収デスマッチ/);
-  assert.match(unparsed[0], /架空十七郎/);
+  assert.equal(unparsed.length, 2);
+  const leftover = unparsed.find((u) => u.includes('リング撤収デスマッチ'));
+  assert.ok(leftover, '見出しを取りこぼした試合が出ていない');
+  assert.match(leftover, /架空十七郎/);
 });
 
 // 公式は一部の試合時間を「19時27分」と誤記する（正しくは 19 分 27 秒）。
@@ -175,4 +177,19 @@ test('見出しを取りこぼしても手前の試合に混ざらない', () =>
   assert.ok(!names.includes('体固め'), '決まり手が選手名になっている');
   assert.ok(!names.includes('リング撤収デスマッチ'), '次の試合の見出しが選手名になっている');
   assert.ok(!names.includes('架空十七郎'), '次の試合の選手が混ざっている');
+});
+
+// 目次の直後には記事本文が続き、その中に「第N試合」として載っていない
+// 王座戦が混ざる。見出しを認識できないので手前のブロックに入るが、
+// 記事本文を選手名にしてはいけないし、試合として作ってもいけない
+// （公式が第N試合として載せていない試合は data/ に入れない方針）。
+test('記事本文を含むブロックは試合にせず取りこぼしに回す', () => {
+  const { event, unparsed } = parse(RAW, TARGET);
+  const names = event.matches.flatMap((m) => m.sides.flatMap((s) => s.names));
+  assert.ok(!names.some((n) => n.length > 30), `記事本文が選手名になっている: ${JSON.stringify(names)}`);
+  assert.ok(!names.includes('架空十九郎'), '第N試合として載っていない試合を取り込んでいる');
+  assert.ok(
+    unparsed.some((u) => u.includes('架空十九郎')),
+    '取りこぼしとして報告されていない',
+  );
 });
