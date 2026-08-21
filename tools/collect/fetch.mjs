@@ -19,6 +19,14 @@ export async function createFetcher() {
         return document.body.innerText.replace(/\n{3,}/g, '\n\n');
       });
     },
+    // リンクは innerText に現れないので別に取る。fetchText の戻りから
+    // URL を正規表現で拾おうとすると構造上 0 件になる。
+    /** @param {string} url @returns {Promise<string[]>} 絶対 URL の配列 */
+    async fetchLinks(url) {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: NAV_TIMEOUT_MS });
+      await page.waitForTimeout(SETTLE_MS);
+      return page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => a.href));
+    },
     async close() {
       await browser.close();
     },

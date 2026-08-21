@@ -21,15 +21,21 @@ const DECISION = [
 // 選手名ではない行。陣営の組み立て時に落とす。
 const LABEL = /^(WIN|LOSE|DRAW|VS|＜.*＞|with .*|※.*)$/;
 
-const HEAD_RE = /^(?:第(.+?)試合|オープニングマッチ|セミファイナル|メインイベント|緊急決定試合)\s*(?:(\d+)分)?/;
+const RESULT_ID_RE = /\/results\/([0-9a-f]{24})(?:[/?#]|$)/;
+
+// 見出しは「<試合名>　<制限時間>分一本勝負」の形。試合名の語彙は興行ごとに
+// 増える（ダークマッチ・再試合・緊急決定試合…）ので列挙せず、行全体が
+// 「勝負」で終わることで判定する。列挙にすると取りこぼした試合の中身が
+// 手前の試合に混ざる。
+const HEAD_RE = /^(.{0,24}?)[\s　]*(?:(\d+)分)?(?:時間無制限)?(?:一本|\d+本)?勝負$/;
 const DURATION_RE = /^(\d+)分(\d+)秒$/;
 
 // 結果一覧に載っている分をすべて返す。マージが冪等なので取りすぎても
 // 2 回目以降は差分ゼロになる。「直近 N 日」の絞り込みは spec §10 の保留事項。
 /** @returns {Promise<Target[]>} */
 export async function listTargets(fetcher) {
-  const text = await fetcher.fetchText(`${BASE}/results`);
-  const ids = [...text.matchAll(/\/results\/([0-9a-f]{24})/g)].map((m) => m[1]);
+  const links = await fetcher.fetchLinks(`${BASE}/results`);
+  const ids = links.flatMap((href) => RESULT_ID_RE.exec(href)?.[1] ?? []);
   return [...new Set(ids)].map((id) => ({ id, url: `${BASE}/results/${id}`, kind: 'result' }));
 }
 
@@ -49,6 +55,7 @@ export function parse(raw, target) {
 
   const date = parseDate(lines);
   const name = parseName(lines);
+  const venueName = parseVenue(lines);
 
   const matches = [];
   for (const block of splitMatches(lines)) {
@@ -68,6 +75,7 @@ export function parse(raw, target) {
     date,
     doorsOpen: null,   // 結果ページには無い。スケジュール側で埋める
     bellTime: null,
+    venueName,         // 表示名のまま渡す
     venueSlug: null,   // 会場名 -> slug の解決は resolve 段の仕事
     attendance: null,
     confirmed: true,
@@ -84,6 +92,13 @@ function parseDate(lines) {
     if (m) return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
   }
   return null;
+}
+
+// 「会場」ラベルの次の非空行。「東京・両国国技館」のような都市つき表記で返る。
+function parseVenue(lines) {
+  const i = lines.indexOf('会場');
+  if (i === -1) return null;
+  return lines.slice(i + 1, i + 4).find(Boolean) ?? null;
 }
 
 function parseName(lines) {
@@ -112,7 +127,8 @@ function parseMatch(block, order) {
 
   // 選手名やラベルは前後を空行で挟まれる。見出しの直後に空行なしで続く行は
   // 副題（「スペシャルタッグマッチ」「〜選手権試合」）であって選手名ではない。
-  const subtitle = block[1] || null;
+  // ただし副題が無く WIN が直に続く興行もあるので、ラベル行は副題にしない。
+  const subtitle = block[1] && !LABEL.test(block[1]) ? block[1] : null;
   const titleName = subtitle && /選手権試合/.test(subtitle)
     ? subtitle.replace(/選手権試合.*$/, '選手権')
     : null;
