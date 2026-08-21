@@ -14,6 +14,7 @@ import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import * as ddt from './adapters/ddt.mjs';
+import * as stardom from './adapters/stardom.mjs';
 
 // LLM フォールバックは条件付き（計画 Task 9）。まだ無ければ LLM 段を飛ばす。
 // 「無ければ飛ばす」であって「エラーを握り潰す」ではないので、ファイルが
@@ -26,7 +27,7 @@ const DATA = join(ROOT, 'data');
 const STAGING = join(ROOT, '.cache', 'data-staging');
 const REPORT = join(ROOT, '.cache', 'report.md');
 
-const ADAPTERS = { ddt };
+const ADAPTERS = { ddt, stardom };
 
 const MATCH_TYPE_BY_SIZE = { 1: 'singles', 2: 'tag', 3: 'six-man-tag', 4: 'eight-man-tag' };
 
@@ -176,6 +177,10 @@ async function runPromotion(promotion, opts, result) {
   if (opts.step === 'fetch') return;
 
   // --- parse -> resolve -> merge ---
+  // 同じ日に 2 興行あると eventId の連番を決められない。黙って 1 件目に
+  // マージすると別興行の試合が混ざるので、2 件目以降は失敗として上げる。
+  const seenEventIds = new Set();
+
   for (const id of listSnapshots(promotion)) {
     const url = readSnapshotUrl(promotion, id);
     // 出典 URL が無いスナップショットからは書けない（sources[] が埋まらない）。
@@ -208,6 +213,15 @@ async function runPromotion(promotion, opts, result) {
         result.failures.push({ promotion, step: 'parse', message: `${id}: 日付が取れず eventId を決められない` });
         continue;
       }
+
+      if (seenEventIds.has(rawEvent.eventId)) {
+        result.failures.push({
+          promotion, step: 'parse',
+          message: `${id}: eventId ${rawEvent.eventId} が同じ興行が既にある（同日複数興行の連番は未対応）`,
+        });
+        continue;
+      }
+      seenEventIds.add(rawEvent.eventId);
 
       const { event, unresolved } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
       result.unresolved.push(...unresolved);
