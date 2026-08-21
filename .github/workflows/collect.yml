@@ -1,0 +1,71 @@
+name: collect
+
+# cron は Phase C が安定してから足す。今は手動実行のみ。
+on:
+  workflow_dispatch:
+    inputs:
+      promotion:
+        description: 団体 slug（空なら全団体）
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: 収集して PR を出す
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          # バージョンの真実は .node-version 1 箇所
+          node-version-file: .node-version
+          cache: npm
+
+      - name: 依存関係をインストール
+        run: npm ci
+
+      - name: ブラウザを導入
+        run: npx playwright install --with-deps chromium
+
+      # run.mjs は失敗した団体があると exit 1 を返すが、部分失敗を許容する
+      # 設計なので取れた分は PR にしたい。失敗した団体はレポートに載る。
+      #
+      # 入力は ${{ }} で run: に直接展開せず env 経由で渡す。展開すると
+      # 団体 slug にシェルを書かれたときにそのまま実行される。
+      - name: 収集
+        id: collect
+        env:
+          PROMOTION: ${{ inputs.promotion }}
+        run: |
+          if [ -n "$PROMOTION" ]; then
+            npm run collect -- --promotion "$PROMOTION"
+          else
+            npm run collect
+          fi
+        continue-on-error: true
+
+      # レポートは公式サイト由来の文字列を含む。GITHUB_OUTPUT に流すと
+      # 区切り文字を書かれたときに任意の output を差し込めるので、
+      # ファイルのまま body-path で渡す。
+      - name: PR を作る
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: collect/auto
+          base: main
+          title: "データ収集: ${{ github.run_started_at }}"
+          body-path: .cache/report.md
+          commit-message: |
+            公式サイトから興行データを取り込む
+
+            tools/collect による自動収集。詳細は PR 本文のレポートを参照。
+          add-paths: data/
+          delete-branch: false
