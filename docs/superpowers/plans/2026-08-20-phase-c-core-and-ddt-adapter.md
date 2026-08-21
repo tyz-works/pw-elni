@@ -6,7 +6,7 @@
 
 **Architecture:** 団体ごとの差は adapter の 3 関数に閉じ、コアは団体を知らない。fetch と parse の間にスナップショット（生テキストのファイル）を挟み、parse 以降をネットワーク非依存にする。マージは追記のみで、既存値は上書きせず conflict として人間に上げる。
 
-**Tech Stack:** Node 24 / ESM (`.mjs`) / `node --test` / ajv (既存) / Playwright / `@anthropic-ai/sdk`
+**Tech Stack:** Node 24 / ESM (`.mjs`) / `node --test` / ajv (既存) / Playwright / LLM SDK は Task 9 で選定（条件付き・第一候補は `@google/genai`）
 
 **Spec:** `docs/superpowers/specs/2026-08-20-phase-c-collection-pipeline-design.md`
 
@@ -74,10 +74,12 @@
 
 - [ ] **Step 1: `package.json` の test スクリプトを広げる**
 
-`tools/collect/` 配下のテストが自動で拾われるようにする。`node --test <dir>` はディレクトリを再帰して `*.test.mjs` を探す。
+`tools/collect/` 配下のテストが自動で拾われるようにする。
+
+**Node 24 では `--test` の位置引数はグロブパターン/ファイルパスとして扱われる。** ディレクトリを渡すとエントリポイントとして解決され `MODULE_NOT_FOUND` になるので、グロブを引用してシェルに展開させず Node 自身にグロブさせる。
 
 ```json
-"test": "node --test tools/",
+"test": "node --test 'tools/**/*.test.mjs'",
 ```
 
 - [ ] **Step 2: 失敗するテストを書く**

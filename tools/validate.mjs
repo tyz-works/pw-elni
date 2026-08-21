@@ -14,6 +14,8 @@ import { fileURLToPath } from 'node:url';
 import ajvModule from 'ajv/dist/2020.js';
 import addFormatsModule from 'ajv-formats';
 
+import { normalize } from './collect/core/aliases.mjs';
+
 const Ajv2020 = ajvModule.default ?? ajvModule;
 const addFormats = addFormatsModule.default ?? addFormatsModule;
 
@@ -173,6 +175,26 @@ for (const { data, file } of store.wrestler.values()) {
   // aliases に本名(name)自身が入っていても害はないが、空文字や重複は弾く
   if (data.aliases.includes(data.name)) {
     fail(file, `aliases に name と同一の文字列 "${data.name}" が入っている（冗長）`);
+  }
+}
+
+// --- alias の正規化衝突 ---
+// 別々の選手が同じ正規化キーを持つと、収集パイプラインの alias 解決が
+// どちらを返すか実装依存になる。パイプラインの前提条件を非 LLM の門で守る。
+{
+  const owner = new Map(); // 正規化キー -> slug
+  for (const [slug, { data, file }] of store.wrestler) {
+    for (const label of [data.name, ...data.aliases]) {
+      const key = normalize(label);
+      const prev = owner.get(key);
+      if (prev === undefined) {
+        owner.set(key, slug);
+        continue;
+      }
+      if (prev !== slug) {
+        fail(file, `alias の正規化キーが衝突している: "${label}" は ${prev} と同じキーになる`);
+      }
+    }
   }
 }
 

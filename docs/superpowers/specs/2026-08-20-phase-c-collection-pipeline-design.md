@@ -257,7 +257,9 @@ Task 1〜8 を LLM 無しで組み、DDT を実際に流して `unresolved` が�
 - `aliases.test.mjs` — `normalize` の揺れと正規化キーの衝突検出
 - `adapters/{promotion}.test.mjs` — フィクスチャ → `parse` → 期待 JSON
 
-`package.json` の `test` を `node --test tools/` に広げる。これで CI の既存の「検証器そのもののテスト」ステップに collect のテストが自動的に乗り、ワークフローの追記は要らない。
+`package.json` の `test` を `node --test 'tools/**/*.test.mjs'` に広げる。これで CI の既存の「検証器そのもののテスト」ステップに collect のテストが自動的に乗り、ワークフローの追記は要らない。
+
+**グロブは引用してシェルに展開させないこと。** Node 24 では `--test` の位置引数はグロブパターン/ファイルパスとして扱われ、ディレクトリを渡すとエントリポイントとして解決されて `MODULE_NOT_FOUND` になる。
 
 ### フィクスチャ
 

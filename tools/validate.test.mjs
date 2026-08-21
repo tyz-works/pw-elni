@@ -281,6 +281,21 @@ const CASES = [
       writeJson(p, n);
     },
   },
+  {
+    name: 'aliases の正規化キーが他の選手と衝突',
+    expect: '正規化キーが衝突',
+    mutate: (d) => {
+      const [aPath, bPath] = readdirSync(join(d, 'wrestlers'))
+        .filter((f) => f.endsWith('.json'))
+        .sort()
+        .slice(0, 2)
+        .map((f) => join(d, 'wrestlers', f));
+      // b の aliases に a の name を入れ、別 slug が同じ正規化キーを持つ状態を作る
+      const b = readJson(bPath);
+      b.aliases = [...b.aliases, readJson(aPath).name];
+      writeJson(bPath, b);
+    },
+  },
 ];
 
 for (const c of CASES) {
