@@ -2,21 +2,11 @@
 // 結果ページ 1 枚に全試合の WIN/LOSE・決まり手・時間が載る。
 // 開場/開始時刻だけは結果ページに無く、スケジュールページ側にある。
 
+import { decisionFrom } from '../core/decision.mjs';
+
 export const PROMOTION = 'ddt';
 
 const BASE = 'https://www.ddtpro.jp';
-
-// 決まり手の文字列 -> schema の decision。判断できないものは 'unknown' にする。
-const DECISION = [
-  [/オーバー・ザ・トップロープ/, 'over-the-top-rope'],
-  [/ギブアップ|ギブ/, 'submission'],
-  [/レフェリーストップ|TKO|KO/, 'knockout'],
-  [/リングアウト/, 'countout'],
-  [/反則/, 'disqualification'],
-  [/時間切れ/, 'time-limit-draw'],
-  [/両者/, 'draw'],
-  [/固め|押さえ込み|丸め込み|クラッチ|フォール/, 'pinfall'],
-];
 
 // 選手名ではない行。陣営の組み立て時に落とす。
 // 入場順のマーカーは全角 ＜9＞ と半角 <19> の両方が使われている。
@@ -158,7 +148,7 @@ function parseMatch(block, order) {
   const durationSeconds = dm ? Number(dm[1]) * 60 + Number(dm[2]) : null;
 
   const decisionText = block.slice(durIdx + 1).find(Boolean) ?? '';
-  const decision = DECISION.find(([re]) => re.test(decisionText))?.[1] ?? 'unknown';
+  const decision = decisionFrom(decisionText);
 
   const noteIdx = block.findIndex((l) => l.startsWith('※'));
   const noteLine = noteIdx === -1 ? null : block[noteIdx];
