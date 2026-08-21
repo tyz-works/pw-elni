@@ -13,6 +13,7 @@ import { buildIndex, resolve as resolveName } from './core/aliases.mjs';
 import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
+import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
 import * as ddt from './adapters/ddt.mjs';
 import * as stardom from './adapters/stardom.mjs';
 
@@ -26,6 +27,9 @@ const ROOT = fileURLToPath(new URL('../../', import.meta.url));
 const DATA = join(ROOT, 'data');
 const STAGING = join(ROOT, '.cache', 'data-staging');
 const REPORT = join(ROOT, '.cache', 'report.md');
+// 人間が一度見た食い違いの記録。data/ ではなくツール側に置く（サイトの
+// 内容ではなくパイプラインの運用情報なので）。
+const ACKNOWLEDGED = join(ROOT, 'tools', 'collect', 'acknowledged-conflicts.json');
 
 const ADAPTERS = { ddt, stardom };
 
@@ -47,10 +51,16 @@ function parseArgs(argv) {
     step: get('--step'),
     noLlm: argv.includes('--no-llm'),
     dryRun: argv.includes('--dry-run'),
+    acknowledge: argv.includes('--acknowledge'),
   };
 }
 
 const today = () => new Date().toISOString().slice(0, 10);
+
+function loadAcknowledged() {
+  if (!existsSync(ACKNOWLEDGED)) return [];
+  return JSON.parse(readFileSync(ACKNOWLEDGED, 'utf8'));
+}
 
 function loadEntities(dir) {
   return readdirSync(join(DATA, dir))
@@ -336,6 +346,24 @@ async function main() {
       cpSync(from, to);
     }
   }
+
+  // 一度見た食い違いは黙らせる。--acknowledge を付けた実行で記録する。
+  const acknowledged = loadAcknowledged();
+  if (opts.acknowledge) {
+    const known = new Set(acknowledged.map(conflictKey));
+    const added = result.conflicts.filter((c) => !known.has(conflictKey(c)));
+    if (added.length) {
+      const next = [...acknowledged, ...added.map((c) => ({
+        promotion: c.promotion, eventId: c.eventId, path: c.path,
+        existing: c.existing, incoming: c.incoming,
+      }))];
+      writeFileSync(ACKNOWLEDGED, `${JSON.stringify(next, null, 2)}\n`, 'utf8');
+    }
+    process.stdout.write(`既知の食い違いに ${added.length} 件を追記した: ${ACKNOWLEDGED}\n`);
+  }
+  const filtered = filterAcknowledged(result.conflicts, acknowledged.map(conflictKey));
+  result.conflicts = filtered.conflicts;
+  result.silencedConflicts = filtered.silenced;
 
   mkdirSync(dirname(REPORT), { recursive: true });
   writeFileSync(REPORT, renderReport(result), 'utf8');

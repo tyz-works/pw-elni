@@ -4,7 +4,7 @@
 const cell = (v) => String(v ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ');
 
 export function renderReport(result) {
-  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders } = result;
+  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders, silencedConflicts = 0 } = result;
   const out = ['# 収集結果', ''];
 
   if (failures.length) {
@@ -57,6 +57,11 @@ export function renderReport(result) {
       out.push(`- ${cell(l.promotion)} / ${cell(l.eventId)} 第 ${l.order} 試合（${cell(l.model)}）`);
     }
     out.push('');
+  }
+
+  // 黙らせた件数は必ず出す。何件隠したか分からないと記録機構自体が信用できない。
+  if (silencedConflicts) {
+    out.push(`> 既に確認済みの食い違い ${silencedConflicts} 件は省略した（\`tools/collect/acknowledged-conflicts.json\`）。`, '');
   }
 
   out.push('## 取り込んだ変更', '');

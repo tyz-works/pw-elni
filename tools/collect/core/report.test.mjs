@@ -70,3 +70,13 @@ test('取りこぼした試合を出す', () => {
 test('取りこぼしが無ければその節を出さない', () => {
   assert.ok(!renderReport(EMPTY).includes('取りこぼした試合'));
 });
+
+// 何件隠したか分からないと、黙らせる機構そのものが信用できなくなる。
+test('省略した食い違いの件数を出す', () => {
+  const md = renderReport({ ...EMPTY, silencedConflicts: 16 });
+  assert.match(md, /確認済みの食い違い 16 件は省略/);
+});
+
+test('省略が無ければその断りを出さない', () => {
+  assert.ok(!renderReport(EMPTY).includes('省略'));
+});
