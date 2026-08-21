@@ -8,20 +8,17 @@ import { spawnSync } from 'node:child_process';
 import { createFetcher } from './fetch.mjs';
 import {
   writeSnapshot, readSnapshot, listSnapshots, writeSnapshotUrl, readSnapshotUrl,
+  writeExtraction, readExtraction,
 } from './core/snapshot.mjs';
 import { buildIndex, resolve as resolveName } from './core/aliases.mjs';
 import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
+import { createExtractor } from './core/llm.mjs';
 import * as ddt from './adapters/ddt.mjs';
 import * as stardom from './adapters/stardom.mjs';
-
-// LLM フォールバックは条件付き（計画 Task 9）。まだ無ければ LLM 段を飛ばす。
-// 「無ければ飛ばす」であって「エラーを握り潰す」ではないので、ファイルが
-// 在るのに読み込めない場合は落とす。
-const LLM_URL = new URL('./core/llm.mjs', import.meta.url);
-const extract = existsSync(LLM_URL) ? (await import(LLM_URL.href)).extract : null;
+import * as njpw from './adapters/njpw.mjs';
 
 const ROOT = fileURLToPath(new URL('../../', import.meta.url));
 const DATA = join(ROOT, 'data');
@@ -33,7 +30,9 @@ const ACKNOWLEDGED = join(ROOT, 'tools', 'collect', 'acknowledged-conflicts.json
 // 通知用の 1 行要約。レポート全文は長すぎて通知に載らない。
 const SUMMARY = join(ROOT, '.cache', 'summary.txt');
 
-const ADAPTERS = { ddt, stardom };
+const ADAPTERS = { ddt, stardom, njpw };
+
+let extractor = null;
 
 const MATCH_TYPE_BY_SIZE = { 1: 'singles', 2: 'tag', 3: 'six-man-tag', 4: 'eight-man-tag' };
 
@@ -77,6 +76,32 @@ function buildMoveIndex() {
     name: m.name,
     aliases: m.nameEn ? [m.nameEn] : [],
   }))).index;
+}
+
+// LLM が返す形 -> アダプタが返す形。LLM は表示名しか返さないので、
+// slug への解決はこの後の resolve 段が行う。
+function llmMatchToRaw(m, fallbackOrder) {
+  const winner = Number.isInteger(m.winnerSideIndex) && m.winnerSideIndex >= 0
+    ? m.winnerSideIndex
+    : null;
+  const decision = m.decision ?? 'unknown';
+  // 勝者が分からない試合は結果ごと未確定にする。スキーマは「決着なし」を
+  // draw 系でしか表せず、unknown + 勝者なしは検証器に落とされる。
+  // 推測で勝者を作らないほうを採る。
+  const drawish = ['draw', 'time-limit-draw', 'no-contest'];
+  const result = winner === null && !drawish.includes(decision)
+    ? null
+    : { winnerSideIndex: winner, decision, finishText: null, durationSeconds: null };
+
+  return {
+    order: Number.isInteger(m.order) && m.order > 0 ? m.order : fallbackOrder,
+    matchType: null,
+    sides: (m.sides ?? []).map((s) => ({ names: s.names ?? [], teamName: null })),
+    titleName: m.titleName || null,
+    timeLimitMinutes: null,
+    result,
+    notes: null,
+  };
 }
 
 function eventPath(base, promotion, eventId) {
@@ -206,20 +231,34 @@ async function runPromotion(promotion, opts, result) {
       const target = { id, url, kind: 'result' };
       const { event: rawEvent, unparsed } = adapter.parse(raw, target);
 
-      const stillUnparsed = [];
-      for (const fragment of unparsed) {
-        if (!opts.noLlm && extract) {
-          const filled = await extract(fragment, 'match');
-          if (filled) {
-            rawEvent.matches.push(filled.match);
-            result.llmFilled.push({ promotion, eventId: rawEvent.eventId, order: filled.match.order, model: filled.model });
-            continue;
+      // 抽出結果を先に見る。記事は公開後に変わらないので、呼び直しても
+      // 同じ結果に金を払うだけになる。取り込めたかどうかとは無関係に残す
+      // （未解決の名前があって書けない興行こそ、毎日呼び直してしまう）。
+      const cached = opts.noLlm ? null : readExtraction(promotion, id);
+      if (cached?.matches?.length) {
+        for (const m of cached.matches) rawEvent.matches.push(llmMatchToRaw(m, rawEvent.matches.length + 1));
+        result.llmFilled.push({
+          promotion, eventId: rawEvent.eventId,
+          order: cached.matches.length, model: `${cached.model} (キャッシュ)`,
+        });
+      } else {
+        for (const fragment of unparsed) {
+          if (!opts.noLlm && extractor) {
+            const filled = await extractor.extract(fragment);
+            if (filled?.length) {
+              writeExtraction(promotion, id, { model: extractor.model, matches: filled });
+              for (const m of filled) rawEvent.matches.push(llmMatchToRaw(m, rawEvent.matches.length + 1));
+              result.llmFilled.push({
+                promotion, eventId: rawEvent.eventId,
+                order: filled.length, model: extractor.model,
+              });
+              continue;
+            }
           }
+          // LLM が無い / 補えなかった断片は人間に上げる。黙って捨てない。
+          result.unparsed.push({ promotion, eventId: rawEvent.eventId, text: fragment });
         }
-        // LLM が無い / 補えなかった断片は人間に上げる。黙って捨てない。
-        stillUnparsed.push({ promotion, eventId: rawEvent.eventId, text: fragment });
       }
-      result.unparsed.push(...stillUnparsed);
 
       if (!rawEvent.eventId) {
         result.failures.push({ promotion, step: 'parse', message: `${id}: 日付が取れず eventId を決められない` });
@@ -253,9 +292,14 @@ async function runPromotion(promotion, opts, result) {
       const { merged, conflicts } = merge(existing, event, { sourceUrl: url });
       result.conflicts.push(...conflicts.map((c) => ({ ...c, promotion, eventId: event.eventId })));
 
-      const incomingOrders = new Set(event.matches.map((m) => m.order));
-      const dropped = existing.matches.map((m) => m.order).filter((o) => !incomingOrders.has(o));
-      if (dropped.length) result.droppedOrders.push({ promotion, eventId: event.eventId, orders: dropped });
+      // 抽出側が 1 試合も取れていないときは「消えた」の判定をしない。
+      // LLM が動かなかった等でカードが空になっただけで、既存の全試合が
+      // 消えたと報告してしまう。
+      if (event.matches.length) {
+        const incomingOrders = new Set(event.matches.map((m) => m.order));
+        const dropped = existing.matches.map((m) => m.order).filter((o) => !incomingOrders.has(o));
+        if (dropped.length) result.droppedOrders.push({ promotion, eventId: event.eventId, orders: dropped });
+      }
 
       if (!unresolved.length) stage(promotion, merged, existing, result);
     } catch (e) {
@@ -303,6 +347,14 @@ function failingFiles(out) {
 
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
+
+  // 鍵が無ければ LLM 段は動かない。1 回の実行で呼ぶ上限を入れて、
+  // 取りこぼしが急に増えても課金が跳ねないようにする。
+  extractor = createExtractor({
+    apiKey: process.env.GEMINI_API_KEY ?? '',
+    ...(process.env.GEMINI_MODEL ? { model: process.env.GEMINI_MODEL } : {}),
+    ...(process.env.LLM_MAX_CALLS ? { maxCalls: Number(process.env.LLM_MAX_CALLS) } : {}),
+  });
   const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
 
   // staging は毎回 data/ のコピーから作り直す

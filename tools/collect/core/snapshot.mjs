@@ -47,3 +47,25 @@ export function readSnapshotUrl(promotion, id) {
   const p = urlPath(promotion, id);
   return existsSync(p) ? readFileSync(p, 'utf8').trim() : null;
 }
+
+// LLM の抽出結果はスナップショットの隣に置く。同じ記事を呼び直すと同じ
+// 結果に金を払うだけなので、興行が data/ に書けたかどうかとは無関係に残す。
+// 拡張子を変えているだけなので listSnapshots には混ざらない。
+const extractionPath = (promotion, id) => snapshotPath(promotion, id).replace(/\.txt$/, '.llm.json');
+
+export function writeExtraction(promotion, id, data) {
+  const p = extractionPath(promotion, id);
+  mkdirSync(dirname(p), { recursive: true });
+  writeFileSync(p, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+}
+
+/** @returns {object | null} */
+export function readExtraction(promotion, id) {
+  const p = extractionPath(promotion, id);
+  if (!existsSync(p)) return null;
+  try {
+    return JSON.parse(readFileSync(p, 'utf8'));
+  } catch {
+    return null;
+  }
+}

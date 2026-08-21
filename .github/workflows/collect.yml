@@ -44,6 +44,15 @@ jobs:
       - name: ブラウザを導入
         run: npx playwright install --with-deps chromium
 
+      # LLM の抽出結果を実行間で持ち越す。GH Actions は毎回まっさらなので、
+      # 残さないと同じ記事を毎日 LLM に投げて課金だけが積み上がる。
+      - name: 収集キャッシュを復元
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: collect-cache-${{ github.run_id }}
+          restore-keys: collect-cache-
+
       # run.mjs は失敗した団体があると exit 1 を返すが、部分失敗を許容する
       # 設計なので取れた分は PR にしたい。失敗した団体はレポートに載る。
       #
@@ -53,6 +62,10 @@ jobs:
         id: collect
         env:
           PROMOTION: ${{ inputs.promotion }}
+          # 鍵が無ければ LLM 段は動かず、記事本文は取りこぼしとして報告される。
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # 1 回の実行で呼ぶ上限。取りこぼしが急に増えても課金が跳ねない。
+          LLM_MAX_CALLS: '30'
         run: |
           if [ -n "$PROMOTION" ]; then
             npm run collect -- --promotion "$PROMOTION"
