@@ -19,7 +19,8 @@ const DECISION = [
 ];
 
 // 選手名ではない行。陣営の組み立て時に落とす。
-const LABEL = /^(WIN|LOSE|DRAW|VS|＜.*＞|with .*|※.*)$/;
+// 入場順のマーカーは全角 ＜9＞ と半角 <19> の両方が使われている。
+const LABEL = /^(WIN|LOSE|DRAW|VS|＜.*＞|<\d+>|with .*|※.*)$/;
 
 const RESULT_ID_RE = /\/results\/([0-9a-f]{24})(?:[/?#]|$)/;
 
@@ -29,6 +30,11 @@ const RESULT_ID_RE = /\/results\/([0-9a-f]{24})(?:[/?#]|$)/;
 // 手前の試合に混ざる。
 const HEAD_RE = /^(.{0,24}?)[\s　]*(?:(\d+)分)?(?:時間無制限)?(?:一本|\d+本)?勝負$/;
 const DURATION_RE = /^(\d+)分(\d+)秒$/;
+
+// 公式は一部の試合時間を「19時27分」と誤記する（正しくは 19 分 27 秒）。
+// 値は信用できないので採らないが、選手が並ぶ範囲の終わりを示す位置としては
+// 使える。認識しないとそこで試合が切れず、次の試合の中身が混ざる。
+const TIME_LINE_RE = /^(?:\d+分\d+秒|\d+時\d+分)$/;
 
 // 結果一覧に載っている分をすべて返す。マージが冪等なので取りすぎても
 // 2 回目以降は差分ゼロになる。「直近 N 日」の絞り込みは spec §10 の保留事項。
@@ -62,9 +68,18 @@ export function parse(raw, target) {
     // ページ冒頭の目次にも見出しだけが並ぶ。試合の中身が無いブロックは
     // 失われた試合ではないので unparsed に入れない。
     if (!looksLikeMatch(block)) continue;
-    const m = parseMatch(block, matches.length + 1);
-    if (m) matches.push(m);
-    else unparsed.push(block.join('\n'));
+    const parsed = parseMatch(block, matches.length + 1);
+    if (!parsed) {
+      unparsed.push(block.join('\n'));
+      continue;
+    }
+    matches.push(parsed.match);
+
+    // 見出しの語彙は列挙しきれない（「リング撤収デスマッチ」は「勝負」で
+    // 終わらない）。取りこぼした見出しの試合は 1 つ前のブロックの末尾に
+    // 残るので、黙って落とさず unparsed に上げる。
+    const rest = block.slice(parsed.endIdx);
+    if (looksLikeMatch(rest)) unparsed.push(rest.join('\n'));
   }
 
   const event = {
@@ -116,7 +131,7 @@ function splitMatches(lines) {
 
 // 試合の中身（時間か勝敗ラベル）を含むか。目次の見出しだけの行と区別する。
 function looksLikeMatch(block) {
-  return block.some((l) => DURATION_RE.test(l) || l === 'VS' || l === 'WIN' || l === 'LOSE');
+  return block.some((l) => TIME_LINE_RE.test(l) || l === 'VS' || l === 'WIN' || l === 'LOSE');
 }
 
 function parseMatch(block, order) {
@@ -133,15 +148,16 @@ function parseMatch(block, order) {
     ? subtitle.replace(/選手権試合.*$/, '選手権')
     : null;
 
-  const durIdx = block.findIndex((l) => DURATION_RE.test(l));
+  const durIdx = block.findIndex((l) => TIME_LINE_RE.test(l));
   if (durIdx === -1) return null;
   const dm = DURATION_RE.exec(block[durIdx]);
-  const durationSeconds = Number(dm[1]) * 60 + Number(dm[2]);
+  const durationSeconds = dm ? Number(dm[1]) * 60 + Number(dm[2]) : null;
 
   const decisionText = block.slice(durIdx + 1).find(Boolean) ?? '';
   const decision = DECISION.find(([re]) => re.test(decisionText))?.[1] ?? 'unknown';
 
-  const noteLine = block.find((l) => l.startsWith('※'));
+  const noteIdx = block.findIndex((l) => l.startsWith('※'));
+  const noteLine = noteIdx === -1 ? null : block[noteIdx];
   const finishText = noteLine ? (/^※([^。]+)。/.exec(noteLine)?.[1] ?? null) : null;
 
   // 見出し行と副題行は陣営の組み立てに渡さない。渡すと選手名として拾われる。
@@ -149,13 +165,17 @@ function parseMatch(block, order) {
   if (sides.length < 1) return null;
 
   return {
-    order,
-    matchType: null, // sides の人数から run.mjs 側で決める
-    sides,
-    titleName,
-    timeLimitMinutes,
-    result: { winnerSideIndex, decision, finishText, durationSeconds },
-    notes: noteLine ?? null,
+    match: {
+      order,
+      matchType: null, // sides の人数から run.mjs 側で決める
+      sides,
+      titleName,
+      timeLimitMinutes,
+      result: { winnerSideIndex, decision, finishText, durationSeconds },
+      notes: noteLine ?? null,
+    },
+    // この試合が消費した範囲の終わり。以降に中身が残っていれば別の試合。
+    endIdx: Math.max(durIdx + 1, noteIdx + 1),
   };
 }
 

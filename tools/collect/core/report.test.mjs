@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 import { renderReport } from './report.mjs';
 
-const EMPTY = { changed: [], conflicts: [], unresolved: [], failures: [], llmFilled: [], droppedOrders: [] };
+const EMPTY = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
 
 test('何も無ければ差分なしと書く', () => {
   const md = renderReport(EMPTY);
@@ -55,4 +55,18 @@ test('改行を含む値が表を壊さない', () => {
   });
   const row = md.split('\n').find((l) => l.includes('1 行目'));
   assert.match(row, /1 行目 2 行目/);
+});
+
+// パーサが取りこぼした断片は人間に届かないと存在しないのと同じになる。
+test('取りこぼした試合を出す', () => {
+  const md = renderReport({
+    ...EMPTY,
+    unparsed: [{ promotion: 'ddt', eventId: 'e', text: 'アイアンマンヘビーメタル級選手権試合\nLOSE\n＜王者＞' }],
+  });
+  assert.match(md, /取りこぼした試合/);
+  assert.match(md, /アイアンマンヘビーメタル級選手権試合/);
+});
+
+test('取りこぼしが無ければその節を出さない', () => {
+  assert.ok(!renderReport(EMPTY).includes('取りこぼした試合'));
 });

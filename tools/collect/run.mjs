@@ -192,14 +192,20 @@ async function runPromotion(promotion, opts, result) {
       const target = { id, url, kind: 'result' };
       const { event: rawEvent, unparsed } = adapter.parse(raw, target);
 
-      if (unparsed.length && !opts.noLlm && extract) {
-        for (const fragment of unparsed) {
+      const stillUnparsed = [];
+      for (const fragment of unparsed) {
+        if (!opts.noLlm && extract) {
           const filled = await extract(fragment, 'match');
-          if (!filled) continue;
-          rawEvent.matches.push(filled.match);
-          result.llmFilled.push({ promotion, eventId: rawEvent.eventId, order: filled.match.order, model: filled.model });
+          if (filled) {
+            rawEvent.matches.push(filled.match);
+            result.llmFilled.push({ promotion, eventId: rawEvent.eventId, order: filled.match.order, model: filled.model });
+            continue;
+          }
         }
+        // LLM が無い / 補えなかった断片は人間に上げる。黙って捨てない。
+        stillUnparsed.push({ promotion, eventId: rawEvent.eventId, text: fragment });
       }
+      result.unparsed.push(...stillUnparsed);
 
       if (!rawEvent.eventId) {
         result.failures.push({ promotion, step: 'parse', message: `${id}: 日付が取れず eventId を決められない` });
@@ -248,7 +254,7 @@ function stage(promotion, merged, existing, result) {
 
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
-  const result = { changed: [], conflicts: [], unresolved: [], failures: [], llmFilled: [], droppedOrders: [] };
+  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
 
   // staging は毎回 data/ のコピーから作り直す
   rmSync(STAGING, { recursive: true, force: true });
