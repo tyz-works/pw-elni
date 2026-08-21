@@ -12,6 +12,7 @@ import {
 import { buildIndex, resolve as resolveName } from './core/aliases.mjs';
 import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
+import { buildVenueIndex } from './core/venues.mjs';
 import * as ddt from './adapters/ddt.mjs';
 
 // LLM フォールバックは条件付き（計画 Task 9）。まだ無ければ LLM 段を飛ばす。
@@ -56,17 +57,6 @@ function buildMoveIndex() {
     slug: m.slug,
     name: m.name,
     aliases: m.nameEn ? [m.nameEn] : [],
-  }))).index;
-}
-
-// 公式は会場を「東京・両国国技館」と都市つきで書く。施設名だけの表記と
-// 都市つきの表記の両方を索引に入れる（normalize が中黒を落とすため、
-// 都市つきは連結した 1 語として一致する）。
-function buildVenueIndex() {
-  return buildIndex(loadEntities('venues').map((v) => ({
-    slug: v.slug,
-    name: v.name,
-    aliases: [v.nameEn, v.city ? `${v.city}・${v.name}` : null].filter(Boolean),
   }))).index;
 }
 
@@ -156,7 +146,7 @@ async function runPromotion(promotion, opts, result) {
   const adapter = ADAPTERS[promotion];
   const wrestlerIndex = buildIndex(loadEntities('wrestlers')).index;
   const moveIndex = buildMoveIndex();
-  const venueIndex = buildVenueIndex();
+  const venueIndex = buildVenueIndex(loadEntities('venues'));
 
   // --- fetch ---
   if (!opts.step || opts.step === 'fetch') {
