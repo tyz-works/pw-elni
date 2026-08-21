@@ -1,0 +1,153 @@
+[
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=1].notes",
+    "existing": "オープニングマッチ。決まり手はビエント・レバンテが正田壮史から奪った押さえ込み。paleyouth の 7 度目の防衛は失敗し、KANON 組が第 61 代王者組となった。KANON 組には KIMIHIRO と YUZUKI がセコンドに付いた。",
+    "incoming": "※paleyouthが7度目の防衛に失敗、KANON組が第61代王者組となる。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=2].matchType",
+    "existing": "battle-royal",
+    "incoming": "singles"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=2].sides",
+    "existing": [
+      {
+        "wrestlerIds": [
+          "akito",
+          "yuki-ishida",
+          "soma-takao",
+          "naomi-yoshimura",
+          "fuminori-abe",
+          "yuki-iino",
+          "toru-owashi",
+          "yuni",
+          "ilusion",
+          "masami-inahata",
+          "mj-paul",
+          "super-sasadango-machine",
+          "yoshihiko"
+        ],
+        "teamName": null
+      }
+    ],
+    "incoming": [
+      {
+        "wrestlerIds": [
+          "yoshihiko"
+        ],
+        "teamName": null
+      },
+      {
+        "wrestlerIds": [
+          "ilusion"
+        ],
+        "teamName": null
+      }
+    ]
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=2].result.winnerSideIndex",
+    "existing": 0,
+    "incoming": 1
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=2].notes",
+    "existing": "時間差入場バトルロイヤル。イルシオン（入場 9 番）が王者ヨシヒコ（同 13 番）をオーバー・ザ・トップロープで排除し、第 1892 代王者となった。入場 12 番は公式発表に記載がない。同王座は本大会の前後にも場外で複数回移動しているが、公式が「第 N 試合」として掲載しているのは本試合のみのため、それらは収録していない。",
+    "incoming": "※ヨシヒコが防衛に失敗、イルシオンが第1892代王者となる。＜　＞内は入場順。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=3].notes",
+    "existing": "スペシャルタッグマッチ。決まり手は髙木三四郎が To-y に決めたストーンコールド・スタナーからの片エビ固め。To-y が保持していた「いつでもどこでも挑戦権」（青）が髙木に移動した。",
+    "incoming": "※ストーンコールド・スタナー。To-yの持ついつでもどこでも挑戦権（青）が髙木に移動。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=4].notes",
+    "existing": "葛西陽向デビュー 1 周年記念試合〜スペシャルタッグマッチ。決まり手は瑠希也の R・フィッシャーマンバスターからの片エビ固め。",
+    "incoming": "※R・フィッシャーマンバスター"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=5].titleName",
+    "existing": "DDT EXTREME級選手権",
+    "incoming": "DDT EXTREME選手権"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=5].notes",
+    "existing": "有刺鉄線デスマッチ。決まり手は勝俣瞬馬のととのえスプラッシュ・ウィズ・有刺鉄線からの片エビ固め。岡谷の 5 度目の防衛は失敗し、勝俣が第 65 代王者となるとともに、岡谷が保持していた「いつでもどこでも挑戦権」（赤）も勝俣に移動した。",
+    "incoming": "※ととのえスプラッシュ・ウィズ・有刺鉄線。岡谷が5度目の防衛に失敗、勝俣が第65代王者となるとともに、岡谷の持ついつでもどこでも挑戦権（赤）が勝俣に移動。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=6].notes",
+    "existing": "決まり手は宮脇純太のサンシャインクラッチ。クリス組の 4 度目の防衛は失敗し、青木組が第 90 代王者組となった。",
+    "incoming": "※クリス組が4度目の防衛に失敗、青木組が第90代王者組となる。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=8].result.decision",
+    "existing": "submission",
+    "incoming": "unknown"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=9].notes",
+    "existing": "決まり手は田口隆祐のどどんからのエビ固め。須見の 3 度目の防衛は失敗し、田口が第 22 代王者となった。",
+    "incoming": "※どどん。須見が3度目の防衛に失敗、田口が第22代王者となる。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=10].notes",
+    "existing": "セミファイナル。ドラマティック・ドリームマッチ。決まり手は KONOSUKE TAKESHITA のレイジングファイヤーからの片エビ固め。",
+    "incoming": "※レイジングファイヤー"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=11].titleName",
+    "existing": "KO-D無差別級選手権",
+    "incoming": "グッドコムアセット presents KO-D無差別級選手権"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=11].notes",
+    "existing": "メインイベント。グッドコムアセット presents。決まり手は MAO のキャノンボール450°からの片エビ固め。上野の 9 度目の防衛は失敗し、MAO が第 89 代王者となった。",
+    "incoming": "※キャノンボール450°。上野が9度目の防衛に失敗、MAOが第89代王者となる。"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=12].titleName",
+    "existing": "KO-D無差別級選手権",
+    "incoming": "いつでもどこでも挑戦権使用～KO-D無差別級選手権"
+  },
+  {
+    "promotion": "ddt",
+    "eventId": "ddt-20260811-0",
+    "path": "matches[order=12].notes",
+    "existing": "緊急決定試合。メインイベント終了後に髙木三四郎が「いつでもどこでも挑戦権」を行使して成立。決まり手は MAO の首固め。第 89 代王者が初防衛に成功した。",
+    "incoming": "※第89代王者が初防衛に成功。"
+  }
+]
