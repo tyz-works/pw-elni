@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "validate": "node tools/validate.mjs",
+    "collect": "node tools/collect/run.mjs",
     "test": "node --test 'tools/**/*.test.mjs'",
     "build": "npm run validate && npm run build --workspace site",
     "dev": "npm run dev --workspace site",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
+    "playwright": "^1.62.1",
     "wrangler": "^4.123.0"
   }
 }
