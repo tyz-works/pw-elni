@@ -74,3 +74,22 @@ test('名前の途中の引用符は落とさない', () => {
   const { index } = buildIndex([{ slug: 'x', name: '架空“太郎”次郎', aliases: [] }]);
   assert.equal(resolve('架空“太郎”次郎', index), 'x');
 });
+
+// スターダムは他団体からの参戦を「稲葉あずさ（JTO）」と所属つきで書く。
+// 参戦のたびに alias を足しても追いつかないので、装飾として落とす。
+test('末尾の所属のカッコ書きを落として解決する', () => {
+  const { index } = buildIndex([{ slug: 'azusa-inaba', name: '稲葉あずさ', aliases: [] }]);
+  assert.equal(resolve('稲葉あずさ（JTO）', index), 'azusa-inaba');
+  assert.equal(resolve('稲葉あずさ(JTO)', index), 'azusa-inaba', '半角カッコも同じ');
+});
+
+test('名前の途中のカッコは落とさない', () => {
+  const { index } = buildIndex([{ slug: 'x', name: '架空（仮）太郎', aliases: [] }]);
+  assert.equal(resolve('架空（仮）太郎', index), 'x');
+});
+
+// ニックネームの前置きと所属の後置きが同時に付くこともある。
+test('前置きと後置きを両方落とす', () => {
+  const { index } = buildIndex([{ slug: 'y', name: '架空次郎', aliases: [] }]);
+  assert.equal(resolve('“異名”架空次郎（サンプル団体）', index), 'y');
+});

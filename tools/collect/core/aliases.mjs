@@ -9,9 +9,17 @@ const VARIANTS = new Map([['髙', '高'], ['﨑', '崎']]);
 // 落とすのは行頭のものだけ。名前の途中の引用符には触らない。
 const NICKNAME_PREFIX = /^["\u201c][^"\u201d]*["\u201d]/;
 
+// 他団体からの参戦は所属をカッコ書きで併記する（「稲葉あずさ（JTO）」）。
+// 参戦のたびに alias を足しても追いつかないので、これも装飾として落とす。
+// 落とすのは末尾のものだけ。名前の途中のカッコには触らない。
+// NFKC で全角カッコは半角になるので、半角だけを見ればよい。
+const AFFILIATION_SUFFIX = /\([^()]*\)$/;
+
 /** @param {string} name */
 export function normalize(name) {
-  const nfkc = name.normalize('NFKC').replace(NICKNAME_PREFIX, '');
+  const nfkc = name.normalize('NFKC')
+    .replace(NICKNAME_PREFIX, '')
+    .replace(AFFILIATION_SUFFIX, '');
   let out = '';
   for (const ch of nfkc) out += VARIANTS.get(ch) ?? ch;
   return out.replace(/[・\s]/g, '').toLowerCase();
