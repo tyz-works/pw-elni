@@ -15,7 +15,9 @@ const MATCH_END = '試合レポートを見る';
 // 「決勝トーナメント1回戦①の勝者」のような枠の説明を落とす。
 const LABEL = /^(WIN|LOSE|DRAW|VS|【.*】|.*の勝者|※.*)$/;
 
-const DURATION_RE = /^(\d+)分(\d+)秒$/;
+// 時間切れ引き分けは「15分」と秒なしで書かれる。秒は 0 とみなす（推測ではなく
+// 制限時間ちょうどという意味）。
+const DURATION_RE = /^(\d+)分(?:(\d+)秒)?$/;
 const EVENT_ID_RE = /\/event\/([^/]+)\/?$/;
 
 /** @returns {Promise<Target[]>} */
@@ -118,7 +120,7 @@ function parseMatch(block, order) {
   const durIdx = block.findIndex((l) => DURATION_RE.test(l));
   if (durIdx === -1) return null;
   const dm = DURATION_RE.exec(block[durIdx]);
-  const durationSeconds = Number(dm[1]) * 60 + Number(dm[2]);
+  const durationSeconds = Number(dm[1]) * 60 + Number(dm[2] ?? 0);
 
   // ブロックの先頭は試合名。選手名ではない。
   const heading = block.find(Boolean) ?? '';
