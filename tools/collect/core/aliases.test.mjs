@@ -60,3 +60,17 @@ test('曖昧一致はしない', () => {
   const { index } = buildIndex(WRESTLERS);
   assert.equal(resolve('HARASHIM', index), null, '1 文字違いは解決しない');
 });
+
+// 公式は選手名にニックネームを前置きすることがある（DDT は頻繁）。
+// alias を 1 件ずつ足すと追いつかないので、装飾として落とす。
+test('ニックネームの前置きを落として解決する', () => {
+  const { index } = buildIndex([{ slug: 'kazuma-sumi', name: '須見和馬', aliases: [] }]);
+  assert.equal(resolve('“天翔ける天空聖者”須見和馬', index), 'kazuma-sumi');
+  assert.equal(resolve('"Mr.ハイドロポンプ"須見和馬', index), 'kazuma-sumi', '半角引用符も同じ');
+});
+
+test('名前の途中の引用符は落とさない', () => {
+  assert.equal(normalize('架空“太郎”次郎'), normalize('架空“太郎”次郎'));
+  const { index } = buildIndex([{ slug: 'x', name: '架空“太郎”次郎', aliases: [] }]);
+  assert.equal(resolve('架空“太郎”次郎', index), 'x');
+});

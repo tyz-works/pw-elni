@@ -4,9 +4,14 @@
 // 公式表記と記事本文で揺れる異体字だけを対象にする。増やすときはテストも足すこと。
 const VARIANTS = new Map([['髙', '高'], ['﨑', '崎']]);
 
+// 公式は選手名にニックネームを前置きすることがある（DDT は頻繁）。
+// alias を 1 件ずつ足しても追いつかないので、装飾として落とす。
+// 落とすのは行頭のものだけ。名前の途中の引用符には触らない。
+const NICKNAME_PREFIX = /^["\u201c][^"\u201d]*["\u201d]/;
+
 /** @param {string} name */
 export function normalize(name) {
-  const nfkc = name.normalize('NFKC');
+  const nfkc = name.normalize('NFKC').replace(NICKNAME_PREFIX, '');
   let out = '';
   for (const ch of nfkc) out += VARIANTS.get(ch) ?? ch;
   return out.replace(/[・\s]/g, '').toLowerCase();

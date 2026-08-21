@@ -26,9 +26,9 @@ test('会場名を表示名のまま取る', () => {
   assert.equal(event.venueSlug, null);
 });
 
-test('試合を 6 つ取り order を振る', () => {
+test('試合を 7 つ取り order を振る', () => {
   const { event } = parse(RAW, TARGET);
-  assert.deepEqual(event.matches.map((m) => m.order), [1, 2, 3, 4, 5, 6]);
+  assert.deepEqual(event.matches.map((m) => m.order), [1, 2, 3, 4, 5, 6, 7]);
 });
 
 // 見出しの語彙（ダークマッチ・再試合など）は興行ごとに増える。列挙して
@@ -46,8 +46,11 @@ test('見出しの語彙を列挙せず「勝負」で終わる行を見出し�
 // 失われた試合でもない。試合にも取りこぼしにも数えないのが正しい。
 test('目次の見出しは試合にも取りこぼしにも数えない', () => {
   const { event, unparsed } = parse(RAW, TARGET);
-  assert.equal(event.matches.length, 6);
-  assert.deepEqual(unparsed, []);
+  assert.equal(event.matches.length, 7);
+  assert.ok(
+    unparsed.every((u) => u.includes('架空十七郎')),
+    `目次が取りこぼしとして出ている: ${JSON.stringify(unparsed)}`,
+  );
 });
 
 test('メインイベントも通し番号の途中として拾う', () => {
@@ -132,7 +135,44 @@ test('補足行を notes に残す', () => {
   assert.match(event.matches[2].notes, /架空五郎が防衛に失敗/);
 });
 
-test('フィクスチャでは取りこぼしが出ない', () => {
+// 見出しを取りこぼした試合は 1 つ前のブロックの末尾に残る。混ざらないだけでは
+// 足りず、黙って消えてもいけない。
+test('取りこぼした試合を unparsed に上げる', () => {
   const { unparsed } = parse(RAW, TARGET);
-  assert.deepEqual(unparsed, []);
+  assert.equal(unparsed.length, 1);
+  assert.match(unparsed[0], /リング撤収デスマッチ/);
+  assert.match(unparsed[0], /架空十七郎/);
+});
+
+// 公式は一部の試合時間を「19時27分」と誤記する（正しくは 19 分 27 秒）。
+// 時間の行として認識しないと、そこで試合が切れず次の試合の見出しや
+// 決まり手が選手名として拾われる。値は推測せず null にする。
+test('「N時M分」の行も試合時間の位置として扱い、値は null にする', () => {
+  const { event } = parse(RAW, TARGET);
+  const m = event.matches.find((x) => x.sides[0].names.includes('架空十五郎'));
+  assert.ok(m, '「N時M分」で終わる試合が取れていない');
+  assert.deepEqual(m.sides, [
+    { names: ['架空十五郎'], teamName: null },
+    { names: ['架空十六郎'], teamName: null },
+  ]);
+  assert.equal(m.result.durationSeconds, null, '誤記の時間を推測で埋めない');
+  assert.equal(m.result.decision, 'pinfall');
+});
+
+// 入場順のマーカーは全角 ＜9＞ と半角 <19> の両方が使われている。
+test('半角の入場順マーカーを選手名として拾わない', () => {
+  const { event } = parse(RAW, TARGET);
+  const names = event.matches.flatMap((m) => m.sides.flatMap((s) => s.names));
+  assert.ok(!names.some((n) => /^<\d+>$/.test(n)), `入場順マーカーが混ざっている: ${names}`);
+});
+
+// 見出しの語彙は列挙しきれない（「リング撤収デスマッチ」は「勝負」で終わらない）。
+// 見出しを取りこぼしても、手前の試合に中身が混ざらないことを守る。
+test('見出しを取りこぼしても手前の試合に混ざらない', () => {
+  const { event } = parse(RAW, TARGET);
+  const m = event.matches.find((x) => x.sides[0].names.includes('架空十五郎'));
+  const names = m.sides.flatMap((s) => s.names);
+  assert.ok(!names.includes('体固め'), '決まり手が選手名になっている');
+  assert.ok(!names.includes('リング撤収デスマッチ'), '次の試合の見出しが選手名になっている');
+  assert.ok(!names.includes('架空十七郎'), '次の試合の選手が混ざっている');
 });

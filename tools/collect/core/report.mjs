@@ -4,7 +4,7 @@
 const cell = (v) => String(v ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ');
 
 export function renderReport(result) {
-  const { changed, conflicts, unresolved, failures, llmFilled, droppedOrders } = result;
+  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders } = result;
   const out = ['# 収集結果', ''];
 
   if (failures.length) {
@@ -28,6 +28,17 @@ export function renderReport(result) {
       '| 団体 | 興行 | 名前 | 出典 |', '|---|---|---|---|');
     for (const u of unresolved) {
       out.push(`| ${cell(u.promotion)} | ${cell(u.eventName)} | ${cell(u.name)} | ${cell(u.sourceUrl)} |`);
+    }
+    out.push('');
+  }
+
+  if (unparsed.length) {
+    out.push('## 取りこぼした試合', '',
+      'パーサが試合として組み立てられなかった断片。**この試合は書いていない。**',
+      '公式ページの構造が変わったか、見出しの書き方が新しい可能性がある。', '');
+    for (const u of unparsed) {
+      const head = u.text.split('\n').filter(Boolean).slice(0, 3).join(' / ');
+      out.push(`- ${cell(u.promotion)} / ${cell(u.eventId)} — ${cell(head)}`);
     }
     out.push('');
   }
