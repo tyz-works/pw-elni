@@ -1,0 +1,243 @@
+{
+  "eventId": "ddt-20260802-0",
+  "promotionSlug": "ddt",
+  "name": "大阪vs東京～ドリーム東西プロレス合戦2026～",
+  "series": null,
+  "date": "2026-08-02",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "osaka-umeda-stella-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuni",
+            "yuki-ishida",
+            "rukiya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daichi-satoh",
+            "kanon",
+            "viento-levante",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "lariat",
+        "durationSeconds": 513
+      },
+      "confirmed": true,
+      "notes": "※ラリアット。瑠希也の持ついつでもどこでもいつでもどこでも挑戦権挑戦権がKANONに移動。"
+    },
+    {
+      "order": 2,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "akito",
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "shota"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 579
+      },
+      "confirmed": true,
+      "notes": "※フロッグスプラッシュ"
+    },
+    {
+      "order": 3,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "gym-trainer-kotoka"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "knockout",
+        "finishMoveSlug": null,
+        "durationSeconds": 826
+      },
+      "confirmed": true,
+      "notes": "※バトルロープでの絞首刑→レフェリーストップ。"
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 577
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "hideki-okatani",
+            "chris-brookes"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "daisuke-sasaki",
+            "yukio-naya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 640
+      },
+      "confirmed": true,
+      "notes": "※正田のチカラKOBUムキムキ"
+    },
+    {
+      "order": 6,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 693
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・フィストドロップ"
+    },
+    {
+      "order": 7,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "sanshiro-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "shinya-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "cannonball-450",
+        "durationSeconds": 1065
+      },
+      "confirmed": true,
+      "notes": "※キャノンボール450°。東西全面対抗戦は4勝3敗で東軍の勝利。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a6ec2030c43c800027c30de",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a6ec2030c43c800027c30de",
+      "title": "大阪vs東京～ドリーム東西プロレス合戦2026～ | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

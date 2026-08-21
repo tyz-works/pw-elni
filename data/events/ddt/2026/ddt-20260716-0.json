@@ -1,0 +1,186 @@
+{
+  "eventId": "ddt-20260716-0",
+  "promotionSlug": "ddt",
+  "name": "闘うビアガーデン2026 in SHINJUKU 【FINAL COUNTDOWN2】",
+  "series": null,
+  "date": "2026-07-16",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "yuni"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 449
+      },
+      "confirmed": true,
+      "notes": "※炎掌"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "mikiya-sasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 618
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani",
+            "ilusion",
+            "mj-paul"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "knockout",
+        "finishMoveSlug": null,
+        "durationSeconds": 807
+      },
+      "confirmed": true,
+      "notes": "※胴絞めスリーパーホールド→レフェリーストップ。"
+    },
+    {
+      "order": 4,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 3,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 850
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D6人タッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1181
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ボディープレス・オン・ザ・テーブル・フロム・カウンター。第60代王者組が6度目の防衛に成功。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a58b0cb1886090002f356ab",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a58b0cb1886090002f356ab",
+      "title": "闘うビアガーデン2026 in SHINJUKU 【FINAL COUNTDOWN2】 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

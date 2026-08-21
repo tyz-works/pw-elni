@@ -1,0 +1,206 @@
+{
+  "eventId": "ddt-20260620-0",
+  "promotionSlug": "ddt",
+  "name": "熱帯ナニワン・サマー 2026",
+  "series": null,
+  "date": "2026-06-20",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "osaka-azalea-taisho",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 543
+      },
+      "confirmed": true,
+      "notes": "※炎掌"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 617
+      },
+      "confirmed": true,
+      "notes": "※エルボーバット"
+    },
+    {
+      "order": 3,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito",
+            "junta-miyawaki",
+            "naomi-yoshimura",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 666
+      },
+      "confirmed": true,
+      "notes": "※串刺し式クレイモア"
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 812
+      },
+      "confirmed": true,
+      "notes": "※ラリアット"
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 628
+      },
+      "confirmed": true,
+      "notes": "※正田のチカラKOBUムキムキ"
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1108
+      },
+      "confirmed": true,
+      "notes": "※コジマインパクト"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a362528e9059f0002113233",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a362528e9059f0002113233",
+      "title": "熱帯ナニワン・サマー 2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

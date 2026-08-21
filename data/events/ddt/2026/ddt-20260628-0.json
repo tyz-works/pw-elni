@@ -1,0 +1,298 @@
+{
+  "eventId": "ddt-20260628-0",
+  "promotionSlug": "ddt",
+  "name": "KING OF KINGS 2026 ～天下大乱～",
+  "series": null,
+  "date": "2026-06-28",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "junta-miyawaki",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito",
+            "miles-kal"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 446
+      },
+      "confirmed": true,
+      "notes": "※サンシャイン・ドライバー"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 430
+      },
+      "confirmed": true,
+      "notes": "※世界一のバックドロップ"
+    },
+    {
+      "order": 3,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "minoru-suzuki",
+            "danshoku-dieno",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 9
+      },
+      "confirmed": true,
+      "notes": "※ラリアット"
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "minoru-suzuki",
+            "danshoku-dieno",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 485
+      },
+      "confirmed": true,
+      "notes": "※ラリアット"
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yuki-iino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 469
+      },
+      "confirmed": true,
+      "notes": "※ラリアット"
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 584
+      },
+      "confirmed": true,
+      "notes": "※ローリング・エルボーバット"
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 751
+      },
+      "confirmed": true,
+      "notes": "※キャノンボール450°・オン・ザ・プラスチックケース"
+    },
+    {
+      "order": 8,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 624
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 9,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shinya-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D無差別級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1308
+      },
+      "confirmed": true,
+      "notes": "※第88代王者が8度目の防衛に成功。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a40686b720bea000217d9df",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a40686b720bea000217d9df",
+      "title": "KING OF KINGS 2026 ～天下大乱～ | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

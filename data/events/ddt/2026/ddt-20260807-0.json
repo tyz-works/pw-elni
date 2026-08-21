@@ -1,0 +1,112 @@
+{
+  "eventId": "ddt-20260807-0",
+  "promotionSlug": "ddt",
+  "name": "WRESTLE PETER PAN 2026記者会見＆前夜祭 in 池袋",
+  "series": null,
+  "date": "2026-08-07",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-ikebukuro-global-ring-theatre",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rukiya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 606
+      },
+      "confirmed": true,
+      "notes": "※プロトボム"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 462
+      },
+      "confirmed": true,
+      "notes": "※メサイアDDT。イルシオンがアイアンマンヘビーメタル級王座の防衛に失敗、夢虹が第1879代王者となる。"
+    },
+    {
+      "order": 3,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "to-y",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "masada-no-chikara-kobu-mukimuki",
+        "durationSeconds": 914
+      },
+      "confirmed": true,
+      "notes": "※正田のチカラKOBUムキムキ。稲畑がアイアンマンヘビーメタル級王座の防衛に失敗、正田が第1882代王者となる。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a75b6b6fa55300002ff7b63",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a75b6b6fa55300002ff7b63",
+      "title": "WRESTLE PETER PAN 2026記者会見＆前夜祭 in 池袋 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

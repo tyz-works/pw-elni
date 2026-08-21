@@ -1,0 +1,240 @@
+{
+  "eventId": "ddt-20260805-0",
+  "promotionSlug": "ddt",
+  "name": "夏休みの思い出 2026",
+  "series": null,
+  "date": "2026-08-05",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tomomitsu-matsunaga",
+            "mbm"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 508
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 521
+      },
+      "confirmed": true,
+      "notes": "※ニーバット"
+    },
+    {
+      "order": 3,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mj-paul",
+            "ilusion",
+            "tetsuya-koda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "naomi-yoshimura",
+            "hisaya-imabayashi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 557
+      },
+      "confirmed": true,
+      "notes": "※裏拳。甲田が防衛に失敗、今林が第1877代王者となる。"
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 690
+      },
+      "confirmed": true,
+      "notes": "※串刺し式クレイモア。勝俣の持ついつでもどこでも挑戦権（赤）が岡谷に移動。"
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 12
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shinya-aoki",
+            "junta-miyawaki",
+            "akito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 795
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1181
+      },
+      "confirmed": true,
+      "notes": "※MAO＆ビエントの合体技を切り返す。ビエントの持ついつでもどこでも挑戦権（青）がTo-yに移動。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a730e7fce68600002d12d70",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a730e7fce68600002d12d70",
+      "title": "夏休みの思い出 2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

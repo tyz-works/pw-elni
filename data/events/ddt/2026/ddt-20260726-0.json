@@ -1,0 +1,234 @@
+{
+  "eventId": "ddt-20260726-0",
+  "promotionSlug": "ddt",
+  "name": "ROCK IN RING 2026～一撃必倒～",
+  "series": null,
+  "date": "2026-07-26",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "antonio-honda",
+            "masami-inahata",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura",
+            "yuni",
+            "rukiya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 438
+      },
+      "confirmed": true,
+      "notes": "※ジャックナイフ式エビ固めを切り返す。夢虹がアイアンマンヘビーメタル級王座の防衛に失敗、アントンが第1845代王者となる。"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "minoru-suzuki",
+            "jun-akiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 348
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 517
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ヘッドバット"
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "kazuki-hirata",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daichi-satoh",
+            "soma-takao",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 583
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-Dタッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 890
+      },
+      "confirmed": true,
+      "notes": "※第89代王者組が3度目の防衛に成功。"
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT EXTREME選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 920
+      },
+      "confirmed": true,
+      "notes": "※串刺し式クレイモア。第64代王者が4度目の防衛に成功。"
+    },
+    {
+      "order": 7,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1162
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a656a8a1d71f90002293ebe",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a656a8a1d71f90002293ebe",
+      "title": "ROCK IN RING 2026～一撃必倒～ | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

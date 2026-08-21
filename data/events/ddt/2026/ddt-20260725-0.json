@@ -1,0 +1,54 @@
+{
+  "eventId": "ddt-20260725-0",
+  "promotionSlug": "ddt",
+  "name": "路上プロレス in 楢葉町サマーフェスティバル2026",
+  "series": null,
+  "date": "2026-07-25",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "naraha-tenjinmisaki-sports-park",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yukio-naya",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1542
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ボディープレス・オン・ザ・テーブル・フロム・ラダー"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a646c8688d96400026ff3ad",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a646c8688d96400026ff3ad",
+      "title": "路上プロレス in 楢葉町サマーフェスティバル2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "eventId": "ddt-20260708-0",
+  "promotionSlug": "ddt",
+  "name": "浅草ROX仲見世ファイティング 2026",
+  "series": null,
+  "date": "2026-07-08",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-asakusa-rox-3g-multi-court",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tawaramachi-kid-jr",
+            "super-nikuyaki-machine",
+            "akinori-ariji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "benio",
+            "tataki-torinomi",
+            "takuya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 727
+      },
+      "confirmed": true,
+      "notes": "※ムーンサルト・プレス"
+    },
+    {
+      "order": 2,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "daichi-satoh",
+            "mbm"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tomomitsu-matsunaga",
+            "rukiya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 637
+      },
+      "confirmed": true,
+      "notes": "※マッドスプラッシュ"
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 684
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ヘッドバット"
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "yukio-naya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 600
+      },
+      "confirmed": true,
+      "notes": "※世界一のバックドロップ"
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 658
+      },
+      "confirmed": true,
+      "notes": "※蒼魔刀"
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata",
+            "yoshihiko"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 986
+      },
+      "confirmed": true,
+      "notes": "※平田がアイアンマンヘビーメタル級王座の防衛に失敗、須見が第1840代王者となる。"
+    },
+    {
+      "order": 7,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "ryota-nakatsu",
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "to-y",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1109
+      },
+      "confirmed": true,
+      "notes": "※Jul.2"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a4e111ead03940002d2ebdc",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a4e111ead03940002d2ebdc",
+      "title": "浅草ROX仲見世ファイティング 2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

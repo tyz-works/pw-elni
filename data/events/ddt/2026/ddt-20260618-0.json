@@ -1,0 +1,170 @@
+{
+  "eventId": "ddt-20260618-0",
+  "promotionSlug": "ddt",
+  "name": "行くぜ！ビアガーデンプロレス2026",
+  "series": null,
+  "date": "2026-06-18",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-ueno-park-outdoor-stage",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kanon",
+            "junta-miyawaki",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 506
+      },
+      "confirmed": true,
+      "notes": "※ラリアット"
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 764
+      },
+      "confirmed": true,
+      "notes": "※高鹿が防衛に失敗、ブンブンが第1829代王者となる。"
+    },
+    {
+      "order": 3,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "bunbun"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": null
+      },
+      "confirmed": true,
+      "notes": "※TTD。ブンブンが防衛に失敗、アントンが第1830代王者となる。"
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "crocodile-d-sasa",
+            "abarenbo-hideki",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 737
+      },
+      "confirmed": true,
+      "notes": "※垂直落下式ブレーンバスター・イン・ザ・プール"
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-koroku"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": null
+      },
+      "confirmed": true,
+      "notes": "※ハンマー攻撃。高鹿が防衛に失敗、平田が第1832代王者となる。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a33acf674d0520002dfd32c",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a33acf674d0520002dfd32c",
+      "title": "行くぜ！ビアガーデンプロレス2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

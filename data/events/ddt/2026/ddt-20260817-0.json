@@ -1,0 +1,115 @@
+{
+  "eventId": "ddt-20260817-0",
+  "promotionSlug": "ddt",
+  "name": "AFTER PETER PAN ～両国後夜祭～",
+  "series": null,
+  "date": "2026-08-17",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-kanda-myojin-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuki-hirata",
+            "danshoku-dieno",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gakuya-dorobo-ishida",
+            "kazuma-sumi",
+            "water-masami",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 6
+      },
+      "confirmed": true,
+      "notes": "※オーディション優勝は瑠希也。"
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sasadango-belt"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "スーパー・ササダンゴ・マシン級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "swanton-bomb",
+        "durationSeconds": 726
+      },
+      "confirmed": true,
+      "notes": "※スワントーンボム。ササダンゴベルトが初防衛に失敗、イルシオンが第2代王者となる。"
+    },
+    {
+      "order": 3,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D6人タッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1121
+      },
+      "confirmed": true,
+      "notes": "※納谷のニーリフト。第61代王者組が初防衛に成功。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a82b5e554febe0002a12f98",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a82b5e554febe0002a12f98",
+      "title": "AFTER PETER PAN ～両国後夜祭～ | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "eventId": "ddt-20260705-0",
+  "promotionSlug": "ddt",
+  "name": "レンブラントハイウェイシリーズ2026〜あゆコロシアム in Atsugi〜",
+  "series": null,
+  "date": "2026-07-05",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "atsugi-rembrandt-hotel",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 403
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 586
+      },
+      "confirmed": true,
+      "notes": "※不思議の国の小嶋～コジマワンダーランド～"
+    },
+    {
+      "order": 3,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito",
+            "soma-takao",
+            "yukio-naya",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 669
+      },
+      "confirmed": true,
+      "notes": "※クレイモア"
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "yuki-ishida",
+            "rukiya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 503
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 617
+      },
+      "confirmed": true,
+      "notes": "※KIMIHIROが防衛に失敗、クリス・ブルックスが第1837代王者となる。"
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1379
+      },
+      "confirmed": true,
+      "notes": "※S.L.C.によるKIMIHIRO投下。クリスが防衛に失敗、KIMIHIROが第1838代王者となる。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a49dce343dc170002e4af14",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a49dce343dc170002e4af14",
+      "title": "レンブラントハイウェイシリーズ2026〜あゆコロシアム in Atsugi〜 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

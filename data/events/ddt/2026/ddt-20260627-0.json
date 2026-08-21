@@ -1,0 +1,124 @@
+{
+  "eventId": "ddt-20260627-0",
+  "promotionSlug": "ddt",
+  "name": "DDT×グランハマー 路上プロレス新橋\"武将横丁\"決戦",
+  "series": null,
+  "date": "2026-06-27",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-granhammer",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya",
+            "yuki-ishida",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 590
+      },
+      "confirmed": true,
+      "notes": "※正田のチカラKOBUムキムキ・オン・ザ・イス盛り"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 710
+      },
+      "confirmed": true,
+      "notes": "※サウナトランス・スプラッシュ。平田がアイアンマンヘビーメタル級王座の防衛に失敗、勝俣が第1835代王者となる。"
+    },
+    {
+      "order": 3,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "minoru-suzuki",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1225
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ボディープレス・オン・ザ・テーブル・フロム・ラダー"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a3f46ea33de2e000208a7a9",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a3f46ea33de2e000208a7a9",
+      "title": "DDT×グランハマー 路上プロレス新橋\"武将横丁\"決戦 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "eventId": "ddt-20260706-0",
+  "promotionSlug": "ddt",
+  "name": "超日本ビアガーデンプロレス",
+  "series": null,
+  "date": "2026-07-06",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sekimoto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shota"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1795
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ボディープレス。<　>内は入場順。リング外に転落の場合失格となるアウト・オブ・ザ・リングを採用。"
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mbm"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "miles-kal"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 461
+      },
+      "confirmed": true,
+      "notes": "※パッケージ・パイルドライバー"
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kuroshio-tokyo-japan",
+            "saito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gym-trainer-kotoka",
+            "marika-kobashi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1074
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hayabusa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ken-ohka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 548
+      },
+      "confirmed": true,
+      "notes": "※ファイアーバード ・スプラッシュ"
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "baramon-koji",
+            "baramon-shu",
+            "baramon-kei"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "ippanjin-munenori-sawa",
+            "fuminori-abe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 778
+      },
+      "confirmed": true,
+      "notes": "※ストーンコールド・スタナー"
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuji-nagata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "cima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1085
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a4b88c3a007410002784857",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a4b88c3a007410002784857",
+      "title": "超日本ビアガーデンプロレス | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}
