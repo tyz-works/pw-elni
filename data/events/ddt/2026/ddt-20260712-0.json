@@ -1,0 +1,206 @@
+{
+  "eventId": "ddt-20260712-0",
+  "promotionSlug": "ddt",
+  "name": "DDTを見てごらんグランシップ",
+  "series": null,
+  "date": "2026-07-12",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "shizuoka-granship-exchange-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 506
+      },
+      "confirmed": true,
+      "notes": "※ローリング・エルボーバット"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 500
+      },
+      "confirmed": true,
+      "notes": "※R・フィッシャーマンバスター"
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata",
+            "akito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 856
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 616
+      },
+      "confirmed": true,
+      "notes": "※串刺し式クレイモア"
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 800
+      },
+      "confirmed": true,
+      "notes": "※たけしとゆうやで創る未来への咆哮"
+    },
+    {
+      "order": 6,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shinya-aoki",
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1189
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a52f7736263790002bf307f",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a52f7736263790002bf307f",
+      "title": "DDTを見てごらんグランシップ | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

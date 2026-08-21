@@ -1,0 +1,274 @@
+{
+  "eventId": "stardom-20260814-0",
+  "promotionSlug": "stardom",
+  "name": "Sammy presents STARDOM 5★STAR GP 2026 in KOBE",
+  "series": null,
+  "date": "2026-08-14",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "kobe-sanbo-hall",
+  "attendance": 758,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 569
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 547
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ami-sohrei"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kian-furusawa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 476
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "lady-c"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mei-seira"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 269
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "starlight-kid"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "koguma"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 589
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "miyu-amasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "julia-hart"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 425
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hina"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 691
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "momo-watanabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "time-limit-draw",
+        "finishMoveSlug": null,
+        "durationSeconds": 900
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 9,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "suzu-suzuki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 715
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://wwr-stardom.com/event/20260814_kobe/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260814_kobe/",
+      "title": "Sammy presents STARDOM 5★STAR GP 2026 in KOBE | stardom",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

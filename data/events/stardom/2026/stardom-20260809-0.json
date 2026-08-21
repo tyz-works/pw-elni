@@ -1,0 +1,248 @@
+{
+  "eventId": "stardom-20260809-0",
+  "promotionSlug": "stardom",
+  "name": "Sammy presents STARDOM 5★STAR GP 2026 in SAPPORO Day2",
+  "series": null,
+  "date": "2026-08-09",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "sapporo-chateraise-gateaux-kingdom",
+  "attendance": 716,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sayaka-kurara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 448
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "azm"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akira-kurogane"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 459
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "lady-c",
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 645
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 520
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "itsuki-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 700
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "time-limit-draw",
+        "finishMoveSlug": null,
+        "durationSeconds": 900
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tomoka-inaba"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 310
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maki-itoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 785
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://wwr-stardom.com/event/20260809_sapporo2/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260809_sapporo2/",
+      "title": "Sammy presents STARDOM 5★STAR GP 2026 in SAPPORO Day2 | stardom",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "eventId": "ddt-20260621-0",
+  "promotionSlug": "ddt",
+  "name": "尾張WARS 2026",
+  "series": null,
+  "date": "2026-06-21",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "nagoya-chunichi-hall-conference",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "akito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 529
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "kumadori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuni",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 485
+      },
+      "confirmed": true,
+      "notes": "※きりもみ式セントーン"
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "rukiya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 407
+      },
+      "confirmed": true,
+      "notes": "※R・フィッシャーマンバスター"
+    },
+    {
+      "order": 4,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "toru-owashi",
+            "danshoku-dieno",
+            "super-sasadango-machine",
+            "kazuki-hirata",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 535
+      },
+      "confirmed": true,
+      "notes": "※ランニング・ダイビング・ヘッドバット。3勝2敗1分でS.L.C.の勝利。"
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D6人タッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 831
+      },
+      "confirmed": true,
+      "notes": "※たけしとゆうやで創る未来への咆哮。第60代王者組が5度目の防衛に成功。"
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT EXTREME選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 980
+      },
+      "confirmed": true,
+      "notes": "※第64代王者が2度目の防衛に成功。"
+    },
+    {
+      "order": 7,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-Dタッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1132
+      },
+      "confirmed": true,
+      "notes": "※スワンダイブ式蒼魔刀。第89代王者組が2度目の防衛に成功。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a3622e067563d000260dccc",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a3622e067563d000260dccc",
+      "title": "尾張WARS 2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "eventId": "ddt-20260617-0",
+  "promotionSlug": "ddt",
+  "name": "そうだ！ビアガーデンプロレスに行こう2026",
+  "series": null,
+  "date": "2026-06-17",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-ueno-park-outdoor-stage",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tomomitsu-matsunaga",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 495
+      },
+      "confirmed": true,
+      "notes": "※マンブリ"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 10
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "antonio-honda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 478
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuya-koroku"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 377
+      },
+      "confirmed": true,
+      "notes": "※第1827代王者が防衛に成功。"
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ilusion",
+            "daisuke-sasaki",
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida",
+            "rukiya",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "swanton-bomb",
+        "durationSeconds": 617
+      },
+      "confirmed": true,
+      "notes": "※スワントーンボム。試合中に反則行為をした場合、反則をした選手を擁するチームのキャプテンが酒を1杯飲まなくてはいけない特別ルール。"
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 481
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "jun-akiyama"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1071
+      },
+      "confirmed": true,
+      "notes": "※蒼魔刀"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a325a609d050e000202e2ef",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a325a609d050e000202e2ef",
+      "title": "そうだ！ビアガーデンプロレスに行こう2026 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

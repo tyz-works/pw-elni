@@ -1,0 +1,308 @@
+{
+  "eventId": "ddt-20260813-0",
+  "promotionSlug": "ddt",
+  "name": "闘うビアガーデン2026 in SHINJUKU【FINAL COUNTDOWN3】",
+  "series": null,
+  "date": "2026-08-13",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoshihiko"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 880
+      },
+      "confirmed": true,
+      "notes": "※MAOが防衛に失敗、勝俣が第1896代王者となる。"
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "tomomitsu-matsunaga"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 436
+      },
+      "confirmed": true,
+      "notes": "※ローリング・エルボーバット"
+    },
+    {
+      "order": 3,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "akito",
+            "soma-takao",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 17
+      },
+      "confirmed": true,
+      "notes": "※ラリアット"
+    },
+    {
+      "order": 4,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "akito",
+            "soma-takao",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 456
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "harashima",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hideki-okatani",
+            "mj-paul"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 689
+      },
+      "confirmed": true,
+      "notes": "※垂直落下式ブレーンバスター"
+    },
+    {
+      "order": 6,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "a-yazawa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 817
+      },
+      "confirmed": true,
+      "notes": "※ペディグリー"
+    },
+    {
+      "order": 7,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura",
+            "masami-inahata",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 744
+      },
+      "confirmed": true,
+      "notes": "※きりもみ式セントーン。夢虹がアイアンマンヘビーメタル級王座の防衛に失敗、隈取が第1898代王者となる。"
+    },
+    {
+      "order": 8,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "baramon-sasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "super-sasadango-machine"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1112
+      },
+      "confirmed": true,
+      "notes": "※ウルトラジャム"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a7d7f352f73f70002937bcd",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a7d7f352f73f70002937bcd",
+      "title": "闘うビアガーデン2026 in SHINJUKU【FINAL COUNTDOWN3】 | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}

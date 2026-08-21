@@ -1,0 +1,247 @@
+{
+  "eventId": "ddt-20260814-0",
+  "promotionSlug": "ddt",
+  "name": "最後の新宿FACEビアガーデンプロレス",
+  "series": null,
+  "date": "2026-08-14",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tetsuya-koda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hisaya-imabayashi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 609
+      },
+      "confirmed": true,
+      "notes": "※裏拳"
+    },
+    {
+      "order": 2,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "tomomitsu-matsunaga",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "naomi-yoshimura",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 528
+      },
+      "confirmed": true,
+      "notes": "※DDT"
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 717
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 640
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "keisuke-ishii",
+            "danshoku-dieno",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuki-iino",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "lariat",
+        "durationSeconds": 466
+      },
+      "confirmed": true,
+      "notes": "※ラリアット。勝俣がアイアンマンヘビーメタル級王座の防衛に失敗、ディーノが第1900代王者となるとともに、勝俣の持ついつでもどこでも挑戦権（赤）がディーノに移動。"
+    },
+    {
+      "order": 6,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "nise-daisuke-sasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daishion-sasaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 662
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "yuki-ueno",
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "kanon",
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1457
+      },
+      "confirmed": true,
+      "notes": "※Jul.2"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a7ee68222848a00022ce78b",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a7ee68222848a00022ce78b",
+      "title": "最後の新宿FACEビアガーデンプロレス | ddt",
+      "retrievedAt": "2026-08-21"
+    }
+  ]
+}
