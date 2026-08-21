@@ -30,6 +30,8 @@ const REPORT = join(ROOT, '.cache', 'report.md');
 // 人間が一度見た食い違いの記録。data/ ではなくツール側に置く（サイトの
 // 内容ではなくパイプラインの運用情報なので）。
 const ACKNOWLEDGED = join(ROOT, 'tools', 'collect', 'acknowledged-conflicts.json');
+// 通知用の 1 行要約。レポート全文は長すぎて通知に載らない。
+const SUMMARY = join(ROOT, '.cache', 'summary.txt');
 
 const ADAPTERS = { ddt, stardom };
 
@@ -277,6 +279,16 @@ function stage(promotion, merged, existing, result) {
 // 外れるので、無限に回らないための歯止め。
 const MAX_DROP_ROUNDS = 10;
 
+function summaryLine(result) {
+  return [
+    `取り込み ${result.changed.length}`,
+    `conflict ${result.conflicts.length}`,
+    `unresolved ${result.unresolved.length}`,
+    `取りこぼし ${result.unparsed.length}`,
+    `失敗 ${result.failures.length}`,
+  ].join(' / ');
+}
+
 function validateStaging() {
   const v = spawnSync('node', [join(ROOT, 'tools', 'validate.mjs'), '--data', STAGING], { encoding: 'utf8' });
   return { ok: v.status === 0, out: (v.stdout ?? '') + (v.stderr ?? '') };
@@ -367,6 +379,7 @@ async function main() {
 
   mkdirSync(dirname(REPORT), { recursive: true });
   writeFileSync(REPORT, renderReport(result), 'utf8');
+  writeFileSync(SUMMARY, `${summaryLine(result)}\n`, 'utf8');
   process.stdout.write(`\nレポート: ${REPORT}\n`);
   process.exit(result.failures.length ? 1 : 0);
 }

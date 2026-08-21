@@ -1,7 +1,10 @@
 name: collect
 
-# cron は Phase C が安定してから足す。今は手動実行のみ。
 on:
+  # 毎日 8:00 JST。前日の興行結果が公式に掲載された頃に回す。
+  # GH Actions の cron は負荷により数分〜十数分遅れることがある。
+  schedule:
+    - cron: '0 23 * * *'
   workflow_dispatch:
     inputs:
       promotion:
@@ -21,6 +24,11 @@ jobs:
   collect:
     name: 収集して PR を出す
     runs-on: ubuntu-latest
+    # 通知の有無を step の if で判定するため、job レベルに置く
+    # （step 自身の env は if から参照できない）。
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - uses: actions/checkout@v7
 
@@ -53,10 +61,18 @@ jobs:
           fi
         continue-on-error: true
 
+      # 自動マージするので、人間のレビューの代わりに門をここで通す。
+      # GITHUB_TOKEN が作った PR は workflow を起動しないため、PR 側では
+      # CI が回らない。ここを通ったものだけをマージする。
+      # npm run build は先に npm run validate を走らせる。
+      - name: 検証とビルド
+        run: npm run build
+
       # レポートは公式サイト由来の文字列を含む。GITHUB_OUTPUT に流すと
       # 区切り文字を書かれたときに任意の output を差し込めるので、
       # ファイルのまま body-path で渡す。
       - name: PR を作る
+        id: pr
         uses: peter-evans/create-pull-request@v7
         with:
           branch: collect/auto
@@ -69,3 +85,33 @@ jobs:
             tools/collect による自動収集。詳細は PR 本文のレポートを参照。
           add-paths: data/
           delete-branch: false
+
+      # 差分が無ければ PR は作られない。その場合は何もしない。
+      - name: PR をマージ
+        if: steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.pr.outputs.pull-request-number }}
+        run: gh pr merge "$PR_NUMBER" --squash --delete-branch
+
+      # 通知は失敗してもバッチ本体を落とさない（CLAUDE.md の運用ルール）。
+      # 本文は jq で組み立てる。レポート由来の文字列をシェルや JSON に
+      # 直接埋めない。
+      - name: Telegram に通知
+        if: always() && env.TELEGRAM_BOT_TOKEN != ''
+        continue-on-error: true
+        env:
+          SUMMARY_FILE: .cache/summary.txt
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          SUMMARY="$(cat "$SUMMARY_FILE" 2>/dev/null || echo '要約なし（収集前に落ちた可能性）')"
+          TEXT="$(printf '%s\n%s\n%s\n%s' \
+            "pw-elni 収集 [$JOB_STATUS]" "$SUMMARY" "${PR_URL:-差分なし}" "$RUN_URL")"
+          curl -sS --max-time 30 -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H 'Content-Type: application/json' \
+            -d "$(jq -n --arg chat "$TELEGRAM_CHAT_ID" --arg text "$TEXT" \
+                  '{chat_id: $chat, text: $text, disable_web_page_preview: true}')" \
+            > /dev/null
