@@ -30,6 +30,12 @@ const ADAPTERS = { ddt };
 
 const MATCH_TYPE_BY_SIZE = { 1: 'singles', 2: 'tag', 3: 'six-man-tag', 4: 'eight-man-tag' };
 
+function inferMatchType(sideCount, sizeOfFirstSide) {
+  if (sideCount === 1) return 'battle-royal';
+  if (sideCount > 2) return 'multi-man';
+  return MATCH_TYPE_BY_SIZE[sizeOfFirstSide] ?? 'multi-man';
+}
+
 function parseArgs(argv) {
   const get = (flag) => {
     const i = argv.indexOf(flag);
@@ -93,9 +99,10 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
       });
       return { wrestlerIds, teamName: s.teamName };
     });
+    // 陣営が 3 つ以上なら人数に関係なく multi-man。1 人ずつの 3 way を
+    // singles にすると検証器に落とされる。
     const size = sides[0]?.wrestlerIds.length ?? 0;
-    const matchType = m.matchType
-      ?? (sides.length === 1 ? 'battle-royal' : (MATCH_TYPE_BY_SIZE[size] ?? 'multi-man'));
+    const matchType = m.matchType ?? inferMatchType(sides.length, size);
 
     // 技名は完全一致だけで解決する。解決できなければ null。
     // 未登録の技を勝手に作らないのは選手と同じ方針（CLAUDE.md）。
@@ -242,6 +249,22 @@ function stage(promotion, merged, existing, result) {
   result.changed.push({ promotion, eventId: merged.eventId, eventName: merged.name, fields });
 }
 
+// 検証に落ちた興行を外して再検証する回数の上限。落ちるたびに 1 件ずつ
+// 外れるので、無限に回らないための歯止め。
+const MAX_DROP_ROUNDS = 10;
+
+function validateStaging() {
+  const v = spawnSync('node', [join(ROOT, 'tools', 'validate.mjs'), '--data', STAGING], { encoding: 'utf8' });
+  return { ok: v.status === 0, out: (v.stdout ?? '') + (v.stderr ?? '') };
+}
+
+// 検証器はファイルごとに見出し行を出す。そこから落ちた興行のパスを拾う。
+function failingFiles(out) {
+  return out.split('\n')
+    .map((l) => /^ {2}(\/.*\.json)$/.exec(l)?.[1])
+    .filter(Boolean);
+}
+
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
@@ -259,10 +282,32 @@ async function main() {
 
   // staging に対して既存の検証器を掛ける。門は 1 つのまま
   if (result.changed.length) {
-    const v = spawnSync('node', [join(ROOT, 'tools', 'validate.mjs'), '--data', STAGING], { encoding: 'utf8' });
-    process.stdout.write(v.stdout ?? '');
-    process.stderr.write(v.stderr ?? '');
-    if (v.status !== 0) {
+    let v = validateStaging();
+
+    // 検証に落ちた興行だけを外して再検証する。1 興行の異常で他の興行まで
+    // 止めない（部分失敗を許容する設計）。外した興行はレポートに載る。
+    for (let i = 0; !v.ok && i < MAX_DROP_ROUNDS; i++) {
+      const bad = new Set(failingFiles(v.out));
+      const dropped = result.changed.filter((c) => bad.has(eventPath(STAGING, c.promotion, c.eventId)));
+      // 興行と紐づかない失敗（孤立参照など）は切り分けられないので全体を止める
+      if (!dropped.length) break;
+      for (const c of dropped) {
+        const staged = eventPath(STAGING, c.promotion, c.eventId);
+        const original = eventPath(DATA, c.promotion, c.eventId);
+        if (existsSync(original)) cpSync(original, staged);
+        else rmSync(staged, { force: true });
+        result.failures.push({
+          promotion: c.promotion, step: 'validate',
+          message: `${c.eventId}: 検証に落ちたので反映しない`,
+        });
+      }
+      const droppedIds = new Set(dropped.map((c) => c.eventId));
+      result.changed = result.changed.filter((c) => !droppedIds.has(c.eventId));
+      v = validateStaging();
+    }
+
+    process.stdout.write(v.out);
+    if (!v.ok) {
       result.failures.push({ promotion: '(all)', step: 'validate', message: '検証に失敗したため data/ に反映しない' });
       result.changed = [];
     }
