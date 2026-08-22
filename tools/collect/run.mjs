@@ -48,7 +48,8 @@ function parseArgs(argv) {
     return i === -1 ? null : argv[i + 1];
   };
   return {
-    promotion: get('--promotion'),
+    // カンマ区切りで複数指定できる（--promotion ddt,stardom）
+    promotion: get('--promotion')?.split(',').map((x) => x.trim()).filter(Boolean) ?? null,
     step: get('--step'),
     noLlm: argv.includes('--no-llm'),
     dryRun: argv.includes('--dry-run'),
@@ -362,7 +363,7 @@ async function main() {
   mkdirSync(dirname(STAGING), { recursive: true });
   cpSync(DATA, STAGING, { recursive: true });
 
-  const promotions = opts.promotion ? [opts.promotion] : Object.keys(ADAPTERS);
+  const promotions = opts.promotion ?? Object.keys(ADAPTERS);
   for (const p of promotions) {
     if (!ADAPTERS[p]) { result.failures.push({ promotion: p, step: 'setup', message: 'アダプタが無い' }); continue; }
     await runPromotion(p, opts, result); // 1 団体が落ちても他は止めない
