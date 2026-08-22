@@ -1,30 +1,16 @@
 {
   "slug": "maika",
   "name": "舞華",
-  "nameEn": "MAIKA",
-  "aliases": [
-    "MAIKA",
-    "Maika"
-  ],
+  "nameEn": null,
+  "aliases": [],
   "realName": null,
   "birthDate": null,
-  "birthplace": "福岡県",
-  "debutDate": "2019-05-07",
-  "heightCm": 162,
-  "weightKg": 65,
-  "status": "active",
-  "promotionSlugs": [
-    "stardom"
-  ],
-  "finishingMoveSlugs": [
-    "michinoku-driver-2",
-    "avalanche-brainbuster"
-  ],
-  "sources": [
-    {
-      "url": "https://wwr-stardom.com/fighters/",
-      "title": "選手紹介 | スターダム✪STARDOM",
-      "retrievedAt": "2026-08-18"
-    }
-  ]
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": []
 }

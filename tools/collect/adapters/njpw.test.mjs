@@ -49,3 +49,67 @@ test('本文が無ければ取りこぼしも出さない', () => {
   assert.equal(event.date, '2026-08-16');
   assert.deepEqual(unparsed, []);
 });
+
+// RESULT セクションには構造化された対戦カードがある。ここは LLM に
+// 渡さず決定論的に取る。渡す量が減り、LLM の出力を検算する材料にもなる。
+test('カードから試合順・制限時間・選手名・時間・決まり手を取る', () => {
+  const { event } = parse(RAW, TARGET);
+  assert.equal(event.cardMatches.length, 2);
+  assert.deepEqual(event.cardMatches[0], {
+    order: 1,
+    timeLimitMinutes: 20,
+    subtitle: null,
+    names: ['架空三郎', '架空四郎', '架空五郎', '架空六郎'],
+    durationSeconds: 330,
+    finishText: 'サンプルドライバー→体固め',
+  });
+});
+
+test('星取の行を選手名にしない', () => {
+  const { event } = parse(RAW, TARGET);
+  assert.deepEqual(event.cardMatches[1].names, ['架空太郎', '架空次郎']);
+});
+
+test('王座戦の副題を拾う', () => {
+  const { event } = parse(RAW, TARGET);
+  assert.equal(event.cardMatches[1].subtitle, '『サンプル王座』選手権試合');
+  assert.equal(event.cardMatches[0].subtitle, null);
+});
+
+// セレモニーなど試合でない項目も「試合詳細を見る」で終わる。
+test('見出しが第N試合でないブロックはカードに数えない', () => {
+  const { event } = parse(RAW, TARGET);
+  assert.ok(!event.cardMatches.some((m) => m.names.includes('架空七郎')));
+});
+
+// LLM には陣営分けと勝敗だけを任せる。判断材料としてカードも渡す。
+test('LLM に渡す断片にカードと記事本文の両方を入れる', () => {
+  const { unparsed } = parse(RAW, TARGET);
+  assert.equal(unparsed.length, 1);
+  assert.match(unparsed[0], /第1試合は架空三郎/, '記事本文が入っていない');
+  assert.match(unparsed[0], /5分30秒/, 'カードが入っていない');
+});
+
+// 引き分け後の延長戦は「第7試合（延長戦）」として同じ番号で載る。
+// どちらも本物の試合だが、order が重複すると検証器に落とされる。
+test('試合順が重複したら次の空き番号を使う', () => {
+  const raw = RAW.replace(
+    '会社概要',
+    [
+      '第2試合 60分1本勝負（延長戦）',
+      '',
+      '架空太郎',
+      '',
+      '架空次郎',
+      '',
+      '0分18秒 サンプルスープレックスホールド',
+      '',
+      '試合詳細を見る',
+      '',
+      '会社概要',
+    ].join('\n'),
+  );
+  const { event } = parse(raw, TARGET);
+  assert.deepEqual(event.cardMatches.map((m) => m.order), [1, 2, 3]);
+  assert.equal(event.cardMatches[2].durationSeconds, 18);
+});

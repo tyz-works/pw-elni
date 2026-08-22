@@ -2,6 +2,10 @@
   "slug": "tokyo-ota-city-general-gymnasium",
   "name": "大田区総合体育館",
   "nameEn": "Ota City General Gymnasium",
+  "aliases": [
+    "EBARA WAVE アリーナおおた",
+    "東京・EBARA WAVE アリーナおおた（大田区総合体育館）"
+  ],
   "city": "東京",
   "prefecture": "東京都",
   "capacity": null,

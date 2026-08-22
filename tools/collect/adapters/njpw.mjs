@@ -14,6 +14,31 @@ const RESULT_ID_RE = /\/tournament\/result\/(\d+)/;
 // 記事本文の段落。ナビやフッタの短い行と区別する。
 const PROSE_MIN_LENGTH = 30;
 
+// カードの見出し。「第1試合 20分1本勝負」
+const CARD_HEAD = /^第(\d+)試合\s*(?:(\d+)分)?/;
+
+// カードの各項目の終わり。
+const CARD_END = '試合詳細を見る';
+
+// 「12分45秒 サンプルロック」
+const CARD_TIME = /^(\d+)分(\d+)秒\s*(.*)$/;
+
+// 星取「（1勝0敗＝2点）」。選手名ではない。
+// 閉じ括弧の後ろにアイコン由来の文字が付くことがある（「（3勝6敗＝6点）i」）。
+// 行末で縛らず、括弧で始まることで判定する。
+const CARD_RECORD = /^[（(][^）)]*[）)]/;
+
+// 「<チャンピオン>」のようなラベル。選手名ではない。
+const CARD_LABEL = /^[<＜].*[>＞]$/;
+
+// 試合の副題。『G1 CLIMAX 36』Bブロック公式戦 / 2vs1 変則マッチ /
+// 真壁刀義相模原凱旋試合 のように、必ず「マッチ」「試合」「戦」で終わるか
+// 『』で囲まれる。選手名がこの形になることは無い。
+// 取りこぼしても、LLM の出力とカードの突き合わせで検出できる（そこで
+// 「カードに無い選手名」として弾かれ、レポートに出る）。
+// 「タイガーマスク引退試合Ⅱ」のように通し番号が付くことがある。
+const CARD_SUBTITLE = /^『.*』|(?:マッチ|試合|戦)[ⅠⅡⅢⅣⅤⅥ0-9０-９]*$/;
+
 // 試合の記述ではない行。LLM に渡さない。
 const NOT_PROSE = [
   /プレミアム入会/,
@@ -47,6 +72,8 @@ export function parse(raw, target) {
   const date = parseDate(lines);
   const { doorsOpen, bellTime } = parseTimes(lines);
   const prose = parseProse(lines);
+  const cardMatches = parseCard(lines);
+  const cardText = renderCard(lines);
 
   const event = {
     eventId: date ? `njpw-${date.replaceAll('-', '')}-0` : null,
@@ -62,9 +89,14 @@ export function parse(raw, target) {
     confirmed: true,
     officialUrl: target.url,
     sources: [],       // run.mjs が retrievedAt 付きで足す
-    matches: [],       // 記事本文からの組み立ては LLM の仕事
+    matches: [],       // 陣営分けと勝敗は LLM の仕事。run.mjs が組み立てる
+    cardMatches,       // カードから決定論的に取れた分。run.mjs が検算に使う
   };
-  return { event, unparsed: prose ? [prose] : [] };
+
+  // LLM にはカードと記事本文の両方を渡す。カードで正確な表記と試合順が
+  // 分かり、本文で陣営分けと勝敗が分かる。
+  const fragment = [cardText, prose].filter(Boolean).join('\n\n');
+  return { event, unparsed: fragment ? [fragment] : [] };
 }
 
 const afterLabel = (lines, label) => {
@@ -100,6 +132,70 @@ function parseAttendance(lines) {
   const l = afterLabel(lines, '観衆');
   const m = l && /^([\d,]+)\s*人/.exec(l);
   return m ? Number(m[1].replaceAll(',', '')) : null;
+}
+
+// RESULT セクションを「試合詳細を見る」で切る。
+function cardBlocks(lines) {
+  const start = lines.indexOf('RESULT');
+  if (start === -1) return [];
+  const blocks = [];
+  let cur = [];
+  for (const l of lines.slice(start + 1)) {
+    if (l === CARD_END) {
+      if (cur.some(Boolean)) blocks.push(cur);
+      cur = [];
+      continue;
+    }
+    cur.push(l);
+  }
+  return blocks;
+}
+
+// カードから決定論的に取れるもの。陣営の分かれ目と勝敗は書かれていない
+// （VS も ＆ も ○● も無く、選手名が平坦に並ぶだけ）。そこは LLM に回す。
+function parseCard(lines) {
+  const out = [];
+  const used = new Set();
+  for (const block of cardBlocks(lines)) {
+    const head = block.find(Boolean) ?? '';
+    const hm = CARD_HEAD.exec(head);
+    if (!hm) continue; // セレモニーなど試合でない項目
+
+    const body = block.slice(block.indexOf(head) + 1).filter(Boolean);
+    const timeIdx = body.findIndex((l) => CARD_TIME.test(l));
+    const tm = timeIdx === -1 ? null : CARD_TIME.exec(body[timeIdx]);
+
+    const beforeTime = body.slice(0, timeIdx === -1 ? undefined : timeIdx);
+    const subtitle = beforeTime.find((l) => CARD_SUBTITLE.test(l)) ?? null;
+
+    const names = beforeTime.filter(
+      (l) => !CARD_RECORD.test(l) && !CARD_LABEL.test(l) && !CARD_SUBTITLE.test(l),
+    );
+
+    // 引き分け後の延長戦は「第7試合（延長戦）」と同じ番号で載る。どちらも
+    // 本物の試合だが、order が重複すると検証器に落とされる。公式の番号を
+    // 使いつつ、埋まっていたら次の空き番号にずらす。
+    let order = Number(hm[1]);
+    while (used.has(order)) order += 1;
+    used.add(order);
+
+    out.push({
+      order,
+      timeLimitMinutes: hm[2] ? Number(hm[2]) : null,
+      subtitle,
+      names,
+      durationSeconds: tm ? Number(tm[1]) * 60 + Number(tm[2]) : null,
+      finishText: tm ? (tm[3] || null) : null,
+    });
+  }
+  return out;
+}
+
+// LLM に渡すためにカードを平文へ戻す。切り出したブロックから組み直すので、
+// 最後の「試合詳細を見る」より後（フッタなど）は入らない。
+function renderCard(lines) {
+  const blocks = cardBlocks(lines).map((b) => b.filter(Boolean).join('\n'));
+  return blocks.length ? blocks.join('\n\n') : null;
 }
 
 // 記事本文だけを集める。ナビ・フッタ・有料導線は落とす。

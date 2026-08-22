@@ -15,7 +15,8 @@ import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
-import { createExtractor } from './core/llm.mjs';
+import { createExtractor, PROMPT_VERSION } from './core/llm.mjs';
+import { mergeLlmMatch, pairWithCards } from './core/llm-merge.mjs';
 import * as ddt from './adapters/ddt.mjs';
 import * as stardom from './adapters/stardom.mjs';
 import * as njpw from './adapters/njpw.mjs';
@@ -77,32 +78,6 @@ function buildMoveIndex() {
     name: m.name,
     aliases: m.nameEn ? [m.nameEn] : [],
   }))).index;
-}
-
-// LLM が返す形 -> アダプタが返す形。LLM は表示名しか返さないので、
-// slug への解決はこの後の resolve 段が行う。
-function llmMatchToRaw(m, fallbackOrder) {
-  const winner = Number.isInteger(m.winnerSideIndex) && m.winnerSideIndex >= 0
-    ? m.winnerSideIndex
-    : null;
-  const decision = m.decision ?? 'unknown';
-  // 勝者が分からない試合は結果ごと未確定にする。スキーマは「決着なし」を
-  // draw 系でしか表せず、unknown + 勝者なしは検証器に落とされる。
-  // 推測で勝者を作らないほうを採る。
-  const drawish = ['draw', 'time-limit-draw', 'no-contest'];
-  const result = winner === null && !drawish.includes(decision)
-    ? null
-    : { winnerSideIndex: winner, decision, finishText: null, durationSeconds: null };
-
-  return {
-    order: Number.isInteger(m.order) && m.order > 0 ? m.order : fallbackOrder,
-    matchType: null,
-    sides: (m.sides ?? []).map((s) => ({ names: s.names ?? [], teamName: null })),
-    titleName: m.titleName || null,
-    timeLimitMinutes: null,
-    result,
-    notes: null,
-  };
 }
 
 function eventPath(base, promotion, eventId) {
@@ -248,28 +223,49 @@ async function runPromotion(promotion, opts, result) {
       // 抽出結果を先に見る。記事は公開後に変わらないので、呼び直しても
       // 同じ結果に金を払うだけになる。取り込めたかどうかとは無関係に残す
       // （未解決の名前があって書けない興行こそ、毎日呼び直してしまう）。
-      const cached = opts.noLlm ? null : readExtraction(promotion, id);
-      if (cached?.matches?.length) {
-        for (const m of cached.matches) rawEvent.matches.push(llmMatchToRaw(m, rawEvent.matches.length + 1));
-        result.llmFilled.push({
-          promotion, eventId: rawEvent.eventId,
-          order: cached.matches.length, model: `${cached.model} (キャッシュ)`,
-        });
-      } else {
-        for (const fragment of unparsed) {
-          if (!opts.noLlm && extractor) {
-            const filled = await extractor.extract(fragment);
-            if (filled?.length) {
-              writeExtraction(promotion, id, { model: extractor.model, matches: filled });
-              for (const m of filled) rawEvent.matches.push(llmMatchToRaw(m, rawEvent.matches.length + 1));
-              result.llmFilled.push({
-                promotion, eventId: rawEvent.eventId,
-                order: filled.length, model: extractor.model,
-              });
-              continue;
-            }
+      let hasUnparsed = false;
+
+      // 抽出結果を先に見る。記事は公開後に変わらないので、呼び直しても
+      // 同じ結果に金を払うだけになる。取り込めたかどうかとは無関係に残す
+      // （未解決の名前があって書けない興行こそ、毎日呼び直してしまう）。
+      // 版が違うキャッシュは使わない。プロンプトを変えた後に古い結果を
+      // 使い続けると、直したはずの誤りが残る。
+      const stored = opts.noLlm ? null : readExtraction(promotion, id);
+      const cached = stored?.promptVersion === PROMPT_VERSION ? stored : null;
+      let llmMatches = cached?.matches ?? null;
+      let usedModel = cached ? `${cached.model} (キャッシュ)` : null;
+
+      if (!llmMatches && !opts.noLlm && extractor && unparsed.length) {
+        const filled = await extractor.extract(unparsed.join('\n\n'));
+        if (filled?.length) {
+          writeExtraction(promotion, id, { promptVersion: PROMPT_VERSION, model: extractor.model, matches: filled });
+          llmMatches = filled;
+          usedModel = extractor.model;
+        }
+      }
+
+      if (llmMatches?.length) {
+        // ここが検算。カードと突き合わせて合わない試合は採らない。
+        let taken = 0;
+        for (const { llm, card } of pairWithCards(llmMatches, rawEvent.cardMatches ?? [])) {
+          const { match, problems } = mergeLlmMatch(llm, card);
+          for (const message of problems) {
+            result.failures.push({ promotion, step: 'extract', message: `${rawEvent.eventId}: ${message}` });
           }
-          // LLM が無い / 補えなかった断片は人間に上げる。黙って捨てない。
+          if (match) {
+            rawEvent.matches.push(match);
+            taken += 1;
+          }
+        }
+        if (taken) {
+          result.llmFilled.push({ promotion, eventId: rawEvent.eventId, order: taken, model: usedModel });
+        }
+      }
+
+      // 組み立てられなかった分は人間に上げる。黙って捨てない。
+      if (!rawEvent.matches.length) {
+        for (const fragment of unparsed) {
+          hasUnparsed = true;
           result.unparsed.push({ promotion, eventId: rawEvent.eventId, text: fragment });
         }
       }
@@ -292,6 +288,13 @@ async function runPromotion(promotion, opts, result) {
       result.unresolved.push(...unresolved);
 
       event.sources = [{ url, title: `${event.name} | ${promotion}`, retrievedAt: today() }];
+
+      // 試合が 1 つも取れず、取りこぼしが残っている興行は書かない。
+      // 空のカードで書くと「対戦カード未発表」と見分けが付かなくなる。
+      // 実際には抽出に失敗しただけで、公式には結果が載っている。
+      if (!event.matches.length && hasUnparsed) {
+        continue;
+      }
 
       const p = eventPath(DATA, promotion, event.eventId);
       const existing = existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null;
@@ -423,6 +426,12 @@ async function main() {
       mkdirSync(dirname(to), { recursive: true });
       cpSync(from, to);
     }
+  }
+
+  // LLM の失敗理由をレポートに出す。握り潰すと「補えなかった」と
+  // 「そもそも呼べていない」が区別できない。
+  for (const message of new Set(extractor?.errors() ?? [])) {
+    result.failures.push({ promotion: '(llm)', step: 'extract', message });
   }
 
   // 一度見た食い違いは黙らせる。--acknowledge を付けた実行で記録する。

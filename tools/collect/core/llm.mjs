@@ -14,6 +14,9 @@ const ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models';
 
 const DEFAULT_MODEL = 'gemini-3.7-flash';
 
+// プロンプトを変えたら上げる。古い抽出結果を黙って使い続けないための版。
+export const PROMPT_VERSION = 2;
+
 // 1 回の実行で呼ぶ上限。取りこぼしが急に増えても課金が跳ねないための歯止め。
 const DEFAULT_MAX_CALLS = 30;
 
@@ -59,14 +62,17 @@ export const MATCH_SCHEMA = {
 
 const INSTRUCTION = [
   'あなたはプロレスの試合結果を構造化するツールです。',
-  '与えられた記事本文から、実際に行われた試合だけを JSON 配列で返してください。',
+  '公式の対戦カードと、同じ大会の記事本文を渡します。',
+  'カードには出場選手が並んでいますが、どちらの陣営かと勝敗が書かれていません。',
+  '記事本文を読んで、各試合の陣営分けと勝者を JSON 配列で返してください。',
   '',
   '規則:',
-  '- 選手名は本文に書かれたとおりの文字列をそのまま返す。ローマ字にしない。',
+  '- order はカードの「第N試合」の番号に合わせる。カードに無い試合を作らない。',
+  '- 選手名は**カードに書かれたとおりの文字列**をそのまま返す。ローマ字にしない。',
+  '- カードに並ぶ選手を過不足なく sides に振り分ける。1 人も落とさない。増やさない。',
+  '- 勝った側の陣営を winnerSideIndex に。本文から読み取れなければ -1。',
   '- 本文に書かれていないことを補わない。分からない決着は "unknown"。',
-  '- 勝者が決まらない試合の winnerSideIndex は -1。',
   '- 記事の感想・次回予告・入場や煽りの描写は試合ではない。含めない。',
-  '- 試合が 1 つも書かれていなければ空配列を返す。',
 ].join('\n');
 
 /** @returns {object} generateContent のリクエストボディ */
@@ -106,13 +112,23 @@ export function createExtractor({ apiKey, model = DEFAULT_MODEL, maxCalls = DEFA
   if (!apiKey) return null;
 
   let calls = 0;
+  const errors = [];
+
+  // 記録に鍵を残さない。URL やエラー文に混ざることがある。
+  const scrub = (s) => String(s).replaceAll(apiKey, '***');
+  const note = (msg) => { errors.push(scrub(msg).slice(0, 300)); };
 
   return {
     model,
     calls: () => calls,
+    /** 失敗の理由。握り潰すと「補えなかった」と「呼べていない」が区別できない。 */
+    errors: () => errors.slice(),
     /** @returns {Promise<object[]|null>} 補えなかったときは null */
     async extract(text) {
-      if (calls >= maxCalls) return null;
+      if (calls >= maxCalls) {
+        note(`1 回の実行で呼べる上限 ${maxCalls} 件に達した`);
+        return null;
+      }
       calls += 1;
 
       const url = `${ENDPOINT}/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
@@ -124,9 +140,15 @@ export function createExtractor({ apiKey, model = DEFAULT_MODEL, maxCalls = DEFA
           signal: AbortSignal.timeout(TIMEOUT_MS),
         });
         // 失敗しても例外を投げない。1 団体の失敗で他を止めないため。
-        if (!res.ok) return null;
-        return parseResponse(await res.json());
-      } catch {
+        if (!res.ok) {
+          note(`${model}: HTTP ${res.status} ${await res.text().catch(() => '')}`);
+          return null;
+        }
+        const matches = parseResponse(await res.json());
+        if (!matches.length) note(`${model}: 試合を 1 つも返さなかった`);
+        return matches;
+      } catch (e) {
+        note(`${model}: ${e.message}`);
         return null;
       }
     },

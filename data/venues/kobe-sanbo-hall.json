@@ -1,7 +1,10 @@
 {
   "slug": "kobe-sanbo-hall",
-  "name": "神戸サンボーホール 2階大展示場",
+  "name": "神戸サンボーホール",
   "nameEn": null,
+  "aliases": [
+    "神戸サンボーホール 2階大展示場"
+  ],
   "city": "神戸",
   "prefecture": "兵庫県",
   "capacity": null,

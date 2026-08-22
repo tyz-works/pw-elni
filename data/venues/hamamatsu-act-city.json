@@ -1,7 +1,10 @@
 {
   "slug": "hamamatsu-act-city",
-  "name": "アクトシティ浜松 展示イベントホール第2ブロック",
+  "name": "アクトシティ浜松",
   "nameEn": null,
+  "aliases": [
+    "アクトシティ浜松 展示イベントホール第2ブロック"
+  ],
   "city": "浜松",
   "prefecture": "静岡県",
   "capacity": null,

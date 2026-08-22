@@ -100,3 +100,20 @@ test('入力を書き換えない', () => {
   merge(existing, { matches: [{ order: 1, notes: 'x' }] }, SRC);
   assert.equal(JSON.stringify(existing), frozen);
 });
+
+// wrestlerIds は集合。並び順に意味は無いので、順序違いを食い違いにしない。
+// 公式の並びは記事ごとに変わるため、放置すると毎回同じ conflict が出る。
+test('wrestlerIds の並び順違いは食い違いにしない', () => {
+  const existing = { matches: [{ order: 1, sides: [{ wrestlerIds: ['a', 'b', 'c'], teamName: null }] }] };
+  const incoming = { matches: [{ order: 1, sides: [{ wrestlerIds: ['c', 'a', 'b'], teamName: null }] }] };
+  const { merged, conflicts } = merge(existing, incoming);
+  assert.deepEqual(conflicts, []);
+  assert.deepEqual(merged.matches[0].sides[0].wrestlerIds, ['a', 'b', 'c'], '既存の並びを保つ');
+});
+
+test('顔ぶれが違えば食い違いとして報告する', () => {
+  const existing = { matches: [{ order: 1, sides: [{ wrestlerIds: ['a', 'b'], teamName: null }] }] };
+  const incoming = { matches: [{ order: 1, sides: [{ wrestlerIds: ['a', 'z'], teamName: null }] }] };
+  const { conflicts } = merge(existing, incoming);
+  assert.equal(conflicts.length, 1);
+});
