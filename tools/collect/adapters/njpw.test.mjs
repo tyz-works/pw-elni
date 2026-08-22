@@ -89,3 +89,27 @@ test('LLM に渡す断片にカードと記事本文の両方を入れる', () =
   assert.match(unparsed[0], /第1試合は架空三郎/, '記事本文が入っていない');
   assert.match(unparsed[0], /5分30秒/, 'カードが入っていない');
 });
+
+// 引き分け後の延長戦は「第7試合（延長戦）」として同じ番号で載る。
+// どちらも本物の試合だが、order が重複すると検証器に落とされる。
+test('試合順が重複したら次の空き番号を使う', () => {
+  const raw = RAW.replace(
+    '会社概要',
+    [
+      '第2試合 60分1本勝負（延長戦）',
+      '',
+      '架空太郎',
+      '',
+      '架空次郎',
+      '',
+      '0分18秒 サンプルスープレックスホールド',
+      '',
+      '試合詳細を見る',
+      '',
+      '会社概要',
+    ].join('\n'),
+  );
+  const { event } = parse(raw, TARGET);
+  assert.deepEqual(event.cardMatches.map((m) => m.order), [1, 2, 3]);
+  assert.equal(event.cardMatches[2].durationSeconds, 18);
+});

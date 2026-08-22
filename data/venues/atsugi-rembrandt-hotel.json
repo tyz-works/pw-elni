@@ -1,7 +1,10 @@
 {
   "slug": "atsugi-rembrandt-hotel",
-  "name": "レンブラントホテル厚木・グランドバンケット相模",
+  "name": "レンブラントホテル厚木",
   "nameEn": null,
+  "aliases": [
+    "レンブラントホテル厚木・グランドバンケット相模"
+  ],
   "city": "厚木",
   "prefecture": "神奈川県",
   "capacity": null,

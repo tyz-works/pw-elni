@@ -155,6 +155,7 @@ function cardBlocks(lines) {
 // （VS も ＆ も ○● も無く、選手名が平坦に並ぶだけ）。そこは LLM に回す。
 function parseCard(lines) {
   const out = [];
+  const used = new Set();
   for (const block of cardBlocks(lines)) {
     const head = block.find(Boolean) ?? '';
     const hm = CARD_HEAD.exec(head);
@@ -171,8 +172,15 @@ function parseCard(lines) {
       (l) => !CARD_RECORD.test(l) && !CARD_LABEL.test(l) && !CARD_SUBTITLE.test(l),
     );
 
+    // 引き分け後の延長戦は「第7試合（延長戦）」と同じ番号で載る。どちらも
+    // 本物の試合だが、order が重複すると検証器に落とされる。公式の番号を
+    // 使いつつ、埋まっていたら次の空き番号にずらす。
+    let order = Number(hm[1]);
+    while (used.has(order)) order += 1;
+    used.add(order);
+
     out.push({
-      order: Number(hm[1]),
+      order,
       timeLimitMinutes: hm[2] ? Number(hm[2]) : null,
       subtitle,
       names,

@@ -11,13 +11,14 @@ import { buildIndex } from './aliases.mjs';
 const shortPrefecture = (p) => (p ? p.replace(/[都道府県]$/, '') : null);
 
 /**
- * @param {{slug: string, name: string, nameEn?: string|null, city?: string|null, prefecture?: string|null}[]} venues
+ * @param {{slug: string, name: string, nameEn?: string|null, aliases?: string[], city?: string|null, prefecture?: string|null}[]} venues
  * @returns {Map<string, string>}
  */
 export function buildVenueIndex(venues) {
   return buildIndex(venues.map((v) => {
     const pref = shortPrefecture(v.prefecture);
     const aliases = [
+      ...(v.aliases ?? []),
       v.nameEn,
       v.city ? `${v.city}・${v.name}` : null,
       pref ? `${pref}・${v.name}` : null,

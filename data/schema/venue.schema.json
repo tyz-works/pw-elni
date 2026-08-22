@@ -8,13 +8,42 @@
       "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug",
       "description": "{都市}-{施設}。例 tokyo-korakuen-hall"
     },
-    "name": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
-    "nameEn": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" },
-    "city": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
-    "prefecture": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString" },
-    "capacity": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt" },
-    "sources": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources" }
+    "name": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString"
+    },
+    "nameEn": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString"
+    },
+    "aliases": {
+      "type": "array",
+      "description": "表記ゆれ・改称・ネーミングライツ・部屋名つきの表記をすべて入れる。",
+      "items": {
+        "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString"
+      },
+      "uniqueItems": true
+    },
+    "city": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString"
+    },
+    "prefecture": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nonEmptyString"
+    },
+    "capacity": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullablePositiveInt"
+    },
+    "sources": {
+      "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/sources"
+    }
   },
-  "required": ["slug", "name", "nameEn", "city", "prefecture", "capacity", "sources"],
+  "required": [
+    "slug",
+    "name",
+    "nameEn",
+    "aliases",
+    "city",
+    "prefecture",
+    "capacity",
+    "sources"
+  ],
   "additionalProperties": false
 }

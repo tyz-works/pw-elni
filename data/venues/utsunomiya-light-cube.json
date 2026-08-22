@@ -1,7 +1,10 @@
 {
   "slug": "utsunomiya-light-cube",
-  "name": "ライトキューブ宇都宮 大ホール",
+  "name": "ライトキューブ宇都宮",
   "nameEn": null,
+  "aliases": [
+    "ライトキューブ宇都宮 大ホール"
+  ],
   "city": "宇都宮",
   "prefecture": "栃木県",
   "capacity": null,

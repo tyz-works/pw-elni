@@ -5,7 +5,7 @@ import { buildVenueIndex } from './venues.mjs';
 import { resolve } from './aliases.mjs';
 
 const VENUES = [
-  { slug: 'tokyo-korakuen-hall', name: '後楽園ホール', nameEn: 'Korakuen Hall', city: '東京', prefecture: '東京都' },
+  { slug: 'tokyo-korakuen-hall', name: '後楽園ホール', nameEn: 'Korakuen Hall', city: '東京', prefecture: '東京都', aliases: ['東京ドームシティホール'] },
   { slug: 'nagoya-imaike-gas-hall', name: '今池ガスホール', nameEn: null, city: '名古屋', prefecture: '愛知県' },
   { slug: 'naraha-tenjinmisaki-sports-park', name: '天神岬スポーツ公園', nameEn: null, city: '楢葉町', prefecture: '福島県' },
 ];
@@ -37,4 +37,15 @@ test('県名と市町村を両方前置きした表記で解決する', () => {
 
 test('関係のない名前は解決しない', () => {
   assert.equal(r('東京・存在しないホール'), null);
+});
+
+// ネーミングライツで改称したり、部屋名つきで書かれたりする。
+// venue も wrestler と同じく aliases で受ける。
+test('aliases でも解決する', () => {
+  assert.equal(r('東京ドームシティホール'), 'tokyo-korakuen-hall');
+});
+
+test('aliases を持たない会場でも壊れない', () => {
+  const index = buildVenueIndex([{ slug: 'x', name: 'サンプル会館', city: '東京', prefecture: '東京都' }]);
+  assert.equal(resolve('東京・サンプル会館', index), 'x');
 });

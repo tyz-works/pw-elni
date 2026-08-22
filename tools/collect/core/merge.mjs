@@ -75,7 +75,17 @@ function mergeArray(existing, incoming, path, conflicts, sourceUrl, key) {
       mergeValue(s, incoming[i], `${path}[${i}]`, conflicts, sourceUrl, null));
   }
 
-  // スカラー配列（wrestlerIds など）は全体で比較する
+  // wrestlerIds は集合。並び順に意味は無く、公式の並びは記事ごとに変わる。
+  // 順序違いを食い違いにすると毎回同じ conflict が出続ける。
+  if (key === 'wrestlerIds') {
+    const same = existing.length === incoming.length
+      && isDeepStrictEqual([...existing].sort(), [...incoming].sort());
+    if (same) return existing;
+    conflicts.push({ path, existing, incoming, sourceUrl });
+    return existing;
+  }
+
+  // その他のスカラー配列は全体で比較する
   if (isDeepStrictEqual(existing, incoming)) return existing;
   conflicts.push({ path, existing, incoming, sourceUrl });
   return existing;
