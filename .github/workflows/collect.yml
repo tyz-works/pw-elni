@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       promotion:
-        description: 団体 slug（空なら全団体）
+        description: 団体 slug（カンマ区切り。空なら決定論的な団体すべて）
         required: false
         default: ''
 
@@ -21,11 +21,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect:
-    name: 収集して PR を出す
+  # 決定論的なパーサだけで取れる団体。検証を通れば自動でマージする。
+  deterministic:
+    name: 収集して自動マージ（ddt / stardom）
     runs-on: ubuntu-latest
-    # 通知の有無を step の if で判定するため、job レベルに置く
-    # （step 自身の env は if から参照できない）。
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -44,27 +43,38 @@ jobs:
       - name: ブラウザを導入
         run: npx playwright install --with-deps chromium
 
+      # 取得結果と LLM の抽出結果を実行間で持ち越す。GH Actions は毎回
+      # まっさらなので、残さないと同じ記事を毎日 LLM に投げることになる。
+      - name: 収集キャッシュを復元
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: collect-cache-${{ github.run_id }}
+          restore-keys: collect-cache-
+
       # run.mjs は失敗した団体があると exit 1 を返すが、部分失敗を許容する
       # 設計なので取れた分は PR にしたい。失敗した団体はレポートに載る。
       #
       # 入力は ${{ }} で run: に直接展開せず env 経由で渡す。展開すると
       # 団体 slug にシェルを書かれたときにそのまま実行される。
       - name: 収集
-        id: collect
         env:
           PROMOTION: ${{ inputs.promotion }}
         run: |
-          if [ -n "$PROMOTION" ]; then
-            npm run collect -- --promotion "$PROMOTION"
-          else
-            npm run collect
+          PROMOTIONS="${PROMOTION:-ddt,stardom}"
+          # njpw は目視してから取り込むので必ず別ジョブに回す。
+          # 手動実行で njpw を指定されても、ここでは絶対に扱わない。
+          PROMOTIONS="$(echo "$PROMOTIONS" | tr ',' '\n' | grep -v '^njpw$' | paste -sd, -)"
+          if [ -z "$PROMOTIONS" ]; then
+            echo '自動マージ対象の団体が無いので何もしない'
+            exit 0
           fi
+          npm run collect -- --promotion "$PROMOTIONS"
         continue-on-error: true
 
       # 自動マージするので、人間のレビューの代わりに門をここで通す。
       # GITHUB_TOKEN が作った PR は workflow を起動しないため、PR 側では
-      # CI が回らない。ここを通ったものだけをマージする。
-      # npm run build は先に npm run validate を走らせる。
+      # CI が回らない。npm run build は先に npm run validate を走らせる。
       - name: 検証とビルド
         run: npm run build
 
@@ -94,24 +104,84 @@ jobs:
           PR_NUMBER: ${{ steps.pr.outputs.pull-request-number }}
         run: gh pr merge "$PR_NUMBER" --squash --delete-branch
 
-      # 通知は失敗してもバッチ本体を落とさない（CLAUDE.md の運用ルール）。
-      # 本文は jq で組み立てる。レポート由来の文字列をシェルや JSON に
-      # 直接埋めない。
       - name: Telegram に通知
         if: always() && env.TELEGRAM_BOT_TOKEN != ''
         continue-on-error: true
         env:
-          SUMMARY_FILE: .cache/summary.txt
+          LABEL: 自動マージ（ddt / stardom）
           PR_URL: ${{ steps.pr.outputs.pull-request-url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           JOB_STATUS: ${{ job.status }}
-        run: |
-          SUMMARY="$(cat "$SUMMARY_FILE" 2>/dev/null || echo '要約なし（収集前に落ちた可能性）')"
-          TEXT="$(printf '%s\n%s\n%s\n%s' \
-            "pw-elni 収集 [$JOB_STATUS]" "$SUMMARY" "${PR_URL:-差分なし}" "$RUN_URL")"
-          curl -sS --max-time 30 -X POST \
-            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -H 'Content-Type: application/json' \
-            -d "$(jq -n --arg chat "$TELEGRAM_CHAT_ID" --arg text "$TEXT" \
-                  '{chat_id: $chat, text: $text, disable_web_page_preview: true}')" \
-            > /dev/null
+        run: bash .github/scripts/notify-telegram.sh
+
+  # 新日本は記事本文から LLM で組み立てるので、内容を目視してから取り込む。
+  # PR は作るがマージはしない。deterministic の後に回して、更新済みの main
+  # を土台にする。
+  njpw-review:
+    name: 収集して PR だけ作る（njpw / LLM）
+    needs: deterministic
+    if: ${{ inputs.promotion == '' || contains(inputs.promotion, 'njpw') }}
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: 依存関係をインストール
+        run: npm ci
+
+      - name: ブラウザを導入
+        run: npx playwright install --with-deps chromium
+
+      - name: 収集キャッシュを復元
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: collect-cache-njpw-${{ github.run_id }}
+          restore-keys: collect-cache-njpw-
+
+      - name: 収集
+        env:
+          # 鍵が無ければ LLM 段は動かず、記事本文は取りこぼしとして報告される。
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # 1 回の実行で呼ぶ上限。取りこぼしが急に増えても課金が跳ねない。
+          LLM_MAX_CALLS: '30'
+        run: npm run collect -- --promotion njpw
+        continue-on-error: true
+
+      # マージしないので門は緩くてよいが、壊れたものを PR にしても仕方ない。
+      - name: 検証とビルド
+        run: npm run build
+
+      - name: PR を作る
+        id: pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: collect/njpw-review
+          base: main
+          title: "データ収集（要確認・新日本）: ${{ github.run_started_at }}"
+          body-path: .cache/report.md
+          commit-message: |
+            新日本の興行データを取り込む
+
+            記事本文から LLM で組み立てたもの。内容を確認してからマージすること。
+          add-paths: data/
+          delete-branch: false
+
+      - name: Telegram に通知
+        if: always() && env.TELEGRAM_BOT_TOKEN != ''
+        continue-on-error: true
+        env:
+          LABEL: 要確認・新日本（LLM 抽出。マージしていない）
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+        run: bash .github/scripts/notify-telegram.sh

@@ -5,6 +5,7 @@ import { dirname } from 'node:path';
 
 import {
   snapshotPath, writeSnapshot, readSnapshot, listSnapshots, writeSnapshotUrl, readSnapshotUrl,
+  writeExtraction, readExtraction,
 } from './snapshot.mjs';
 
 // 実在の団体 slug と衝突させない。テストの後始末でこのディレクトリごと消す。
@@ -58,4 +59,20 @@ test('URL を保存して読み出せる', () => {
 
 test('URL が無ければ null', () => {
   assert.equal(readSnapshotUrl(P, 'no-url'), null);
+});
+
+// LLM の抽出結果はスナップショットの隣に置く。呼び直すと同じ結果に金を
+// 払うだけなので、興行が data/ に書けたかどうかとは無関係に残す。
+test('抽出結果を保存して読み出せる', () => {
+  writeExtraction(P, 'e5', { matches: [{ order: 1 }] });
+  assert.deepEqual(readExtraction(P, 'e5'), { matches: [{ order: 1 }] });
+});
+
+test('抽出結果が無ければ null', () => {
+  assert.equal(readExtraction(P, 'no-extraction'), null);
+});
+
+test('抽出結果は id の一覧に混ざらない', () => {
+  writeExtraction(P, 'e6', { matches: [] });
+  assert.ok(!listSnapshots(P).includes('e6'));
 });
