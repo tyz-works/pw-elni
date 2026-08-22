@@ -248,6 +248,7 @@ async function runPromotion(promotion, opts, result) {
       // 抽出結果を先に見る。記事は公開後に変わらないので、呼び直しても
       // 同じ結果に金を払うだけになる。取り込めたかどうかとは無関係に残す
       // （未解決の名前があって書けない興行こそ、毎日呼び直してしまう）。
+      let hasUnparsed = false;
       const cached = opts.noLlm ? null : readExtraction(promotion, id);
       if (cached?.matches?.length) {
         for (const m of cached.matches) rawEvent.matches.push(llmMatchToRaw(m, rawEvent.matches.length + 1));
@@ -270,6 +271,7 @@ async function runPromotion(promotion, opts, result) {
             }
           }
           // LLM が無い / 補えなかった断片は人間に上げる。黙って捨てない。
+          hasUnparsed = true;
           result.unparsed.push({ promotion, eventId: rawEvent.eventId, text: fragment });
         }
       }
@@ -292,6 +294,13 @@ async function runPromotion(promotion, opts, result) {
       result.unresolved.push(...unresolved);
 
       event.sources = [{ url, title: `${event.name} | ${promotion}`, retrievedAt: today() }];
+
+      // 試合が 1 つも取れず、取りこぼしが残っている興行は書かない。
+      // 空のカードで書くと「対戦カード未発表」と見分けが付かなくなる。
+      // 実際には抽出に失敗しただけで、公式には結果が載っている。
+      if (!event.matches.length && hasUnparsed) {
+        continue;
+      }
 
       const p = eventPath(DATA, promotion, event.eventId);
       const existing = existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null;
