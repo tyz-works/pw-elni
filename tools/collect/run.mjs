@@ -16,7 +16,7 @@ import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
 import { createExtractor, PROMPT_VERSION } from './core/llm.mjs';
-import { mergeLlmMatch } from './core/llm-merge.mjs';
+import { mergeLlmMatch, pairWithCards } from './core/llm-merge.mjs';
 import * as ddt from './adapters/ddt.mjs';
 import * as stardom from './adapters/stardom.mjs';
 import * as njpw from './adapters/njpw.mjs';
@@ -246,10 +246,9 @@ async function runPromotion(promotion, opts, result) {
 
       if (llmMatches?.length) {
         // ここが検算。カードと突き合わせて合わない試合は採らない。
-        const card = new Map((rawEvent.cardMatches ?? []).map((c) => [c.order, c]));
         let taken = 0;
-        for (const m of llmMatches) {
-          const { match, problems } = mergeLlmMatch(m, card.get(m.order));
+        for (const { llm, card } of pairWithCards(llmMatches, rawEvent.cardMatches ?? [])) {
+          const { match, problems } = mergeLlmMatch(llm, card);
           for (const message of problems) {
             result.failures.push({ promotion, step: 'extract', message: `${rawEvent.eventId}: ${message}` });
           }

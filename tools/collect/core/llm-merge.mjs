@@ -10,6 +10,54 @@ import { decisionFrom } from './decision.mjs';
 
 const DRAWISH = ['draw', 'time-limit-draw', 'no-contest'];
 
+const nameKey = (names) => [...names].map(normalize).sort().join('|');
+
+/**
+ * LLM が返した試合に対応するカードを、選手名の集合で引き当てる。
+ *
+ * 試合順では引き当てられない。記事本文の数え方と公式カードの番号が
+ * 一致しない興行がある（共催興行など）。名前の集合なら番号のずれに
+ * 影響されず、引き当てられた時点で名前の検算も済んでいる。
+ *
+ * 同じ顔合わせが 2 試合あるときはどちらか決められないので引き当てない。
+ *
+ * @param {object} llm
+ * @param {object[]} cards
+ * @returns {object|undefined}
+ */
+export function findCardFor(llm, cards) {
+  const key = nameKey((llm.sides ?? []).flatMap((s) => s.names ?? []));
+  const hits = cards.filter((c) => nameKey(c.names) === key);
+  return hits.length === 1 ? hits[0] : undefined;
+}
+
+/**
+ * LLM が返した試合の並びと、カードの並びを選手名の集合で対応付ける。
+ *
+ * 同じ顔合わせが 2 度組まれることがある（引き分け後の延長戦など）。
+ * どちらも本物の試合なので、同じ集合が複数あれば出現順で割り当てる。
+ *
+ * @param {object[]} llmMatches
+ * @param {object[]} cards
+ * @returns {{llm: object, card: object|undefined}[]}
+ */
+export function pairWithCards(llmMatches, cards) {
+  const byKey = new Map();
+  for (const c of cards) {
+    const key = nameKey(c.names);
+    if (!byKey.has(key)) byKey.set(key, []);
+    byKey.get(key).push(c);
+  }
+
+  const used = new Map();
+  return llmMatches.map((llm) => {
+    const key = nameKey((llm.sides ?? []).flatMap((s) => s.names ?? []));
+    const i = used.get(key) ?? 0;
+    used.set(key, i + 1);
+    return { llm, card: byKey.get(key)?.[i] };
+  });
+}
+
 /**
  * @param {object} llm LLM が返した 1 試合
  * @param {object|undefined} card 同じ order のカード
@@ -19,7 +67,8 @@ export function mergeLlmMatch(llm, card) {
   const problems = [];
 
   if (!card) {
-    problems.push(`第 ${llm.order} 試合: カードに無い試合順を返してきた`);
+    const names = (llm.sides ?? []).flatMap((s) => s.names ?? []).join(' / ');
+    problems.push(`第 ${llm.order} 試合: カードに同じ顔合わせが無い（${names}）`);
     return { match: null, problems };
   }
 

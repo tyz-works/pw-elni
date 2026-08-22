@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { mergeLlmMatch } from './llm-merge.mjs';
+import { mergeLlmMatch, findCardFor, pairWithCards } from './llm-merge.mjs';
 
 const CARD = {
   order: 1,
@@ -94,4 +94,56 @@ test('引き分けは勝者なしのまま結果を残す', () => {
   const { match } = mergeLlmMatch({ ...LLM, winnerSideIndex: -1 }, card);
   assert.equal(match.result.decision, 'time-limit-draw');
   assert.equal(match.result.winnerSideIndex, null);
+});
+
+// 記事本文の数え方と公式カードの番号が一致しない興行がある
+// （AEW との共催興行で LLM が 12 試合と数え、カードは 9 試合だった）。
+// 番号ではなく選手名の集合で突き合わせる。
+test('選手名の集合でカードを引き当てる', () => {
+  const cards = [
+    { ...CARD, order: 1, names: ['A', 'B'] },
+    { ...CARD, order: 2, names: ['ウルフアロン', 'HENARE'] },
+  ];
+  const { match, problems } = mergeLlmMatch({ ...LLM, order: 99 }, findCardFor(LLM, cards));
+  assert.deepEqual(problems, []);
+  assert.equal(match.order, 2, 'カード側の試合順を採る');
+});
+
+test('表記のゆれがあっても引き当てる', () => {
+  const cards = [{ ...CARD, order: 3, names: ['鷹木 信悟', 'ジェイク・リー'] }];
+  const llm = { ...LLM, sides: [{ names: ['鷹木信悟'] }, { names: ['ジェイク・リー'] }] };
+  assert.equal(findCardFor(llm, cards)?.order, 3);
+});
+
+test('どのカードとも合わなければ引き当てない', () => {
+  const cards = [{ ...CARD, order: 1, names: ['A', 'B'] }];
+  assert.equal(findCardFor(LLM, cards), undefined);
+});
+
+test('同じ顔合わせが 2 試合あれば引き当てない', () => {
+  const cards = [{ ...CARD, order: 1 }, { ...CARD, order: 5 }];
+  assert.equal(findCardFor(LLM, cards), undefined, 'どちらか決められないなら採らない');
+});
+
+// 同じ顔合わせが 2 度組まれることがある（引き分け後の延長戦など）。
+// どちらも本物の試合なので、出現順で対応付ける。
+test('同じ顔合わせが複数あれば出現順で対応付ける', () => {
+  const cards = [
+    { ...CARD, order: 7, durationSeconds: 300, finishText: '時間切れ引き分け' },
+    { ...CARD, order: 7, durationSeconds: 18, finishText: 'タイガースープレックスホールド' },
+  ];
+  const llms = [
+    { ...LLM, order: 7, winnerSideIndex: -1 },
+    { ...LLM, order: 7, winnerSideIndex: 0 },
+  ];
+  const pairs = pairWithCards(llms, cards);
+  assert.equal(pairs.length, 2);
+  assert.equal(pairs[0].card.durationSeconds, 300);
+  assert.equal(pairs[1].card.durationSeconds, 18);
+});
+
+test('カードより多く返してきた分は対応付かない', () => {
+  const pairs = pairWithCards([LLM, LLM], [CARD]);
+  assert.ok(pairs[0].card);
+  assert.equal(pairs[1].card, undefined);
 });
