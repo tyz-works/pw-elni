@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { buildRequest, parseResponse, createExtractor, MATCH_SCHEMA } from './llm.mjs';
+import { buildRequest, parseResponse, createExtractor, MATCH_SCHEMA, PROMPT_VERSION } from './llm.mjs';
 
 const PROSE = '第1試合はAとBが対戦。最後はAがフォール勝ちを収めた。';
 
@@ -67,6 +67,44 @@ test('API が失敗しても例外を投げず null を返す', async () => {
   assert.equal(await ex.extract(PROSE), null);
 });
 
+// 握り潰すと「補えなかった」と「呼べていない」が見分けられない。
+test('失敗の理由を記録して読み出せる', async () => {
+  const fakeFetch = async () => ({ ok: false, status: 404, text: async () => 'model not found' });
+  const ex = createExtractor({ apiKey: 'k', fetchImpl: fakeFetch });
+  await ex.extract(PROSE);
+  assert.equal(ex.errors().length, 1);
+  assert.match(ex.errors()[0], /404/);
+  assert.match(ex.errors()[0], /model not found/);
+});
+
+test('例外も理由として記録する', async () => {
+  const fakeFetch = async () => { throw new Error('getaddrinfo ENOTFOUND'); };
+  const ex = createExtractor({ apiKey: 'k', fetchImpl: fakeFetch });
+  await ex.extract(PROSE);
+  assert.match(ex.errors()[0], /ENOTFOUND/);
+});
+
+test('記録に API キーを含めない', async () => {
+  const fakeFetch = async () => { throw new Error('failed to fetch https://x/?key=SUPERSECRET'); };
+  const ex = createExtractor({ apiKey: 'SUPERSECRET', fetchImpl: fakeFetch });
+  await ex.extract(PROSE);
+  assert.ok(!ex.errors()[0].includes('SUPERSECRET'), `鍵が漏れている: ${ex.errors()[0]}`);
+});
+
+test('空の返答も理由として記録する', async () => {
+  const fakeFetch = async () => ({ ok: true, json: async () => ({ candidates: [] }) });
+  const ex = createExtractor({ apiKey: 'k', fetchImpl: fakeFetch });
+  assert.deepEqual(await ex.extract(PROSE), []);
+  assert.match(ex.errors()[0], /試合を 1 つも返さなかった/);
+});
+
 test('API キーが無ければ抽出器を作らない', () => {
   assert.equal(createExtractor({ apiKey: '' }), null);
+});
+
+// プロンプトを変えたら古い抽出結果は当てにならない。キャッシュを
+// 黙って使い続けないよう、版を持たせて突き合わせる。
+test('プロンプトの版を持つ', () => {
+  assert.equal(typeof PROMPT_VERSION, 'number');
+  assert.ok(PROMPT_VERSION >= 1);
 });
