@@ -200,6 +200,19 @@ async function runPromotion(promotion, opts, result) {
     try {
       fetcher = await createFetcher();
       const targets = await adapter.listTargets(fetcher);
+      process.stdout.write(`${promotion}: 取得対象 ${targets.length} 件\n`);
+
+      // 0 件を成功として扱うと「差分はありません」と見分けが付かない。
+      // ページ構造が変わっても、アクセスを拒否されても、黙って何も
+      // 取らなくなるだけになる。失敗として上げる。
+      if (!targets.length) {
+        result.failures.push({
+          promotion, step: 'fetch',
+          message: '一覧から対象が 1 件も取れなかった（ページ構造の変化か、アクセス拒否の可能性）',
+        });
+        return;
+      }
+
       for (const t of targets) {
         const raw = await adapter.fetchRaw(fetcher, t);
         writeSnapshot(promotion, t.id, raw);
