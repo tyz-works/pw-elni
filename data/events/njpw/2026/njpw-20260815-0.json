@@ -1,0 +1,272 @@
+{
+  "eventId": "njpw-20260815-0",
+  "promotionSlug": "njpw",
+  "name": "新日カードランブル presents G1 CLIMAX 36",
+  "series": null,
+  "date": "2026-08-15",
+  "doorsOpen": "13:30",
+  "bellTime": "15:00",
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": 7777,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taisei-nakahara",
+            "masatora-yasuda",
+            "yoshi-hashi",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jacob-austin-young",
+            "francesco-akira",
+            "great-o-khan",
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 474
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi",
+            "el-desperado",
+            "taichi",
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sho",
+            "douki",
+            "sanada",
+            "ren-narita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 557
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "drilla-moloney"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "wheeler-yuta",
+            "gabe-kidd"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 693
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "master-wato",
+            "yoh",
+            "yuji-nagata",
+            "toru-yano",
+            "togi-makabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gedo",
+            "taiji-ishimori",
+            "oskar",
+            "yuto-ice",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 386
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "boltin-oleg",
+            "wolf-aron"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kosei-fujita",
+            "hartley-jackson",
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 582
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "callum-newman"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1124
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yota-tsuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1510
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hiroyoshi-tenzan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "satoshi-kojima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 562
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/642540",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/642540",
+      "title": "新日カードランブル presents G1 CLIMAX 36 | njpw",
+      "retrievedAt": "2026-08-22"
+    }
+  ]
+}

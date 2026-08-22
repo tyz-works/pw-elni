@@ -1,0 +1,282 @@
+{
+  "eventId": "njpw-20260729-0",
+  "promotionSlug": "njpw",
+  "name": "新日カードランブル presents G1 CLIMAX 36",
+  "series": null,
+  "date": "2026-07-29",
+  "doorsOpen": "17:00",
+  "bellTime": "18:30",
+  "venueSlug": "osaka-yamato-arena",
+  "attendance": 2025,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taisei-nakahara",
+            "toru-yano"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jacob-austin-young",
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 326
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda",
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "wolf-aron"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 305
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "drilla-moloney"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gedo",
+            "oskar"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 322
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hartley-jackson",
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dick-togo",
+            "ren-narita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 421
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "boltin-oleg"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jake-lee"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 618
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanada"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": "big-rock",
+        "durationSeconds": 708
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "great-o-khan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 876
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shingo-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1000
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 9,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yota-tsuji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuto-ice"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "knockout",
+        "finishMoveSlug": null,
+        "durationSeconds": 1568
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/642493",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/642493",
+      "title": "新日カードランブル presents G1 CLIMAX 36 | njpw",
+      "retrievedAt": "2026-08-22"
+    }
+  ]
+}

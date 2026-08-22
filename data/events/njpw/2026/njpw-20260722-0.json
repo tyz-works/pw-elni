@@ -1,0 +1,284 @@
+{
+  "eventId": "njpw-20260722-0",
+  "promotionSlug": "njpw",
+  "name": "新日カードランブル presents G1 CLIMAX 36",
+  "series": null,
+  "date": "2026-07-22",
+  "doorsOpen": "17:00",
+  "bellTime": "18:30",
+  "venueSlug": "nagaoka-aore",
+  "attendance": 1555,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jacob-austin-young",
+            "great-o-khan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 390
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "jake-lee"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yoshinobu-kanemaru",
+            "sanada"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 413
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "toru-yano",
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masatora-yasuda",
+            "boltin-oleg"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 326
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "gedo",
+            "yuto-ice"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hartley-jackson",
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 390
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "yota-tsuji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "taiji-ishimori",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 497
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "wolf-aron"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gabe-kidd"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 591
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "oskar"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 706
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "drilla-moloney"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1068
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 9,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "callum-newman"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1211
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/642489",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/642489",
+      "title": "新日カードランブル presents G1 CLIMAX 36 | njpw",
+      "retrievedAt": "2026-08-22"
+    }
+  ]
+}

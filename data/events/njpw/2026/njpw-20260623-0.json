@@ -1,0 +1,248 @@
+{
+  "eventId": "njpw-20260623-0",
+  "promotionSlug": "njpw",
+  "name": "Road to G1 CLIMAX",
+  "series": null,
+  "date": "2026-06-23",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": 1195,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda",
+            "el-desperado",
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "taisei-nakahara",
+            "toru-yano",
+            "togi-makabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 527
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "ryusuke-taguchi",
+            "yoh",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "jacob-austin-young",
+            "great-o-khan",
+            "jake-lee"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 615
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "satoshi-kojima",
+            "shota-umino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hartley-jackson",
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 606
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "shingo-takagi",
+            "oskar",
+            "yota-tsuji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yoshinobu-kanemaru",
+            "douki",
+            "yujiro-takahashi",
+            "ren-narita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "knockout",
+        "finishMoveSlug": null,
+        "durationSeconds": 527
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "master-wato"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "francesco-akira"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kosei-fujita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sho"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 935
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoshi-hashi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "wolf-aron"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 1185
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taichi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuto-ice"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1554
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/639768",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/639768",
+      "title": "Road to G1 CLIMAX | njpw",
+      "retrievedAt": "2026-08-22"
+    }
+  ]
+}

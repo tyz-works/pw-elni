@@ -1,0 +1,295 @@
+{
+  "eventId": "njpw-20260629-0",
+  "promotionSlug": "njpw",
+  "name": "AEW x NJPW: Forbidden Door",
+  "series": null,
+  "date": "2026-06-29",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "san-jose-sap-center",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mascara-dorada",
+            "mistico"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "nicholas-jackson",
+            "matthew-jackson"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "titan",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1062
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kenny-omega"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1587
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jon-moxley"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "bandido"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "knockout",
+        "finishMoveSlug": null,
+        "durationSeconds": 1091
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shota-umino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "pac"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1091
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tekla"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1125
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "christian-cage",
+            "adam-copeland"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "clark-connors",
+            "david-finlay"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1007
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mercedes-mone"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maya-world"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 1491
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "andrade-el-idolo",
+            "jake-doyle",
+            "kevin-knight",
+            "kyle-fletcher",
+            "kazuchika-okada",
+            "mjf"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kyle-oreilly",
+            "orange-cassidy",
+            "roderick-strong",
+            "darby-allin",
+            "konosuke-takeshita",
+            "mark-briscoe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1843
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 9,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "swerve-strickland"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "will-ospreay"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 2108
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/654540",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/654540",
+      "title": "AEW x NJPW: Forbidden Door | njpw",
+      "retrievedAt": "2026-08-22"
+    }
+  ]
+}

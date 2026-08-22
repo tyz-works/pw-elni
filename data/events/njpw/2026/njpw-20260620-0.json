@@ -1,0 +1,242 @@
+{
+  "eventId": "njpw-20260620-0",
+  "promotionSlug": "njpw",
+  "name": "永田裕志 Produce Blue Justice XVIII ～青義進陸～",
+  "series": null,
+  "date": "2026-06-20",
+  "doorsOpen": "15:30",
+  "bellTime": "17:00",
+  "venueSlug": "kimitsu-city-gymnasium",
+  "attendance": 1044,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "toru-yano",
+            "togi-makabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "taisei-nakahara",
+            "hiroshi-yamato",
+            "satoshi-kojima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 442
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda",
+            "master-wato"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "douki",
+            "sho"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": "italian-stretch-no-32",
+        "durationSeconds": 277
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi",
+            "shota-umino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "jake-lee"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 582
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kosei-fujita",
+            "hartley-jackson",
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jacob-austin-young",
+            "great-o-khan",
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 454
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "el-desperado",
+            "yuya-uemura",
+            "taichi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 775
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoh",
+            "yoshi-hashi",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gedo",
+            "shingo-takagi",
+            "yota-tsuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 528
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "josh-barnett",
+            "wolf-aron",
+            "yuji-nagata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yoshinobu-kanemaru",
+            "yujiro-takahashi",
+            "ren-narita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 641
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/639145",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/639145",
+      "title": "永田裕志 Produce Blue Justice XVIII ～青義進陸～ | njpw",
+      "retrievedAt": "2026-08-22"
+    }
+  ]
+}
