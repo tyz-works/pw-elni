@@ -58,6 +58,7 @@ jobs:
       # 入力は ${{ }} で run: に直接展開せず env 経由で渡す。展開すると
       # 団体 slug にシェルを書かれたときにそのまま実行される。
       - name: 収集
+        id: collect
         env:
           PROMOTION: ${{ inputs.promotion }}
         run: |
@@ -67,8 +68,10 @@ jobs:
           PROMOTIONS="$(echo "$PROMOTIONS" | tr ',' '\n' | grep -v '^njpw$' | paste -sd, -)"
           if [ -z "$PROMOTIONS" ]; then
             echo '自動マージ対象の団体が無いので何もしない'
+            echo 'ran=false' >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo 'ran=true' >> "$GITHUB_OUTPUT"
           npm run collect -- --promotion "$PROMOTIONS"
         continue-on-error: true
 
@@ -76,6 +79,7 @@ jobs:
       # GITHUB_TOKEN が作った PR は workflow を起動しないため、PR 側では
       # CI が回らない。npm run build は先に npm run validate を走らせる。
       - name: 検証とビルド
+        if: steps.collect.outputs.ran == 'true'
         run: npm run build
 
       # レポートは公式サイト由来の文字列を含む。GITHUB_OUTPUT に流すと
@@ -83,6 +87,7 @@ jobs:
       # ファイルのまま body-path で渡す。
       - name: PR を作る
         id: pr
+        if: steps.collect.outputs.ran == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
           branch: collect/auto
@@ -120,7 +125,9 @@ jobs:
   njpw-review:
     name: 収集して PR だけ作る（njpw / LLM）
     needs: deterministic
-    if: ${{ inputs.promotion == '' || contains(inputs.promotion, 'njpw') }}
+    # deterministic の後に回して更新済みの main を土台にするが、
+    # あちらが落ちてもこちらは止めない（部分失敗を許容する設計）。
+    if: ${{ always() && (inputs.promotion == '' || contains(inputs.promotion, 'njpw')) }}
     runs-on: ubuntu-latest
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
