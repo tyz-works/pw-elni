@@ -9,7 +9,9 @@
 # 鍵は環境変数から読む。リポジトリにもシェル履歴にも残さないこと。
 #   GEMINI_API_KEY                        新日本の LLM 抽出に使う。
 #                                         無ければ新日本は取りこぼしとして報告される
-#   TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID あれば結果を通知する
+#   TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID あれば結果を通知する。
+#                                         未設定なら ~/.telegram-bot-token と
+#                                         ~/.telegram-chat-id を読む
 set -uo pipefail
 
 cd "$(dirname "$0")/../.." || exit 1
@@ -100,6 +102,12 @@ tools/collect/daily.sh による自動収集。詳細は PR 本文のレポー�
     git checkout main --quiet
   fi
 fi
+
+# 通知の鍵も環境変数が無ければファイルから読む。GitHub Secrets はローカル
+# 運用では使えないので、手元に置いたファイルを既定の置き場にする。
+: "${TELEGRAM_BOT_TOKEN:=$([ -r "$HOME/.telegram-bot-token" ] && cat "$HOME/.telegram-bot-token" || echo "")}"
+: "${TELEGRAM_CHAT_ID:=$([ -r "$HOME/.telegram-chat-id" ] && cat "$HOME/.telegram-chat-id" || echo "")}"
+export TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID
 
 if [ -n "${TELEGRAM_BOT_TOKEN:-}" ]; then
   JOB_STATUS=$([ "$BUILD_STATUS" -eq 0 ] && echo success || echo failure) \
