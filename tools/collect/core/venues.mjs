@@ -17,12 +17,16 @@ const shortPrefecture = (p) => (p ? p.replace(/[都道府県]$/, '') : null);
 export function buildVenueIndex(venues) {
   return buildIndex(venues.map((v) => {
     const pref = shortPrefecture(v.prefecture);
+    // name にも alias にも同じ前置きが付きうる。両方に展開する。
+    const bases = [v.name, ...(v.aliases ?? [])];
     const aliases = [
-      ...(v.aliases ?? []),
+      ...bases.slice(1),
       v.nameEn,
-      v.city ? `${v.city}・${v.name}` : null,
-      pref ? `${pref}・${v.name}` : null,
-      pref && v.city ? `${pref}・${v.city}・${v.name}` : null,
+      ...bases.flatMap((b) => [
+        v.city ? `${v.city}・${b}` : null,
+        pref ? `${pref}・${b}` : null,
+        pref && v.city ? `${pref}・${v.city}・${b}` : null,
+      ]),
     ];
     return { slug: v.slug, name: v.name, aliases: aliases.filter(Boolean) };
   })).index;

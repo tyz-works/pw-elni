@@ -1,16 +1,30 @@
 {
   "slug": "shota-umino",
-  "name": "海野 翔太",
-  "nameEn": null,
-  "aliases": [],
+  "name": "海野翔太",
+  "nameEn": "Shota Umino",
+  "aliases": [
+    "うみのしょうた",
+    "Shota Umino",
+    "海野 翔太"
+  ],
   "realName": null,
-  "birthDate": null,
-  "birthplace": null,
-  "debutDate": null,
-  "heightCm": null,
-  "weightKg": null,
-  "status": "unknown",
-  "promotionSlugs": [],
-  "finishingMoveSlugs": [],
-  "sources": []
+  "birthDate": "1997-04-17",
+  "birthplace": "東京都世田谷区",
+  "debutDate": "2017-04-13",
+  "heightCm": 183,
+  "weightKg": 103,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [
+    "second-chapter"
+  ],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/89835",
+      "title": "海野 翔太 | 新日本プロレスリング株式会社",
+      "retrievedAt": "2026-08-20"
+    }
+  ]
 }
