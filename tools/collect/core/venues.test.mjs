@@ -49,3 +49,17 @@ test('aliases を持たない会場でも壊れない', () => {
   const index = buildVenueIndex([{ slug: 'x', name: 'サンプル会館', city: '東京', prefecture: '東京都' }]);
   assert.equal(resolve('東京・サンプル会館', index), 'x');
 });
+
+// 公式は alias 側の表記にも都道府県を前置きする。
+// 「静岡・アクトシティ浜松 展示イベントホール第2ブロック」のような形。
+test('alias にも都道府県・市の前置きを効かせる', () => {
+  const index = buildVenueIndex([{
+    slug: 'hamamatsu-act-city',
+    name: 'アクトシティ浜松',
+    aliases: ['アクトシティ浜松 展示イベントホール第2ブロック'],
+    city: '浜松',
+    prefecture: '静岡県',
+  }]);
+  assert.equal(resolve('静岡・アクトシティ浜松 展示イベントホール第2ブロック', index), 'hamamatsu-act-city');
+  assert.equal(resolve('浜松・アクトシティ浜松', index), 'hamamatsu-act-city');
+});

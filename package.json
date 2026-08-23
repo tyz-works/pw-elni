@@ -11,6 +11,7 @@
   "scripts": {
     "validate": "node tools/validate.mjs",
     "collect": "node tools/collect/run.mjs",
+    "obsidian": "node tools/obsidian/export.mjs",
     "test": "node --test 'tools/**/*.test.mjs'",
     "build": "npm run validate && npm run build --workspace site",
     "dev": "npm run dev --workspace site",
