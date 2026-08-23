@@ -1,0 +1,78 @@
+{
+  "eventId": "stardom-20260823-0",
+  "promotionSlug": "stardom",
+  "name": "Sammy presents STARDOM 5★STAR GP 2026 ～優勝決定戦～",
+  "series": null,
+  "date": "2026-08-23",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 1016
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 1011
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://wwr-stardom.com/event/20260823_ryogoku/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260823_ryogoku/",
+      "title": "Sammy presents STARDOM 5★STAR GP 2026 ～優勝決定戦～ | stardom",
+      "retrievedAt": "2026-08-23"
+    }
+  ]
+}
