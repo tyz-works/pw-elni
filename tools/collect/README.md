@@ -69,24 +69,26 @@ DRY_RUN=1 GEMINI_API_KEY=... tools/collect/daily.sh  # data/ に書かず確認�
 
 ## 自動実行の登録
 
-WSL の cron は WSL が起きていないと動かない。**Windows のタスクスケジューラから
-WSL を叩く**のが確実。
-
-1. タスクスケジューラで「基本タスクの作成」
-2. トリガー: 毎日 8:00
-3. 操作: プログラムの開始
-   - プログラム: `wsl.exe`
-   - 引数: `-d Ubuntu -- bash -lc 'cd ~/workspace/pw-elni && GEMINI_API_KEY="$(cat ~/.gemini-key)" tools/collect/daily.sh >> /tmp/pw-elni-daily.log 2>&1'`
-4. 「最上位の特権で実行する」は不要
-5. 「タスクを実行するためにスリープを解除する」を有効にしておくと取りこぼしが減る
-
-WSL 側で完結させたい場合は cron でもよい（WSL が常時起きている前提）。
+このマシンは WSL で systemd が有効、`cron.service` も稼働している。crontab に足すだけでよい。
 
 ```
-0 8 * * * cd ~/workspace/pw-elni && GEMINI_API_KEY="$(cat ~/.gemini-key)" tools/collect/daily.sh >> /tmp/pw-elni-daily.log 2>&1
+30 8 * * * GEMINI_API_KEY="$(cat $HOME/.gemini-key)" bash $HOME/workspace/pw-elni/tools/collect/daily.sh >> /tmp/pw-elni-daily.log 2>&1
 ```
 
-どちらの場合も、鍵はファイルから読む。`crontab -e` に直接書かないこと。
+**8:30 にしている理由**: 8:00 は別プロジェクトの cron と重なる。両方が Playwright と
+Node を同時に起動するとメモリを食う（このマシンは 6GB）。
+
+**cron の PATH は `/usr/bin:/bin` しかなく、nvm 配下の node が見つからない。**
+`daily.sh` の側で nvm を読むようにしてあるので、crontab に PATH を書く必要はない。
+
+鍵はファイルから読む。`crontab -e` に直接書かないこと。
+
+動作確認は cron と同じ最小環境で試すのが確実:
+
+```bash
+env -i HOME="$HOME" PATH=/usr/bin:/bin DRY_RUN=1 \
+  sh -c 'bash $HOME/workspace/pw-elni/tools/collect/daily.sh'
+```
 
 ## Obsidian への書き出し
 

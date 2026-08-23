@@ -14,6 +14,25 @@ set -uo pipefail
 
 cd "$(dirname "$0")/../.." || exit 1
 
+# cron の PATH は /usr/bin:/bin しかなく、nvm 配下の node が見つからない。
+# ここで自己完結させる（crontab 側に PATH を書くと二重管理になる）。
+if ! command -v npm > /dev/null 2>&1; then
+  if [ -s "$HOME/.nvm/nvm.sh" ]; then
+    # shellcheck disable=SC1091
+    . "$HOME/.nvm/nvm.sh" > /dev/null 2>&1
+  fi
+fi
+if ! command -v npm > /dev/null 2>&1; then
+  for d in "$HOME"/.nvm/versions/node/*/bin; do
+    [ -x "$d/npm" ] && PATH="$d:$PATH"
+  done
+  export PATH
+fi
+if ! command -v npm > /dev/null 2>&1; then
+  echo "npm が見つからない。PATH: $PATH" >&2
+  exit 1
+fi
+
 DRY=""
 [ "${DRY_RUN:-}" = "1" ] && DRY="--dry-run"
 
