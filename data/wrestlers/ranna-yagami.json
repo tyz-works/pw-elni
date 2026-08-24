@@ -1,0 +1,26 @@
+{
+  "slug": "ranna-yagami",
+  "name": "八神蘭奈",
+  "nameEn": "RANNA YAGAMI",
+  "aliases": [
+    "八神 蘭奈"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "東京都豊島区",
+  "debutDate": "2023-12-25",
+  "heightCm": 159,
+  "weightKg": 57,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/yagami/",
+      "title": "八神 蘭奈 | 選手紹介 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-25"
+    }
+  ]
+}
