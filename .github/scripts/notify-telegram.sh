@@ -19,8 +19,14 @@ TEXT="$(printf '%s\n%s\n%s\n%s\n%s' \
 BODY="$(jq -n --arg chat "$TELEGRAM_CHAT_ID" --arg text "$TEXT" \
   '{chat_id: $chat, text: $text, disable_web_page_preview: true}')"
 
-curl -sS --max-time 30 -X POST \
+# 成否をログに残す。黙って成功も黙って失敗もするとログから判別できない。
+# 鍵は URL に入るので、応答も含めて出力にはそのまま流さない。
+if curl -sS --max-time 30 -X POST \
   "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
   -H 'Content-Type: application/json' \
   -d "$BODY" \
-  > /dev/null
+  -o /dev/null -w '%{http_code}' 2>/dev/null | grep -q '^200$'; then
+  echo "Telegram: 送信した"
+else
+  echo "Telegram: 送信に失敗した（バッチ本体は続行）" >&2
+fi
