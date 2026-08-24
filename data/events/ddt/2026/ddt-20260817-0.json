@@ -11,7 +11,8 @@
   "confirmed": true,
   "matches": [
     {
-      "order": 1,
+      "order": 2,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -44,7 +45,8 @@
       "notes": "※オーディション優勝は瑠希也。"
     },
     {
-      "order": 2,
+      "order": 3,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -72,7 +74,8 @@
       "notes": "※スワントーンボム。ササダンゴベルトが初防衛に失敗、イルシオンが第2代王者となる。"
     },
     {
-      "order": 3,
+      "order": 4,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {

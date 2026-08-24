@@ -4,7 +4,7 @@
 const cell = (v) => String(v ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ');
 
 export function renderReport(result) {
-  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders, silencedConflicts = 0 } = result;
+  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders, duplicateNames = [], silencedConflicts = 0 } = result;
   const out = ['# 収集結果', ''];
 
   if (failures.length) {
@@ -39,6 +39,16 @@ export function renderReport(result) {
     for (const u of unparsed) {
       const head = u.text.split('\n').filter(Boolean).slice(0, 3).join(' / ');
       out.push(`- ${cell(u.promotion)} / ${cell(u.eventId)} — ${cell(head)}`);
+    }
+    out.push('');
+  }
+
+  if (duplicateNames.length) {
+    out.push('## 同じ名前が 1 つの陣営に複数', '',
+      '公式が同じリングネームを複数回並べている試合。中の人が違う（覆面・分身）',
+      'のが本当なら公式どおりで正しい。こちらの取り違えなら直すこと。', '');
+    for (const d of duplicateNames) {
+      out.push(`- ${cell(d.promotion)} / ${cell(d.eventId)} ${cell(d.label)} — ${cell(d.names.join(', '))}`);
     }
     out.push('');
   }

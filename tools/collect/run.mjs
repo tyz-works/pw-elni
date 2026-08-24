@@ -91,6 +91,10 @@ function eventPath(base, promotion, eventId) {
 // そのまま流すと additionalProperties で検証に落ちる。
 function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceUrl) {
   const unresolved = [];
+  // 同じリングネームが 1 つの陣営に複数並ぶ試合。公式がそう書いていることが
+  // あり（覆面・分身）、スキーマでは許している。ただし黙って通すと
+  // こちらの取り違えを見逃すので、レポートに上げて人間に見せる。
+  const duplicateNames = [];
 
   // 会場はスキーマ上必須。解決できない会場を勝手に作らないので、
   // 解決できなければこの興行は書かない（選手名と同じ扱い）。
@@ -111,6 +115,15 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
         if (!slug) unresolved.push({ promotion, eventName: rawEvent.name, name: n, sourceUrl });
         return slug;
       });
+      const dupes = wrestlerIds.filter((v, i) => v && wrestlerIds.indexOf(v) !== i);
+      if (dupes.length) {
+        duplicateNames.push({
+          promotion,
+          eventId: rawEvent.eventId,
+          label: `第 ${m.order} 試合`,
+          names: [...new Set(dupes)],
+        });
+      }
       return { wrestlerIds, teamName: s.teamName };
     });
     // 陣営が 3 つ以上なら人数に関係なく multi-man。1 人ずつの 3 way を
@@ -127,6 +140,9 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
 
     return {
       order: m.order,
+      // ダークマッチを区別するのは今のところ DDT だけ。他のアダプタは
+      // 公式が番号を振った本戦しか返さないので card に倒す。
+      segment: m.segment ?? 'card',
       matchType,
       sides,
       titleName: m.titleName,
@@ -160,7 +176,7 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
     officialUrl: rawEvent.officialUrl,
     sources: rawEvent.sources,
   };
-  return { event, unresolved };
+  return { event, unresolved, duplicateNames };
 }
 
 async function runPromotion(promotion, opts, result) {
@@ -293,8 +309,9 @@ async function runPromotion(promotion, opts, result) {
       }
       seenEventIds.add(rawEvent.eventId);
 
-      const { event, unresolved } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
+      const { event, unresolved, duplicateNames } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
       result.unresolved.push(...unresolved);
+      result.duplicateNames.push(...duplicateNames);
 
       event.sources = [{ url, title: `${event.name} | ${promotion}`, retrievedAt: today() }];
 
@@ -390,7 +407,7 @@ async function main() {
     ...(process.env.GEMINI_MODEL ? { model: process.env.GEMINI_MODEL } : {}),
     ...(process.env.LLM_MAX_CALLS ? { maxCalls: Number(process.env.LLM_MAX_CALLS) } : {}),
   });
-  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
+  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [], duplicateNames: [] };
 
   // staging は毎回 data/ のコピーから作り直す
   rmSync(STAGING, { recursive: true, force: true });

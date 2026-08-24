@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "dark",
       "matchType": "tag",
       "sides": [
         {
@@ -41,7 +42,8 @@
       "notes": "※サンシャイン・ドライバー"
     },
     {
-      "order": 2,
+      "order": 1,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -71,7 +73,8 @@
       "notes": "※世界一のバックドロップ"
     },
     {
-      "order": 3,
+      "order": 2,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -103,7 +106,8 @@
       "notes": "※ラリアット"
     },
     {
-      "order": 4,
+      "order": 3,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -135,7 +139,8 @@
       "notes": "※ラリアット"
     },
     {
-      "order": 5,
+      "order": 4,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -165,7 +170,8 @@
       "notes": "※ラリアット"
     },
     {
-      "order": 6,
+      "order": 5,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -197,7 +203,8 @@
       "notes": "※ローリング・エルボーバット"
     },
     {
-      "order": 7,
+      "order": 6,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -225,7 +232,8 @@
       "notes": "※キャノンボール450°・オン・ザ・プラスチックケース"
     },
     {
-      "order": 8,
+      "order": 7,
+      "segment": "card",
       "matchType": "eight-man-tag",
       "sides": [
         {
@@ -259,7 +267,8 @@
       "notes": null
     },
     {
-      "order": 9,
+      "order": 8,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {

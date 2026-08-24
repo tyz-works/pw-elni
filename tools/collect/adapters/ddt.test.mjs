@@ -26,9 +26,14 @@ test('会場名を表示名のまま取る', () => {
   assert.equal(event.venueSlug, null);
 });
 
-test('試合を 7 つ取り order を振る', () => {
+// ダークマッチは公式の試合番号の外にある（「オープニングマッチ」が第 1 試合）。
+// 本戦とは別の連番にするので、両方に 1 が現れるのが正しい。
+test('試合を 7 つ取り segment ごとに order を振る', () => {
   const { event } = parse(RAW, TARGET);
-  assert.deepEqual(event.matches.map((m) => m.order), [1, 2, 3, 4, 5, 6, 7]);
+  assert.deepEqual(
+    event.matches.map((m) => `${m.segment}:${m.order}`),
+    ['dark:1', 'card:1', 'card:2', 'card:3', 'card:4', 'card:5', 'card:6'],
+  );
 });
 
 // 見出しの語彙（ダークマッチ・再試合など）は興行ごとに増える。列挙して
@@ -56,7 +61,31 @@ test('目次の見出しは試合にも取りこぼしにも数えない', () =>
 
 test('メインイベントも通し番号の途中として拾う', () => {
   const { event } = parse(RAW, TARGET);
-  assert.equal(event.matches[3].order, 4);
+  assert.equal(event.matches[3].order, 3);
+  assert.equal(event.matches[3].segment, 'card');
+});
+
+// 番号は「解析できた試合の連番」ではなく「番組表に載った試合の位置」で振る。
+// 連番にすると、解析に失敗した試合の後ろが 1 つずつ繰り上がって
+// 別の試合の番号になる（実データで 4 興行が該当した）。
+test('解析できなかった試合のぶんも番号を消費する', () => {
+  // 第一試合の中身を壊して解析できなくする。
+  const broken = RAW.replace('架空太郎', 'あ'.repeat(40));
+  const { event } = parse(broken, TARGET);
+  const orders = event.matches.filter((m) => m.segment === 'card').map((m) => m.order);
+  assert.ok(!orders.includes(1), '解析できなかった第一試合の番号が使われている');
+  assert.deepEqual(orders, [2, 3, 4, 5, 6], '後ろの試合が繰り上がっている');
+});
+
+// 番組表には試合以外も並ぶ（前説・ライブ・オープニング）。試合として
+// 数えると以降の番号が 1 つずつずれる。
+test('番組表の非試合項目は番号を消費しない', () => {
+  const { event, unparsed } = parse(RAW, TARGET);
+  assert.equal(event.matches[1].order, 1, 'オープニングが第 1 試合を消費している');
+  assert.ok(
+    unparsed.some((u) => u.includes('架空十九郎')),
+    'オープニング内の番号なしの試合が取りこぼしとして出ていない',
+  );
 });
 
 test('陣営を VS で割り、名前だけを持つ', () => {

@@ -53,16 +53,22 @@ function mergeArray(existing, incoming, path, conflicts, sourceUrl, key) {
     return out;
   }
 
-  // matches: order を identity にする
+  // matches: segment + order を identity にする。ダークマッチは本戦と
+  // 別の連番なので、order だけで突き合わせると別の試合に上書きしてしまう。
   if (key === 'matches') {
     const out = existing.slice();
-    const indexByOrder = new Map(out.map((m, i) => [m.order, i]));
+    const idOf = (m) => `${m.segment ?? 'card'}:${m.order}`;
+    const indexById = new Map(out.map((m, i) => [idOf(m), i]));
     for (const m of incoming) {
-      const i = indexByOrder.get(m.order);
+      const i = indexById.get(idOf(m));
       if (i === undefined) { out.push(m); continue; }
-      out[i] = mergeValue(out[i], m, `${path}[order=${m.order}]`, conflicts, sourceUrl, null);
+      // パス表記は既存のまま。acknowledged-conflicts.json の鍵になっているので
+      // 変えると記録済みの食い違いが全件やり直しになる。
+      const label = (m.segment ?? 'card') === 'dark' ? `dark=${m.order}` : `order=${m.order}`;
+      out[i] = mergeValue(out[i], m, `${path}[${label}]`, conflicts, sourceUrl, null);
     }
-    return out.sort((a, b) => a.order - b.order);
+    // ダークマッチは本戦の前に行われるので先に並べる。
+    return out.sort((a, b) => matchRank(a) - matchRank(b));
   }
 
   // sides: 位置を identity にする。要素数が違えば conflict
@@ -89,4 +95,10 @@ function mergeArray(existing, incoming, path, conflicts, sourceUrl, key) {
   if (isDeepStrictEqual(existing, incoming)) return existing;
   conflicts.push({ path, existing, incoming, sourceUrl });
   return existing;
+}
+
+// 並び順の基準。ダークマッチは公式の試合番号の外で、本戦の前に行われる。
+// 大きめの下駄を履かせて本戦と混ざらないようにする。
+function matchRank(m) {
+  return ((m.segment ?? 'card') === 'dark' ? 0 : 1000) + m.order;
 }

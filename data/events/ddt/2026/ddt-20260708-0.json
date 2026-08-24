@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "dark",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -43,7 +44,8 @@
       "notes": "※ムーンサルト・プレス"
     },
     {
-      "order": 2,
+      "order": 1,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -75,7 +77,8 @@
       "notes": "※マッドスプラッシュ"
     },
     {
-      "order": 3,
+      "order": 2,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -105,7 +108,8 @@
       "notes": "※ダイビング・ヘッドバット"
     },
     {
-      "order": 4,
+      "order": 3,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -135,7 +139,8 @@
       "notes": "※世界一のバックドロップ"
     },
     {
-      "order": 5,
+      "order": 4,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -167,7 +172,8 @@
       "notes": "※蒼魔刀"
     },
     {
-      "order": 6,
+      "order": 5,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -199,7 +205,8 @@
       "notes": "※平田がアイアンマンヘビーメタル級王座の防衛に失敗、須見が第1840代王者となる。"
     },
     {
-      "order": 7,
+      "order": 6,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {

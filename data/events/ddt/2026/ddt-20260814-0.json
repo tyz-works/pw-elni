@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "dark",
       "matchType": "singles",
       "sides": [
         {
@@ -39,7 +40,8 @@
       "notes": "※裏拳"
     },
     {
-      "order": 2,
+      "order": 1,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -71,7 +73,8 @@
       "notes": "※DDT"
     },
     {
-      "order": 3,
+      "order": 2,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -101,7 +104,8 @@
       "notes": null
     },
     {
-      "order": 4,
+      "order": 3,
+      "segment": "card",
       "matchType": "multi-man",
       "sides": [
         {
@@ -138,7 +142,8 @@
       "notes": null
     },
     {
-      "order": 5,
+      "order": 4,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -170,7 +175,8 @@
       "notes": "※ラリアット。勝俣がアイアンマンヘビーメタル級王座の防衛に失敗、ディーノが第1900代王者となるとともに、勝俣の持ついつでもどこでも挑戦権（赤）がディーノに移動。"
     },
     {
-      "order": 6,
+      "order": 5,
+      "segment": "card",
       "matchType": "multi-man",
       "sides": [
         {
@@ -204,7 +210,8 @@
       "notes": null
     },
     {
-      "order": 7,
+      "order": 6,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {

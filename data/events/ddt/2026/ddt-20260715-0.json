@@ -1,43 +1,45 @@
 {
-  "eventId": "stardom-20260802-0",
-  "promotionSlug": "stardom",
-  "name": "Sammy presents STARDOM 5★STAR GP 2026 in UTSUNOMIYA",
+  "eventId": "ddt-20260715-0",
+  "promotionSlug": "ddt",
+  "name": "闘うビアガーデン2026 in SHINJUKU 【FINAL COUNTDOWN1】",
   "series": null,
-  "date": "2026-08-02",
+  "date": "2026-07-15",
   "doorsOpen": null,
   "bellTime": null,
-  "venueSlug": "utsunomiya-light-cube",
-  "attendance": 766,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
   "confirmed": true,
   "matches": [
     {
       "order": 1,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "saya-kamitani"
+            "jun-akiyama",
+            "soma-takao"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "kian-furusawa"
+            "naomi-yoshimura",
+            "rukiya"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 15,
       "result": {
         "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 435
+        "durationSeconds": 327
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※ニーバット"
     },
     {
       "order": 2,
@@ -46,53 +48,55 @@
       "sides": [
         {
           "wrestlerIds": [
-            "suzu-suzuki"
+            "tomei-kazuki-hirata"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "rian"
+            "kazuki-hirata"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 15,
       "result": {
         "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 261
+        "durationSeconds": 694
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※＜　＞内は入場順。"
     },
     {
       "order": 3,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "sakura-aya"
+            "hideki-okatani",
+            "ilusion"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "miyu-amasaki"
+            "yuni",
+            "kumadori"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 30,
       "result": {
-        "winnerSideIndex": 1,
-        "decision": "pinfall",
+        "winnerSideIndex": 0,
+        "decision": "unknown",
         "finishMoveSlug": null,
-        "durationSeconds": 538
+        "durationSeconds": 649
       },
       "confirmed": true,
       "notes": null
@@ -100,184 +104,156 @@
     {
       "order": 4,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "ruaka"
+            "danshoku-dieno",
+            "danshoku-dieno"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "julia-hart"
+            "antonio-honda",
+            "junta-miyawaki"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 30,
       "result": {
         "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 455
+        "durationSeconds": 550
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※ゴッチ式男色ドライバー"
     },
     {
       "order": 5,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "eight-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "yuna-mizumori"
+            "yuki-ueno",
+            "shinya-aoki",
+            "to-y",
+            "kaisei-takechi"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "koguma"
+            "kanon",
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 30,
       "result": {
         "winnerSideIndex": 0,
-        "decision": "unknown",
+        "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 470
+        "durationSeconds": 718
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※BREAK IT DOWN"
     },
     {
       "order": 6,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "starlight-kid"
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "momo-watanabe"
+            "harashima",
+            "yuki-ishida",
+            "hinata-kasai"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 30,
       "result": {
         "winnerSideIndex": 0,
-        "decision": "unknown",
+        "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 611
+        "durationSeconds": 653
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※ファイヤーサンダー"
     },
     {
       "order": 7,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "multi-man",
       "sides": [
         {
           "wrestlerIds": [
-            "hanan"
+            "daisuke-sasaki"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "ami-sohrei"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": null,
-      "result": {
-        "winnerSideIndex": 1,
-        "decision": "pinfall",
-        "finishMoveSlug": null,
-        "durationSeconds": 676
-      },
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 8,
-      "segment": "card",
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "hina"
+            "kazuma-sumi"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "hanako"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": null,
-      "result": {
-        "winnerSideIndex": 1,
-        "decision": "pinfall",
-        "finishMoveSlug": null,
-        "durationSeconds": 848
-      },
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 9,
-      "segment": "card",
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "itsuki-aoki"
+            "chris-brookes"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "rina"
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
+      "timeLimitMinutes": 30,
       "result": {
-        "winnerSideIndex": 1,
-        "decision": "pinfall",
+        "winnerSideIndex": 4,
+        "decision": "knockout",
         "finishMoveSlug": null,
-        "durationSeconds": 876
+        "durationSeconds": 1321
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※勝俣がいつでもどこでも挑戦権を獲得。"
     }
   ],
-  "officialUrl": "https://wwr-stardom.com/event/20260802_utsunomiya/",
+  "officialUrl": "https://www.ddtpro.jp/results/6a5722f012ed1a00021bd390",
   "sources": [
     {
-      "url": "https://wwr-stardom.com/event/20260802_utsunomiya/",
-      "title": "Sammy presents STARDOM 5★STAR GP 2026 in UTSUNOMIYA | stardom",
-      "retrievedAt": "2026-08-21"
+      "url": "https://www.ddtpro.jp/results/6a5722f012ed1a00021bd390",
+      "title": "闘うビアガーデン2026 in SHINJUKU 【FINAL COUNTDOWN1】 | ddt",
+      "retrievedAt": "2026-08-24"
     }
   ]
 }

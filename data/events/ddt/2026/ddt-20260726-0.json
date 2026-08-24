@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "dark",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -43,7 +44,8 @@
       "notes": "※ジャックナイフ式エビ固めを切り返す。夢虹がアイアンマンヘビーメタル級王座の防衛に失敗、アントンが第1845代王者となる。"
     },
     {
-      "order": 2,
+      "order": 1,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -73,7 +75,8 @@
       "notes": null
     },
     {
-      "order": 3,
+      "order": 2,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -103,7 +106,8 @@
       "notes": "※ダイビング・ヘッドバット"
     },
     {
-      "order": 4,
+      "order": 3,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -135,7 +139,8 @@
       "notes": null
     },
     {
-      "order": 5,
+      "order": 4,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -165,7 +170,8 @@
       "notes": "※第89代王者組が3度目の防衛に成功。"
     },
     {
-      "order": 6,
+      "order": 5,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -193,7 +199,8 @@
       "notes": "※串刺し式クレイモア。第64代王者が4度目の防衛に成功。"
     },
     {
-      "order": 7,
+      "order": 6,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {

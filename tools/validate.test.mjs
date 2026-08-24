@@ -296,7 +296,32 @@ const CASES = [
       writeJson(bPath, b);
     },
   },
+  {
+    // order は segment ごとの連番なので、同じ segment の中でだけ重複を見る。
+    name: '同じ segment の中で order が重複',
+    expect: 'order が重複している',
+    mutate: (d) => {
+      const p = pickJson(join(d, 'events'), (e) => e.matches.length > 1);
+      const e = readJson(p);
+      e.matches[1].order = e.matches[0].order;
+      e.matches[1].segment = e.matches[0].segment;
+      writeJson(p, e);
+    },
+  },
 ];
+
+// ダークマッチは公式の試合番号の外にあり、本戦とは別の連番。同じ興行に
+// dark:1 と card:1 が並ぶのは正しい状態で、重複として落としてはいけない。
+test('通るべき: segment が違えば同じ order が並んでよい', () => {
+  const { code, out } = runWithMutation((d) => {
+    const p = pickJson(join(d, 'events'), (e) => e.matches.length > 1);
+    const e = readJson(p);
+    e.matches[0].segment = 'dark';
+    e.matches[0].order = e.matches[1].order;
+    writeJson(p, e);
+  });
+  assert.equal(code, 0, `重複でないものが落ちている:\n${out}`);
+});
 
 for (const c of CASES) {
   test(`落ちるべき: ${c.name}`, () => {
