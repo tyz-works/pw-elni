@@ -228,14 +228,19 @@ async function runPromotion(promotion, opts, result) {
       // 抽出結果を先に見る。記事は公開後に変わらないので、呼び直しても
       // 同じ結果に金を払うだけになる。取り込めたかどうかとは無関係に残す
       // （未解決の名前があって書けない興行こそ、毎日呼び直してしまう）。
+      // LLM は検算できるときだけ使う。アダプタが公式カードを返さない団体
+      // （＝突き合わせる材料が無い）では呼ばない。呼んでも必ず弾かれるうえ、
+      // 課金だけが積み上がる。
+      const verifiable = (rawEvent.cardMatches ?? []).length > 0;
+
       // 版が違うキャッシュは使わない。プロンプトを変えた後に古い結果を
       // 使い続けると、直したはずの誤りが残る。
-      const stored = opts.noLlm ? null : readExtraction(promotion, id);
+      const stored = opts.noLlm || !verifiable ? null : readExtraction(promotion, id);
       const cached = stored?.promptVersion === PROMPT_VERSION ? stored : null;
       let llmMatches = cached?.matches ?? null;
       let usedModel = cached ? `${cached.model} (キャッシュ)` : null;
 
-      if (!llmMatches && !opts.noLlm && extractor && unparsed.length) {
+      if (!llmMatches && !opts.noLlm && verifiable && extractor && unparsed.length) {
         const filled = await extractor.extract(unparsed.join('\n\n'));
         if (filled?.length) {
           writeExtraction(promotion, id, { promptVersion: PROMPT_VERSION, model: extractor.model, matches: filled });
@@ -244,6 +249,7 @@ async function runPromotion(promotion, opts, result) {
         }
       }
 
+      let llmTaken = 0;
       if (llmMatches?.length) {
         // ここが検算。カードと突き合わせて合わない試合は採らない。
         let taken = 0;
@@ -257,13 +263,16 @@ async function runPromotion(promotion, opts, result) {
             taken += 1;
           }
         }
+        llmTaken = taken;
         if (taken) {
           result.llmFilled.push({ promotion, eventId: rawEvent.eventId, order: taken, model: usedModel });
         }
       }
 
       // 組み立てられなかった分は人間に上げる。黙って捨てない。
-      if (!rawEvent.matches.length) {
+      // 判定は「LLM が実際に試合を組み立てたか」で行う。決定論的に取れた
+      // 試合が別にあっても、取りこぼした断片は取りこぼしのまま報告する。
+      if (!llmTaken) {
         for (const fragment of unparsed) {
           hasUnparsed = true;
           result.unparsed.push({ promotion, eventId: rawEvent.eventId, text: fragment });
