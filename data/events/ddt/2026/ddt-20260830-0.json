@@ -12,117 +12,19 @@
   "matches": [
     {
       "order": 1,
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "mao"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "daichi-satoh"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": "KO-D無差別級選手権",
-      "timeLimitMinutes": null,
-      "result": null,
-      "confirmed": false,
-      "notes": "第 89 代王者 MAO の 2 度目の防衛戦。公式発表に「いつでもどこでも挑戦権の動向次第で変更の場合あり」と注記があるため未確定として扱う。なお order は公式の対戦カード掲載順であり、当日の試合順は未発表。"
-    },
-    {
-      "order": 2,
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "ryusuke-taguchi"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "daisuke-sasaki"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": "DDT UNIVERSAL選手権",
-      "timeLimitMinutes": null,
-      "result": null,
-      "confirmed": true,
-      "notes": "第 22 代王者の初防衛戦。"
-    },
-    {
-      "order": 3,
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "shunma-katsumata"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "kumadori"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": "DDT EXTREME級選手権",
-      "timeLimitMinutes": null,
-      "result": null,
-      "confirmed": true,
-      "notes": "DDT EXTREME 級とアイアンマンヘビーメタル級の両選手権試合。勝俣は第 65 代 DDT EXTREME 級王座の 5 度目、第 1899 代アイアンマンヘビーメタル級王座の防衛戦。ルールは未定で、アイアンマンヘビーメタル級王座の性質上、当日は DDT EXTREME 級王座のみが懸けられる場合がある。"
-    },
-    {
-      "order": 4,
       "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "shinya-aoki",
-            "junta-miyawaki"
+            "naomi-yoshimura",
+            "tomomitsu-matsunaga"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "jun-akiyama",
-            "rukiya"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": "KO-Dタッグ選手権",
-      "timeLimitMinutes": null,
-      "result": null,
-      "confirmed": true,
-      "notes": "第 90 代王者組の初防衛戦。"
-    },
-    {
-      "order": 5,
-      "matchType": "eight-man-tag",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "harashima",
-            "yasu-urano",
-            "akito",
-            "soma-takao"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "fuminori-abe",
-            "takeshi-masada",
-            "yuya-koroku",
-            "masami-inahata"
+            "yuni",
+            "yuki-ishida"
           ],
           "teamName": null
         }
@@ -131,17 +33,17 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": "スペシャル 8 人タッグマッチ。"
+      "notes": "ダークマッチ。当日の試合順は未発表のため、order は公式の対戦カード掲載順（メインイベントが先頭）を反転して振っている。"
     },
     {
-      "order": 6,
+      "order": 2,
       "matchType": "multi-man",
       "sides": [
         {
           "wrestlerIds": [
             "kanon",
             "yukio-naya",
-            "kazuma-sumi"
+            "viento-levante"
           ],
           "teamName": null
         },
@@ -169,7 +71,7 @@
       "notes": "3WAY6 人タッグマッチ。KANON 組には KIMIHIRO と YUZUKI がセコンドに付く。"
     },
     {
-      "order": 7,
+      "order": 3,
       "matchType": "tag",
       "sides": [
         {
@@ -181,42 +83,140 @@
         },
         {
           "wrestlerIds": [
+            "jun-akiyama",
+            "fuminori-abe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "スペシャルタッグマッチ。"
+    },
+    {
+      "order": 4,
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "harashima",
+            "yasu-urano",
+            "akito",
+            "soma-takao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "kazuma-sumi",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "スペシャル 8 人タッグマッチ。"
+    },
+    {
+      "order": 5,
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shinya-aoki",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
             "danshoku-dieno",
             "kazuki-hirata"
           ],
           "teamName": null
         }
       ],
-      "titleName": null,
+      "titleName": "KO-Dタッグ選手権",
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "第 90 代王者組の初防衛戦。"
     },
     {
-      "order": 8,
-      "matchType": "tag",
+      "order": 6,
+      "matchType": "singles",
       "sides": [
         {
           "wrestlerIds": [
-            "viento-levante",
-            "naomi-yoshimura"
+            "shunma-katsumata"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "yuni",
-            "yuki-ishida"
+            "kumadori"
           ],
           "teamName": null
         }
       ],
-      "titleName": null,
+      "titleName": "DDT EXTREME選手権",
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": "ダークマッチ。"
+      "notes": "第 65 代王者の初防衛戦。"
+    },
+    {
+      "order": 7,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT UNIVERSAL選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "第 22 代王者の初防衛戦。"
+    },
+    {
+      "order": 8,
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D無差別級選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": false,
+      "notes": "第 89 代王者 MAO の 2 度目の防衛戦。公式発表に「いつでもどこでも挑戦権の動向次第で変更の場合あり」と注記があるため未確定として扱う。"
     }
   ],
   "officialUrl": "https://www.ddtpro.jp/schedules/693146cb3700d20002d1cdad",
@@ -224,7 +224,7 @@
     {
       "url": "https://www.ddtpro.jp/schedules/693146cb3700d20002d1cdad",
       "title": "東京・後楽園ホール「LAST SUMMER STANDING ～夏の答え合わせ～」 | DDT プロレスリング公式サイト",
-      "retrievedAt": "2026-08-20"
+      "retrievedAt": "2026-08-25"
     }
   ]
 }
