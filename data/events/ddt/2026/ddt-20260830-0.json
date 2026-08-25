@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "dark",
       "matchType": "tag",
       "sides": [
         {
@@ -36,7 +37,8 @@
       "notes": "ダークマッチ。当日の試合順は未発表のため、order は公式の対戦カード掲載順（メインイベントが先頭）を反転して振っている。"
     },
     {
-      "order": 2,
+      "order": 1,
+      "segment": "card",
       "matchType": "multi-man",
       "sides": [
         {
@@ -71,7 +73,8 @@
       "notes": "3WAY6 人タッグマッチ。KANON 組には KIMIHIRO と YUZUKI がセコンドに付く。"
     },
     {
-      "order": 3,
+      "order": 2,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -96,7 +99,8 @@
       "notes": "スペシャルタッグマッチ。"
     },
     {
-      "order": 4,
+      "order": 3,
+      "segment": "card",
       "matchType": "eight-man-tag",
       "sides": [
         {
@@ -125,7 +129,8 @@
       "notes": "スペシャル 8 人タッグマッチ。"
     },
     {
-      "order": 5,
+      "order": 4,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -150,7 +155,8 @@
       "notes": "第 90 代王者組の初防衛戦。"
     },
     {
-      "order": 6,
+      "order": 5,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -173,7 +179,8 @@
       "notes": "第 65 代王者の初防衛戦。"
     },
     {
-      "order": 7,
+      "order": 6,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -196,7 +203,8 @@
       "notes": "第 22 代王者の初防衛戦。"
     },
     {
-      "order": 8,
+      "order": 7,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {

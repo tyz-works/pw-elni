@@ -19,6 +19,20 @@ const RESULT_ID_RE = /\/results\/([0-9a-f]{24})(?:[/?#]|$)/;
 // 「勝負」で終わることで判定する。列挙にすると取りこぼした試合の中身が
 // 手前の試合に混ざる。
 const HEAD_RE = /^(.{0,24}?)[\s　]*(?:(\d+)分)?(?:時間無制限)?(?:一本|\d+本)?勝負$/;
+
+// ダークマッチは公式の試合番号の外にある（「オープニングマッチ」が第 1 試合）。
+// 本戦とは別の連番にするので、見出しで見分ける。
+const DARK_RE = /^ダークマッチ/;
+
+// 番組表には試合以外も並ぶ（前説・公開調印式・ライブ・オープニング）。
+// 試合の見出しだけが試合形式の表記で終わる。「オープニングマッチ」のような
+// 見出しの語彙ではなく、この末尾で見分ける。語彙は興行ごとに増えるが、
+// 形式の書き方は団体をまたいで安定している。
+//
+// 前説や公開調印式の中でアイアンマン級王座が動くことがあり、それを番号付きの
+// 試合として数えると以降の番号が 1 つずつずれる。公式が番号を振っていない
+// 試合は収録しない（data/README.md）。
+const PROGRAM_MATCH_RE = /(?:勝負|ラウンド制)$/;
 const DURATION_RE = /^(\d+)分(\d+)秒$/;
 
 // 公式は一部の試合時間を「19時27分」と誤記する（正しくは 19 分 27 秒）。
@@ -58,20 +72,35 @@ export function parse(raw, target) {
   const venueName = parseVenue(lines);
 
   const matches = [];
-  for (const block of splitMatches(lines)) {
-    // ページ冒頭の目次にも見出しだけが並ぶ。試合の中身が無いブロックは
-    // 失われた試合ではないので unparsed に入れない。
+  const nextOrder = { card: 0, dark: 0 };
+  for (const { heading, block } of splitBlocks(lines)) {
+    // 試合の中身が無いブロックは失われた試合ではない（見出しだけの目次、
+    // 前説・ライブ・公開調印式）。unparsed に入れない。
     if (!looksLikeMatch(block)) continue;
-    const parsed = parseMatch(block, matches.length + 1);
+
+    // 番号の付かない試合。収録はしないが、黙って落とさず取りこぼしに上げる。
+    if (!PROGRAM_MATCH_RE.test(heading)) {
+      unparsed.push(block.join('\n'));
+      continue;
+    }
+
+    // 番号は「解析できた試合の連番」ではなく「番組表に載った試合の位置」で
+    // 振る。解析に失敗した試合のぶんも番号を消費させないと、以降の試合が
+    // 1 つずつ繰り上がって別の試合の番号になる。
+    const segment = DARK_RE.test(heading) ? 'dark' : 'card';
+    nextOrder[segment] += 1;
+    const order = nextOrder[segment];
+
+    const parsed = parseMatch(block, order, segment);
     if (!parsed) {
       unparsed.push(block.join('\n'));
       continue;
     }
     matches.push(parsed.match);
 
-    // 見出しの語彙は列挙しきれない（「リング撤収デスマッチ」は「勝負」で
-    // 終わらない）。取りこぼした見出しの試合は 1 つ前のブロックの末尾に
-    // 残るので、黙って落とさず unparsed に上げる。
+    // 番組表に無い試合（アイアンマン級王座の移動など）はブロックの末尾に
+    // 残る。公式が番号を振っていないので番号は与えないが、黙って落とさず
+    // unparsed に上げる。
     const rest = block.slice(parsed.endIdx);
     if (looksLikeMatch(rest)) unparsed.push(rest.join('\n'));
   }
@@ -117,10 +146,50 @@ function parseName(lines) {
   return null;
 }
 
-function splitMatches(lines) {
-  const starts = [];
-  for (const [i, l] of lines.entries()) if (HEAD_RE.test(l)) starts.push(i);
-  return starts.map((s, k) => lines.slice(s, starts[k + 1] ?? lines.length));
+// 結果ページの冒頭には「★大会ハイライト★」に挟まれた番組表がある。公式が
+// その日の進行をそのまま並べたもので、試合以外（前説・ライブ・公開調印式）も
+// 含む。本文はこの項目名を見出しとして繰り返す。
+//
+// 見出しを正規表現で拾うより番組表を使うほうが取りこぼさない。「第二試合
+// 3分5ラウンド制」のように「勝負」で終わらない見出しが実在し、HEAD_RE では
+// 切れずに手前の試合へ混ざる。番組表には並んで載っている。
+const PROGRAM_MARKER = '★大会ハイライト★';
+
+/** @returns {{items: string[], bodyStart: number} | null} */
+function parseProgram(lines) {
+  const first = lines.indexOf(PROGRAM_MARKER);
+  if (first === -1) return null;
+  const second = lines.indexOf(PROGRAM_MARKER, first + 1);
+  if (second === -1) return null;
+  const items = lines.slice(first + 1, second).filter(Boolean);
+  return items.length ? { items, bodyStart: second + 1 } : null;
+}
+
+// 本文を見出しで区切る。番組表があればその項目名で、無ければ HEAD_RE で。
+// 番組表が無い興行が実在する（試合が 1〜2 件の小規模大会）。
+/** @returns {{heading: string, block: string[]}[]} */
+function splitBlocks(lines) {
+  const program = parseProgram(lines);
+  if (!program) {
+    const starts = [];
+    for (const [i, l] of lines.entries()) if (HEAD_RE.test(l)) starts.push(i);
+    return starts.map((s, k) => ({ heading: lines[s], block: lines.slice(s, starts[k + 1] ?? lines.length) }));
+  }
+
+  // 項目は番組表の順に本文へ現れる。前から順に探し、見つかった位置で切る。
+  // 同じ文字列の項目が 2 つあっても手前から順に消費するので取り違えない。
+  const found = [];
+  let from = program.bodyStart;
+  for (const item of program.items) {
+    const at = lines.indexOf(item, from);
+    if (at === -1) continue;
+    found.push({ heading: item, at });
+    from = at + 1;
+  }
+  return found.map((f, k) => ({
+    heading: f.heading,
+    block: lines.slice(f.at, found[k + 1]?.at ?? lines.length),
+  }));
 }
 
 // 試合の中身（時間か勝敗ラベル）を含むか。目次の見出しだけの行と区別する。
@@ -128,11 +197,11 @@ function looksLikeMatch(block) {
   return block.some((l) => TIME_LINE_RE.test(l) || l === 'VS' || l === 'WIN' || l === 'LOSE');
 }
 
-function parseMatch(block, order) {
+function parseMatch(block, order, segment) {
   const head = block[0];
-  const hm = HEAD_RE.exec(head);
-  if (!hm) return null;
-  const timeLimitMinutes = hm[2] ? Number(hm[2]) : null;
+  // 制限時間は「N 分一本勝負」の形のときだけ採る。「3分5ラウンド制」の 3 は
+  // 1 ラウンドの長さであって制限時間ではない。読めなければ null で通す。
+  const timeLimitMinutes = HEAD_RE.exec(head)?.[2] ? Number(HEAD_RE.exec(head)[2]) : null;
 
   // 選手名やラベルは前後を空行で挟まれる。見出しの直後に空行なしで続く行は
   // 副題（「スペシャルタッグマッチ」「〜選手権試合」）であって選手名ではない。
@@ -167,6 +236,7 @@ function parseMatch(block, order) {
   return {
     match: {
       order,
+      segment,
       matchType: null, // sides の人数から run.mjs 側で決める
       sides,
       titleName,

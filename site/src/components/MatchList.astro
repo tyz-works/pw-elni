@@ -9,7 +9,18 @@ interface Props {
 }
 
 const { matches, wrestlerBySlug, moveBySlug } = Astro.props;
-const ordered = [...matches].sort((a, b) => a.order - b.order);
+
+// ダークマッチは公式の試合番号の外にあり、本戦の前に行われる。
+// order は segment ごとの連番なので、まず segment で分けてから並べる。
+const rank = (m: Match) => (m.segment === 'dark' ? 0 : 1000) + m.order;
+const ordered = [...matches].sort((a, b) => rank(a) - rank(b));
+
+// ダークマッチが 1 つだけなら番号を付けない（公式もそう書く）。
+const darkCount = matches.filter((m) => m.segment === 'dark').length;
+const orderLabel = (m: Match) =>
+  m.segment === 'dark'
+    ? (darkCount > 1 ? `第${m.order}ダークマッチ` : 'ダークマッチ')
+    : `第${m.order}試合`;
 ---
 
 {
@@ -23,7 +34,7 @@ const ordered = [...matches].sort((a, b) => a.order - b.order);
         return (
           <li class="match">
             <p class="match-head">
-              <span class="match-order">第{m.order}試合</span>
+              <span class="match-order">{orderLabel(m)}</span>
               <span>{MATCH_TYPE_LABEL[m.matchType]}</span>
               {m.timeLimitMinutes !== null && <span>{m.timeLimitMinutes}分1本勝負</span>}
               {m.titleName && <span class="badge title">{m.titleName}</span>}

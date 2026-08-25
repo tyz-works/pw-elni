@@ -15,6 +15,7 @@ import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
+import { matchKey, matchLabel } from './core/match-label.mjs';
 import { createExtractor, PROMPT_VERSION } from './core/llm.mjs';
 import { mergeLlmMatch, pairWithCards } from './core/llm-merge.mjs';
 import * as ddt from './adapters/ddt.mjs';
@@ -91,6 +92,10 @@ function eventPath(base, promotion, eventId) {
 // そのまま流すと additionalProperties で検証に落ちる。
 function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceUrl) {
   const unresolved = [];
+  // 同じリングネームが 1 つの陣営に複数並ぶ試合。公式がそう書いていることが
+  // あり（覆面・分身）、スキーマでは許している。ただし黙って通すと
+  // こちらの取り違えを見逃すので、レポートに上げて人間に見せる。
+  const duplicateNames = [];
 
   // 会場はスキーマ上必須。解決できない会場を勝手に作らないので、
   // 解決できなければこの興行は書かない（選手名と同じ扱い）。
@@ -111,6 +116,15 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
         if (!slug) unresolved.push({ promotion, eventName: rawEvent.name, name: n, sourceUrl });
         return slug;
       });
+      const dupes = wrestlerIds.filter((v, i) => v && wrestlerIds.indexOf(v) !== i);
+      if (dupes.length) {
+        duplicateNames.push({
+          promotion,
+          eventId: rawEvent.eventId,
+          label: matchLabel(m),
+          names: [...new Set(dupes)],
+        });
+      }
       return { wrestlerIds, teamName: s.teamName };
     });
     // 陣営が 3 つ以上なら人数に関係なく multi-man。1 人ずつの 3 way を
@@ -127,6 +141,9 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
 
     return {
       order: m.order,
+      // ダークマッチを区別するのは今のところ DDT だけ。他のアダプタは
+      // 公式が番号を振った本戦しか返さないので card に倒す。
+      segment: m.segment ?? 'card',
       matchType,
       sides,
       titleName: m.titleName,
@@ -160,7 +177,7 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
     officialUrl: rawEvent.officialUrl,
     sources: rawEvent.sources,
   };
-  return { event, unresolved };
+  return { event, unresolved, duplicateNames };
 }
 
 async function runPromotion(promotion, opts, result) {
@@ -293,8 +310,9 @@ async function runPromotion(promotion, opts, result) {
       }
       seenEventIds.add(rawEvent.eventId);
 
-      const { event, unresolved } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
+      const { event, unresolved, duplicateNames } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
       result.unresolved.push(...unresolved);
+      result.duplicateNames.push(...duplicateNames);
 
       event.sources = [{ url, title: `${event.name} | ${promotion}`, retrievedAt: today() }];
 
@@ -321,10 +339,17 @@ async function runPromotion(promotion, opts, result) {
       // 抽出側が 1 試合も取れていないときは「消えた」の判定をしない。
       // LLM が動かなかった等でカードが空になっただけで、既存の全試合が
       // 消えたと報告してしまう。
+      //
+      // 突き合わせは segment + order で行う。order だけで見ると、ダークマッチが
+      // 公式から消えても本戦の同じ番号が残っているかぎり検知できない。
       if (event.matches.length) {
-        const incomingOrders = new Set(event.matches.map((m) => m.order));
-        const dropped = existing.matches.map((m) => m.order).filter((o) => !incomingOrders.has(o));
-        if (dropped.length) result.droppedOrders.push({ promotion, eventId: event.eventId, orders: dropped });
+        const incoming = new Set(event.matches.map(matchKey));
+        const dropped = existing.matches.filter((m) => !incoming.has(matchKey(m)));
+        if (dropped.length) {
+          result.droppedOrders.push({
+            promotion, eventId: event.eventId, labels: dropped.map(matchLabel),
+          });
+        }
       }
 
       if (!unresolved.length) stage(promotion, merged, existing, result);
@@ -364,11 +389,20 @@ function validateStaging() {
   return { ok: v.status === 0, out: (v.stdout ?? '') + (v.stderr ?? '') };
 }
 
-// 検証器はファイルごとに見出し行を出す。そこから落ちた興行のパスを拾う。
-function failingFiles(out) {
-  return out.split('\n')
-    .map((l) => /^ {2}(\/.*\.json)$/.exec(l)?.[1])
-    .filter(Boolean);
+// 検証器はファイルごとに見出し行を出し、その下に「    - 理由」を並べる。
+// 落ちた興行のパスと理由の両方を拾う。理由を捨てると、レポートを見た人間が
+// 何を直せばいいのか分からないまま「反映しない」とだけ告げられる。
+/** @returns {Map<string, string[]>} ファイルの絶対パス → 理由の配列 */
+function failureReasons(out) {
+  const byFile = new Map();
+  let current = null;
+  for (const line of out.split('\n')) {
+    const file = /^ {2}(\/.*\.json)$/.exec(line)?.[1];
+    if (file) { current = []; byFile.set(file, current); continue; }
+    const reason = /^ {4}- (.+)$/.exec(line)?.[1];
+    if (reason && current) current.push(reason);
+  }
+  return byFile;
 }
 
 async function main() {
@@ -381,7 +415,7 @@ async function main() {
     ...(process.env.GEMINI_MODEL ? { model: process.env.GEMINI_MODEL } : {}),
     ...(process.env.LLM_MAX_CALLS ? { maxCalls: Number(process.env.LLM_MAX_CALLS) } : {}),
   });
-  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
+  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [], duplicateNames: [] };
 
   // staging は毎回 data/ のコピーから作り直す
   rmSync(STAGING, { recursive: true, force: true });
@@ -401,8 +435,8 @@ async function main() {
     // 検証に落ちた興行だけを外して再検証する。1 興行の異常で他の興行まで
     // 止めない（部分失敗を許容する設計）。外した興行はレポートに載る。
     for (let i = 0; !v.ok && i < MAX_DROP_ROUNDS; i++) {
-      const bad = new Set(failingFiles(v.out));
-      const dropped = result.changed.filter((c) => bad.has(eventPath(STAGING, c.promotion, c.eventId)));
+      const reasons = failureReasons(v.out);
+      const dropped = result.changed.filter((c) => reasons.has(eventPath(STAGING, c.promotion, c.eventId)));
       // 興行と紐づかない失敗（孤立参照など）は切り分けられないので全体を止める
       if (!dropped.length) break;
       for (const c of dropped) {
@@ -410,9 +444,10 @@ async function main() {
         const original = eventPath(DATA, c.promotion, c.eventId);
         if (existsSync(original)) cpSync(original, staged);
         else rmSync(staged, { force: true });
+        const why = reasons.get(staged) ?? [];
         result.failures.push({
           promotion: c.promotion, step: 'validate',
-          message: `${c.eventId}: 検証に落ちたので反映しない`,
+          message: `${c.eventId}: 検証に落ちたので反映しない — ${why.join(' / ') || '理由を取れなかった'}`,
         });
       }
       const droppedIds = new Set(dropped.map((c) => c.eventId));

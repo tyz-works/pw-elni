@@ -1,0 +1,28 @@
+{
+  "slug": "fukigen-death",
+  "name": "フキゲンです★",
+  "nameEn": "FUKIGEN DEATH★",
+  "aliases": [
+    "ゴキゲンです☆",
+    "DEATH山さん。",
+    "米山香織"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": 150,
+  "weightKg": 58,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/fukigen/",
+      "title": "フキゲンです★ | 選手紹介 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-25"
+    }
+  ]
+}

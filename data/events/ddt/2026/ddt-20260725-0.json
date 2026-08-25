@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {

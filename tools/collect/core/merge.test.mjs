@@ -41,6 +41,18 @@ test('confirmed は false から true にだけ進む', () => {
   assert.equal(down.conflicts.length, 1);
 });
 
+// ダークマッチは公式の試合番号の外にあり、本戦とは別の連番。order だけで
+// 突き合わせると dark:1 が card:1 を上書きしてしまう。
+test('matches は segment + order を identity にする', () => {
+  const existing = { matches: [{ order: 1, segment: 'card', notes: '本戦' }] };
+  const incoming = { matches: [{ order: 1, segment: 'dark', notes: 'ダーク' }] };
+  const { merged, conflicts } = merge(existing, incoming, SRC);
+  assert.equal(merged.matches.length, 2, '別の試合として並ぶこと');
+  assert.deepEqual(conflicts, [], '上書きの食い違いを出さないこと');
+  // ダークマッチは本戦の前に行われるので先に並ぶ。
+  assert.deepEqual(merged.matches.map((m) => m.segment), ['dark', 'card']);
+});
+
 test('matches は order を identity にする', () => {
   const existing = { matches: [{ order: 1, notes: 'あり' }] };
   const incoming = { matches: [{ order: 2, notes: '新規' }, { order: 1, notes: 'あり' }] };

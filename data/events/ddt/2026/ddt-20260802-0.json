@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "card",
       "matchType": "eight-man-tag",
       "sides": [
         {
@@ -46,6 +47,7 @@
     },
     {
       "order": 2,
+      "segment": "card",
       "matchType": "multi-man",
       "sides": [
         {
@@ -83,6 +85,7 @@
     },
     {
       "order": 3,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -111,6 +114,7 @@
     },
     {
       "order": 4,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -141,6 +145,7 @@
     },
     {
       "order": 5,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -173,6 +178,7 @@
     },
     {
       "order": 6,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -203,6 +209,7 @@
     },
     {
       "order": 7,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {

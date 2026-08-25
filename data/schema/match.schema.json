@@ -8,7 +8,12 @@
     "order": {
       "type": "integer",
       "minimum": 1,
-      "description": "第 N 試合。1 始まり。"
+      "description": "segment の中での連番。1 始まり。card なら第 N 試合、dark なら第 N ダークマッチ。"
+    },
+    "segment": {
+      "type": "string",
+      "enum": ["card", "dark"],
+      "description": "card = 公式が試合番号を振る本戦。dark = ダークマッチ（番号の外）。ダークマッチは本戦の前に行われる。"
     },
     "matchType": {
       "type": "string",
@@ -25,8 +30,7 @@
             "type": "array",
             "description": "wrestler の slug。存在しない slug を指すと CI が落ちる。",
             "minItems": 1,
-            "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" },
-            "uniqueItems": true
+            "items": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/slug" }
           },
           "teamName": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" }
         },
@@ -79,6 +83,6 @@
     },
     "notes": { "$ref": "https://pw.elni.net/schema/common.schema.json#/$defs/nullableNonEmptyString" }
   },
-  "required": ["order", "matchType", "sides", "titleName", "timeLimitMinutes", "result", "confirmed", "notes"],
+  "required": ["order", "segment", "matchType", "sides", "titleName", "timeLimitMinutes", "result", "confirmed", "notes"],
   "additionalProperties": false
 }

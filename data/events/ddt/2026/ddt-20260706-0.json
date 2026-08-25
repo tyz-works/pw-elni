@@ -12,6 +12,7 @@
   "matches": [
     {
       "order": 1,
+      "segment": "dark",
       "matchType": "singles",
       "sides": [
         {
@@ -39,7 +40,8 @@
       "notes": "※ダイビング・ボディープレス。<　>内は入場順。リング外に転落の場合失格となるアウト・オブ・ザ・リングを採用。"
     },
     {
-      "order": 2,
+      "order": 1,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -68,6 +70,7 @@
     },
     {
       "order": 3,
+      "segment": "card",
       "matchType": "tag",
       "sides": [
         {
@@ -98,6 +101,7 @@
     },
     {
       "order": 4,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {
@@ -126,6 +130,7 @@
     },
     {
       "order": 5,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -158,6 +163,7 @@
     },
     {
       "order": 6,
+      "segment": "card",
       "matchType": "singles",
       "sides": [
         {

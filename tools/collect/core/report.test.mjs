@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 import { renderReport } from './report.mjs';
 
-const EMPTY = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
+const EMPTY = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [], duplicateNames: [] };
 
 test('何も無ければ差分なしと書く', () => {
   const md = renderReport(EMPTY);
@@ -34,9 +34,15 @@ test('LLM が埋めた箇所を明示する', () => {
   assert.match(md, /第 3 試合/);
 });
 
-test('公式から消えた order を出す', () => {
-  const md = renderReport({ ...EMPTY, droppedOrders: [{ promotion: 'ddt', eventId: 'e', orders: [5] }] });
+test('公式から消えた試合を出す', () => {
+  const md = renderReport({
+    ...EMPTY,
+    droppedOrders: [{ promotion: 'ddt', eventId: 'e', labels: ['第 5 試合', '第 1 ダークマッチ'] }],
+  });
   assert.match(md, /公式側から消えた/);
+  assert.match(md, /第 5 試合/);
+  // ダークマッチは本戦と別の連番なので、番号だけでは何が消えたか分からない。
+  assert.match(md, /第 1 ダークマッチ/);
 });
 
 test('パイプ記号を含む値が表を壊さない', () => {
@@ -79,4 +85,15 @@ test('省略した食い違いの件数を出す', () => {
 
 test('省略が無ければその断りを出さない', () => {
   assert.ok(!renderReport(EMPTY).includes('省略'));
+});
+
+// スキーマは 1 陣営の中の同名を許している（覆面・分身で中の人が違う）。
+// 黙って通すとこちらの取り違えを見逃すので、レポートに上げる。
+test('同名の複数名をレポートに出す', () => {
+  const md = renderReport({
+    ...EMPTY,
+    duplicateNames: [{ promotion: 'ddt', eventId: 'e', label: '第 3 試合', names: ['nise-baramon-yuki'] }],
+  });
+  assert.match(md, /同じ名前が 1 つの陣営に複数/);
+  assert.match(md, /nise-baramon-yuki/);
 });

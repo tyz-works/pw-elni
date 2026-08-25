@@ -1,0 +1,27 @@
+{
+  "slug": "kiyoka-kotatsu",
+  "name": "虎龍清花",
+  "nameEn": "KIYOKA KOTATSU",
+  "aliases": [
+    "虎龍 清花",
+    "福田茉耶"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "群馬県邑楽郡",
+  "debutDate": "2021-07-01",
+  "heightCm": 156,
+  "weightKg": 50,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/xxx_20250217/",
+      "title": "虎龍 清花 | 選手紹介 | スターダム✪STARDOM",
+      "retrievedAt": "2026-08-25"
+    }
+  ]
+}
