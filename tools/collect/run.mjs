@@ -15,6 +15,7 @@ import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
+import { matchKey, matchLabel } from './core/match-label.mjs';
 import { createExtractor, PROMPT_VERSION } from './core/llm.mjs';
 import { mergeLlmMatch, pairWithCards } from './core/llm-merge.mjs';
 import * as ddt from './adapters/ddt.mjs';
@@ -120,7 +121,7 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
         duplicateNames.push({
           promotion,
           eventId: rawEvent.eventId,
-          label: `第 ${m.order} 試合`,
+          label: matchLabel(m),
           names: [...new Set(dupes)],
         });
       }
@@ -338,10 +339,17 @@ async function runPromotion(promotion, opts, result) {
       // 抽出側が 1 試合も取れていないときは「消えた」の判定をしない。
       // LLM が動かなかった等でカードが空になっただけで、既存の全試合が
       // 消えたと報告してしまう。
+      //
+      // 突き合わせは segment + order で行う。order だけで見ると、ダークマッチが
+      // 公式から消えても本戦の同じ番号が残っているかぎり検知できない。
       if (event.matches.length) {
-        const incomingOrders = new Set(event.matches.map((m) => m.order));
-        const dropped = existing.matches.map((m) => m.order).filter((o) => !incomingOrders.has(o));
-        if (dropped.length) result.droppedOrders.push({ promotion, eventId: event.eventId, orders: dropped });
+        const incoming = new Set(event.matches.map(matchKey));
+        const dropped = existing.matches.filter((m) => !incoming.has(matchKey(m)));
+        if (dropped.length) {
+          result.droppedOrders.push({
+            promotion, eventId: event.eventId, labels: dropped.map(matchLabel),
+          });
+        }
       }
 
       if (!unresolved.length) stage(promotion, merged, existing, result);
