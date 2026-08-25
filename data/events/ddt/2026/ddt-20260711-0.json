@@ -1,0 +1,67 @@
+{
+  "eventId": "ddt-20260711-0",
+  "promotionSlug": "ddt",
+  "name": "路上プロレス in HandMade In Japan Fes’ 2026",
+  "series": null,
+  "date": "2026-07-11",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-big-sight",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "rukiya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "to-y",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 2311
+      },
+      "confirmed": true,
+      "notes": "※正田のチカラKOBUムキムキ・オン・ザ・テーブル"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a51c38a82ce270002f5b8f4",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a51c38a82ce270002f5b8f4",
+      "title": "路上プロレス in HandMade In Japan Fes’ 2026 | ddt",
+      "retrievedAt": "2026-08-24"
+    }
+  ]
+}
