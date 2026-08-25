@@ -4,7 +4,7 @@
 const cell = (v) => String(v ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ');
 
 export function renderReport(result) {
-  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders, silencedConflicts = 0 } = result;
+  const { changed, conflicts, unresolved, unparsed = [], failures, llmFilled, droppedOrders, duplicateNames = [], silencedConflicts = 0 } = result;
   const out = ['# 収集結果', ''];
 
   if (failures.length) {
@@ -43,10 +43,20 @@ export function renderReport(result) {
     out.push('');
   }
 
+  if (duplicateNames.length) {
+    out.push('## 同じ名前が 1 つの陣営に複数', '',
+      '公式が同じリングネームを複数回並べている試合。中の人が違う（覆面・分身）',
+      'のが本当なら公式どおりで正しい。こちらの取り違えなら直すこと。', '');
+    for (const d of duplicateNames) {
+      out.push(`- ${cell(d.promotion)} / ${cell(d.eventId)} ${cell(d.label)} — ${cell(d.names.join(', '))}`);
+    }
+    out.push('');
+  }
+
   if (droppedOrders.length) {
     out.push('## 公式側から消えた試合', '', '既存データには残してある。消すかどうかは人間が判断する。', '');
     for (const d of droppedOrders) {
-      out.push(`- ${cell(d.promotion)} / ${cell(d.eventId)} — 第 ${d.orders.join(', ')} 試合`);
+      out.push(`- ${cell(d.promotion)} / ${cell(d.eventId)} — ${cell(d.labels.join(' / '))}`);
     }
     out.push('');
   }

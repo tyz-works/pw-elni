@@ -1,9 +1,9 @@
 {
-  "eventId": "ddt-20260716-0",
+  "eventId": "ddt-20260702-0",
   "promotionSlug": "ddt",
-  "name": "闘うビアガーデン2026 in SHINJUKU 【FINAL COUNTDOWN2】",
+  "name": "CHARISMANIA Ⅳ",
   "series": null,
-  "date": "2026-07-16",
+  "date": "2026-07-02",
   "doorsOpen": null,
   "bellTime": null,
   "venueSlug": "tokyo-shinjuku-face",
@@ -17,15 +17,15 @@
       "sides": [
         {
           "wrestlerIds": [
-            "kazuma-sumi",
-            "yuni"
+            "yasu-urano",
+            "sangre-azteca-jr"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "soma-takao",
-            "yuki-ishida"
+            "naohiro-katsumi",
+            "yuni-karasu-jr"
           ],
           "teamName": null
         }
@@ -33,30 +33,28 @@
       "titleName": null,
       "timeLimitMinutes": 15,
       "result": {
-        "winnerSideIndex": 1,
-        "decision": "pinfall",
+        "winnerSideIndex": 0,
+        "decision": "unknown",
         "finishMoveSlug": null,
-        "durationSeconds": 449
+        "durationSeconds": 683
       },
       "confirmed": true,
-      "notes": "※炎掌"
+      "notes": null
     },
     {
       "order": 2,
       "segment": "card",
-      "matchType": "tag",
+      "matchType": "singles",
       "sides": [
         {
           "wrestlerIds": [
-            "daisuke-sasaki",
-            "mikiya-sasaki"
+            "mj-paul"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "shunma-katsumata",
-            "to-y"
+            "ryunosuke-nagai"
           ],
           "teamName": null
         }
@@ -67,10 +65,10 @@
         "winnerSideIndex": 1,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 618
+        "durationSeconds": 547
       },
       "confirmed": true,
-      "notes": null
+      "notes": "※スピア"
     },
     {
       "order": 3,
@@ -79,17 +77,17 @@
       "sides": [
         {
           "wrestlerIds": [
-            "hideki-okatani",
-            "ilusion",
-            "mj-paul"
+            "nise-baramon-yuki",
+            "nise-baramon-yuki",
+            "nise-baramon-yuki"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "yuki-iino",
-            "yukio-naya",
-            "viento-levante"
+            "transam-hiroshi",
+            "takayuki-ueki",
+            "takeshi-masada"
           ],
           "teamName": null
         }
@@ -97,40 +95,30 @@
       "titleName": null,
       "timeLimitMinutes": 30,
       "result": {
-        "winnerSideIndex": 1,
-        "decision": "knockout",
+        "winnerSideIndex": null,
+        "decision": "no-contest",
         "finishMoveSlug": null,
-        "durationSeconds": 807
+        "durationSeconds": 790
       },
       "confirmed": true,
-      "notes": "※胴絞めスリーパーホールド→レフェリーストップ。"
+      "notes": "※マタローの暴走により収拾付かず。"
     },
     {
-      "order": 5,
+      "order": 4,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "yuki-ueno"
+            "ayato-yoshida",
+            "gabai-jiichan"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "kazuki-hirata"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "junta-miyawaki"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "masami-inahata"
+            "minoru-fujita",
+            "ilusion"
           ],
           "teamName": null
         }
@@ -138,54 +126,85 @@
       "titleName": null,
       "timeLimitMinutes": 30,
       "result": {
-        "winnerSideIndex": 3,
-        "decision": "unknown",
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 850
+        "durationSeconds": 860
       },
       "confirmed": true,
       "notes": null
     },
     {
-      "order": 6,
+      "order": 5,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "singles",
       "sides": [
         {
           "wrestlerIds": [
-            "takeshi-masada",
-            "yuya-koroku",
-            "daichi-satoh"
+            "hideki-okatani"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "chris-brookes",
-            "harashima",
-            "antonio-honda"
+            "yuko-miyamoto"
           ],
           "teamName": null
         }
       ],
-      "titleName": "KO-D6人タッグ選手権",
+      "titleName": "DDT EXTREME選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "draw",
+        "finishMoveSlug": null,
+        "durationSeconds": 870
+      },
+      "confirmed": true,
+      "notes": "※第64代王者が3度目の防衛に成功。"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shuji-ishikawa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "keisuke-ishii"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
       "timeLimitMinutes": 60,
       "result": {
         "winnerSideIndex": 0,
-        "decision": "pinfall",
+        "decision": "unknown",
         "finishMoveSlug": null,
-        "durationSeconds": 1181
+        "durationSeconds": 894
       },
       "confirmed": true,
-      "notes": "※ダイビング・ボディープレス・オン・ザ・テーブル・フロム・カウンター。第60代王者組が6度目の防衛に成功。"
+      "notes": "※第8代王者が2度目の防衛に成功。"
     }
   ],
-  "officialUrl": "https://www.ddtpro.jp/results/6a58b0cb1886090002f356ab",
+  "officialUrl": "https://www.ddtpro.jp/results/6a46387db1d8c000028f5931",
   "sources": [
     {
-      "url": "https://www.ddtpro.jp/results/6a58b0cb1886090002f356ab",
-      "title": "闘うビアガーデン2026 in SHINJUKU 【FINAL COUNTDOWN2】 | ddt",
-      "retrievedAt": "2026-08-21"
+      "url": "https://www.ddtpro.jp/results/6a46387db1d8c000028f5931",
+      "title": "CHARISMANIA Ⅳ | ddt",
+      "retrievedAt": "2026-08-24"
     }
   ]
 }

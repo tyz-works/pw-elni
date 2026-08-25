@@ -79,7 +79,10 @@ export interface MatchResult {
 }
 
 export interface Match {
+  /** segment ごとの連番。card なら第 N 試合、dark なら第 N ダークマッチ。 */
   order: number;
+  /** card = 公式が試合番号を振る本戦。dark = ダークマッチ（番号の外・本戦の前）。 */
+  segment: 'card' | 'dark';
   matchType:
     | 'singles'
     | 'tag'

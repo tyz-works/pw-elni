@@ -15,6 +15,7 @@ import { merge } from './core/merge.mjs';
 import { renderReport } from './core/report.mjs';
 import { buildVenueIndex } from './core/venues.mjs';
 import { conflictKey, filterAcknowledged } from './core/acknowledged.mjs';
+import { matchKey, matchLabel } from './core/match-label.mjs';
 import { createExtractor, PROMPT_VERSION } from './core/llm.mjs';
 import { mergeLlmMatch, pairWithCards } from './core/llm-merge.mjs';
 import * as ddt from './adapters/ddt.mjs';
@@ -91,6 +92,10 @@ function eventPath(base, promotion, eventId) {
 // そのまま流すと additionalProperties で検証に落ちる。
 function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceUrl) {
   const unresolved = [];
+  // 同じリングネームが 1 つの陣営に複数並ぶ試合。公式がそう書いていることが
+  // あり（覆面・分身）、スキーマでは許している。ただし黙って通すと
+  // こちらの取り違えを見逃すので、レポートに上げて人間に見せる。
+  const duplicateNames = [];
 
   // 会場はスキーマ上必須。解決できない会場を勝手に作らないので、
   // 解決できなければこの興行は書かない（選手名と同じ扱い）。
@@ -111,6 +116,15 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
         if (!slug) unresolved.push({ promotion, eventName: rawEvent.name, name: n, sourceUrl });
         return slug;
       });
+      const dupes = wrestlerIds.filter((v, i) => v && wrestlerIds.indexOf(v) !== i);
+      if (dupes.length) {
+        duplicateNames.push({
+          promotion,
+          eventId: rawEvent.eventId,
+          label: matchLabel(m),
+          names: [...new Set(dupes)],
+        });
+      }
       return { wrestlerIds, teamName: s.teamName };
     });
     // 陣営が 3 つ以上なら人数に関係なく multi-man。1 人ずつの 3 way を
@@ -127,6 +141,9 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
 
     return {
       order: m.order,
+      // ダークマッチを区別するのは今のところ DDT だけ。他のアダプタは
+      // 公式が番号を振った本戦しか返さないので card に倒す。
+      segment: m.segment ?? 'card',
       matchType,
       sides,
       titleName: m.titleName,
@@ -160,7 +177,7 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
     officialUrl: rawEvent.officialUrl,
     sources: rawEvent.sources,
   };
-  return { event, unresolved };
+  return { event, unresolved, duplicateNames };
 }
 
 async function runPromotion(promotion, opts, result) {
@@ -293,8 +310,9 @@ async function runPromotion(promotion, opts, result) {
       }
       seenEventIds.add(rawEvent.eventId);
 
-      const { event, unresolved } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
+      const { event, unresolved, duplicateNames } = resolveEvent(rawEvent, wrestlerIndex, moveIndex, venueIndex, promotion, url);
       result.unresolved.push(...unresolved);
+      result.duplicateNames.push(...duplicateNames);
 
       event.sources = [{ url, title: `${event.name} | ${promotion}`, retrievedAt: today() }];
 
@@ -321,10 +339,17 @@ async function runPromotion(promotion, opts, result) {
       // 抽出側が 1 試合も取れていないときは「消えた」の判定をしない。
       // LLM が動かなかった等でカードが空になっただけで、既存の全試合が
       // 消えたと報告してしまう。
+      //
+      // 突き合わせは segment + order で行う。order だけで見ると、ダークマッチが
+      // 公式から消えても本戦の同じ番号が残っているかぎり検知できない。
       if (event.matches.length) {
-        const incomingOrders = new Set(event.matches.map((m) => m.order));
-        const dropped = existing.matches.map((m) => m.order).filter((o) => !incomingOrders.has(o));
-        if (dropped.length) result.droppedOrders.push({ promotion, eventId: event.eventId, orders: dropped });
+        const incoming = new Set(event.matches.map(matchKey));
+        const dropped = existing.matches.filter((m) => !incoming.has(matchKey(m)));
+        if (dropped.length) {
+          result.droppedOrders.push({
+            promotion, eventId: event.eventId, labels: dropped.map(matchLabel),
+          });
+        }
       }
 
       if (!unresolved.length) stage(promotion, merged, existing, result);
@@ -390,7 +415,7 @@ async function main() {
     ...(process.env.GEMINI_MODEL ? { model: process.env.GEMINI_MODEL } : {}),
     ...(process.env.LLM_MAX_CALLS ? { maxCalls: Number(process.env.LLM_MAX_CALLS) } : {}),
   });
-  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [] };
+  const result = { changed: [], conflicts: [], unresolved: [], unparsed: [], failures: [], llmFilled: [], droppedOrders: [], duplicateNames: [] };
 
   // staging は毎回 data/ のコピーから作り直す
   rmSync(STAGING, { recursive: true, force: true });

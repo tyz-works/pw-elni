@@ -236,12 +236,17 @@ for (const { data, file } of store.event.values()) {
   }
 
   // 試合
+  // order は segment ごとの連番。ダークマッチは公式の試合番号の外なので、
+  // 本戦の第 1 試合とダークマッチ 1 が同じ興行に並んでよい。
   const seenOrder = new Set();
   for (const match of data.matches) {
-    const label = `matches[order=${match.order}]`;
+    const label = match.segment === 'dark'
+      ? `matches[dark=${match.order}]`
+      : `matches[order=${match.order}]`;
+    const orderKey = `${match.segment}:${match.order}`;
 
-    if (seenOrder.has(match.order)) fail(file, `${label}: order が重複している`);
-    seenOrder.add(match.order);
+    if (seenOrder.has(orderKey)) fail(file, `${label}: order が重複している`);
+    seenOrder.add(orderKey);
 
     for (const [i, s] of match.sides.entries()) {
       for (const id of s.wrestlerIds) {
