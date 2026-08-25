@@ -34,9 +34,15 @@ test('LLM が埋めた箇所を明示する', () => {
   assert.match(md, /第 3 試合/);
 });
 
-test('公式から消えた order を出す', () => {
-  const md = renderReport({ ...EMPTY, droppedOrders: [{ promotion: 'ddt', eventId: 'e', orders: [5] }] });
+test('公式から消えた試合を出す', () => {
+  const md = renderReport({
+    ...EMPTY,
+    droppedOrders: [{ promotion: 'ddt', eventId: 'e', labels: ['第 5 試合', '第 1 ダークマッチ'] }],
+  });
   assert.match(md, /公式側から消えた/);
+  assert.match(md, /第 5 試合/);
+  // ダークマッチは本戦と別の連番なので、番号だけでは何が消えたか分からない。
+  assert.match(md, /第 1 ダークマッチ/);
 });
 
 test('パイプ記号を含む値が表を壊さない', () => {

@@ -56,7 +56,7 @@ export function renderReport(result) {
   if (droppedOrders.length) {
     out.push('## 公式側から消えた試合', '', '既存データには残してある。消すかどうかは人間が判断する。', '');
     for (const d of droppedOrders) {
-      out.push(`- ${cell(d.promotion)} / ${cell(d.eventId)} — 第 ${d.orders.join(', ')} 試合`);
+      out.push(`- ${cell(d.promotion)} / ${cell(d.eventId)} — ${cell(d.labels.join(' / '))}`);
     }
     out.push('');
   }
