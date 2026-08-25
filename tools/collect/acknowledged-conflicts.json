@@ -149,5 +149,13 @@
     "path": "matches[order=12].notes",
     "existing": "緊急決定試合。メインイベント終了後に髙木三四郎が「いつでもどこでも挑戦権」を行使して成立。決まり手は MAO の首固め。第 89 代王者が初防衛に成功した。",
     "incoming": "※第89代王者が初防衛に成功。"
+  },
+  {
+    "promotion": "njpw",
+    "eventId": "njpw-20260816-0",
+    "path": "matches[order=3].result.winnerSideIndex",
+    "existing": 1,
+    "incoming": 0,
+    "reason": "公式の大会結果一覧の本文が誤っている。「最後は松本がフロントネックロックでレフェリーストップ勝ちを収めた」と書かれているが、直前の記述どおり技を掛けたのは藤田晃生であり、勝者は TMDK 側（既存の 1）。試合詳細ページで裏を取った既知の誤り（data/README.md に記載）。"
   }
 ]
