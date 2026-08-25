@@ -31,3 +31,10 @@ test('判断できないものは unknown', () => {
   assert.equal(decisionFrom('タイガーリリー'), 'unknown');
   assert.equal(decisionFrom(null), 'unknown');
 });
+
+// 「無効試合」は勝者がいない。unknown のままだと検証器が
+// 「decision が unknown なのに winnerSideIndex が null」で興行ごと落とす。
+test('無効試合は no-contest', () => {
+  assert.equal(decisionFrom('無効試合'), 'no-contest');
+  assert.equal(decisionFrom('ノーコンテスト'), 'no-contest');
+});

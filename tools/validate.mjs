@@ -251,8 +251,10 @@ for (const { data, file } of store.event.values()) {
       }
     }
 
-    // 同一選手が複数陣営に入っていないか
-    const all = match.sides.flatMap((s) => s.wrestlerIds);
+    // 同一選手が複数陣営に入っていないか。
+    // 1 つの陣営の中の重複はスキーマ（uniqueItems）の担当なので、ここでは数えない。
+    // 混ぜると陣営内の重複まで「複数の陣営に含まれている」と報告してしまう。
+    const all = match.sides.flatMap((s) => [...new Set(s.wrestlerIds)]);
     const dupes = all.filter((v, i) => all.indexOf(v) !== i);
     if (dupes.length) {
       fail(file, `${label}: 同一選手が複数の陣営に含まれている (${[...new Set(dupes)].join(', ')})`);

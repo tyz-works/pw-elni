@@ -364,11 +364,20 @@ function validateStaging() {
   return { ok: v.status === 0, out: (v.stdout ?? '') + (v.stderr ?? '') };
 }
 
-// 検証器はファイルごとに見出し行を出す。そこから落ちた興行のパスを拾う。
-function failingFiles(out) {
-  return out.split('\n')
-    .map((l) => /^ {2}(\/.*\.json)$/.exec(l)?.[1])
-    .filter(Boolean);
+// 検証器はファイルごとに見出し行を出し、その下に「    - 理由」を並べる。
+// 落ちた興行のパスと理由の両方を拾う。理由を捨てると、レポートを見た人間が
+// 何を直せばいいのか分からないまま「反映しない」とだけ告げられる。
+/** @returns {Map<string, string[]>} ファイルの絶対パス → 理由の配列 */
+function failureReasons(out) {
+  const byFile = new Map();
+  let current = null;
+  for (const line of out.split('\n')) {
+    const file = /^ {2}(\/.*\.json)$/.exec(line)?.[1];
+    if (file) { current = []; byFile.set(file, current); continue; }
+    const reason = /^ {4}- (.+)$/.exec(line)?.[1];
+    if (reason && current) current.push(reason);
+  }
+  return byFile;
 }
 
 async function main() {
@@ -401,8 +410,8 @@ async function main() {
     // 検証に落ちた興行だけを外して再検証する。1 興行の異常で他の興行まで
     // 止めない（部分失敗を許容する設計）。外した興行はレポートに載る。
     for (let i = 0; !v.ok && i < MAX_DROP_ROUNDS; i++) {
-      const bad = new Set(failingFiles(v.out));
-      const dropped = result.changed.filter((c) => bad.has(eventPath(STAGING, c.promotion, c.eventId)));
+      const reasons = failureReasons(v.out);
+      const dropped = result.changed.filter((c) => reasons.has(eventPath(STAGING, c.promotion, c.eventId)));
       // 興行と紐づかない失敗（孤立参照など）は切り分けられないので全体を止める
       if (!dropped.length) break;
       for (const c of dropped) {
@@ -410,9 +419,10 @@ async function main() {
         const original = eventPath(DATA, c.promotion, c.eventId);
         if (existsSync(original)) cpSync(original, staged);
         else rmSync(staged, { force: true });
+        const why = reasons.get(staged) ?? [];
         result.failures.push({
           promotion: c.promotion, step: 'validate',
-          message: `${c.eventId}: 検証に落ちたので反映しない`,
+          message: `${c.eventId}: 検証に落ちたので反映しない — ${why.join(' / ') || '理由を取れなかった'}`,
         });
       }
       const droppedIds = new Set(dropped.map((c) => c.eventId));
