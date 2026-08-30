@@ -1,0 +1,259 @@
+{
+  "eventId": "ddt-20260826-0",
+  "promotionSlug": "ddt",
+  "name": "ドラマチック・ビアガーデン・ネバーランド 2026 in UENO",
+  "series": null,
+  "date": "2026-08-26",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-ueno-park-outdoor-stage",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "to-y",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 666
+      },
+      "confirmed": true,
+      "notes": "※須見が防衛に失敗、勝俣が第1902代王者となる。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 400
+      },
+      "confirmed": true,
+      "notes": "※KANONの持ついつでもどこでもいつでもどこでも挑戦権挑戦権がアントンに移動。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "akito",
+            "junta-miyawaki",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "harashima",
+            "tomomitsu-matsunaga",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 548
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "yuki-iino",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "crocodile-d-sasa",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 580
+      },
+      "confirmed": true,
+      "notes": "※みちのくドライバーⅡ・イン・ザ・バケツ"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "chris-brookes"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 978
+      },
+      "confirmed": true,
+      "notes": "※陽向のラリアット"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuni"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "no-contest",
+        "finishMoveSlug": null,
+        "durationSeconds": 651
+      },
+      "confirmed": true,
+      "notes": "※KING OF DRUNK勢の乱入"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "chris-brookes",
+            "kazuki-hirata",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "takeshi-masada",
+            "daichi-satoh",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 476
+      },
+      "confirmed": true,
+      "notes": "※パイルドライバー・イン・ザ・プール。ディーノの持ついつでもどこでも挑戦権（赤）がクリスに移動。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6a8ea92c8de5ce000290e0b9",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6a8ea92c8de5ce000290e0b9",
+      "title": "ドラマチック・ビアガーデン・ネバーランド 2026 in UENO | ddt",
+      "retrievedAt": "2026-08-26"
+    }
+  ]
+}
