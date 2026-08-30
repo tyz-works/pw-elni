@@ -31,8 +31,13 @@
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 395
+      },
       "confirmed": true,
       "notes": "ダークマッチ。当日の試合順は未発表のため、order は公式の対戦カード掲載順（メインイベントが先頭）を反転して振っている。"
     },
@@ -67,8 +72,13 @@
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 563
+      },
       "confirmed": true,
       "notes": "3WAY6 人タッグマッチ。KANON 組には KIMIHIRO と YUZUKI がセコンドに付く。"
     },
@@ -93,8 +103,13 @@
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 651
+      },
       "confirmed": true,
       "notes": "スペシャルタッグマッチ。"
     },
@@ -123,8 +138,13 @@
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 568
+      },
       "confirmed": true,
       "notes": "スペシャル 8 人タッグマッチ。"
     },
@@ -149,8 +169,13 @@
         }
       ],
       "titleName": "KO-Dタッグ選手権",
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 782
+      },
       "confirmed": true,
       "notes": "第 90 代王者組の初防衛戦。"
     },
@@ -173,8 +198,13 @@
         }
       ],
       "titleName": "DDT EXTREME選手権",
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 647
+      },
       "confirmed": true,
       "notes": "第 65 代王者の初防衛戦。"
     },
@@ -197,8 +227,13 @@
         }
       ],
       "titleName": "DDT UNIVERSAL選手権",
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 858
+      },
       "confirmed": true,
       "notes": "第 22 代王者の初防衛戦。"
     },
@@ -221,9 +256,14 @@
         }
       ],
       "titleName": "KO-D無差別級選手権",
-      "timeLimitMinutes": null,
-      "result": null,
-      "confirmed": false,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "cannonball-450",
+        "durationSeconds": 1407
+      },
+      "confirmed": true,
       "notes": "第 89 代王者 MAO の 2 度目の防衛戦。公式発表に「いつでもどこでも挑戦権の動向次第で変更の場合あり」と注記があるため未確定として扱う。"
     }
   ],
@@ -233,6 +273,11 @@
       "url": "https://www.ddtpro.jp/schedules/693146cb3700d20002d1cdad",
       "title": "東京・後楽園ホール「LAST SUMMER STANDING ～夏の答え合わせ～」 | DDT プロレスリング公式サイト",
       "retrievedAt": "2026-08-25"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6a93728d4b9be200026b4383",
+      "title": "LAST SUMMER STANDING～夏の答え合わせ～ | ddt",
+      "retrievedAt": "2026-08-30"
     }
   ]
 }
