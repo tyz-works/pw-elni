@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20260912-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM TO THE WORLD 2026",
+  "series": null,
+  "date": "2026-09-12",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "yokohama-budokan",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://wwr-stardom.com/event/20260912_yokohama/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260912_yokohama/",
+      "title": "STARDOM TO THE WORLD 2026 | stardom",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

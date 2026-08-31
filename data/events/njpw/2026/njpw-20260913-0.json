@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20260913-0",
+  "promotionSlug": "njpw",
+  "name": "Road to DESTRUCTION",
+  "series": null,
+  "date": "2026-09-13",
+  "doorsOpen": "14:00",
+  "bellTime": "15:00",
+  "venueSlug": "sendai-sunplaza-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/656894",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/656894",
+      "title": "Road to DESTRUCTION | njpw",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

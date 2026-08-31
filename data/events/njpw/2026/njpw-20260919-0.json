@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20260919-0",
+  "promotionSlug": "njpw",
+  "name": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～",
+  "series": null,
+  "date": "2026-09-19",
+  "doorsOpen": "14:00",
+  "bellTime": "15:00",
+  "venueSlug": "hokkaido-irie-park-gymnasium",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/657038",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/657038",
+      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

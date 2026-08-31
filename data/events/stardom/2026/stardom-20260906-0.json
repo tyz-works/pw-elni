@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20260906-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in KORAKUEN 2026 Sep.",
+  "series": null,
+  "date": "2026-09-06",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://wwr-stardom.com/event/20260906_korakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260906_korakuen/",
+      "title": "STARDOM in KORAKUEN 2026 Sep. | stardom",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

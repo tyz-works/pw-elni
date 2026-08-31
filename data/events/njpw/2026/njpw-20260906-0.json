@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20260906-0",
+  "promotionSlug": "njpw",
+  "name": "永田裕志 Produce Blue Justice XIX ～青義不撓～",
+  "series": null,
+  "date": "2026-09-06",
+  "doorsOpen": "14:30",
+  "bellTime": "16:00",
+  "venueSlug": "chiba-togane-arena",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/654798",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/654798",
+      "title": "永田裕志 Produce Blue Justice XIX ～青義不撓～ | njpw",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}
