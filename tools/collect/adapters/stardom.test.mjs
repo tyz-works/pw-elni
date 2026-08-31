@@ -108,13 +108,48 @@ test('時刻は取れないので null', () => {
   assert.equal(event.bellTime, null);
 });
 
-// カードは載っているが第N試合の番号が無い。順番を仮に決めて書くと、
-// 興行後に結果側が別の番号で入ってきたときに幻の試合が残る（merge は
-// segment+order を identity にする）。開催前は試合を書かない。
-test('番号の無いカードから試合を作らない', () => {
+// 開催前のカードは暫定。公式が差し替えたら丸ごと入れ替わる前提で、
+// ページに載っている順に番号を振る（結果が入る時点で全部置き換わる）。
+test('開催前のカードを載っている順に取る', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.deepEqual(event.matches.map((m) => `${m.segment}:${m.order}`), ['card:1', 'card:2', 'card:3']);
+  assert.deepEqual(event.matches.map((m) => m.matchType), ['singles', 'singles', 'tag']);
+});
+
+test('VS で陣営を分ける', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.deepEqual(event.matches[0].sides, [
+    { names: ['架空十三子'], teamName: null },
+    { names: ['架空十四子'], teamName: null },
+  ]);
+  assert.deepEqual(event.matches[2].sides, [
+    { names: ['架空十七子', '架空十八子'], teamName: null },
+    { names: ['架空十九子', '架空二十子'], teamName: null },
+  ]);
+});
+
+// ≪王者≫ ≪王者組≫ は落とす。実データでは「挑戦者組」だけ ≪≫ が付いて
+// おらず、括弧の有無が揺れている。
+test('王者・挑戦者のラベルは括弧の有無に関わらず落とす', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  const names = event.matches.flatMap((m) => m.sides.flatMap((s) => s.names));
+  assert.ok(!names.some((n) => n.includes('王者')), `ラベルが選手名になっている: ${names}`);
+  assert.ok(!names.some((n) => n.includes('挑戦者')), `ラベルが選手名になっている: ${names}`);
+});
+
+test('選手権試合の見出しを titleName にする', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.deepEqual(event.matches.map((m) => m.titleName), [
+    null, 'サンプル選手権試合', 'サンプル・タッグ選手権試合',
+  ]);
+});
+
+// 開催前なので勝敗は無い。confirmed はカードが公式発表済みという意味。
+test('結果は null、カードは発表済みとして扱う', () => {
   const { event, unparsed } = parse(SCHED, SCHED_TARGET);
-  assert.deepEqual(event.matches, []);
-  assert.deepEqual(unparsed, []);
+  assert.deepEqual(event.matches.map((m) => m.result), [null, null, null]);
+  assert.deepEqual(event.matches.map((m) => m.confirmed), [true, true, true]);
+  assert.deepEqual(unparsed, [], 'カードは取りこぼしではない');
 });
 
 // listTargets は「結果一覧との突き合わせ」「月送り」「過去の切り捨て」が

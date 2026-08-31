@@ -129,3 +129,52 @@ test('顔ぶれが違えば食い違いとして報告する', () => {
   const { conflicts } = merge(existing, incoming);
   assert.equal(conflicts.length, 1);
 });
+
+// --- 暫定カードの差し替え ---
+// 開催前のカードは公式が差し替える。試合ごとに segment + order で
+// 突き合わせると、番号がずれたときに古い試合が残ってしまう。
+// 結果がまだ 1 つも入っていない興行の matches は丸ごと入れ替える。
+
+const provisional = (order, name) => ({
+  order, segment: 'card', matchType: 'singles',
+  sides: [{ wrestlerIds: [name], teamName: null }, { wrestlerIds: ['x'], teamName: null }],
+  titleName: null, timeLimitMinutes: null, result: null, confirmed: true, notes: null,
+});
+const decided = (order, name) => ({
+  ...provisional(order, name),
+  result: { winnerSideIndex: 0, decision: 'pinfall', finishMoveSlug: null, durationSeconds: 60 },
+});
+
+test('結果がまだ無い興行のカードは丸ごと差し替える', () => {
+  const existing = { matches: [provisional(1, 'a'), provisional(2, 'b')] };
+  const incoming = { matches: [provisional(1, 'c')] };
+  const { merged, conflicts } = merge(existing, incoming);
+  assert.deepEqual(merged.matches.map((m) => m.sides[0].wrestlerIds[0]), ['c']);
+  assert.deepEqual(conflicts, [], '暫定同士の食い違いは報告しない');
+});
+
+// 興行後。結果ページから全試合を取り直したものが、番号のずれた暫定カードを
+// 置き換える。幻の試合が残らないこと。
+test('暫定カードは結果で置き換わり、番号がずれても残らない', () => {
+  const existing = { matches: [provisional(1, 'a')] };
+  const incoming = { matches: [decided(7, 'a')] };
+  const { merged } = merge(existing, incoming);
+  assert.equal(merged.matches.length, 1);
+  assert.equal(merged.matches[0].order, 7);
+  assert.ok(merged.matches[0].result, '結果が入っている');
+});
+
+// 結果が入ったあとは従来どおり。既存値を黙って上書きしない。
+test('結果が入っている興行は従来どおり突き合わせる', () => {
+  const existing = { matches: [decided(1, 'a')] };
+  const incoming = { matches: [decided(1, 'b')] };
+  const { merged, conflicts } = merge(existing, incoming);
+  assert.equal(merged.matches[0].sides[0].wrestlerIds[0], 'a', '既存値を残す');
+  assert.ok(conflicts.length, '食い違いを報告する');
+});
+
+test('取得側のカードが空なら既存を消さない', () => {
+  const existing = { matches: [provisional(1, 'a')] };
+  const { merged } = merge(existing, { matches: [] });
+  assert.equal(merged.matches.length, 1);
+});
