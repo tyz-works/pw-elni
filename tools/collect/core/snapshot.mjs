@@ -48,6 +48,23 @@ export function readSnapshotUrl(promotion, id) {
   return existsSync(p) ? readFileSync(p, 'utf8').trim() : null;
 }
 
+// 種別も URL と同じ流儀で隣に置く。parse 段は id しか持たないので、
+// これが無いと「結果ページか、開催前のスケジュールか」を判別できない。
+// 既存のスナップショットには無いので、無ければ result とみなす。
+const kindPath = (promotion, id) => snapshotPath(promotion, id).replace(/\.txt$/, '.kind');
+
+export function writeSnapshotKind(promotion, id, kind) {
+  const p = kindPath(promotion, id);
+  mkdirSync(dirname(p), { recursive: true });
+  writeFileSync(p, `${kind}\n`, 'utf8');
+}
+
+/** @returns {string} 記録が無ければ 'result' */
+export function readSnapshotKind(promotion, id) {
+  const p = kindPath(promotion, id);
+  return existsSync(p) ? readFileSync(p, 'utf8').trim() : 'result';
+}
+
 // LLM の抽出結果はスナップショットの隣に置く。同じ記事を呼び直すと同じ
 // 結果に金を払うだけなので、興行が data/ に書けたかどうかとは無関係に残す。
 // 拡張子を変えているだけなので listSnapshots には混ざらない。

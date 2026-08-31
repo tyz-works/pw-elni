@@ -222,3 +222,56 @@ test('記事本文を含むブロックは試合にせず取りこぼしに回�
     '取りこぼしとして報告されていない',
   );
 });
+
+// --- スケジュール（今後の興行）---
+
+const SCHED = readFileSync(new URL('../__fixtures__/ddt/schedule-sample.txt', import.meta.url), 'utf8');
+const SCHED_EVENT = readFileSync(new URL('../__fixtures__/ddt/schedule-event-sample.txt', import.meta.url), 'utf8');
+const SCHED_TARGET = { id: 'sched', url: 'https://example.test/schedules/sched', kind: 'schedule' };
+
+test('スケジュールから日時・会場・大会名を取る', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.equal(event.eventId, 'ddt-20261001-0');
+  assert.equal(event.name, 'サンプル大会2026');
+  assert.equal(event.date, '2026-10-01');
+  assert.equal(event.venueName, '東京・サンプルホール');
+  assert.equal(event.officialUrl, SCHED_TARGET.url);
+});
+
+// 開場・開始時刻は結果ページには無く、ここでしか取れない。
+test('開場・開始時刻を取る', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.equal(event.doorsOpen, '17:30');
+  assert.equal(event.bellTime, '18:30');
+});
+
+// 「■出演予定選手」は出場予定の一覧であって対戦カードではない。
+// ここから試合を作ると、公式が発表していないカードを捏造することになる。
+test('出演予定選手から試合を作らない', () => {
+  const { event, unparsed } = parse(SCHED, SCHED_TARGET);
+  assert.deepEqual(event.matches, []);
+  assert.deepEqual(unparsed, [], 'カード未発表は取りこぼしではない');
+});
+
+// 公式が「イベント」「誕生日」に分類したものは興行ではない。
+test('カテゴリが大会でないものは興行にしない', () => {
+  const { event } = parse(SCHED_EVENT, SCHED_TARGET);
+  assert.equal(event, null);
+});
+
+// カテゴリの語彙が変わったら黙って 0 件になるのではなく気付けること。
+test('知らないカテゴリは判別できないものとして報告する', () => {
+  const raw = SCHED.replace('\n大会\n', '\n特別興行\n');
+  const { event, unknownCategory } = parse(raw, SCHED_TARGET);
+  assert.equal(event, null);
+  assert.equal(unknownCategory, '特別興行');
+});
+
+// 時刻が載らない回がある。取れないものを推測で埋めない。
+test('時刻が無ければ null にする', () => {
+  const raw = SCHED.replace(' 開場 17:30 開始 18:30', '');
+  const { event } = parse(raw, SCHED_TARGET);
+  assert.equal(event.doorsOpen, null);
+  assert.equal(event.bellTime, null);
+  assert.equal(event.date, '2026-10-01', '時刻が無くても日付は取れる');
+});
