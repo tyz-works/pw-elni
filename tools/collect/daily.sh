@@ -61,7 +61,10 @@ if [ -z "$DRY" ]; then
   elif ! command -v gh > /dev/null 2>&1; then
     echo "gh が見つからないので PR は作らない。差分は手元に残す" >&2
   else
-    git fetch origin --quiet
+    # --prune を付ける。PR をマージしてブランチを消しても、手元の
+    # origin/collect/auto は残る。残ったままだと「残骸あり」と誤判定して、
+    # 既に無いリモートブランチを消しにいってエラーを吐く。
+    git fetch origin --prune --quiet
     # 前回の PR がまだ開いていればその続きに積む。開いた PR が無いのに
     # ブランチだけ残っているのはマージ済みの残骸なので、そこから積むと
     # 古い data/ の上に積むことになる。消して main から切り直す。
