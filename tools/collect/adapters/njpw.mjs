@@ -11,6 +11,11 @@ const BASE = 'https://www.njpw.co.jp';
 
 const RESULT_ID_RE = /\/tournament\/result\/(\d+)/;
 
+// 今後の興行。/schedule は 1 ページに複数の興行が並ぶので、このパイプラインの
+// 「1 スナップショット = 1 興行」には乗らない。そこから貼られている対戦カードの
+// ページが興行ごとに 1 枚あり、日時・会場・開場/開始を同じ書式で持っている。
+const CARD_ID_RE = /\/tournament\/card\/(\d+)/;
+
 // 記事本文の段落。ナビやフッタの短い行と区別する。
 const PROSE_MIN_LENGTH = 30;
 
@@ -51,9 +56,19 @@ const NOT_PROSE = [
 export async function listTargets(fetcher) {
   const links = await fetcher.fetchLinks(`${BASE}/result`);
   const ids = links.flatMap((href) => RESULT_ID_RE.exec(href)?.[1] ?? []);
-  return [...new Set(ids)].map((id) => ({
+  const results = [...new Set(ids)].map((id) => ({
     id, url: `${BASE}/tournament/result/${id}`, kind: 'result',
   }));
+
+  const schedLinks = await fetcher.fetchLinks(`${BASE}/schedule`);
+  const cardIds = [...new Set(schedLinks.flatMap((href) => CARD_ID_RE.exec(href)?.[1] ?? []))];
+  // 結果とカードの id はどちらも数字で、同じ番号がありうる。スナップショットの
+  // ファイル名がぶつからないよう接頭辞を付ける。
+  const schedules = cardIds.map((id) => ({
+    id: `card-${id}`, url: `${BASE}/tournament/card/${id}`, kind: 'schedule',
+  }));
+
+  return [...results, ...schedules];
 }
 
 /** @returns {Promise<string>} */
@@ -67,6 +82,20 @@ export function fetchRaw(fetcher, target) {
  * @returns {{ event: RawEvent, unparsed: string[] }}
  */
 export function parse(raw, target) {
+  const parsed = parseResult(raw, target);
+  if (target.kind !== 'schedule') return parsed;
+
+  // 開催前。日時・会場・シリーズ名は同じ書式で載るのでそのまま使えるが、
+  // 試合は書かない。カードは名前が平坦に並ぶだけで陣営の区切りが無く、
+  // 陣営は記事本文を読んだ LLM が組み立てる仕事だが、開催前には記事が無い。
+  // cardMatches を渡すと検算材料のつもりが推測の材料になる。
+  return {
+    event: { ...parsed.event, matches: [], cardMatches: [], attendance: null },
+    unparsed: [],
+  };
+}
+
+function parseResult(raw, target) {
   const lines = raw.split('\n').map((s) => s.trim());
 
   const date = parseDate(lines);

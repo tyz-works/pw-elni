@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-import { parse, PROMOTION } from './stardom.mjs';
+import { parse, listTargets, PROMOTION } from './stardom.mjs';
 
 const RAW = readFileSync(new URL('../__fixtures__/stardom/result-sample.txt', import.meta.url), 'utf8');
 const TARGET = { id: 'sample', url: 'https://example.test/event/sample/', kind: 'result' };
@@ -84,4 +84,79 @@ test('星取表の行を選手名にしない', () => {
   const { event } = parse(RAW, TARGET);
   const names = event.matches.flatMap((m) => m.sides.flatMap((s) => s.names));
   assert.ok(!names.some((n) => n.includes('勝')), `星取表が混ざっている: ${names}`);
+});
+
+// --- スケジュール（今後の興行）---
+// 開催前と開催後で URL が同じ（/event/{slug}/）。結果一覧に出ていない
+// ものだけを schedule として扱う。
+
+const SCHED = readFileSync(new URL('../__fixtures__/stardom/schedule-sample.txt', import.meta.url), 'utf8');
+const SCHED_TARGET = { id: '20260906_korakuen', url: 'https://example.test/event/20260906_korakuen/', kind: 'schedule' };
+
+test('スケジュールから日時・会場・大会名を取る', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.equal(event.eventId, 'stardom-20260906-0');
+  assert.equal(event.name, 'サンプル大会 2026 Sep.');
+  assert.equal(event.date, '2026-09-06');
+  assert.equal(event.venueName, '東京・サンプルホール');
+});
+
+// 開場・開始はスターダムのページには無い。推測で埋めない。
+test('時刻は取れないので null', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.equal(event.doorsOpen, null);
+  assert.equal(event.bellTime, null);
+});
+
+// カードは載っているが第N試合の番号が無い。順番を仮に決めて書くと、
+// 興行後に結果側が別の番号で入ってきたときに幻の試合が残る（merge は
+// segment+order を identity にする）。開催前は試合を書かない。
+test('番号の無いカードから試合を作らない', () => {
+  const { event, unparsed } = parse(SCHED, SCHED_TARGET);
+  assert.deepEqual(event.matches, []);
+  assert.deepEqual(unparsed, []);
+});
+
+// listTargets は「結果一覧との突き合わせ」「月送り」「過去の切り捨て」が
+// 重なる場所なので、取得をスタブして振る舞いを固定する。
+function stubFetcher(byUrl) {
+  return { fetchLinks: async (url) => byUrl[url] ?? [] };
+}
+
+test('結果に出ている興行は result、出ていない未来の興行は schedule', async () => {
+  const f = stubFetcher({
+    'https://wwr-stardom.com/results/': ['https://wwr-stardom.com/event/20260823_ryogoku/'],
+    'https://wwr-stardom.com/schedule/?ym=202609': [
+      'https://wwr-stardom.com/event/20260823_ryogoku/',   // 結果に出ている
+      'https://wwr-stardom.com/event/20260906_korakuen/',  // 未来
+    ],
+  });
+  const targets = await listTargets(f, '2026-09-01');
+  assert.deepEqual(targets.map((t) => `${t.kind}:${t.id}`), [
+    'result:20260823_ryogoku',
+    'schedule:20260906_korakuen',
+  ]);
+});
+
+// 結果一覧の 1 ページ目から溢れた古い興行を毎日取りに行かないこと。
+test('スケジュールに残っている過去の興行は取りに行かない', async () => {
+  const f = stubFetcher({
+    'https://wwr-stardom.com/results/': [],
+    'https://wwr-stardom.com/schedule/?ym=202609': [
+      'https://wwr-stardom.com/event/20260726_joetsu/',
+      'https://wwr-stardom.com/event/20260906_korakuen/',
+    ],
+  });
+  const targets = await listTargets(f, '2026-09-01');
+  assert.deepEqual(targets.map((t) => t.id), ['20260906_korakuen']);
+});
+
+// 日付で始まらない slug は判断できない。黙って落とさない。
+test('日付で始まらない slug は落とさない', async () => {
+  const f = stubFetcher({
+    'https://wwr-stardom.com/results/': [],
+    'https://wwr-stardom.com/schedule/?ym=202609': ['https://wwr-stardom.com/event/special-event/'],
+  });
+  const targets = await listTargets(f, '2026-09-01');
+  assert.deepEqual(targets.map((t) => t.id), ['special-event']);
 });

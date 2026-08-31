@@ -20,11 +20,50 @@ const LABEL = /^(WIN|LOSE|DRAW|VS|【.*】|.*の勝者|※.*)$/;
 const DURATION_RE = /^(\d+)分(?:(\d+)秒)?$/;
 const EVENT_ID_RE = /\/event\/([^/]+)\/?$/;
 
+// 今後の興行を何か月ぶん見るか。スターダムは直前まで発表しないので、
+// 増やしても取れる件数はほとんど変わらない。取得ページ数だけが増える。
+const SCHEDULE_MONTHS = 3;
+
+/** 当月から n か月ぶんの YYYYMM。基準日は listTargets から渡す（テストのため） */
+function scheduleMonths(n, today) {
+  const [y, m] = today.split('-').map(Number);
+  return Array.from({ length: n }, (_, i) => {
+    const d = new Date(y, m - 1 + i, 1);
+    return `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}`;
+  });
+}
+
+// slug は日付で始まる（20260906_korakuen）。過去の興行をここで落とさないと、
+// 結果一覧の 1 ページ目から溢れた古い興行のページを毎日取りに行くことになる。
+// 日付で始まらない slug は判断できないので残す（黙って落とさない）。
+const SLUG_DATE_RE = /^(\d{4})(\d{2})(\d{2})_/;
+
+function isPast(id, today) {
+  const m = SLUG_DATE_RE.exec(id);
+  return m ? `${m[1]}-${m[2]}-${m[3]}` < today : false;
+}
+
 /** @returns {Promise<Target[]>} */
-export async function listTargets(fetcher) {
-  const links = await fetcher.fetchLinks(`${BASE}/results/`);
-  const ids = links.flatMap((href) => EVENT_ID_RE.exec(href)?.[1] ?? []);
-  return [...new Set(ids)].map((id) => ({ id, url: `${BASE}/event/${id}/`, kind: 'result' }));
+export async function listTargets(fetcher, today = new Date().toISOString().slice(0, 10)) {
+  const idsFrom = (links) => [...new Set(links.flatMap((href) => EVENT_ID_RE.exec(href)?.[1] ?? []))];
+
+  const resultIds = idsFrom(await fetcher.fetchLinks(`${BASE}/results/`));
+  const results = resultIds.map((id) => ({ id, url: `${BASE}/event/${id}/`, kind: 'result' }));
+
+  // 開催前と開催後で URL が同じなので、結果一覧に出ているものは result、
+  // 出ていないものが今後の興行になる。
+  // /schedule/ は既定だと当月しか返さないが、?ym=YYYYMM で月を送れる。
+  const seen = new Set(resultIds);
+  const schedules = [];
+  for (const ym of scheduleMonths(SCHEDULE_MONTHS, today)) {
+    for (const id of idsFrom(await fetcher.fetchLinks(`${BASE}/schedule/?ym=${ym}`))) {
+      if (seen.has(id) || isPast(id, today)) continue;
+      seen.add(id);
+      schedules.push({ id, url: `${BASE}/event/${id}/`, kind: 'schedule' });
+    }
+  }
+
+  return [...results, ...schedules];
 }
 
 /** @returns {Promise<string>} */
@@ -38,6 +77,17 @@ export function fetchRaw(fetcher, target) {
  * @returns {{ event: RawEvent, unparsed: string[] }}
  */
 export function parse(raw, target) {
+  const parsed = parseResult(raw, target);
+  if (target.kind !== 'schedule') return parsed;
+
+  // 開催前。日時・会場・大会名は同じ書式で載る。対戦カードも載っているが、
+  // 第N試合の番号が無い。順番を仮に決めて書くと、興行後に結果側が別の番号で
+  // 入ってきたときに突き合わせに失敗し、幻の試合が残る（merge は
+  // segment + order を identity にする）。開催前は試合を書かない。
+  return { event: { ...parsed.event, matches: [], attendance: null }, unparsed: [] };
+}
+
+function parseResult(raw, target) {
   const lines = raw.split('\n').map((s) => s.trim());
   const unparsed = [];
 

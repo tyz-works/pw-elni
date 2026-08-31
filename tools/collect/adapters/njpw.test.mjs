@@ -113,3 +113,35 @@ test('試合順が重複したら次の空き番号を使う', () => {
   assert.deepEqual(event.cardMatches.map((m) => m.order), [1, 2, 3]);
   assert.equal(event.cardMatches[2].durationSeconds, 18);
 });
+
+// --- スケジュール（今後の興行）---
+// 対戦カードのページを使う。/schedule は 1 ページに複数興行が並ぶので、
+// 「1 スナップショット = 1 興行」の契約に乗らない。
+
+const SCHED = readFileSync(new URL('../__fixtures__/njpw/schedule-sample.txt', import.meta.url), 'utf8');
+const SCHED_TARGET = { id: 'card-1', url: 'https://example.test/tournament/card/1', kind: 'schedule' };
+
+test('スケジュールから日時・会場・シリーズ名を取る', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.equal(event.eventId, 'njpw-20260905-0');
+  assert.equal(event.name, 'サンプルシリーズ2026');
+  assert.equal(event.date, '2026-09-05');
+  assert.equal(event.venueName, '栃木・サンプルアリーナ');
+  assert.equal(event.doorsOpen, '15:00');
+  assert.equal(event.bellTime, '16:00');
+});
+
+// カードには陣営の区切りが無く、名前が平坦に並ぶだけ（parseCard の names も
+// 平坦）。陣営は記事本文を読んだ LLM が組み立てる仕事で、開催前には記事が
+// 無い。推測で陣営を作らないため、試合は 1 つも書かない。
+test('開催前は試合を書かない', () => {
+  const { event, unparsed } = parse(SCHED, SCHED_TARGET);
+  assert.deepEqual(event.matches, []);
+  assert.deepEqual(event.cardMatches, [], 'LLM の検算材料として渡さない');
+  assert.deepEqual(unparsed, [], 'カード未反映は取りこぼしではない');
+});
+
+test('観衆は開催前には無いので null', () => {
+  const { event } = parse(SCHED, SCHED_TARGET);
+  assert.equal(event.attendance, null);
+});
