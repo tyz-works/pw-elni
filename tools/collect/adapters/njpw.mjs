@@ -99,14 +99,19 @@ const EXTRACT_CARD = () => {
       sides = withLinks.map((k) => links(k).map((a) => a.textContent.trim()));
       break;
     }
-    return { head: block.innerText.split('\n')[0].trim(), sides };
+    const lines = block.innerText.split('\n').map((l) => l.trim()).filter(Boolean);
+    return { head: lines[0] ?? '', sides, text: lines.slice(1).join('\n') };
   });
 };
 
+// 陣営に割れなかったブロックも節に残す。黙って消すと、発表済みの試合が
+// 消えたことに気付けない（選手ページのリンクが無い若手が含まれる回がある）。
+// 割れたものだけが VS を持つので、解析側はそれで見分けられる。
 function renderCardSection(matches) {
   return (matches ?? [])
-    .filter((m) => m.sides && m.sides.length >= 2)
-    .map((m) => [m.head, m.sides.map((s) => s.join('\n')).join('\nVS\n')].join('\n'))
+    .map((m) => (m.sides && m.sides.length >= 2
+      ? [m.head, m.sides.map((s) => s.join('\n')).join('\nVS\n')].join('\n')
+      : [m.head, m.text].filter(Boolean).join('\n')))
     .join('\n\n');
 }
 
@@ -131,14 +136,10 @@ export function parse(raw, target) {
   // 失敗した回なので、推測で陣営を作らず試合ゼロで書く。
   // cardMatches は渡さない。LLM の検算材料は記事本文とセットで意味を持つが、
   // 開催前には記事が無い。
+  const { matches, unparsed } = parseAnnouncedCard(raw);
   return {
-    event: {
-      ...parsed.event,
-      matches: parseAnnouncedCard(raw),
-      cardMatches: [],
-      attendance: null,
-    },
-    unparsed: [],
+    event: { ...parsed.event, matches, cardMatches: [], attendance: null },
+    unparsed,
   };
 }
 
@@ -149,17 +150,30 @@ const MATCH_TYPE_BY_SIZE = { 1: 'singles', 2: 'tag', 3: 'six-man-tag', 4: 'eight
 
 function parseAnnouncedCard(raw) {
   const at = raw.indexOf(CARD_SECTION);
-  if (at === -1) return [];
+  if (at === -1) return { matches: [], unparsed: [] };
 
   const body = raw.slice(at + CARD_SECTION.length).split('\n').map((l) => l.trim());
   const matches = [];
+  const unparsed = [];
   let head = null;
   let sides = [];
+
+  // 「第0試合」は前座。スキーマの order は 1 以上なので、番号の外の試合として
+  // dark に振る（DDT のダークマッチと同じ扱い）。本戦の番号は公式のまま使う。
+  let darkOrder = 0;
 
   const flush = () => {
     if (!head) return;
     const named = sides.filter((s) => s.length);
-    if (named.length >= 2) matches.push(buildAnnouncedMatch(head, named));
+    // 陣営に割れたものだけが VS を持つ。割れなかったブロックは黙って
+    // 捨てず取りこぼしに上げる（選手ページのリンクが無い選手がいる回）。
+    if (named.length >= 2) {
+      const num = Number(head[1]);
+      const segment = num === 0 ? 'dark' : 'card';
+      const order = num === 0 ? (darkOrder += 1) : num;
+      matches.push(buildAnnouncedMatch(head, named, segment, order));
+    }
+    else unparsed.push([head.input, ...named.flat()].join('\n'));
     head = null;
     sides = [];
   };
@@ -172,18 +186,18 @@ function parseAnnouncedCard(raw) {
     sides[sides.length - 1].push(l);
   }
   flush();
-  return matches;
+  return { matches, unparsed };
 }
 
-function buildAnnouncedMatch(head, sides) {
+function buildAnnouncedMatch(head, sides, segment, order) {
   const size = sides[0].length;
   const matchType = sides.length > 2
     ? 'multi-man'
     : (MATCH_TYPE_BY_SIZE[size] ?? 'multi-man');
 
   return {
-    order: Number(head[1]),
-    segment: 'card',
+    order,
+    segment,
     matchType: sides.some((s) => s.length !== size) ? 'multi-man' : matchType,
     sides: sides.map((names) => ({ names, teamName: null })),
     titleName: null,        // 見出しには載らない。結果で置き換わるときに入る

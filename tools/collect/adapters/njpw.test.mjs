@@ -160,7 +160,27 @@ test('開催前なので結果は無い', () => {
   assert.deepEqual(event.matches.map((m) => m.result), [null, null, null]);
   assert.deepEqual(event.matches.map((m) => m.confirmed), [true, true, true]);
   assert.deepEqual(event.cardMatches, [], 'LLM の検算材料としては渡さない');
-  assert.deepEqual(unparsed, []);
+  assert.ok(!unparsed.some((u) => /第[123]試合/.test(u)), '割れた試合は取りこぼしにしない');
+});
+
+// 新日本は前座に「第0試合」を使う。スキーマの order は 1 以上なので
+// そのままでは書けない。番号の外の試合として dark に振る（DDT と同じ扱い）。
+test('第0試合はダークマッチとして扱う', () => {
+  const raw = SCHED.replaceAll('第1試合 15分1本勝負', '第0試合 15分1本勝負');
+  const { event } = parse(raw, SCHED_TARGET);
+  const first = event.matches[0];
+  assert.equal(first.segment, 'dark');
+  assert.equal(first.order, 1, 'order は 1 以上でなければスキーマに落ちる');
+});
+
+// 選手ページのリンクが無い選手（若手など）がいると陣営に割れない。
+// 黙って消すと発表済みの試合が消えたことに気付けないので取りこぼしに上げる。
+test('陣営に割れなかった試合は取りこぼしとして報告する', () => {
+  const { event, unparsed } = parse(SCHED, SCHED_TARGET);
+  assert.ok(!event.matches.some((m) => m.order === 4), '割れなかった試合を書かない');
+  assert.equal(unparsed.length, 1);
+  assert.ok(unparsed[0].includes('第4試合'), `見出しごと報告する: ${unparsed[0]}`);
+  assert.ok(unparsed[0].includes('架空 二十二郎'), '中身も報告する');
 });
 
 // 構造の節が無い＝DOM の読み出しに失敗した回。推測で陣営を作らない。

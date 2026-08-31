@@ -363,7 +363,11 @@ async function runPromotion(promotion, opts, result) {
       // 試合が 1 つも取れず、取りこぼしが残っている興行は書かない。
       // 空のカードで書くと「対戦カード未発表」と見分けが付かなくなる。
       // 実際には抽出に失敗しただけで、公式には結果が載っている。
-      if (!event.matches.length && hasUnparsed) {
+      //
+      // 開催前の興行は別。カードが 1 つも取れなくても日時・会場には値がある
+      // （そもそもカードを取り始める前はこの形で書いていた）。ここで落とすと
+      // 「今後の興行」が消える。
+      if (kind !== 'schedule' && !event.matches.length && hasUnparsed) {
         continue;
       }
 
