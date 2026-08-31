@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20260917-0",
+  "promotionSlug": "njpw",
+  "name": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～",
+  "series": null,
+  "date": "2026-09-17",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "hokkaido-asahikawa-gymnasium",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/657037",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/657037",
+      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

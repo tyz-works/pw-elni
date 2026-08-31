@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20260918-0",
+  "promotionSlug": "njpw",
+  "name": "プロレス TAKE OFF！ from 新千歳空港",
+  "series": null,
+  "date": "2026-09-18",
+  "doorsOpen": "17:45",
+  "bellTime": "18:30",
+  "venueSlug": "hokkaido-new-chitose-airport-center-plaza",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/660611",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/660611",
+      "title": "プロレス TAKE OFF！ from 新千歳空港 | njpw",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}
