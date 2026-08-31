@@ -13,6 +13,19 @@ const BASE = 'https://www.ddtpro.jp';
 const LABEL = /^(WIN|LOSE|DRAW|VS|＜.*＞|<\d+>|with .*|※.*)$/;
 
 const RESULT_ID_RE = /\/results\/([0-9a-f]{24})(?:[/?#]|$)/;
+const SCHEDULE_ID_RE = /\/schedules\/([0-9a-f]{24})(?:[/?#]|$)/;
+
+// スケジュール詳細ページの目印。日付は「2026/10/01」の 1 行で載る。
+const SCHED_DATE_RE = /^(\d{4})\/(\d{2})\/(\d{2})$/;
+
+// 「2026年10月01日(木) 開場 17:30 開始 18:30」。時刻が載らない回もある。
+const SCHED_TIME_RE = /開場\s*(\d{1,2}:\d{2})[\s\S]*?開始\s*(\d{1,2}:\d{2})/;
+
+// 公式が付けるカテゴリ。興行なのは「大会」だけ。
+// 「イベント」「誕生日」は興行ではないので取り込まない。列挙に無い語が来たら
+// 黙って 0 件になるのではなく、判別できないものとして上に返す。
+const EVENT_CATEGORY = '大会';
+const NON_EVENT_CATEGORIES = ['イベント', '誕生日'];
 
 // 見出しは「<試合名>　<制限時間>分一本勝負」の形。試合名の語彙は興行ごとに
 // 増える（ダークマッチ・再試合・緊急決定試合…）ので列挙せず、行全体が
@@ -46,11 +59,20 @@ const NARRATIVE_MIN_LENGTH = 30;
 
 // 結果一覧に載っている分をすべて返す。マージが冪等なので取りすぎても
 // 2 回目以降は差分ゼロになる。「直近 N 日」の絞り込みは spec §10 の保留事項。
+//
+// 今後の興行はトップページからしか辿れない。/schedules は当月のカレンダーだけを
+// 返し、月送りは JS で動くので ?year= や /2026/10 のようなパラメータでは動かせない
+// （どれも当月と同じ 9 件を返す）。トップは 3 か月ぶんが並ぶ。
 /** @returns {Promise<Target[]>} */
 export async function listTargets(fetcher) {
-  const links = await fetcher.fetchLinks(`${BASE}/results`);
-  const ids = links.flatMap((href) => RESULT_ID_RE.exec(href)?.[1] ?? []);
-  return [...new Set(ids)].map((id) => ({ id, url: `${BASE}/results/${id}`, kind: 'result' }));
+  const idsFrom = (links, re) => [...new Set(links.flatMap((href) => re.exec(href)?.[1] ?? []))];
+
+  const results = idsFrom(await fetcher.fetchLinks(`${BASE}/results`), RESULT_ID_RE)
+    .map((id) => ({ id, url: `${BASE}/results/${id}`, kind: 'result' }));
+  const schedules = idsFrom(await fetcher.fetchLinks(`${BASE}/`), SCHEDULE_ID_RE)
+    .map((id) => ({ id, url: `${BASE}/schedules/${id}`, kind: 'schedule' }));
+
+  return [...results, ...schedules];
 }
 
 /** @returns {Promise<string>} */
@@ -61,9 +83,56 @@ export function fetchRaw(fetcher, target) {
 /**
  * @param {string} raw スナップショットの生テキスト
  * @param {Target} target
- * @returns {{ event: RawEvent, unparsed: string[] }}
+ * @returns {{ event: RawEvent | null, unparsed: string[], unknownCategory?: string }}
  */
 export function parse(raw, target) {
+  return target.kind === 'schedule' ? parseSchedule(raw, target) : parseResult(raw, target);
+}
+
+// 開催前の興行。対戦カードは載らないので matches は空のまま返す。
+// 「■出演予定選手」は出場予定の一覧であって対戦カードではないので使わない
+// （ここから試合を作ると公式が発表していないカードを捏造することになる）。
+function parseSchedule(raw, target) {
+  const lines = raw.split('\n').map((s) => s.trim());
+
+  const di = lines.findIndex((l) => SCHED_DATE_RE.test(l));
+  if (di === -1) return { event: null, unparsed: [] };
+  const [, y, m, d] = SCHED_DATE_RE.exec(lines[di]);
+  const date = `${y}-${m}-${d}`;
+
+  const category = lines.slice(di + 1).find(Boolean) ?? null;
+  if (category !== EVENT_CATEGORY) {
+    if (NON_EVENT_CATEGORIES.includes(category)) return { event: null, unparsed: [] };
+    return { event: null, unparsed: [], unknownCategory: category };
+  }
+
+  // 見出しは「会場「大会名」」の形で、その次に大会名だけの行が来る。
+  // 「日時」ラベルの直前の非空行を取れば、見出しの形が変わっても大会名になる。
+  const li = lines.indexOf('日時');
+  const name = li === -1 ? null : (lines.slice(0, li).reverse().find(Boolean) ?? null);
+  const timeLine = li === -1 ? '' : (lines.slice(li + 1, li + 4).find(Boolean) ?? '');
+  const time = SCHED_TIME_RE.exec(timeLine);
+
+  const event = {
+    eventId: `ddt-${date.replaceAll('-', '')}-0`,
+    promotionSlug: PROMOTION,
+    name,
+    series: null,
+    date,
+    doorsOpen: time?.[1] ?? null,
+    bellTime: time?.[2] ?? null,
+    venueName: parseVenue(lines),
+    venueSlug: null,
+    attendance: null,
+    confirmed: true,   // 興行そのものは公式発表済み。未発表なのはカード
+    officialUrl: target.url,
+    sources: [],       // run.mjs が retrievedAt 付きで足す
+    matches: [],       // 対戦カード未発表。スキーマ上は空配列でよい
+  };
+  return { event, unparsed: [] };
+}
+
+function parseResult(raw, target) {
   const lines = raw.split('\n').map((s) => s.trim());
   const unparsed = [];
 

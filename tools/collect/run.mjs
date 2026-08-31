@@ -8,6 +8,7 @@ import { spawnSync } from 'node:child_process';
 import { createFetcher } from './fetch.mjs';
 import {
   writeSnapshot, readSnapshot, listSnapshots, writeSnapshotUrl, readSnapshotUrl,
+  writeSnapshotKind, readSnapshotKind,
   writeExtraction, readExtraction,
 } from './core/snapshot.mjs';
 import { buildIndex, resolve as resolveName } from './core/aliases.mjs';
@@ -209,6 +210,7 @@ async function runPromotion(promotion, opts, result) {
         const raw = await adapter.fetchRaw(fetcher, t);
         writeSnapshot(promotion, t.id, raw);
         writeSnapshotUrl(promotion, t.id, t.url);
+        writeSnapshotKind(promotion, t.id, t.kind);
       }
     } catch (e) {
       result.failures.push({ promotion, step: 'fetch', message: e.message });
@@ -224,7 +226,14 @@ async function runPromotion(promotion, opts, result) {
   // マージすると別興行の試合が混ざるので、2 件目以降は失敗として上げる。
   const seenEventIds = new Set();
 
-  for (const id of listSnapshots(promotion)) {
+  // 結果を先に処理する。開催当日に結果が先に載ると、同じ興行のスケジュールと
+  // 結果が同じ eventId になる。結果のほうが情報として上なので、先に取り込んで
+  // スケジュール側を捨てる。
+  const snapshots = listSnapshots(promotion)
+    .map((id) => ({ id, kind: readSnapshotKind(promotion, id) }))
+    .sort((a, b) => Number(a.kind === 'schedule') - Number(b.kind === 'schedule'));
+
+  for (const { id, kind } of snapshots) {
     const url = readSnapshotUrl(promotion, id);
     // 出典 URL が無いスナップショットからは書けない（sources[] が埋まらない）。
     // 黙って飛ばさず失敗として上げる。
@@ -234,8 +243,25 @@ async function runPromotion(promotion, opts, result) {
     }
     try {
       const raw = readSnapshot(promotion, id);
-      const target = { id, url, kind: 'result' };
-      const { event: rawEvent, unparsed } = adapter.parse(raw, target);
+      const target = { id, url, kind };
+      const { event: rawEvent, unparsed, unknownCategory } = adapter.parse(raw, target);
+
+      // 公式がカテゴリの語彙を変えると、興行かどうかを判別できないまま
+      // 黙って 1 件も取れなくなる。失敗として上げる。
+      if (unknownCategory) {
+        result.failures.push({
+          promotion, step: 'parse',
+          message: `${id}: 知らないカテゴリ「${unknownCategory}」。興行かどうか判別できない`,
+        });
+        continue;
+      }
+
+      // 興行ではないもの（イベント・誕生日）。取りこぼしではないので報告しない。
+      if (!rawEvent) continue;
+
+      // スケジュールから取るのは開催前の分だけ。過去の興行は結果ページ側で
+      // 取れているし、そちらのほうが情報が多い。
+      if (kind === 'schedule' && rawEvent.date < today()) continue;
 
       // 抽出結果を先に見る。記事は公開後に変わらないので、呼び直しても
       // 同じ結果に金を払うだけになる。取り込めたかどうかとは無関係に残す
@@ -302,6 +328,9 @@ async function runPromotion(promotion, opts, result) {
       }
 
       if (seenEventIds.has(rawEvent.eventId)) {
+        // 同じ興行のスケジュールと結果が両方載っているだけ。結果を先に
+        // 処理しているので、ここに来たスケジュールは捨ててよい。
+        if (kind === 'schedule') continue;
         result.failures.push({
           promotion, step: 'parse',
           message: `${id}: eventId ${rawEvent.eventId} が同じ興行が既にある（同日複数興行の連番は未対応）`,
