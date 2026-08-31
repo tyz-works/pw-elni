@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261103-0",
+  "promotionSlug": "ddt",
+  "name": "Ultimate Party 2026",
+  "series": null,
+  "date": "2026-11-03",
+  "doorsOpen": "12:30",
+  "bellTime": "14:00",
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
+      "title": "Ultimate Party 2026 | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}
