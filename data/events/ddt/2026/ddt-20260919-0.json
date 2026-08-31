@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260919-0",
+  "promotionSlug": "ddt",
+  "name": "越後バックドロップ",
+  "series": null,
+  "date": "2026-09-19",
+  "doorsOpen": "12:00",
+  "bellTime": "13:00",
+  "venueSlug": "niigata-higashi-ku-plaza",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a322a8ef72276000253f983",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a322a8ef72276000253f983",
+      "title": "越後バックドロップ | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

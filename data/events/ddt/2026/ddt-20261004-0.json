@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261004-0",
+  "promotionSlug": "ddt",
+  "name": "ナニワプロレス道2026",
+  "series": null,
+  "date": "2026-10-04",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "osaka-higashiyodogawa-ward-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e29f037f7b30002cfff1c",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4e29f037f7b30002cfff1c",
+      "title": "ナニワプロレス道2026 | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

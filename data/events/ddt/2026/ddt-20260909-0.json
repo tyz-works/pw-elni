@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260909-0",
+  "promotionSlug": "ddt",
+  "name": "リングの秋場所 2026",
+  "series": null,
+  "date": "2026-09-09",
+  "doorsOpen": "18:00",
+  "bellTime": "19:00",
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/69b18c3ac2f88d0002ba1b02",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/69b18c3ac2f88d0002ba1b02",
+      "title": "リングの秋場所 2026 | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

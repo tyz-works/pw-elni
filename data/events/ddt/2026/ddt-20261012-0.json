@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261012-0",
+  "promotionSlug": "ddt",
+  "name": "けやきMelty Love 2026",
+  "series": null,
+  "date": "2026-10-12",
+  "doorsOpen": "11:00",
+  "bellTime": "12:00",
+  "venueSlug": "hokkaido-sapporo-sun-plaza",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e2b4892340d0002686f5d",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4e2b4892340d0002686f5d",
+      "title": "けやきMelty Love 2026 | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

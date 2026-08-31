@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261001-0",
+  "promotionSlug": "ddt",
+  "name": "MUSCLE＆",
+  "series": null,
+  "date": "2026-10-01",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a94ed1db48fab00021f4e29",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a94ed1db48fab00021f4e29",
+      "title": "MUSCLE＆ | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

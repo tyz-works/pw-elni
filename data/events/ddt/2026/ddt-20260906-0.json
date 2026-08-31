@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260906-0",
+  "promotionSlug": "ddt",
+  "name": "仙台新伝説2026 ～マーボー焼きそば〜",
+  "series": null,
+  "date": "2026-09-06",
+  "doorsOpen": "12:30",
+  "bellTime": "13:30",
+  "venueSlug": "miyagi-yume-messe",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a3229a179a60600022583d5",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a3229a179a60600022583d5",
+      "title": "仙台新伝説2026 ～マーボー焼きそば〜 | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

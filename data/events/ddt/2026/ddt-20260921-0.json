@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260921-0",
+  "promotionSlug": "ddt",
+  "name": "DRAMATIC INFINITY 2026 ～プロレスの秋～",
+  "series": null,
+  "date": "2026-09-21",
+  "doorsOpen": "10:30",
+  "bellTime": "11:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6931479815bffe00027f46fa",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6931479815bffe00027f46fa",
+      "title": "DRAMATIC INFINITY 2026 ～プロレスの秋～ | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

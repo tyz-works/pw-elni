@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260916-0",
+  "promotionSlug": "ddt",
+  "name": "闘うビアガーデン2026 in UENO",
+  "series": null,
+  "date": "2026-09-16",
+  "doorsOpen": "16:30",
+  "bellTime": "17:30",
+  "venueSlug": "tokyo-ueno-park-outdoor-stage",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a322a1982f2cc000281dbf4",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a322a1982f2cc000281dbf4",
+      "title": "闘うビアガーデン2026 in UENO | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

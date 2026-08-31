@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260923-0",
+  "promotionSlug": "ddt",
+  "name": "HARASHIMA凱旋！～また青梅で大会やるさー！なんでー？地元だからだー！～",
+  "series": null,
+  "date": "2026-09-23",
+  "doorsOpen": "13:00",
+  "bellTime": "14:00",
+  "venueSlug": "tokyo-sumitomo-arena-ome",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a1bf58d6365b600020ad6cd",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a1bf58d6365b600020ad6cd",
+      "title": "HARASHIMA凱旋！～また青梅で大会やるさー！なんでー？地元だからだー！～ | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

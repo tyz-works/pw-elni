@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20260928-0",
+  "promotionSlug": "ddt",
+  "name": "【SHINJUKU FACE COUNTDOWN SERIES】超日本プロレス 〜さよなら新宿FACE〜",
+  "series": null,
+  "date": "2026-09-28",
+  "doorsOpen": "18:30",
+  "bellTime": "19:00",
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a0582acd87b1300021ae668",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a0582acd87b1300021ae668",
+      "title": "【SHINJUKU FACE COUNTDOWN SERIES】超日本プロレス 〜さよなら新宿FACE〜 | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261008-0",
+  "promotionSlug": "ddt",
+  "name": "ビアガーデンプロレス 2026 ～THE FINAL～",
+  "series": null,
+  "date": "2026-10-08",
+  "doorsOpen": "16:30",
+  "bellTime": "17:30",
+  "venueSlug": "tokyo-ueno-park-outdoor-stage",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e2a5763825b0002ad3285",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4e2a5763825b0002ad3285",
+      "title": "ビアガーデンプロレス 2026 ～THE FINAL～ | ddt",
+      "retrievedAt": "2026-08-31"
+    }
+  ]
+}
