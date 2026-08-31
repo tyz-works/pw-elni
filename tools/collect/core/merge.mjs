@@ -58,6 +58,17 @@ function mergeArray(existing, incoming, path, conflicts, sourceUrl, key) {
   // matches: segment + order を identity にする。ダークマッチは本戦と
   // 別の連番なので、order だけで突き合わせると別の試合に上書きしてしまう。
   if (key === 'matches') {
+    // 結果がまだ 1 つも入っていない興行のカードは暫定。公式が差し替えたら
+    // そのまま入れ替える。試合ごとに突き合わせると、番号がずれたときに
+    // 古い試合が残ってしまう（開催前のカードには第N試合の番号が無く、
+    // 結果ページの番号と一致する保証がない）。
+    // 1 つでも結果が入っていれば、以降は下の突き合わせに戻る。
+    // result を持たないレコードは対象にしない。スキーマ上 match は必ず
+    // result を持つ（未確定なら null）ので、キーが無いものは match 以外の
+    // 何かか、組み立て途中のもの。黙って消さないほうを既定にする。
+    const provisional = (m) => isPlainObject(m) && 'result' in m && m.result === null;
+    if (existing.length && existing.every(provisional)) return incoming;
+
     const out = existing.slice();
     const indexByKey = new Map(out.map((m, i) => [matchKey(m), i]));
     for (const m of incoming) {

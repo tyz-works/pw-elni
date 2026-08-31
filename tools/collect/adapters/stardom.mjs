@@ -80,11 +80,93 @@ export function parse(raw, target) {
   const parsed = parseResult(raw, target);
   if (target.kind !== 'schedule') return parsed;
 
-  // 開催前。日時・会場・大会名は同じ書式で載る。対戦カードも載っているが、
-  // 第N試合の番号が無い。順番を仮に決めて書くと、興行後に結果側が別の番号で
-  // 入ってきたときに突き合わせに失敗し、幻の試合が残る（merge は
-  // segment + order を identity にする）。開催前は試合を書かない。
-  return { event: { ...parsed.event, matches: [], attendance: null }, unparsed: [] };
+  // 開催前。日時・会場・大会名は同じ書式で載る。カードは第N試合の番号を
+  // 持たないので、ページに載っている順に番号を振る。番号が結果ページと
+  // ずれても、暫定カードは結果が入る時点で丸ごと差し替わる（merge.mjs）。
+  return {
+    event: { ...parsed.event, matches: parseAnnouncedCard(lines(raw)), attendance: null },
+    unparsed: [],
+  };
+}
+
+const lines = (raw) => raw.split('\n').map((s) => s.trim());
+
+// 開催前の対戦カード。「チケット詳細はこちら」と「VIEW ALL」の間に並ぶ。
+const CARD_START = 'チケット詳細はこちら';
+const CARD_END = 'VIEW ALL';
+
+// 陣営の区切り。
+const CARD_VS = 'VS';
+
+// 見出し。「シングルマッチ」「◯◯選手権試合」。試合名の語彙は興行ごとに
+// 増えるので列挙せず、行末が試合形式の書き方であることで判定する
+// （DDT の見出し判定と同じ考え方）。
+const CARD_HEAD_RE = /(?:マッチ|試合)$/;
+
+// 王座戦の見出しだけ titleName にする。
+const TITLE_RE = /選手権試合$/;
+
+// 「≪王者≫」「≪王者組≫」「挑戦者組」。実データでは挑戦者側だけ ≪≫ が
+// 付いていないことがあり、括弧の有無が揺れる。選手名ではないので落とす。
+// 想定外のラベルが来ても選手名として alias 解決に失敗し unresolved に出る。
+const CARD_LABEL_RE = /^[≪《<＜]?(?:王者|挑戦者)組?[≫》>＞]?$/;
+
+const MATCH_TYPE_BY_SIZE = { 1: 'singles', 2: 'tag', 3: 'six-man-tag', 4: 'eight-man-tag' };
+
+function parseAnnouncedCard(all) {
+  const from = all.indexOf(CARD_START);
+  const to = all.indexOf(CARD_END);
+  if (from === -1 || to === -1 || to <= from) return [];
+
+  const body = all.slice(from + 1, to).filter(Boolean);
+  const matches = [];
+  let head = null;
+  let block = [];
+
+  const flush = () => {
+    if (head === null) return;
+    const match = buildAnnouncedMatch(head, block, matches.length + 1);
+    if (match) matches.push(match);
+    block = [];
+  };
+
+  for (const l of body) {
+    if (CARD_HEAD_RE.test(l)) { flush(); head = l; continue; }
+    block.push(l);
+  }
+  flush();
+  return matches;
+}
+
+function buildAnnouncedMatch(head, block, order) {
+  const sides = [];
+  let current = [];
+  for (const l of block) {
+    if (l === CARD_VS) { sides.push(current); current = []; continue; }
+    if (CARD_LABEL_RE.test(l)) continue;
+    current.push(l);
+  }
+  sides.push(current);
+
+  const named = sides.filter((s) => s.length);
+  if (named.length < 2) return null;
+
+  const size = named[0].length;
+  const matchType = named.length > 2
+    ? 'multi-man'
+    : (MATCH_TYPE_BY_SIZE[size] ?? 'multi-man');
+
+  return {
+    order,
+    segment: 'card',
+    matchType,
+    sides: named.map((names) => ({ names, teamName: null })),
+    titleName: TITLE_RE.test(head) ? head : null,
+    timeLimitMinutes: null,   // 開催前のページには載らない
+    result: null,             // 試合前。スキーマ上も null
+    confirmed: true,          // カードは公式発表済み
+    notes: null,
+  };
 }
 
 function parseResult(raw, target) {
