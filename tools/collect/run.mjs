@@ -345,6 +345,21 @@ async function runPromotion(promotion, opts, result) {
 
       event.sources = [{ url, title: `${event.name} | ${promotion}`, retrievedAt: today() }];
 
+      // 開催前のカードは新人・来日選手を含みやすい。未登録の選手が 1 人いる
+      // だけで興行ごと落とすと、既に取れている日時・会場まで失われて、
+      // カードを取り始める前より悪くなる。解決できなかった試合だけ落として
+      // 興行は書く。名前は unresolved として報告済みなので黙って消えるわけ
+      // ではないし、暫定カードは丸ごと差し替わるので、選手を足せば翌日入る。
+      // 公式の試合番号はそのまま残すので、抜けた試合は番号の飛びで分かる。
+      // 会場が解決できない場合は従来どおり興行ごと書かない（スキーマ上必須）。
+      let blocked = unresolved.length > 0;
+      if (kind === 'schedule' && event.venueSlug) {
+        event.matches = event.matches.filter(
+          (m) => m.sides.every((side) => side.wrestlerIds.every(Boolean)),
+        );
+        blocked = false;
+      }
+
       // 試合が 1 つも取れず、取りこぼしが残っている興行は書かない。
       // 空のカードで書くと「対戦カード未発表」と見分けが付かなくなる。
       // 実際には抽出に失敗しただけで、公式には結果が載っている。
@@ -356,7 +371,7 @@ async function runPromotion(promotion, opts, result) {
       const existing = existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null;
       if (!existing) {
         // 未解決の名前を含む興行は書かない（spec §5）
-        if (!unresolved.length) stage(promotion, event, null, result);
+        if (!blocked) stage(promotion, event, null, result);
         continue;
       }
 
@@ -381,7 +396,7 @@ async function runPromotion(promotion, opts, result) {
         }
       }
 
-      if (!unresolved.length) stage(promotion, merged, existing, result);
+      if (!blocked) stage(promotion, merged, existing, result);
     } catch (e) {
       result.failures.push({ promotion, step: 'parse', message: `${id}: ${e.message}` });
     }

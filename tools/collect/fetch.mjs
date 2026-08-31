@@ -27,6 +27,22 @@ export async function createFetcher() {
       await page.waitForTimeout(SETTLE_MS);
       return page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => a.href));
     },
+    // 本文テキストと、DOM からしか取れない構造を 1 回の遷移で返す。
+    // innerText は見た目の並びしか残さないので、たとえば新日本の対戦カードの
+    // 「どちらの陣営か」は落ちてしまう（名前が平坦に並ぶだけになる）。
+    // fn はページの中で実行されるので、外側の変数は参照できない。
+    // HTML を外に出さず、構造化された値だけを返すこと（LLM に HTML を渡さない）。
+    /** @param {string} url @param {Function} fn @returns {Promise<{text: string, data: unknown}>} */
+    async fetchWithDom(url, fn) {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: NAV_TIMEOUT_MS });
+      await page.waitForTimeout(SETTLE_MS);
+      await page.evaluate(() => {
+        document.querySelectorAll('script,style,noscript').forEach((e) => e.remove());
+      });
+      const text = await page.evaluate(() => document.body.innerText.replace(/\n{3,}/g, '\n\n'));
+      const data = await page.evaluate(fn);
+      return { text, data };
+    },
     async close() {
       await browser.close();
     },
