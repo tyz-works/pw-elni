@@ -9,7 +9,199 @@
   "venueSlug": "utsunomiya-light-cube",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "taisei-nakahara"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jado",
+            "ryusuke-taguchi",
+            "el-desperado"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dick-togo",
+            "sho",
+            "douki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "yoshi-hashi",
+            "shota-umino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jacob-austin-young",
+            "great-o-khan",
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shingo-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "callum-newman"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "satoshi-kojima",
+            "toru-yano",
+            "togi-makabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gedo",
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taichi",
+            "yuya-uemura",
+            "wolf-aron"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kosei-fujita",
+            "hartley-jackson",
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "master-wato",
+            "boltin-oleg",
+            "yoh",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "robbie-x",
+            "taiji-ishimori",
+            "yota-tsuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ],
   "officialUrl": "https://www.njpw.co.jp/tournament/card/656886",
   "sources": [
     {

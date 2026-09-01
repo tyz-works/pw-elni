@@ -9,7 +9,32 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "koguma"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "ハイスピード選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ],
   "officialUrl": "https://wwr-stardom.com/event/20260906_korakuen/",
   "sources": [
     {

@@ -9,7 +9,119 @@
   "venueSlug": "hokkaido-irie-park-gymnasium",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "gedo"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "callum-newman"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taichi",
+            "yuya-uemura",
+            "wolf-aron"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kosei-fujita",
+            "hartley-jackson",
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "ryusuke-taguchi",
+            "yoh",
+            "yoshi-hashi",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "robbie-x",
+            "taiji-ishimori",
+            "shingo-takagi",
+            "yota-tsuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "togi-makabe",
+            "toru-yano"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 60,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ],
   "officialUrl": "https://www.njpw.co.jp/tournament/card/657038",
   "sources": [
     {
