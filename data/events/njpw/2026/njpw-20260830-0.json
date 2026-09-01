@@ -1,13 +1,13 @@
 {
-  "eventId": "njpw-20260906-0",
+  "eventId": "njpw-20260830-0",
   "promotionSlug": "njpw",
-  "name": "永田裕志 Produce Blue Justice XIX ～青義不撓～",
+  "name": "SHIMONOSEKI IMPACT～海響決戦～ 2026 Presented by BOAT RACE下関",
   "series": null,
-  "date": "2026-09-06",
-  "doorsOpen": "14:30",
-  "bellTime": "16:00",
-  "venueSlug": "chiba-togane-arena",
-  "attendance": null,
+  "date": "2026-08-30",
+  "doorsOpen": "14:00",
+  "bellTime": "15:00",
+  "venueSlug": "yamaguchi-kaikyo-messe-shimonoseki",
+  "attendance": 1817,
   "confirmed": true,
   "matches": [
     {
@@ -17,7 +17,7 @@
       "sides": [
         {
           "wrestlerIds": [
-            "tatsuya-matsumoto"
+            "masatora-yasuda"
           ],
           "teamName": null
         },
@@ -37,19 +37,17 @@
     {
       "order": 2,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "masatora-yasuda",
-            "ryusuke-taguchi",
+            "tatsuya-matsumoto",
             "el-desperado"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "dick-togo",
             "sho",
             "douki"
           ],
@@ -65,42 +63,40 @@
     {
       "order": 3,
       "segment": "card",
-      "matchType": "eight-man-tag",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "jado",
             "satoshi-kojima",
-            "boltin-oleg",
-            "shota-umino"
+            "taichi",
+            "yuya-uemura"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "jacob-austin-young",
-            "great-o-khan",
-            "henare",
-            "callum-newman"
+            "dick-togo",
+            "sanada",
+            "ren-narita"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": 20,
+      "timeLimitMinutes": 30,
       "result": null,
       "confirmed": true,
       "notes": null
     },
     {
-      "order": 5,
+      "order": 4,
       "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "taichi",
-            "yuya-uemura",
+            "master-wato",
+            "boltin-oleg",
             "wolf-aron"
           ],
           "teamName": null
@@ -121,51 +117,21 @@
       "notes": null
     },
     {
-      "order": 6,
+      "order": 5,
       "segment": "card",
-      "matchType": "eight-man-tag",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "master-wato",
-            "yoshi-hashi",
-            "yoh",
-            "hirooki-goto"
+            "jado",
+            "toru-yano",
+            "togi-makabe"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
             "gedo",
-            "robbie-x",
-            "taiji-ishimori",
-            "yota-tsuji"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 7,
-      "segment": "card",
-      "matchType": "six-man-tag",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "toru-yano",
-            "togi-makabe",
-            "yuji-nagata"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "daiki-nagai",
             "oskar",
             "yuto-ice"
           ],
@@ -173,18 +139,51 @@
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": 30,
+      "timeLimitMinutes": 20,
       "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoh",
+            "yoshi-hashi",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "shingo-takagi",
+            "yota-tsuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 621
+      },
       "confirmed": true,
       "notes": null
     }
   ],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/654798",
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/657077",
   "sources": [
     {
-      "url": "https://www.njpw.co.jp/tournament/card/654798",
-      "title": "永田裕志 Produce Blue Justice XIX ～青義不撓～ | njpw",
-      "retrievedAt": "2026-08-31"
+      "url": "https://www.njpw.co.jp/tournament/result/657077",
+      "title": "SHIMONOSEKI IMPACT～海響決戦～ 2026 Presented by BOAT RACE下関 | njpw",
+      "retrievedAt": "2026-09-01"
     }
   ]
 }

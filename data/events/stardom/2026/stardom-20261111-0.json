@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261111-0",
+  "promotionSlug": "stardom",
+  "name": "後楽園ホール(夜)",
+  "series": null,
+  "date": "2026-11-11",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://wwr-stardom.com/event/20261111_korakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261111_korakuen/",
+      "title": "後楽園ホール(夜) | stardom",
+      "retrievedAt": "2026-09-01"
+    }
+  ]
+}
