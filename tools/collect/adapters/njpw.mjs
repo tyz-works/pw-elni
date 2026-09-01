@@ -71,9 +71,55 @@ export async function listTargets(fetcher) {
   return [...results, ...schedules];
 }
 
+// 陣営は innerText には出ない。名前が縦に並ぶだけで、どちらのチームかが
+// 落ちてしまう（結果ページのカードも同じ）。DOM では 2 カラムに分かれて
+// いるので、そこだけ構造を読み出して本文の後ろに決定論的な書式で足す。
+// スナップショットから先はこれまでどおりテキストの解析で完結する。
+const CARD_SECTION = '=== pw-elni: 対戦カード（DOM から） ===';
+
+// ページの中で動く。外側の変数は参照できない。HTML は返さない。
+const EXTRACT_CARD = () => {
+  const links = (el) => [...el.querySelectorAll('a[href^="/profile/"]')];
+
+  // 試合ブロック: テキストが「第N試合」で始まり選手リンクを含む、最も内側の要素。
+  let blocks = [...document.querySelectorAll('*')].filter(
+    (el) => /^第\d+試合/.test(el.textContent.trim()) && links(el).length > 0);
+  blocks = blocks.filter((b) => !blocks.some((o) => o !== b && b.contains(o)));
+
+  return blocks.map((block) => {
+    const total = links(block).length;
+    // 陣営の分割点: 選手リンクを持つ子が 2 つ以上あり、それでブロック内の
+    // 全リンクを尽くす最も外側の要素。グリッドには空の子要素も混じるので、
+    // 子の総数では判定しない。クラス名にも依存しない（作り直しで変わる）。
+    let sides = null;
+    for (const el of block.querySelectorAll('*')) {
+      const withLinks = [...el.children].filter((k) => links(k).length > 0);
+      if (withLinks.length < 2) continue;
+      if (withLinks.reduce((n, k) => n + links(k).length, 0) !== total) continue;
+      sides = withLinks.map((k) => links(k).map((a) => a.textContent.trim()));
+      break;
+    }
+    const lines = block.innerText.split('\n').map((l) => l.trim()).filter(Boolean);
+    return { head: lines[0] ?? '', sides, text: lines.slice(1).join('\n') };
+  });
+};
+
+// 陣営に割れなかったブロックも節に残す。黙って消すと、発表済みの試合が
+// 消えたことに気付けない（選手ページのリンクが無い若手が含まれる回がある）。
+// 割れたものだけが VS を持つので、解析側はそれで見分けられる。
+function renderCardSection(matches) {
+  return (matches ?? [])
+    .map((m) => (m.sides && m.sides.length >= 2
+      ? [m.head, m.sides.map((s) => s.join('\n')).join('\nVS\n')].join('\n')
+      : [m.head, m.text].filter(Boolean).join('\n')))
+    .join('\n\n');
+}
+
 /** @returns {Promise<string>} */
-export function fetchRaw(fetcher, target) {
-  return fetcher.fetchText(target.url);
+export async function fetchRaw(fetcher, target) {
+  if (target.kind !== 'schedule') return fetcher.fetchText(target.url);
+  const { text, data } = await fetcher.fetchWithDom(target.url, EXTRACT_CARD);
+  return `${text}\n\n${CARD_SECTION}\n${renderCardSection(data)}\n`;
 }
 
 /**
@@ -85,13 +131,80 @@ export function parse(raw, target) {
   const parsed = parseResult(raw, target);
   if (target.kind !== 'schedule') return parsed;
 
-  // 開催前。日時・会場・シリーズ名は同じ書式で載るのでそのまま使えるが、
-  // 試合は書かない。カードは名前が平坦に並ぶだけで陣営の区切りが無く、
-  // 陣営は記事本文を読んだ LLM が組み立てる仕事だが、開催前には記事が無い。
-  // cardMatches を渡すと検算材料のつもりが推測の材料になる。
+  // 開催前。日時・会場・シリーズ名は結果ページと同じ書式で載る。
+  // カードは fetchRaw が足した構造の節から読む。節が無い＝DOM の読み出しに
+  // 失敗した回なので、推測で陣営を作らず試合ゼロで書く。
+  // cardMatches は渡さない。LLM の検算材料は記事本文とセットで意味を持つが、
+  // 開催前には記事が無い。
+  const { matches, unparsed } = parseAnnouncedCard(raw);
   return {
-    event: { ...parsed.event, matches: [], cardMatches: [], attendance: null },
-    unparsed: [],
+    event: { ...parsed.event, matches, cardMatches: [], attendance: null },
+    unparsed,
+  };
+}
+
+// 見出し「第1試合 15分1本勝負」。制限時間は無いこともある（時間無制限）。
+const ANNOUNCED_HEAD_RE = /^第(\d+)試合\s*(?:(\d+)分)?/;
+const ANNOUNCED_VS = 'VS';
+const MATCH_TYPE_BY_SIZE = { 1: 'singles', 2: 'tag', 3: 'six-man-tag', 4: 'eight-man-tag' };
+
+function parseAnnouncedCard(raw) {
+  const at = raw.indexOf(CARD_SECTION);
+  if (at === -1) return { matches: [], unparsed: [] };
+
+  const body = raw.slice(at + CARD_SECTION.length).split('\n').map((l) => l.trim());
+  const matches = [];
+  const unparsed = [];
+  let head = null;
+  let sides = [];
+
+  // 「第0試合」は前座。スキーマの order は 1 以上なので、番号の外の試合として
+  // dark に振る（DDT のダークマッチと同じ扱い）。本戦の番号は公式のまま使う。
+  let darkOrder = 0;
+
+  const flush = () => {
+    if (!head) return;
+    const named = sides.filter((s) => s.length);
+    // 陣営に割れたものだけが VS を持つ。割れなかったブロックは黙って
+    // 捨てず取りこぼしに上げる（選手ページのリンクが無い選手がいる回）。
+    if (named.length >= 2) {
+      const num = Number(head[1]);
+      const segment = num === 0 ? 'dark' : 'card';
+      const order = num === 0 ? (darkOrder += 1) : num;
+      matches.push(buildAnnouncedMatch(head, named, segment, order));
+    }
+    else unparsed.push([head.input, ...named.flat()].join('\n'));
+    head = null;
+    sides = [];
+  };
+
+  for (const l of body) {
+    const m = ANNOUNCED_HEAD_RE.exec(l);
+    if (m) { flush(); head = m; sides = [[]]; continue; }
+    if (!head || !l) continue;
+    if (l === ANNOUNCED_VS) { sides.push([]); continue; }
+    sides[sides.length - 1].push(l);
+  }
+  flush();
+  return { matches, unparsed };
+}
+
+function buildAnnouncedMatch(head, sides, segment, order) {
+  const size = sides[0].length;
+  const matchType = sides.length > 2
+    ? 'multi-man'
+    : (MATCH_TYPE_BY_SIZE[size] ?? 'multi-man');
+
+  return {
+    order,
+    segment,
+    matchType: sides.some((s) => s.length !== size) ? 'multi-man' : matchType,
+    sides: sides.map((names) => ({ names, teamName: null })),
+    titleName: null,        // 見出しには載らない。結果で置き換わるときに入る
+    timeLimitMinutes: head[2] ? Number(head[2]) : null,
+    result: null,           // 試合前
+    confirmed: true,        // カードは公式発表済み
+    notes: null,
   };
 }
 
