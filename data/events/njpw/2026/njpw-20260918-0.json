@@ -13,11 +13,12 @@
     {
       "order": 1,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "eight-man-tag",
       "sides": [
         {
           "wrestlerIds": [
             "masatora-yasuda",
+            "shota-umino",
             "toru-yano",
             "togi-makabe"
           ],
@@ -26,6 +27,7 @@
         {
           "wrestlerIds": [
             "daiki-nagai",
+            "gedo",
             "oskar",
             "yuto-ice"
           ],
