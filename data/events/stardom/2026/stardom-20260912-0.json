@@ -11,7 +11,7 @@
   "confirmed": true,
   "matches": [
     {
-      "order": 1,
+      "order": 3,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -35,7 +35,7 @@
       "notes": null
     },
     {
-      "order": 2,
+      "order": 5,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -59,7 +59,35 @@
       "notes": null
     },
     {
-      "order": 3,
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tekla",
+            "julia-hart",
+            "skye-blue"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "natsupoi",
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アーティスト・オブ・スターダム選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
       "segment": "card",
       "matchType": "tag",
       "sides": [
@@ -85,7 +113,7 @@
       "notes": null
     },
     {
-      "order": 4,
+      "order": 8,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -109,7 +137,7 @@
       "notes": null
     },
     {
-      "order": 5,
+      "order": 9,
       "segment": "card",
       "matchType": "singles",
       "sides": [
