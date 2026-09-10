@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20260910-0",
+  "promotionSlug": "stardom",
+  "name": "【他団体参戦】伊藤道場",
+  "series": null,
+  "date": "2026-09-10",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-shinjuku-face",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://wwr-stardom.com/event/20260910_itodojo/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260910_itodojo/",
+      "title": "【他団体参戦】伊藤道場 | stardom",
+      "retrievedAt": "2026-09-10"
+    }
+  ]
+}
