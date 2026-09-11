@@ -105,9 +105,9 @@
         },
         {
           "wrestlerIds": [
-            "kosei-fujita",
             "hartley-jackson",
-            "ryohei-oiwa"
+            "ryohei-oiwa",
+            "kosei-fujita"
           ],
           "teamName": null
         }
