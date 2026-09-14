@@ -68,33 +68,6 @@
       "notes": null
     },
     {
-      "order": 4,
-      "segment": "card",
-      "matchType": "multi-man",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "gedo",
-            "robbie-x"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "zane-jay",
-            "jake-lee",
-            "callum-newman"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
       "order": 5,
       "segment": "card",
       "matchType": "six-man-tag",
@@ -137,9 +110,9 @@
         },
         {
           "wrestlerIds": [
-            "kosei-fujita",
             "hartley-jackson",
-            "ryohei-oiwa"
+            "ryohei-oiwa",
+            "kosei-fujita"
           ],
           "teamName": null
         }
