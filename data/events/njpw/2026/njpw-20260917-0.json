@@ -11,30 +11,6 @@
   "confirmed": true,
   "matches": [
     {
-      "order": 1,
-      "segment": "card",
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "masatora-yasuda"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "dick-togo"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 20,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
       "order": 2,
       "segment": "card",
       "matchType": "tag",
@@ -91,31 +67,6 @@
       "notes": null
     },
     {
-      "order": 4,
-      "segment": "card",
-      "matchType": "multi-man",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "gedo"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "zane-jay",
-            "callum-newman"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
       "order": 5,
       "segment": "card",
       "matchType": "six-man-tag",
@@ -130,9 +81,9 @@
         },
         {
           "wrestlerIds": [
-            "kosei-fujita",
             "hartley-jackson",
-            "ryohei-oiwa"
+            "ryohei-oiwa",
+            "kosei-fujita"
           ],
           "teamName": null
         }

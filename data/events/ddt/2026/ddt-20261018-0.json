@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261018-0",
+  "promotionSlug": "ddt",
+  "name": "WRESTLING HARVEST 2026～秋のプロレス収穫祭～",
+  "series": null,
+  "date": "2026-10-18",
+  "doorsOpen": "10:30",
+  "bellTime": "11:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6931480515bffe00027f46fb",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6931480515bffe00027f46fb",
+      "title": "WRESTLING HARVEST 2026～秋のプロレス収穫祭～ | ddt",
+      "retrievedAt": "2026-09-03"
+    }
+  ]
+}

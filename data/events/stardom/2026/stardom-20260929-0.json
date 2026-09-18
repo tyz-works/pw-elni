@@ -1,0 +1,46 @@
+{
+  "eventId": "stardom-20260929-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM NIGHTER in KORAKUEN 2026 Sep.",
+  "series": null,
+  "date": "2026-09-29",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "ワンダー・オブ・スターダム選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://wwr-stardom.com/event/20260929_korakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20260929_korakuen/",
+      "title": "STARDOM NIGHTER in KORAKUEN 2026 Sep. | stardom",
+      "retrievedAt": "2026-09-14"
+    }
+  ]
+}
