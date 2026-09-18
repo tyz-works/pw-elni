@@ -7,7 +7,7 @@
   "doorsOpen": "17:45",
   "bellTime": "18:30",
   "venueSlug": "hokkaido-new-chitose-airport-center-plaza",
-  "attendance": null,
+  "attendance": 188,
   "confirmed": true,
   "matches": [
     {
@@ -64,7 +64,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 852
+      },
       "confirmed": true,
       "notes": null
     },
@@ -94,7 +99,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1012
+      },
       "confirmed": true,
       "notes": null
     }
@@ -105,6 +115,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/660611",
       "title": "プロレス TAKE OFF！ from 新千歳空港 | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/660611",
+      "title": "プロレス TAKE OFF！ from 新千歳空港 | njpw",
+      "retrievedAt": "2026-09-18"
     }
   ]
 }
