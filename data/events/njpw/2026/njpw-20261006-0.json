@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20261006-0",
+  "promotionSlug": "njpw",
+  "name": "Road to KING OF PRO-WRESTLING 2026",
+  "series": null,
+  "date": "2026-10-06",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/654877",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/654877",
+      "title": "Road to KING OF PRO-WRESTLING 2026 | njpw",
+      "retrievedAt": "2026-09-20"
+    }
+  ]
+}
