@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261209-0",
+  "promotionSlug": "ddt",
+  "name": "GO UPDATE 2026 〜もういっちょ水曜日のDDTどうでしょう〜",
+  "series": null,
+  "date": "2026-12-09",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/693148bd55bee30002329699",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/693148bd55bee30002329699",
+      "title": "GO UPDATE 2026 〜もういっちょ水曜日のDDTどうでしょう〜 | ddt",
+      "retrievedAt": "2026-09-26"
+    }
+  ]
+}
