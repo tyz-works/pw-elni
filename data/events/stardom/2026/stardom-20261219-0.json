@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261219-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in UTSUNOMIYA 2026 Dec.",
+  "series": null,
+  "date": "2026-12-19",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "utsunomiya-light-cube",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://wwr-stardom.com/event/20261219_utsunomiya/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261219_utsunomiya/",
+      "title": "STARDOM in UTSUNOMIYA 2026 Dec. | stardom",
+      "retrievedAt": "2026-10-01"
+    }
+  ]
+}

@@ -9,13 +9,252 @@
   "venueSlug": "tokyo-shinjuku-face",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "dark",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 508
+      },
+      "confirmed": true,
+      "notes": "※¡Hasta la vista!"
+    },
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "viento-levante"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 593
+      },
+      "confirmed": true,
+      "notes": "※イルシオンの持ついつでもどこでもいつでもどこでも挑戦権挑戦権がビエントに移動。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "yuki-ishida",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 643
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hideki-okatani",
+            "mj-paul"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "kumadori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki",
+            "tomomitsu-matsunaga"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 2,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 425
+      },
+      "confirmed": true,
+      "notes": "※隈取が防衛に失敗、隈取が第1904代王者となる。"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "to-y",
+            "kazuma-sumi",
+            "kaisei-takechi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 787
+      },
+      "confirmed": true,
+      "notes": "※たけしとゆうやで創る未来への咆哮"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "soma-takao"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 821
+      },
+      "confirmed": true,
+      "notes": "※払腰"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "yuki-iino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "fuminori-abe",
+            "harashima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 992
+      },
+      "confirmed": true,
+      "notes": "※お卍固めを切り返す"
+    }
+  ],
   "officialUrl": "https://www.ddtpro.jp/schedules/69b18c3ac2f88d0002ba1b02",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/69b18c3ac2f88d0002ba1b02",
       "title": "リングの秋場所 2026 | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6aa124e0fb14ee0002165bc8",
+      "title": "リングの秋場所 2026 | ddt",
+      "retrievedAt": "2026-09-09"
     }
   ]
 }

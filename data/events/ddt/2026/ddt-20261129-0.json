@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261129-0",
+  "promotionSlug": "ddt",
+  "name": "BE AMBITIOUS 2026 〜晩秋決戦〜",
+  "series": null,
+  "date": "2026-11-29",
+  "doorsOpen": "10:30",
+  "bellTime": "11:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6931486a3cac4c0002a50f5e",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6931486a3cac4c0002a50f5e",
+      "title": "BE AMBITIOUS 2026 〜晩秋決戦〜 | ddt",
+      "retrievedAt": "2026-09-19"
+    }
+  ]
+}

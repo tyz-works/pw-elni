@@ -66,31 +66,6 @@
       "notes": null
     },
     {
-      "order": 3,
-      "segment": "card",
-      "matchType": "multi-man",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "daiki-nagai"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "zane-jay",
-            "callum-newman"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 20,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
       "order": 4,
       "segment": "card",
       "matchType": "six-man-tag",

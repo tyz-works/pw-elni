@@ -9,13 +9,330 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "dark",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tomomitsu-matsunaga",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 565
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 630
+      },
+      "confirmed": true,
+      "notes": "※たけしとゆうやで創る未来への咆哮"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "soma-takao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 507
+      },
+      "confirmed": true,
+      "notes": "※ジントニック"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shinya-aoki",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 448
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "yuji-nagata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "harashima",
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "knockout",
+        "finishMoveSlug": null,
+        "durationSeconds": 599
+      },
+      "confirmed": true,
+      "notes": "※フロント・ネックロック→レフェリーストップ。ディーノがアイアンマンヘビーメタル級王座の防衛に失敗、秋山が第1908代王者となる。"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D6人タッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 760
+      },
+      "confirmed": true,
+      "notes": "※KANON組が2度目の防衛に失敗、佐々木組が第62代王者組となる。ビエントの持ついつでもどこでもいつでもどこでも挑戦権挑戦権がイルシオンに移動。"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT UNIVERSAL選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 769
+      },
+      "confirmed": true,
+      "notes": "※第22代王者が2度目の防衛に成功。"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "fuminori-abe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D無差別級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1154
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 72
+      },
+      "confirmed": true,
+      "notes": "※髙木の持ついつでもどこでも挑戦権（赤）がイルシオンに移動。"
+    },
+    {
+      "order": 9,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "いつでもどこでも挑戦権使用～KO-D無差別級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "cannonball-450",
+        "durationSeconds": 275
+      },
+      "confirmed": true,
+      "notes": "※キャノンボール450°。第89代王者が4度目の防衛に成功。"
+    }
+  ],
   "officialUrl": "https://www.ddtpro.jp/schedules/6931479815bffe00027f46fa",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6931479815bffe00027f46fa",
       "title": "DRAMATIC INFINITY 2026 ～プロレスの秋～ | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ab093ceb75a760002a7199b",
+      "title": "DRAMATIC INFINITY 2026～プロレスの秋～ | ddt",
+      "retrievedAt": "2026-09-21"
     }
   ]
 }
