@@ -115,6 +115,7 @@ export function mergeLlmMatch(llm, card) {
   return {
     match: {
       order: card.order,
+      segment: card.segment,
       matchType: null, // sides の人数から run.mjs 側で決める
       sides,
       titleName: title ? title[1] : null,

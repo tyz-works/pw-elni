@@ -31,6 +31,12 @@ test('陣営は LLM、時間と決まり手はカードから取る', () => {
   assert.equal(match.result.winnerSideIndex, 0);
 });
 
+// 新日本の「第0試合」はカード側で dark に振る。その区別を落とさない。
+test('カードの segment を引き継ぐ', () => {
+  const { match } = mergeLlmMatch(LLM, { ...CARD, segment: 'dark' });
+  assert.equal(match.segment, 'dark');
+});
+
 // 決まり手はカードに書かれている。LLM の判断より公式の文字列を優先する。
 test('決着はカードの決まり手から決める', () => {
   const { match } = mergeLlmMatch({ ...LLM, decision: 'submission' }, CARD);

@@ -314,15 +314,20 @@ function parseCard(lines) {
       (l) => !CARD_RECORD.test(l) && !CARD_LABEL.test(l) && !CARD_SUBTITLE.test(l),
     );
 
+    // 「第0試合」は前座。開催前カードと同じく dark に振る（order は 1 以上）。
+    const num = Number(hm[1]);
+    const segment = num === 0 ? 'dark' : 'card';
+
     // 引き分け後の延長戦は「第7試合（延長戦）」と同じ番号で載る。どちらも
     // 本物の試合だが、order が重複すると検証器に落とされる。公式の番号を
     // 使いつつ、埋まっていたら次の空き番号にずらす。
-    let order = Number(hm[1]);
-    while (used.has(order)) order += 1;
-    used.add(order);
+    let order = Math.max(num, 1);
+    while (used.has(`${segment}:${order}`)) order += 1;
+    used.add(`${segment}:${order}`);
 
     out.push({
       order,
+      segment,
       timeLimitMinutes: hm[2] ? Number(hm[2]) : null,
       subtitle,
       names,
