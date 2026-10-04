@@ -7,7 +7,7 @@
   "doorsOpen": "14:30",
   "bellTime": "16:00",
   "venueSlug": "chiba-togane-arena",
-  "attendance": null,
+  "attendance": 1258,
   "confirmed": true,
   "matches": [
     {
@@ -30,7 +30,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 15,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 533
+      },
       "confirmed": true,
       "notes": null
     },
@@ -58,7 +63,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 453
+      },
       "confirmed": true,
       "notes": null
     },
@@ -88,7 +98,41 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 755
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jeff-cobb"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 461
+      },
       "confirmed": true,
       "notes": null
     },
@@ -116,7 +160,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 477
+      },
       "confirmed": true,
       "notes": null
     },
@@ -146,7 +195,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 545
+      },
       "confirmed": true,
       "notes": null
     },
@@ -174,7 +228,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "backdrop-hold",
+        "durationSeconds": 924
+      },
       "confirmed": true,
       "notes": null
     }
@@ -185,6 +244,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/654798",
       "title": "永田裕志 Produce Blue Justice XIX ～青義不撓～ | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/654798",
+      "title": "永田裕志 Produce Blue Justice XIX ～青義不撓～ | njpw",
+      "retrievedAt": "2026-10-04"
     }
   ]
 }

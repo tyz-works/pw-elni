@@ -142,7 +142,7 @@ function resolveEvent(rawEvent, index, moveIndex, venueIndex, promotion, sourceU
 
     return {
       order: m.order,
-      // ダークマッチを区別するのは今のところ DDT だけ。他のアダプタは
+      // ダークマッチを区別するのは DDT と新日本（第0試合）だけ。他のアダプタは
       // 公式が番号を振った本戦しか返さないので card に倒す。
       segment: m.segment ?? 'card',
       matchType,

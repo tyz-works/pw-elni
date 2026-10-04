@@ -7,9 +7,38 @@
   "doorsOpen": "17:30",
   "bellTime": "18:30",
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1218,
   "confirmed": true,
   "matches": [
+    {
+      "order": 1,
+      "segment": "dark",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taisei-nakahara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yushin-hatazawa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 10,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 409
+      },
+      "confirmed": true,
+      "notes": null
+    },
     {
       "order": 1,
       "segment": "card",
@@ -36,7 +65,43 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 748
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "gedo",
+            "jeff-cobb"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "callum-newman"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 585
+      },
       "confirmed": true,
       "notes": null
     },
@@ -64,7 +129,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "draw",
+        "finishMoveSlug": null,
+        "durationSeconds": 296
+      },
       "confirmed": true,
       "notes": null
     },
@@ -90,14 +160,19 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 510
+      },
       "confirmed": true,
       "notes": null
     },
     {
       "order": 5,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
@@ -109,6 +184,7 @@
         },
         {
           "wrestlerIds": [
+            "shun-skywalker",
             "sho",
             "douki"
           ],
@@ -117,7 +193,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 571
+      },
       "confirmed": true,
       "notes": null
     },
@@ -143,7 +224,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1084
+      },
       "confirmed": true,
       "notes": null
     },
@@ -169,7 +255,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 1265
+      },
       "confirmed": true,
       "notes": null
     }
@@ -180,6 +271,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/654876",
       "title": "Road to DESTRUCTION | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/654876",
+      "title": "Road to DESTRUCTION | njpw",
+      "retrievedAt": "2026-10-04"
     }
   ]
 }

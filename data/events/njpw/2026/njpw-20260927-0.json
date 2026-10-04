@@ -1,62 +1,37 @@
 {
-  "eventId": "njpw-20260909-0",
+  "eventId": "njpw-20260927-0",
   "promotionSlug": "njpw",
-  "name": "Road to DESTRUCTION",
+  "name": "DESTRUCTION in KOBE",
   "series": null,
-  "date": "2026-09-09",
-  "doorsOpen": "17:30",
-  "bellTime": "18:30",
-  "venueSlug": "tokyo-korakuen-hall",
-  "attendance": 1102,
+  "date": "2026-09-27",
+  "doorsOpen": "14:30",
+  "bellTime": "16:00",
+  "venueSlug": "kobe-world-kinen-hall",
+  "attendance": 4870,
   "confirmed": true,
   "matches": [
     {
       "order": 1,
-      "segment": "dark",
-      "matchType": "singles",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "tatsuya-matsumoto"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "yushin-hatazawa"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 10,
-      "result": {
-        "winnerSideIndex": 0,
-        "decision": "pinfall",
-        "finishMoveSlug": null,
-        "durationSeconds": 435
-      },
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 1,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "multi-man",
       "sides": [
         {
           "wrestlerIds": [
-            "taisei-nakahara",
-            "yoshi-hashi",
+            "toru-yano",
+            "mistico",
+            "el-desperado",
+            "boltin-oleg",
             "shota-umino"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "jacob-austin-young",
-            "great-o-khan",
-            "henare"
+            "dick-togo",
+            "sho",
+            "douki",
+            "sanada",
+            "ren-narita"
           ],
           "teamName": null
         }
@@ -64,10 +39,10 @@
       "titleName": null,
       "timeLimitMinutes": 20,
       "result": {
-        "winnerSideIndex": 1,
+        "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 738
+        "durationSeconds": 504
       },
       "confirmed": true,
       "notes": null
@@ -79,48 +54,17 @@
       "sides": [
         {
           "wrestlerIds": [
-            "masatora-yasuda",
+            "master-wato",
             "ryusuke-taguchi",
-            "el-desperado"
+            "yoh"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "shun-skywalker",
-            "sho",
-            "douki"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 20,
-      "result": {
-        "winnerSideIndex": 1,
-        "decision": "pinfall",
-        "finishMoveSlug": null,
-        "durationSeconds": 594
-      },
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 3,
-      "segment": "card",
-      "matchType": "tag",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "daiki-nagai",
-            "jeff-cobb"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "zane-jay",
-            "callum-newman"
+            "gedo",
+            "taiji-ishimori",
+            "robbie-x"
           ],
           "teamName": null
         }
@@ -131,29 +75,29 @@
         "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 623
+        "durationSeconds": 213
       },
       "confirmed": true,
       "notes": null
     },
     {
-      "order": 4,
+      "order": 3,
       "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "jado",
-            "toru-yano",
-            "togi-makabe"
+            "daiki-nagai",
+            "oskar",
+            "yuto-ice"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "gedo",
-            "oskar",
-            "yuto-ice"
+            "zane-jay",
+            "great-o-khan",
+            "henare"
           ],
           "teamName": null
         }
@@ -161,31 +105,29 @@
       "titleName": null,
       "timeLimitMinutes": 30,
       "result": {
-        "winnerSideIndex": 1,
+        "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 483
+        "durationSeconds": 573
       },
       "confirmed": true,
       "notes": null
     },
     {
-      "order": 5,
+      "order": 4,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
             "taichi",
-            "yuya-uemura",
             "wolf-aron"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "kosei-fujita",
-            "hartley-jackson",
+            "zack-sabre-jr",
             "ryohei-oiwa"
           ],
           "teamName": null
@@ -194,30 +136,28 @@
       "titleName": null,
       "timeLimitMinutes": 30,
       "result": {
-        "winnerSideIndex": 0,
+        "winnerSideIndex": 1,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 577
+        "durationSeconds": 608
       },
       "confirmed": true,
       "notes": null
     },
     {
-      "order": 6,
+      "order": 5,
       "segment": "card",
-      "matchType": "tag",
+      "matchType": "singles",
       "sides": [
         {
           "wrestlerIds": [
-            "master-wato",
-            "boltin-oleg"
+            "jeff-cobb"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "robbie-x",
-            "shingo-takagi"
+            "callum-newman"
           ],
           "teamName": null
         }
@@ -228,7 +168,36 @@
         "winnerSideIndex": 1,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 700
+        "durationSeconds": 833
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shun-skywalker"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 612
       },
       "confirmed": true,
       "notes": null
@@ -236,19 +205,17 @@
     {
       "order": 7,
       "segment": "card",
-      "matchType": "tag",
+      "matchType": "singles",
       "sides": [
         {
           "wrestlerIds": [
-            "yoh",
-            "hirooki-goto"
+            "shingo-takagi"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "taiji-ishimori",
-            "yota-tsuji"
+            "claudio-castagnoli"
           ],
           "teamName": null
         }
@@ -259,22 +226,75 @@
         "winnerSideIndex": 0,
         "decision": "pinfall",
         "finishMoveSlug": null,
-        "durationSeconds": 810
+        "durationSeconds": 941
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "drilla-moloney"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gabe-kidd"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1177
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 9,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yota-tsuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1441
       },
       "confirmed": true,
       "notes": null
     }
   ],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/654589",
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/656945",
   "sources": [
     {
-      "url": "https://www.njpw.co.jp/tournament/card/654589",
-      "title": "Road to DESTRUCTION | njpw",
-      "retrievedAt": "2026-08-31"
-    },
-    {
-      "url": "https://www.njpw.co.jp/tournament/result/654589",
-      "title": "Road to DESTRUCTION | njpw",
+      "url": "https://www.njpw.co.jp/tournament/result/656945",
+      "title": "DESTRUCTION in KOBE | njpw",
       "retrievedAt": "2026-10-04"
     }
   ]

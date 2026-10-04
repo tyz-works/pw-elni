@@ -57,6 +57,7 @@ test('カードから試合順・制限時間・選手名・時間・決まり�
   assert.equal(event.cardMatches.length, 2);
   assert.deepEqual(event.cardMatches[0], {
     order: 1,
+    segment: 'card',
     timeLimitMinutes: 20,
     subtitle: null,
     names: ['架空三郎', '架空四郎', '架空五郎', '架空六郎'],
@@ -112,6 +113,17 @@ test('試合順が重複したら次の空き番号を使う', () => {
   const { event } = parse(raw, TARGET);
   assert.deepEqual(event.cardMatches.map((m) => m.order), [1, 2, 3]);
   assert.equal(event.cardMatches[2].durationSeconds, 18);
+});
+
+// 結果ページのカードも前座を「第0試合」と書く。開催前カードと同じく
+// dark に振らないと order=0 でスキーマに落ち、興行ごと書けなくなる。
+test('結果のカードでも第0試合はダークマッチとして扱う', () => {
+  const raw = RAW.replace('第1試合 20分1本勝負', '第0試合 20分1本勝負');
+  const { event } = parse(raw, TARGET);
+  assert.deepEqual(
+    event.cardMatches.map((m) => `${m.segment}:${m.order}`),
+    ['dark:1', 'card:2'],
+  );
 });
 
 // --- スケジュール（今後の興行）---
