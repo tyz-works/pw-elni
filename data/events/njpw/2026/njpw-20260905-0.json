@@ -7,7 +7,7 @@
   "doorsOpen": "15:00",
   "bellTime": "16:00",
   "venueSlug": "utsunomiya-light-cube",
-  "attendance": null,
+  "attendance": 903,
   "confirmed": true,
   "matches": [
     {
@@ -30,7 +30,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 15,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 428
+      },
       "confirmed": true,
       "notes": null
     },
@@ -58,7 +63,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": "italian-stretch-no-32",
+        "durationSeconds": 530
+      },
       "confirmed": true,
       "notes": null
     },
@@ -86,18 +96,24 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 649
+      },
       "confirmed": true,
       "notes": null
     },
     {
       "order": 4,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "shingo-takagi"
+            "shingo-takagi",
+            "jeff-cobb"
           ],
           "teamName": null
         },
@@ -111,7 +127,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 491
+      },
       "confirmed": true,
       "notes": null
     },
@@ -139,7 +160,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 616
+      },
       "confirmed": true,
       "notes": null
     },
@@ -167,7 +193,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 587
+      },
       "confirmed": true,
       "notes": null
     },
@@ -197,7 +228,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 690
+      },
       "confirmed": true,
       "notes": null
     }
@@ -208,6 +244,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/656886",
       "title": "Road to DESTRUCTION | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/656886",
+      "title": "Road to DESTRUCTION | njpw",
+      "retrievedAt": "2026-10-04"
     }
   ]
 }

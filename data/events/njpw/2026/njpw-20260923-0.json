@@ -7,7 +7,7 @@
   "doorsOpen": "14:00",
   "bellTime": "15:00",
   "venueSlug": "hokkaido-kitagas-arena-sapporo46",
-  "attendance": null,
+  "attendance": 2002,
   "confirmed": true,
   "matches": [
     {
@@ -32,14 +32,19 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 376
+      },
       "confirmed": true,
       "notes": null
     },
     {
       "order": 2,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
@@ -50,14 +55,20 @@
         },
         {
           "wrestlerIds": [
-            "dick-togo"
+            "dick-togo",
+            "shun-skywalker"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 541
+      },
       "confirmed": true,
       "notes": null
     },
@@ -83,7 +94,47 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 662
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "jeff-cobb",
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "callum-newman",
+            "great-o-khan",
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 689
+      },
       "confirmed": true,
       "notes": null
     },
@@ -94,7 +145,7 @@
       "sides": [
         {
           "wrestlerIds": [
-            "taichi",
+            "taisei-nakahara",
             "yuya-uemura",
             "wolf-aron"
           ],
@@ -111,7 +162,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 671
+      },
       "confirmed": true,
       "notes": null
     },
@@ -137,7 +193,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 833
+      },
       "confirmed": true,
       "notes": null
     },
@@ -162,8 +223,13 @@
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 1318
+      },
       "confirmed": true,
       "notes": null
     },
@@ -187,7 +253,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 60,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1364
+      },
       "confirmed": true,
       "notes": null
     }
@@ -198,6 +269,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/657041",
       "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/657041",
+      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
+      "retrievedAt": "2026-10-04"
     }
   ]
 }

@@ -7,9 +7,38 @@
   "doorsOpen": "15:00",
   "bellTime": "16:00",
   "venueSlug": "hokkaido-kitami-sports-center",
-  "attendance": null,
+  "attendance": 874,
   "confirmed": true,
   "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taisei-nakahara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yushin-hatazawa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 10,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 464
+      },
+      "confirmed": true,
+      "notes": null
+    },
     {
       "order": 2,
       "segment": "card",
@@ -32,67 +61,17 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 492
+      },
       "confirmed": true,
       "notes": null
     },
     {
       "order": 3,
-      "segment": "card",
-      "matchType": "multi-man",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "masatora-yasuda",
-            "shota-umino",
-            "mistico",
-            "el-desperado"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "dick-togo",
-            "sho",
-            "douki"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 4,
-      "segment": "card",
-      "matchType": "tag",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "tatsuya-matsumoto",
-            "boltin-oleg"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "drilla-moloney",
-            "shingo-takagi"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 5,
       "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
@@ -115,7 +94,113 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 533
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "gedo",
+            "jeff-cobb",
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jake-lee",
+            "callum-newman",
+            "great-o-khan",
+            "henare"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 777
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "boltin-oleg"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "drilla-moloney",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 681
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda",
+            "shota-umino",
+            "mistico",
+            "el-desperado"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dick-togo",
+            "shun-skywalker",
+            "sho",
+            "douki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 610
+      },
       "confirmed": true,
       "notes": null
     },
@@ -145,7 +230,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 935
+      },
       "confirmed": true,
       "notes": null
     }
@@ -156,6 +246,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/657039",
       "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/657039",
+      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
+      "retrievedAt": "2026-10-04"
     }
   ]
 }

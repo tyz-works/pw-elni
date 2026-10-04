@@ -7,9 +7,40 @@
   "doorsOpen": "17:30",
   "bellTime": "18:30",
   "venueSlug": "hokkaido-tomakomai-gymnasium",
-  "attendance": null,
+  "attendance": 772,
   "confirmed": true,
   "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yushin-hatazawa",
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dick-togo",
+            "shun-skywalker"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 548
+      },
+      "confirmed": true,
+      "notes": null
+    },
     {
       "order": 2,
       "segment": "card",
@@ -32,7 +63,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 541
+      },
       "confirmed": true,
       "notes": null
     },
@@ -62,7 +98,43 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 764
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "jeff-cobb"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zane-jay",
+            "callum-newman"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 503
+      },
       "confirmed": true,
       "notes": null
     },
@@ -90,7 +162,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 626
+      },
       "confirmed": true,
       "notes": null
     },
@@ -148,7 +225,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 942
+      },
       "confirmed": true,
       "notes": null
     }
@@ -159,6 +241,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/657036",
       "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/657036",
+      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
+      "retrievedAt": "2026-10-04"
     }
   ]
 }
