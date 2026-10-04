@@ -1,31 +1,35 @@
 {
-  "eventId": "njpw-20260917-0",
+  "eventId": "njpw-20261007-0",
   "promotionSlug": "njpw",
-  "name": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～",
+  "name": "Road to KING OF PRO-WRESTLING 2026",
   "series": null,
-  "date": "2026-09-17",
+  "date": "2026-10-07",
   "doorsOpen": "17:30",
   "bellTime": "18:30",
-  "venueSlug": "hokkaido-asahikawa-gymnasium",
+  "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
   "matches": [
     {
       "order": 2,
       "segment": "card",
-      "matchType": "tag",
+      "matchType": "eight-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "taisei-nakahara",
-            "el-desperado"
+            "masatora-yasuda",
+            "el-desperado",
+            "taichi",
+            "yuya-uemura"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
             "sho",
-            "douki"
+            "douki",
+            "yujiro-takahashi",
+            "sanada"
           ],
           "teamName": null
         }
@@ -43,19 +47,19 @@
       "sides": [
         {
           "wrestlerIds": [
-            "jado",
             "master-wato",
             "boltin-oleg",
+            "toru-yano",
             "shota-umino"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "jacob-austin-young",
-            "jake-lee",
-            "great-o-khan",
-            "henare"
+            "dick-togo",
+            "yoshinobu-kanemaru",
+            "shun-skywalker",
+            "ren-narita"
           ],
           "teamName": null
         }
@@ -69,49 +73,18 @@
     {
       "order": 5,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "multi-man",
       "sides": [
         {
           "wrestlerIds": [
-            "taichi",
-            "yuya-uemura",
-            "wolf-aron"
+            "yota-tsuji"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "hartley-jackson",
-            "ryohei-oiwa",
-            "kosei-fujita"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 6,
-      "segment": "card",
-      "matchType": "six-man-tag",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "ryusuke-taguchi",
-            "toru-yano",
-            "togi-makabe"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "shingo-takagi",
-            "oskar",
-            "yuto-ice"
+            "zack-sabre-jr",
+            "ryohei-oiwa"
           ],
           "teamName": null
         }
@@ -125,40 +98,34 @@
     {
       "order": 7,
       "segment": "card",
-      "matchType": "eight-man-tag",
+      "matchType": "singles",
       "sides": [
         {
           "wrestlerIds": [
-            "tatsuya-matsumoto",
-            "yoshi-hashi",
-            "yoh",
-            "hirooki-goto"
+            "yoh"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "daiki-nagai",
-            "robbie-x",
-            "taiji-ishimori",
-            "yota-tsuji"
+            "robbie-x"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": 30,
+      "timeLimitMinutes": 60,
       "result": null,
       "confirmed": true,
       "notes": null
     }
   ],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/657037",
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/654878",
   "sources": [
     {
-      "url": "https://www.njpw.co.jp/tournament/card/657037",
-      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
-      "retrievedAt": "2026-08-31"
+      "url": "https://www.njpw.co.jp/tournament/card/654878",
+      "title": "Road to KING OF PRO-WRESTLING 2026 | njpw",
+      "retrievedAt": "2026-09-24"
     }
   ]
 }

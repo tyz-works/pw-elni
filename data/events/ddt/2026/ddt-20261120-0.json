@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261120-0",
+  "promotionSlug": "ddt",
+  "name": "KOBE FRIDAY NIGHT FIGHT",
+  "series": null,
+  "date": "2026-11-20",
+  "doorsOpen": "17:00",
+  "bellTime": "18:00",
+  "venueSlug": "kobe-sanbo-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a828b5f3443a8000226eb86",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a828b5f3443a8000226eb86",
+      "title": "KOBE FRIDAY NIGHT FIGHT | ddt",
+      "retrievedAt": "2026-09-18"
+    }
+  ]
+}

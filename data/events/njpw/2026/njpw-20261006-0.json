@@ -1,29 +1,37 @@
 {
-  "eventId": "njpw-20260915-0",
+  "eventId": "njpw-20261006-0",
   "promotionSlug": "njpw",
-  "name": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～",
+  "name": "Road to KING OF PRO-WRESTLING 2026",
   "series": null,
-  "date": "2026-09-15",
+  "date": "2026-10-06",
   "doorsOpen": "17:30",
   "bellTime": "18:30",
-  "venueSlug": "hokkaido-hokuto-gymnasium",
+  "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
   "matches": [
     {
       "order": 1,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "multi-man",
       "sides": [
         {
           "wrestlerIds": [
-            "master-wato"
+            "taisei-nakahara",
+            "el-desperado",
+            "taichi",
+            "boltin-oleg",
+            "yuya-uemura"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "dick-togo"
+            "yoshinobu-kanemaru",
+            "sho",
+            "douki",
+            "yujiro-takahashi",
+            "sanada"
           ],
           "teamName": null
         }
@@ -41,15 +49,15 @@
       "sides": [
         {
           "wrestlerIds": [
-            "taisei-nakahara",
-            "el-desperado"
+            "tatsuya-matsumoto",
+            "yoh"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "sho",
-            "douki"
+            "taiji-ishimori",
+            "robbie-x"
           ],
           "teamName": null
         }
@@ -63,23 +71,21 @@
     {
       "order": 3,
       "segment": "card",
-      "matchType": "eight-man-tag",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "jado",
-            "ryusuke-taguchi",
-            "boltin-oleg",
+            "master-wato",
+            "toru-yano",
             "shota-umino"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "jacob-austin-young",
-            "jake-lee",
-            "great-o-khan",
-            "henare"
+            "dick-togo",
+            "shun-skywalker",
+            "ren-narita"
           ],
           "teamName": null
         }
@@ -91,51 +97,21 @@
       "notes": null
     },
     {
-      "order": 5,
+      "order": 6,
       "segment": "card",
-      "matchType": "six-man-tag",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "taichi",
-            "yuya-uemura",
-            "wolf-aron"
+            "shingo-takagi",
+            "yota-tsuji"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
             "hartley-jackson",
-            "ryohei-oiwa",
-            "kosei-fujita"
-          ],
-          "teamName": null
-        }
-      ],
-      "titleName": null,
-      "timeLimitMinutes": 30,
-      "result": null,
-      "confirmed": true,
-      "notes": null
-    },
-    {
-      "order": 6,
-      "segment": "card",
-      "matchType": "six-man-tag",
-      "sides": [
-        {
-          "wrestlerIds": [
-            "masatora-yasuda",
-            "toru-yano",
-            "togi-makabe"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "daiki-nagai",
-            "oskar",
-            "yuto-ice"
+            "ryohei-oiwa"
           ],
           "teamName": null
         }
@@ -149,40 +125,36 @@
     {
       "order": 7,
       "segment": "card",
-      "matchType": "eight-man-tag",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "tatsuya-matsumoto",
-            "yoshi-hashi",
-            "yoh",
-            "hirooki-goto"
+            "oskar",
+            "yuto-ice"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "gedo",
-            "robbie-x",
-            "taiji-ishimori",
-            "yota-tsuji"
+            "great-o-khan",
+            "henare"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
-      "timeLimitMinutes": 30,
+      "timeLimitMinutes": 60,
       "result": null,
       "confirmed": true,
       "notes": null
     }
   ],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/657035",
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/654877",
   "sources": [
     {
-      "url": "https://www.njpw.co.jp/tournament/card/657035",
-      "title": "NJPW BATTLE LINE HOKKAIDO ～Road to DESTRUCTION～ | njpw",
-      "retrievedAt": "2026-08-31"
+      "url": "https://www.njpw.co.jp/tournament/card/654877",
+      "title": "Road to KING OF PRO-WRESTLING 2026 | njpw",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }

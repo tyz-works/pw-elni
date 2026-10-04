@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20261012-0",
+  "promotionSlug": "njpw",
+  "name": "KING OF PRO-WRESTLING 2026",
+  "series": null,
+  "date": "2026-10-12",
+  "doorsOpen": "14:30",
+  "bellTime": "16:00",
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/662775",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662775",
+      "title": "KING OF PRO-WRESTLING 2026 | njpw",
+      "retrievedAt": "2026-09-13"
+    }
+  ]
+}

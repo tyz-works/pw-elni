@@ -1,0 +1,46 @@
+{
+  "eventId": "stardom-20261018-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM Path of Thunder 2026",
+  "series": null,
+  "date": "2026-10-18",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "utsunomiya-light-cube",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "ワンダー・オブ・スターダム選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ],
+  "officialUrl": "https://wwr-stardom.com/event/20261018_utsunomiya/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261018_utsunomiya/",
+      "title": "STARDOM Path of Thunder 2026 | stardom",
+      "retrievedAt": "2026-10-01"
+    }
+  ]
+}
