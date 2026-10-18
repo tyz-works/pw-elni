@@ -11,6 +11,35 @@
   "confirmed": true,
   "matches": [
     {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "no-contest",
+        "finishMoveSlug": null,
+        "durationSeconds": 420
+      },
+      "confirmed": true,
+      "notes": "新人・男色ディーノデビュー戦。ベテラン・石田有輝は石田有輝、新人・男色ディーノは男色ディーノのギミック表記。無効試合。※石田の暴走"
+    },
+    {
       "order": 2,
       "segment": "card",
       "matchType": "multi-man",
@@ -145,6 +174,41 @@
       "notes": "スク～ルボ～イ"
     },
     {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "captain-inoue-c",
+            "kanon",
+            "yukio-naya",
+            "kumadori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "captain-sasaki-c",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kubi-gatame",
+        "durationSeconds": 870
+      },
+      "confirmed": true,
+      "notes": "KIMIHIROはセコンド。キャプテン井上＜C＞とキャプテン佐々木＜C＞は中の人を確定できないためギミック名のまま収録。"
+    },
+    {
       "order": 7,
       "segment": "card",
       "matchType": "singles",
@@ -171,7 +235,7 @@
         "durationSeconds": null
       },
       "confirmed": true,
-      "notes": "公式の時間表記は「19時21分」で分秒として扱えない。上野勇希が防衛に失敗し、勝俣瞬馬が第1916代王者。このあとのエニウェアフォール8人タッグは番組表外のため未収録。第1試合（ベテラン・石田有輝、新人・男色ディーノ）と第6試合（キャプテン井上、キャプテン佐々木）はギミック名が未解決のため欠番。 横入り式エビ固め"
+      "notes": "公式の時間表記は「19時21分」で分秒として扱えない。上野勇希が防衛に失敗し、勝俣瞬馬が第1916代王者。このあとのエニウェアフォール8人タッグは番組表外のため未収録。横入り式エビ固め"
     }
   ],
   "officialUrl": "https://www.ddtpro.jp/results/6ac756d05e9ddb00021b4c30",

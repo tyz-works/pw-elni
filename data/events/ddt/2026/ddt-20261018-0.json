@@ -231,7 +231,36 @@
         "durationSeconds": 1161
       },
       "confirmed": true,
-      "notes": "4対4のイリミネーション。最後はMAOがクリス・ブルックスを首固め。KIMIHIROとYUZUKIはセコンド。緊急決定試合（飯野雄貴対男色“ダンディ”ディーノ）はギミック名が未解決のため未収録。"
+      "notes": "4対4のイリミネーション。最後はMAOがクリス・ブルックスを首固め。KIMIHIROとYUZUKIはセコンド。"
+    },
+    {
+      "order": 8,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-iino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "spear",
+        "durationSeconds": 168
+      },
+      "confirmed": true,
+      "notes": "緊急決定試合。男色“ダンディ”ディーノは男色ディーノのギミック表記。片エビ固め。"
     }
   ],
   "officialUrl": "https://www.ddtpro.jp/results/6ad40cf3442a7c00029134e9",
