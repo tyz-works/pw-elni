@@ -1,0 +1,18 @@
+{
+  "slug": "fujisawa-chichibunomiya-memorial-gymnasium",
+  "name": "藤沢市秩父宮記念体育館",
+  "nameEn": null,
+  "aliases": [
+    "神奈川・藤沢市秩父宮記念体育館"
+  ],
+  "city": "藤沢",
+  "prefecture": "神奈川県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -4,7 +4,8 @@
   "nameEn": "Yuya Koroku",
   "aliases": [
     "YUYA KOROKU",
-    "高鹿 佑也"
+    "高鹿 佑也",
+    "新人・高鹿佑也"
   ],
   "realName": null,
   "birthDate": "1997-11-21",
@@ -24,6 +25,11 @@
       "url": "https://www.ddtpro.jp/wrestlers/67bd667a9342b300022f367c",
       "title": "高鹿佑也 | DDT プロレスリング公式サイト",
       "retrievedAt": "2026-08-20"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6aaa4c9b65e2fa0002d150dc",
+      "title": "闘うビアガーデン2026 in UENO | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

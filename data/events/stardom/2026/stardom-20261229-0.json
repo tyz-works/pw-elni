@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261229-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM DREAM QUEENDOM 2026",
+  "series": null,
+  "date": "2026-12-29",
+  "doorsOpen": "15:40",
+  "bellTime": "17:00",
+  "venueSlug": "tokyo-ryogoku-kokugikan",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261229_ryogoku/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261229_ryogoku/",
+      "title": "STARDOM DREAM QUEENDOM 2026 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

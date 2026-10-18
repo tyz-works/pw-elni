@@ -1,0 +1,18 @@
+{
+  "slug": "kochi-chres-series-gymnasium",
+  "name": "［CHRES］セリーズ 体育館",
+  "nameEn": null,
+  "aliases": [
+    "高知・［CHRES］セリーズ 体育館"
+  ],
+  "city": "高知",
+  "prefecture": "高知県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261115_kochi/",
+      "title": "〜タッグリーグ戦〜 in KOCHI | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -5,7 +5,9 @@
   "aliases": [
     "DANSHOKU DIENO",
     "男色 ディーノ",
-    "Danshoku Dino"
+    "Danshoku Dino",
+    "新人・男色ディーノ",
+    "男色“ダンディ”ディーノ"
   ],
   "realName": null,
   "birthDate": "1977-05-18",
@@ -25,6 +27,16 @@
       "url": "https://www.ddtpro.jp/wrestlers/67bd666f9342b300022f3654",
       "title": "男色ディーノ | DDT プロレスリング公式サイト",
       "retrievedAt": "2026-08-20"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ac756d05e9ddb00021b4c30",
+      "title": "ビアガーデンプロレス 2026～THE FINAL～ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ad40cf3442a7c00029134e9",
+      "title": "WRESTLING HARVEST 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

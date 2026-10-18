@@ -1,0 +1,55 @@
+{
+  "eventId": "ddt-20261017-0",
+  "promotionSlug": "ddt",
+  "name": "路上プロレス in 桃神祭2026",
+  "series": null,
+  "date": "2026-10-17",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "ichihara-amagadai-park",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/results/6ad2e8bf08aed70002bc0f58",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6ad2e8bf08aed70002bc0f58",
+      "title": "路上プロレス in 桃神祭2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "yuni",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 630
+      },
+      "confirmed": true,
+      "notes": "※ダイビング・ボディープレス・オン・ザ・テーブル・フロム・ラダー。エニウェアフォール6人タッグ。開場・開始時刻はスケジュール未確認のため空。 片エビ固め"
+    }
+  ]
+}

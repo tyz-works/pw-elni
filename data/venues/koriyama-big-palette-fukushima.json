@@ -1,0 +1,20 @@
+{
+  "slug": "koriyama-big-palette-fukushima",
+  "name": "ビッグパレットふくしま",
+  "nameEn": null,
+  "aliases": [
+    "福島・ビッグパレットふくしま",
+    "ビッグパレットふくしま 多目的ホールA",
+    "ビッグパレットふくしま 多目的ホールA（郡山市）"
+  ],
+  "city": "郡山",
+  "prefecture": "福島県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

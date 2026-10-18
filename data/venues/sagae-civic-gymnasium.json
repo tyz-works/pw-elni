@@ -1,0 +1,18 @@
+{
+  "slug": "sagae-civic-gymnasium",
+  "name": "寒河江市市民体育館",
+  "nameEn": null,
+  "aliases": [
+    "山形・寒河江市市民体育館"
+  ],
+  "city": "寒河江",
+  "prefecture": "山形県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/2026-10-17_sagae/",
+      "title": "STARDOM in SAGAE 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "eventId": "njpw-20261116-0",
+  "promotionSlug": "njpw",
+  "name": "LUCHA KINGDOM",
+  "series": null,
+  "date": "2026-11-16",
+  "doorsOpen": null,
+  "bellTime": "17:00",
+  "venueSlug": "mexico-city-arena-mexico",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/660980",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/660980",
+      "title": "LUCHA KINGDOM | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rey-pegasus",
+            "capitan-suicida",
+            "brillante-jr"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "okumura",
+            "master-wato",
+            "yoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表・掲載順。エチセロ対ザック・セイバーJr.は予定として触れられているが、カードには載っていない。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "guerrero-maya-jr",
+            "sheua"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sho",
+            "douki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kira"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "IWGP女子選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "niebla-roja",
+            "angel-de-oro"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "taiji-ishimori",
+            "titan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "francesco-akira",
+            "templario"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "STRONG無差別級タッグ選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mistico"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "el-desperado"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}

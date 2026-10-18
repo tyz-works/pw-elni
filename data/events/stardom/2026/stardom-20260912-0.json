@@ -11,7 +11,112 @@
   "confirmed": true,
   "matches": [
     {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "lady-c",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 487
+      },
+      "confirmed": true,
+      "notes": "ダイゼロタイム。 チョークスラム・レクイエム→片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rina-yamashita",
+            "itsuki-aoki",
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hanako",
+            "waka-tsukiyama",
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami",
+            "ruaka",
+            "fukigen-death"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 480
+      },
+      "confirmed": true,
+      "notes": "JPコースター→エビ固め"
+    },
+    {
       "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 510
+      },
+      "confirmed": true,
+      "notes": "葉・月ストラル"
+    },
+    {
+      "order": 4,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -30,12 +135,48 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 440
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "クイーンズランディング"
     },
     {
       "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri",
+            "hina"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 518
+      },
+      "confirmed": true,
+      "notes": "流炎→片エビ固め"
+    },
+    {
+      "order": 6,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -54,12 +195,17 @@
       ],
       "titleName": "フューチャー・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 776
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "八神蘭奈が10度目の防衛。 ビートストライク→片エビ固め"
     },
     {
-      "order": 6,
+      "order": 7,
       "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
@@ -82,12 +228,17 @@
       ],
       "titleName": "アーティスト・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 812
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "王者組が初防衛。 TKO→片エビ固め"
     },
     {
-      "order": 7,
+      "order": 8,
       "segment": "card",
       "matchType": "tag",
       "sides": [
@@ -108,12 +259,17 @@
       ],
       "titleName": "ゴッデス・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": null
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "試合時間の記載なし。王者組が3度目の防衛。 ヌメロ・ウノ"
     },
     {
-      "order": 8,
+      "order": 9,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -132,12 +288,17 @@
       ],
       "titleName": "ワンダー・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1012
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "羽南が3度目の防衛。 リストクラッチ式バックドロップホールド"
     },
     {
-      "order": 9,
+      "order": 10,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -156,9 +317,14 @@
       ],
       "titleName": "ワールド・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 1372
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "NO DQ。鈴季すずが2度目の防衛。"
     }
   ],
   "officialUrl": "https://wwr-stardom.com/event/20260912_yokohama/",
@@ -167,6 +333,11 @@
       "url": "https://wwr-stardom.com/event/20260912_yokohama/",
       "title": "STARDOM TO THE WORLD 2026 | stardom",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://wwr-stardom.com/event/20260912_yokohama/",
+      "title": "STARDOM TO THE WORLD 2026 | スターダム",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

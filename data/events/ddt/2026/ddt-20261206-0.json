@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261206-0",
+  "promotionSlug": "ddt",
+  "name": "小田原プロレス実行委員会プレゼンツチャリティープロレス～令和8年最後にやれんのか!?〜",
+  "series": null,
+  "date": "2026-12-06",
+  "doorsOpen": "12:00",
+  "bellTime": "13:00",
+  "venueSlug": "odawara-arena-sub",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a4f0fdfc4af8f00021e9f5e",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4f0fdfc4af8f00021e9f5e",
+      "title": "小田原プロレス実行委員会プレゼンツチャリティープロレス | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

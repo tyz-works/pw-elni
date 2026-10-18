@@ -1,0 +1,18 @@
+{
+  "slug": "mexico-city-arena-mexico",
+  "name": "アレナメヒコ",
+  "nameEn": null,
+  "aliases": [
+    "メキシコ・アレナメヒコ"
+  ],
+  "city": "メキシコシティ",
+  "prefecture": "メキシコ",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/660980",
+      "title": "LUCHA KINGDOM | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "eventId": "stardom-20261020-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM NIGHTER in KORAKUEN 2026 Oct.1",
+  "series": null,
+  "date": "2026-10-20",
+  "doorsOpen": "17:40",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261020_kourakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261020_kourakuen/",
+      "title": "STARDOM NIGHTER in KORAKUEN 2026 Oct.1 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "yuria-hime"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ami-sohrei",
+            "lady-c",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita",
+            "itsuki-aoki",
+            "maki-itoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "saori-anou",
+            "yuna-mizumori",
+            "anne-kanaya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "syuri",
+            "hina",
+            "tomoka-inaba",
+            "ranna-yagami"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "maika",
+            "utami-hayashishita",
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "konami",
+            "saya-kamitani",
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "sayaka-kurara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "NEW BLOODタッグ選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}

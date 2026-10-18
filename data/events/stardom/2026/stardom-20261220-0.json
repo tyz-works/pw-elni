@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261220-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in SENDAI 2026 Dec.",
+  "series": null,
+  "date": "2026-12-20",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "sendai-pit",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261220_sendai/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261220_sendai/",
+      "title": "STARDOM in SENDAI 2026 Dec. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

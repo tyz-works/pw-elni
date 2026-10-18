@@ -1,0 +1,18 @@
+{
+  "slug": "nagasaki-dejima-messe",
+  "name": "出島メッセ長崎",
+  "nameEn": null,
+  "aliases": [
+    "長崎・出島メッセ長崎"
+  ],
+  "city": "長崎",
+  "prefecture": "長崎県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

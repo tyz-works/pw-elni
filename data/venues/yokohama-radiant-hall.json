@@ -1,0 +1,18 @@
+{
+  "slug": "yokohama-radiant-hall",
+  "name": "横浜ラジアントホール",
+  "nameEn": null,
+  "aliases": [
+    "神奈川・横浜ラジアントホール"
+  ],
+  "city": "横浜",
+  "prefecture": "神奈川県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4e2bb47b2fa100025b4cd6",
+      "title": "ヨコハマ・プロレス・ラプソディ2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

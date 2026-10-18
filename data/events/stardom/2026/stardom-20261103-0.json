@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261103-0",
+  "promotionSlug": "stardom",
+  "name": "〜タッグリーグ戦〜 in NUMAZU",
+  "series": "第16回 ゴッデス・オブ・スターダム",
+  "date": "2026-11-03",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "numazu-kiramesse-hall-1",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261103_numazu/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261103_numazu/",
+      "title": "〜タッグリーグ戦〜 in NUMAZU | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

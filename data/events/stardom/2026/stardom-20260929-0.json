@@ -7,11 +7,184 @@
   "doorsOpen": null,
   "bellTime": null,
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1196,
   "confirmed": true,
   "matches": [
     {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "matoi-hamabe",
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ami-sohrei",
+            "ranna-yagami",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 646
+      },
+      "confirmed": true,
+      "notes": "腕ひしぎ逆十字固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hanako"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 427
+      },
+      "confirmed": true,
+      "notes": "グラウンド式朱雀"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 591
+      },
+      "confirmed": true,
+      "notes": "ダイビングボディプレス→片エビ固め"
+    },
+    {
       "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "azm",
+            "miyu-amasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hina",
+            "lady-c"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "mad-splash",
+        "durationSeconds": 578
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "fuwa-chan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "julia-hart"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 545
+      },
+      "confirmed": true,
+      "notes": "直伝、葉・月ストラル"
+    },
+    {
+      "order": 6,
       "segment": "card",
       "matchType": "eight-man-tag",
       "sides": [
@@ -36,12 +209,17 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 653
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "スペシャルポテリング"
     },
     {
-      "order": 5,
+      "order": 7,
       "segment": "card",
       "matchType": "eight-man-tag",
       "sides": [
@@ -66,12 +244,17 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 610
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "モモ☆ラッチ"
     },
     {
-      "order": 6,
+      "order": 8,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -90,9 +273,14 @@
       ],
       "titleName": "ワンダー・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 940
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "羽南が4度目の防衛。 リストクラッチ式バックドロップホールド"
     }
   ],
   "officialUrl": "https://wwr-stardom.com/event/20260929_korakuen/",
@@ -101,6 +289,11 @@
       "url": "https://wwr-stardom.com/event/20260929_korakuen/",
       "title": "STARDOM NIGHTER in KORAKUEN 2026 Sep. | stardom",
       "retrievedAt": "2026-09-14"
+    },
+    {
+      "url": "https://wwr-stardom.com/event/20260929_korakuen/",
+      "title": "STARDOM NIGHTER in KORAKUEN 2026 Sep. | スターダム",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

@@ -1,0 +1,223 @@
+{
+  "eventId": "stardom-20261017-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in SAGAE 2026 Oct.",
+  "series": null,
+  "date": "2026-10-17",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "sagae-civic-gymnasium",
+  "attendance": 358,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/2026-10-17_sagae/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/2026-10-17_sagae/",
+      "title": "STARDOM in SAGAE 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 615
+      },
+      "confirmed": true,
+      "notes": "にゅーさくらっち"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "lady-c"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "fuwa-chan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 2,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 545
+      },
+      "confirmed": true,
+      "notes": "トライアングルランサー"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "rina-yamashita",
+            "itsuki-aoki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "natsupoi",
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 626
+      },
+      "confirmed": true,
+      "notes": "インプラント→エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanako",
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 703
+      },
+      "confirmed": true,
+      "notes": "葉・月ストラル"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "utami-hayashishita",
+            "ranna-yagami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 679
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "maika"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "syuri",
+            "ami-sohrei",
+            "hina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 632
+      },
+      "confirmed": true,
+      "notes": "外道クラッチ"
+    }
+  ]
+}

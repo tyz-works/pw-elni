@@ -1,0 +1,24 @@
+{
+  "slug": "ryoma-tsukamoto",
+  "name": "塚本竜馬",
+  "nameEn": null,
+  "aliases": [
+    "塚本 竜馬"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/results/6aba2592002e300002fa1569",
+      "title": "超日本プロレス～さよなら新宿FACE～ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

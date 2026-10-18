@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20261120-0",
+  "promotionSlug": "njpw",
+  "name": "Bound for Unbound",
+  "series": null,
+  "date": "2026-11-20",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/schedule",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

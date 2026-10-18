@@ -1,0 +1,20 @@
+{
+  "slug": "ichikikushikino-f-arena",
+  "name": "Fアリーナいちき串木野",
+  "nameEn": null,
+  "aliases": [
+    "鹿児島・Fアリーナいちき串木野",
+    "いちき串木野市総合体育館",
+    "Fアリーナいちき串木野（いちき串木野市総合体育館）"
+  ],
+  "city": "いちき串木野",
+  "prefecture": "鹿児島県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

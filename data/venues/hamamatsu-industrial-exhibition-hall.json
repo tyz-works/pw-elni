@@ -1,0 +1,19 @@
+{
+  "slug": "hamamatsu-industrial-exhibition-hall",
+  "name": "浜松市総合産業展示館",
+  "nameEn": null,
+  "aliases": [
+    "静岡・浜松市総合産業展示館",
+    "浜松市総合産業展示館 本館第1展示場"
+  ],
+  "city": "浜松",
+  "prefecture": "静岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261129_hamamatsu/",
+      "title": "〜タッグリーグ優勝決定戦〜 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

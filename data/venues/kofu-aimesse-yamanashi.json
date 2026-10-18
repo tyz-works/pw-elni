@@ -1,0 +1,19 @@
+{
+  "slug": "kofu-aimesse-yamanashi",
+  "name": "アイメッセ山梨",
+  "nameEn": null,
+  "aliases": [
+    "山梨・アイメッセ山梨",
+    "アイメッセ山梨 Aホール"
+  ],
+  "city": "昭和",
+  "prefecture": "山梨県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261012_kofu/",
+      "title": "STARDOM in KOFU 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

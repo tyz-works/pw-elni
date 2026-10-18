@@ -1,0 +1,26 @@
+{
+  "slug": "masato-oishi",
+  "name": "大石真翔",
+  "nameEn": null,
+  "aliases": [
+    "Masato Oishi"
+  ],
+  "realName": null,
+  "birthDate": "1979-02-16",
+  "birthplace": "静岡県富士市",
+  "debutDate": "2002-01-04",
+  "heightCm": 170,
+  "weightKg": 75,
+  "status": "active",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/wrestlers/67bd669f9342b300022f3703",
+      "title": "大石真翔 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

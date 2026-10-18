@@ -1,0 +1,18 @@
+{
+  "slug": "fuji-fujisanmesse",
+  "name": "ふじさんめっせ",
+  "nameEn": null,
+  "aliases": [
+    "静岡・ふじさんめっせ（富士市）"
+  ],
+  "city": "富士",
+  "prefecture": "静岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261213_fuji/",
+      "title": "STARDOM in FUJI 2026 Dec. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

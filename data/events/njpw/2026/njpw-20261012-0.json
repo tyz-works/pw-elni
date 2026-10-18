@@ -7,15 +7,296 @@
   "doorsOpen": "14:30",
   "bellTime": "16:00",
   "venueSlug": "tokyo-ryogoku-kokugikan",
-  "attendance": null,
+  "attendance": 6422,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/662775",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 380
+      },
+      "confirmed": true,
+      "notes": "シンゴタカギですライダー→片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "el-desperado",
+            "taichi",
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yoshinobu-kanemaru",
+            "yujiro-takahashi",
+            "sanada"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 501
+      },
+      "confirmed": true,
+      "notes": "ブラックメフィスト→片エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "boltin-oleg",
+            "hechicero"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hartley-jackson",
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kamikaze",
+        "durationSeconds": 423
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "toru-yano",
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shun-skywalker",
+            "ren-narita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 245
+      },
+      "confirmed": true,
+      "notes": "横入り式エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jeff-cobb",
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "great-o-khan",
+            "henare",
+            "will-ospreay"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "NEVER無差別級6人タッグ選手権試合",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1043
+      },
+      "confirmed": true,
+      "notes": "ジェフ・コブ、OSKAR、Yuto-Ice組が王座を獲得。 K.O.B→片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "wolf-aron"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kosei-fujita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "NEVER無差別級選手権試合",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 905
+      },
+      "confirmed": true,
+      "notes": "片エビ固め"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shota-umino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gabe-kidd"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "IWGP GLOBALヘビー級選手権試合",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1345
+      },
+      "confirmed": true,
+      "notes": "ゲイブ・キッドが防衛。試合後にタイチが挑戦を表明し、11月3日広島で対戦が決まった。 デスドッグドライバー→体固め"
+    },
+    {
+      "order": 8,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "robbie-eagles"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "IWGPジュニアヘビー級選手権試合",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 782
+      },
+      "confirmed": true,
+      "notes": "ファイブスタークラッチ"
+    },
+    {
+      "order": 9,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yota-tsuji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryohei-oiwa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "IWGPヘビー級選手権試合",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 2110
+      },
+      "confirmed": true,
+      "notes": "辻陽太が2度目の防衛。試合後にケニー・オメガが挑戦を表明。 ファイヤーブラスター→片エビ固め"
+    }
+  ],
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/662775",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/tournament/card/662775",
       "title": "KING OF PRO-WRESTLING 2026 | njpw",
       "retrievedAt": "2026-09-13"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/662775",
+      "title": "KING OF PRO-WRESTLING 2026 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

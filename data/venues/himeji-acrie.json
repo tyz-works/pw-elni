@@ -1,0 +1,18 @@
+{
+  "slug": "himeji-acrie",
+  "name": "アクリエひめじ 展示場A",
+  "nameEn": null,
+  "aliases": [
+    "アクリエひめじ"
+  ],
+  "city": "姫路",
+  "prefecture": "兵庫県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261205_himeji/",
+      "title": "STARDOM in HIMEJI 2026 Dec. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

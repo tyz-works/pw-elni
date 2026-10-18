@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261219-0",
+  "promotionSlug": "ddt",
+  "name": "ブルー・ファイト・ヨコハマ 2026",
+  "series": null,
+  "date": "2026-12-19",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "yokohama-radiant-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6aa8d32965c0c2000270e33f",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6aa8d32965c0c2000270e33f",
+      "title": "ブルー・ファイト・ヨコハマ 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

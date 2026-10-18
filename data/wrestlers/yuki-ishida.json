@@ -4,7 +4,8 @@
   "nameEn": "Yuki Ishida",
   "aliases": [
     "YUKI ISHIDA",
-    "石田 有輝"
+    "石田 有輝",
+    "ベテラン・石田有輝"
   ],
   "realName": null,
   "birthDate": "1999-01-21",
@@ -24,6 +25,11 @@
       "url": "https://www.ddtpro.jp/wrestlers/67bd66779342b300022f3672",
       "title": "石田有輝 | DDT プロレスリング公式サイト",
       "retrievedAt": "2026-08-20"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ac756d05e9ddb00021b4c30",
+      "title": "ビアガーデンプロレス 2026～THE FINAL～ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

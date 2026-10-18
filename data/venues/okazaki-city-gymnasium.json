@@ -1,0 +1,18 @@
+{
+  "slug": "okazaki-city-gymnasium",
+  "name": "岡崎市体育館",
+  "nameEn": null,
+  "aliases": [
+    "愛知・岡崎市体育館"
+  ],
+  "city": "岡崎",
+  "prefecture": "愛知県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261128_okazaki/",
+      "title": "〜タッグリーグ戦〜 in OKAZAKI | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

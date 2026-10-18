@@ -1,0 +1,18 @@
+{
+  "slug": "kumagaya-civic-gymnasium",
+  "name": "熊谷市立市民体育館",
+  "nameEn": null,
+  "aliases": [
+    "埼玉・熊谷市立市民体育館"
+  ],
+  "city": "熊谷",
+  "prefecture": "埼玉県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662776",
+      "title": "SUPER Jr. TAG LEAGUE 2026 10.24 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

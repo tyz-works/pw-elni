@@ -1,0 +1,231 @@
+{
+  "eventId": "njpw-20261017-0",
+  "promotionSlug": "njpw",
+  "name": "タイチの学校プロレス２～いしかり観光大使就任記念・母校凱旋大会～",
+  "series": null,
+  "date": "2026-10-17",
+  "doorsOpen": "14:00",
+  "bellTime": "15:00",
+  "venueSlug": "ishikari-hanakawaminami-junior-high-gymnasium",
+  "attendance": 842,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/669559",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/669559",
+      "title": "タイチの学校プロレス２ | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "dark",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryoma-tsukamoto"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 679
+      },
+      "confirmed": true,
+      "notes": "公式の第0試合。14時45分開始。 逆片エビ固め"
+    },
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dick-togo"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT UNIVERSAL選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": "oh-my-and-garankle",
+        "durationSeconds": 903
+      },
+      "confirmed": true,
+      "notes": "田口隆祐が防衛。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "satoshi-kojima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 383
+      },
+      "confirmed": true,
+      "notes": "減量と勝利でIWGPジュニアヘビー級の挑戦権がかかる公開身体測定だったが、小島聡は体重超過となり、通常のシングルとして行われた。 ファイブスタークラッチ"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yoshi-hashi",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hokkai-kumagoro",
+            "lonely-wolf"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 734
+      },
+      "confirmed": true,
+      "notes": "KUMAGOROSHI×2→片エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuya-uemura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "taka-michinoku"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 586
+      },
+      "confirmed": true,
+      "notes": "リストロック"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "el-desperado",
+            "toru-yano"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gedo",
+            "yuto-ice"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1212
+      },
+      "confirmed": true,
+      "notes": "学校どこでもエニウェアマッチ。 体固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr",
+            "taichi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yoshinobu-kanemaru",
+            "naomichi-marufuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1205
+      },
+      "confirmed": true,
+      "notes": "ザックメフィスト→片エビ固め"
+    }
+  ]
+}

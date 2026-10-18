@@ -9,13 +9,246 @@
   "venueSlug": "tokyo-ueno-park-outdoor-stage",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e2a5763825b0002ad3285",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "no-contest",
+        "finishMoveSlug": null,
+        "durationSeconds": 420
+      },
+      "confirmed": true,
+      "notes": "新人・男色ディーノデビュー戦。ベテラン・石田有輝は石田有輝、新人・男色ディーノは男色ディーノのギミック表記。無効試合。※石田の暴走"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "toru-owashi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 2,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 40
+      },
+      "confirmed": true,
+      "notes": "横入り式エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "toru-owashi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 496
+      },
+      "confirmed": true,
+      "notes": "再試合。 ラ・マヒストラル"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "chris-brookes",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura",
+            "yuya-koroku",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "double-arm-suplex",
+        "durationSeconds": 750
+      },
+      "confirmed": true,
+      "notes": "※ダブルアーム・スープレックス"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuma-sumi",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 510
+      },
+      "confirmed": true,
+      "notes": "スク～ルボ～イ"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "captain-inoue-c",
+            "kanon",
+            "yukio-naya",
+            "kumadori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "captain-sasaki-c",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kubi-gatame",
+        "durationSeconds": 870
+      },
+      "confirmed": true,
+      "notes": "KIMIHIROはセコンド。キャプテン井上＜C＞とキャプテン佐々木＜C＞は中の人を確定できないためギミック名のまま収録。"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": null
+      },
+      "confirmed": true,
+      "notes": "公式の時間表記は「19時21分」で分秒として扱えない。上野勇希が防衛に失敗し、勝俣瞬馬が第1916代王者。このあとのエニウェアフォール8人タッグは番組表外のため未収録。横入り式エビ固め"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6ac756d05e9ddb00021b4c30",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a4e2a5763825b0002ad3285",
       "title": "ビアガーデンプロレス 2026 ～THE FINAL～ | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ac756d05e9ddb00021b4c30",
+      "title": "ビアガーデンプロレス 2026～THE FINAL～ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

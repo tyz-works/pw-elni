@@ -7,11 +7,237 @@
   "doorsOpen": null,
   "bellTime": null,
   "venueSlug": "utsunomiya-light-cube",
-  "attendance": null,
+  "attendance": 792,
   "confirmed": true,
   "matches": [
     {
       "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "yuria-hime"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 538
+      },
+      "confirmed": true,
+      "notes": "姫ゆりあの復帰戦。刀羅ナツコは欠場し、カードが変更されている。 スタークラッシャー→片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 691
+      },
+      "confirmed": true,
+      "notes": "サソリ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ami-sohrei",
+            "lady-c",
+            "ranna-yagami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "konami",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 594
+      },
+      "confirmed": true,
+      "notes": "稲葉あずさの姉超→片エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 427
+      },
+      "confirmed": true,
+      "notes": "3WAYタッグ。もう1組はなつぽい、安納サオリ。 High酩酊→体固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 522
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "rina-yamashita",
+            "itsuki-aoki",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "hazuki",
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 525
+      },
+      "confirmed": true,
+      "notes": "テキーラショット"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1087
+      },
+      "confirmed": true,
+      "notes": "パッケージパイルドライバー→エビ固め"
+    },
+    {
+      "order": 8,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -30,9 +256,14 @@
       ],
       "titleName": "ワンダー・オブ・スターダム選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1180
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "羽南が5度目の防衛。 リストクラッチ式バックドロップホールド"
     }
   ],
   "officialUrl": "https://wwr-stardom.com/event/20261018_utsunomiya/",
@@ -41,6 +272,11 @@
       "url": "https://wwr-stardom.com/event/20261018_utsunomiya/",
       "title": "STARDOM Path of Thunder 2026 | stardom",
       "retrievedAt": "2026-10-01"
+    },
+    {
+      "url": "https://wwr-stardom.com/event/20261018_utsunomiya/",
+      "title": "STARDOM Path of Thunder 2026 | スターダム",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

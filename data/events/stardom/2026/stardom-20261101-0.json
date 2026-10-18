@@ -1,11 +1,11 @@
 {
   "eventId": "stardom-20261101-0",
   "promotionSlug": "stardom",
-  "name": "後楽園ホール(昼)",
-  "series": null,
+  "name": "第16回 ゴッデス・オブ・スターダム ～タッグリーグ開幕戦～",
+  "series": "第16回 ゴッデス・オブ・スターダム",
   "date": "2026-11-01",
-  "doorsOpen": null,
-  "bellTime": null,
+  "doorsOpen": "10:45",
+  "bellTime": "11:30",
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
@@ -16,6 +16,11 @@
       "url": "https://wwr-stardom.com/event/20261101_kourakuen/",
       "title": "後楽園ホール(昼) | stardom",
       "retrievedAt": "2026-09-01"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/20261101_kourakuen/",
+      "title": "第16回 ゴッデス・オブ・スターダム ～タッグリーグ開幕戦～ | スターダム",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

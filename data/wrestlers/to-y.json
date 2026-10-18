@@ -5,7 +5,8 @@
   "aliases": [
     "TO-Y",
     "トーイ",
-    "To-Y"
+    "To-Y",
+    "メカTo-y"
   ],
   "realName": null,
   "birthDate": "1999-12-08",
@@ -25,6 +26,11 @@
       "url": "https://www.ddtpro.jp/wrestlers/67bd667e9342b300022f368b",
       "title": "To-y | DDT プロレスリング公式サイト",
       "retrievedAt": "2026-08-20"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6aaa4c9b65e2fa0002d150dc",
+      "title": "闘うビアガーデン2026 in UENO | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

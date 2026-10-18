@@ -1,0 +1,16 @@
+{
+  "slug": "akita-tersa",
+  "name": "秋田テルサ",
+  "nameEn": null,
+  "aliases": [],
+  "city": "秋田",
+  "prefecture": "秋田県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261121_akita/",
+      "title": "〜タッグリーグ戦〜 in AKITA | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "fukuoka-nishitetsu-hall",
+  "name": "西鉄ホール",
+  "nameEn": null,
+  "aliases": [
+    "福岡・西鉄ホール"
+  ],
+  "city": "福岡",
+  "prefecture": "福岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a96af328d8b100002684a36",
+      "title": "ごまさばエルボー | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

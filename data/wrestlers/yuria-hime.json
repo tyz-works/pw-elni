@@ -1,0 +1,27 @@
+{
+  "slug": "yuria-hime",
+  "name": "姫ゆりあ",
+  "nameEn": "YURIA HIME",
+  "aliases": [
+    "Yuria Hime",
+    "姫 ゆりあ"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "栃木県宇都宮市",
+  "debutDate": "2025-01-26",
+  "heightCm": 162,
+  "weightKg": 57,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/%e5%a7%ab%e3%82%86%e3%82%8a%e3%81%82/",
+      "title": "姫ゆりあ | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

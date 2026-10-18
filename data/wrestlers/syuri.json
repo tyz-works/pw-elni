@@ -1,0 +1,27 @@
+{
+  "slug": "syuri",
+  "name": "朱里",
+  "nameEn": "SYURI",
+  "aliases": [
+    "Syuri",
+    "SYURI"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "神奈川県",
+  "debutDate": "2008-10-26",
+  "heightCm": 164,
+  "weightKg": 57,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/syuri/",
+      "title": "朱里 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

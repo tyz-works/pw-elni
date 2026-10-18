@@ -1,0 +1,259 @@
+{
+  "eventId": "stardom-20261003-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in SAKAE 2026 Oct. ～Day2～",
+  "series": null,
+  "date": "2026-10-03",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "nagoya-chunichi-hall-conference",
+  "attendance": 561,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261003_chu-nichi_day2/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261003_chu-nichi_day2/",
+      "title": "STARDOM in SAKAE 2026 Oct. ～Day2～ | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "miyu-amasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 623
+      },
+      "confirmed": true,
+      "notes": "天聖→片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "yuna-mizumori",
+            "anne-kanaya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 649
+      },
+      "confirmed": true,
+      "notes": "ハナグルマ"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rina"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mei-seira"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 418
+      },
+      "confirmed": true,
+      "notes": "ダブルフォール"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "azm",
+            "ema-maishima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 566
+      },
+      "confirmed": true,
+      "notes": "スタークラッシャー→片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "momo-watanabe",
+            "konami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hanako",
+            "waka-tsukiyama",
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 463
+      },
+      "confirmed": true,
+      "notes": "パントキック→片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saori-anou",
+            "sakura-aya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "bea-priestley",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 566
+      },
+      "confirmed": true,
+      "notes": "スペシャルポテリング"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "maika",
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "syuri",
+            "hina",
+            "lady-c",
+            "ranna-yagami"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "backdrop-hold",
+        "durationSeconds": 775
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261212-0",
+  "promotionSlug": "ddt",
+  "name": "惚れたぜ！IMAIKE 2026",
+  "series": null,
+  "date": "2026-12-12",
+  "doorsOpen": "17:00",
+  "bellTime": "18:00",
+  "venueSlug": "nagoya-imaike-gas-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6aa8d213c23e4c00024a3d5d",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6aa8d213c23e4c00024a3d5d",
+      "title": "惚れたぜ！IMAIKE 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

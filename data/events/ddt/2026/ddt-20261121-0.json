@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261121-0",
+  "promotionSlug": "ddt",
+  "name": "くまもとサンライズ",
+  "series": null,
+  "date": "2026-11-21",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "kumamoto-shintoshin-plaza",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a96aeabc5a7990002d6dab1",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a96aeabc5a7990002d6dab1",
+      "title": "くまもとサンライズ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

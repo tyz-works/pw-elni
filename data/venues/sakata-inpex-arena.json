@@ -1,0 +1,18 @@
+{
+  "slug": "sakata-inpex-arena",
+  "name": "INPEX酒田アリーナ",
+  "nameEn": null,
+  "aliases": [
+    "山形・INPEX酒田アリーナ"
+  ],
+  "city": "酒田",
+  "prefecture": "山形県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261122-0",
+  "promotionSlug": "stardom",
+  "name": "〜タッグリーグ戦〜 in FUKUSHIMA",
+  "series": "第16回 ゴッデス・オブ・スターダム",
+  "date": "2026-11-22",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "fukushima-crown-arena",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261122_fukushima/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261122_fukushima/",
+      "title": "〜タッグリーグ戦〜 in FUKUSHIMA | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

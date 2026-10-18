@@ -1,0 +1,18 @@
+{
+  "slug": "kumamoto-granmesse",
+  "name": "グランメッセ熊本",
+  "nameEn": null,
+  "aliases": [
+    "熊本・グランメッセ熊本"
+  ],
+  "city": "益城",
+  "prefecture": "熊本県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

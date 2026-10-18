@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261121-0",
+  "promotionSlug": "stardom",
+  "name": "〜タッグリーグ戦〜 in AKITA",
+  "series": "第16回 ゴッデス・オブ・スターダム",
+  "date": "2026-11-21",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "akita-tersa",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261121_akita/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261121_akita/",
+      "title": "〜タッグリーグ戦〜 in AKITA | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

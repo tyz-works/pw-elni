@@ -1,0 +1,22 @@
+{
+  "slug": "lee-johnson",
+  "name": "リー・ジョンソン",
+  "nameEn": null,
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662776",
+      "title": "SUPER Jr. TAG LEAGUE 2026 10.24 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}
