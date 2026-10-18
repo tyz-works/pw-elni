@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261027-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM NIGHTER in KORAKUEN 2026 Oct.2",
+  "series": null,
+  "date": "2026-10-27",
+  "doorsOpen": "17:40",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261027_korakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261027_korakuen/",
+      "title": "STARDOM NIGHTER in KORAKUEN 2026 Oct.2 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

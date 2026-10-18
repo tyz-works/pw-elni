@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261123-0",
+  "promotionSlug": "ddt",
+  "name": "ごまさばエルボー",
+  "series": null,
+  "date": "2026-11-23",
+  "doorsOpen": "12:00",
+  "bellTime": "13:00",
+  "venueSlug": "fukuoka-nishitetsu-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a96af328d8b100002684a36",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a96af328d8b100002684a36",
+      "title": "ごまさばエルボー | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

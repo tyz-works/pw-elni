@@ -1,0 +1,128 @@
+{
+  "eventId": "njpw-20261103-0",
+  "promotionSlug": "njpw",
+  "name": "POWER STRUGGLE ～SUPER Jr. TAG LEAGUE 2026～",
+  "series": "SUPER Jr. TAG LEAGUE 2026",
+  "date": "2026-11-03",
+  "doorsOpen": "14:30",
+  "bellTime": "16:00",
+  "venueSlug": "hiroshima-sunplaza-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/662785",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662785",
+      "title": "POWER STRUGGLE ～SUPER Jr. TAG LEAGUE 2026～ | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jeff-cobb",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "wheeler-yuta",
+            "jon-moxley"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表・掲載順。SUPER Jr. TAG LEAGUE 2026優勝決定戦（Aブロック1位対Bブロック1位）は選手が未確定のため未収録で、その位置は第4試合の欠番のまま。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "boltin-oleg"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yota-tsuji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kenny-omega"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "スペシャル3WAY。3人が同時に戦い、誰か1人が勝った時点で終わる。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "oskar",
+            "yuto-ice"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "callum-newman",
+            "will-ospreay"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "IWGPタッグ選手権試合",
+      "timeLimitMinutes": 60,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taichi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gabe-kidd"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "IWGP GLOBALヘビー級選手権試合",
+      "timeLimitMinutes": 60,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}

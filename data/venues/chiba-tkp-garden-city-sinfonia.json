@@ -1,0 +1,18 @@
+{
+  "slug": "chiba-tkp-garden-city-sinfonia",
+  "name": "TKPガーデンシティ千葉 3Fシンフォニア",
+  "nameEn": null,
+  "aliases": [
+    "TKPガーデンシティ千葉　3Fシンフォニア"
+  ],
+  "city": "千葉",
+  "prefecture": "千葉県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261010_chiba/",
+      "title": "STARDOM in CHIBA 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

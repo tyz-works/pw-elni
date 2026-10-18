@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261205-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in HIMEJI 2026 Dec.",
+  "series": null,
+  "date": "2026-12-05",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "himeji-acrie",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261205_himeji/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261205_himeji/",
+      "title": "STARDOM in HIMEJI 2026 Dec. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261114-0",
+  "promotionSlug": "stardom",
+  "name": "〜タッグリーグ戦〜 in MATSUYAMA-EHIME",
+  "series": "第16回 ゴッデス・オブ・スターダム",
+  "date": "2026-11-14",
+  "doorsOpen": "16:15",
+  "bellTime": "17:00",
+  "venueSlug": "matsuyama-item-ehime",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261114_matsuyama/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261114_matsuyama/",
+      "title": "〜タッグリーグ戦〜 in MATSUYAMA-EHIME | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

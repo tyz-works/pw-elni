@@ -1,0 +1,22 @@
+{
+  "slug": "mansoor",
+  "name": "マンスール",
+  "nameEn": null,
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
+      "title": "Ultimate Party 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

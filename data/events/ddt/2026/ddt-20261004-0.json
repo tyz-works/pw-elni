@@ -9,13 +9,244 @@
   "venueSlug": "osaka-higashiyodogawa-ward-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e29f037f7b30002cfff1c",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "junta-miyawaki",
+            "tomomitsu-matsunaga"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "daichi-satoh",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 583
+      },
+      "confirmed": true,
+      "notes": "※マンブリ 片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata",
+            "akito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "to-y",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 4
+      },
+      "confirmed": true,
+      "notes": "脇固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata",
+            "akito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuya-koroku",
+            "to-y",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 522
+      },
+      "confirmed": true,
+      "notes": "再試合。エニーウェアフォールルール。直前の試合は0分4秒で終わった。 脇固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 789
+      },
+      "confirmed": true,
+      "notes": "第1915代王座決定戦。上野勇希が王者になった。番組表の第3試合のため収録。 スリーパーホールド"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni",
+            "kazuma-sumi",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 621
+      },
+      "confirmed": true,
+      "notes": "Chinga Tu Madre!"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1139
+      },
+      "confirmed": true,
+      "notes": "外道クラッチからブリッジするやつ"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "zeus"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 741
+      },
+      "confirmed": true,
+      "notes": "※ジャックハマー。吉村直巳のデビュー10周年記念試合。 片エビ固め"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6ac1e7b2fd2fef0002012cdf",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a4e29f037f7b30002cfff1c",
       "title": "ナニワプロレス道2026 | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ac1e7b2fd2fef0002012cdf",
+      "title": "ナニワプロレス道2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

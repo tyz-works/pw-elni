@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261224-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM YEAREND X'mas NIGHT 2026",
+  "series": null,
+  "date": "2026-12-24",
+  "doorsOpen": "17:40",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261224_korakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261224_korakuen/",
+      "title": "STARDOM YEAREND X'mas NIGHT 2026 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

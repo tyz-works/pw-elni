@@ -9,13 +9,167 @@
   "venueSlug": "tokyo-ueno-park-outdoor-stage",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a322a1982f2cc000281dbf4",
+  "matches": [
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 639
+      },
+      "confirmed": true,
+      "notes": "上野大好きー！"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "seki-shigetaka",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 654
+      },
+      "confirmed": true,
+      "notes": "※合体PK 片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "viento-levante",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "crocodile-d-sasa",
+            "hideki-okatani",
+            "mj-paul"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1060
+      },
+      "confirmed": true,
+      "notes": "※ワニワニスプラッシュ・イン・ザ・電気プール。クロコダイルデスマッチ。 体固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "soma-takao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "gin-tonic",
+        "durationSeconds": 1037
+      },
+      "confirmed": true,
+      "notes": "※ジントニック。第1試合（メカTo-y、Dr.ウエノ）と第3試合（新人・勝俣瞬馬、新人・高鹿佑也）はギミック名が未解決のため欠番。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6aaa4c9b65e2fa0002d150dc",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a322a1982f2cc000281dbf4",
       "title": "闘うビアガーデン2026 in UENO | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6aaa4c9b65e2fa0002d150dc",
+      "title": "闘うビアガーデン2026 in UENO | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

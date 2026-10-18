@@ -1,0 +1,18 @@
+{
+  "slug": "morioka-iwate-prefectural-gymnasium",
+  "name": "岩手県営体育館",
+  "nameEn": null,
+  "aliases": [
+    "岩手・岩手県営体育館"
+  ],
+  "city": "盛岡",
+  "prefecture": "岩手県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

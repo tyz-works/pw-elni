@@ -1,0 +1,27 @@
+{
+  "slug": "kushida",
+  "name": "KUSHIDA",
+  "nameEn": "KUSHIDA",
+  "aliases": [
+    "クシダ",
+    "Kushida"
+  ],
+  "realName": null,
+  "birthDate": "1983-05-12",
+  "birthplace": "東京都大田区",
+  "debutDate": "2005-09-18",
+  "heightCm": 175,
+  "weightKg": 85,
+  "status": "active",
+  "promotionSlugs": [
+    "njpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/718",
+      "title": "KUSHIDA | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

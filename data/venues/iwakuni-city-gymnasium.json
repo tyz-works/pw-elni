@@ -1,0 +1,18 @@
+{
+  "slug": "iwakuni-city-gymnasium",
+  "name": "岩国市総合体育館",
+  "nameEn": null,
+  "aliases": [
+    "山口・岩国市総合体育館"
+  ],
+  "city": "岩国",
+  "prefecture": "山口県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

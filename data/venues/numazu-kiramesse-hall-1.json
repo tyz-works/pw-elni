@@ -1,0 +1,18 @@
+{
+  "slug": "numazu-kiramesse-hall-1",
+  "name": "キラメッセぬまづ 多目的ホール1",
+  "nameEn": null,
+  "aliases": [
+    "静岡・キラメッセぬまづ 多目的ホール1"
+  ],
+  "city": "沼津",
+  "prefecture": "静岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261103_numazu/",
+      "title": "〜タッグリーグ戦〜 in NUMAZU | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

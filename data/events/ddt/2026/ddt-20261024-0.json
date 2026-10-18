@@ -1,0 +1,182 @@
+{
+  "eventId": "ddt-20261024-0",
+  "promotionSlug": "ddt",
+  "name": "ヨコハマ・プロレス・ラプソディ2026",
+  "series": null,
+  "date": "2026-10-24",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "yokohama-radiant-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e2bb47b2fa100025b4cd6",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4e2bb47b2fa100025b4cd6",
+      "title": "ヨコハマ・プロレス・ラプソディ2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kanon"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表。公式はメインを先頭に掲載しているため、掲載順を反転して番号を振った。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "super-sasadango-machine"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "harashima",
+            "naomi-yoshimura",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata",
+            "soma-takao",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "shibam",
+            "yuni"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "akito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}

@@ -9,13 +9,214 @@
   "venueSlug": "tokyo-shinjuku-face",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a0582acd87b1300021ae668",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "gaji",
+            "masato-oishi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shota",
+            "ryoma-tsukamoto"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 534
+      },
+      "confirmed": true,
+      "notes": "GAJIのデビュー戦。 雁之助クラッチ"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mio-shirai",
+            "yuki-minami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "marika-kobashi",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 329
+      },
+      "confirmed": true,
+      "notes": "※稲葉のバックドロップ 片エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kuroshio-tokyo-japan",
+            "yuki-kamifuku"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kumadori",
+            "aio"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 730
+      },
+      "confirmed": true,
+      "notes": "※きりもみ式セントーン 体固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "baramon-shu",
+            "baramon-kei"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "fuminori-abe",
+            "mac-matsushita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tanomusaku-toba"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "ippanjin-munenori-sawa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 848
+      },
+      "confirmed": true,
+      "notes": "五体不満足"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "cima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ken-ohka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 751
+      },
+      "confirmed": true,
+      "notes": "※メテオラ 片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuji-nagata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "satoshi-kojima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アイアンマンヘビーメタル級選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "backdrop-hold",
+        "durationSeconds": 808
+      },
+      "confirmed": true,
+      "notes": "第1911代王者が防衛。番組表に載った試合のため収録。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6aba2592002e300002fa1569",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a0582acd87b1300021ae668",
       "title": "【SHINJUKU FACE COUNTDOWN SERIES】超日本プロレス 〜さよなら新宿FACE〜 | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6aba2592002e300002fa1569",
+      "title": "超日本プロレス～さよなら新宿FACE～ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

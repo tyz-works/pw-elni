@@ -1,0 +1,250 @@
+{
+  "eventId": "stardom-20261011-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in KORAKUEN 2026 Oct.",
+  "series": null,
+  "date": "2026-10-11",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": 1457,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261011_korakuen/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261011_korakuen/",
+      "title": "STARDOM in KORAKUEN 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 721
+      },
+      "confirmed": true,
+      "notes": "ハンディキャップマッチ。先頭の「試合前」は試合ではないため入れていない。 にゅーさくらっち"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "utami-hayashishita",
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami",
+            "ruaka",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 457
+      },
+      "confirmed": true,
+      "notes": "ハンディキャップマッチ。 Pink❤︎Devil→体固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ranna-yagami",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 511
+      },
+      "confirmed": true,
+      "notes": "稲葉あずさの姉越→エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "9分22秒。安納サオリ、伊藤麻希、刀羅ナツコの抑え込み。勝者が複数のため単一の勝者は記録しない。"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "syuri",
+            "hina",
+            "lady-c"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 654
+      },
+      "confirmed": true,
+      "notes": "ゴリラリアット→片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "azm",
+            "miyu-amasaki",
+            "mei-seira",
+            "ema-maishima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "itsuki-aoki",
+            "akira-kurogane",
+            "hazuki",
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "moonsault-press",
+        "durationSeconds": 839
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsupoi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "ハイスピード選手権試合",
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 823
+      },
+      "confirmed": true,
+      "notes": "水森由菜が6度目の防衛。 熊本の不沈艦→片エビ固め"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "eventId": "njpw-20261030-0",
+  "promotionSlug": "njpw",
+  "name": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～",
+  "series": "SUPER Jr. TAG LEAGUE 2026",
+  "date": "2026-10-30",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "gifu-fureai-dome",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/662779",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662779",
+      "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.30 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shota-umino",
+            "mistico",
+            "el-desperado"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tatsuya-matsumoto",
+            "kazuma-sumi",
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": "第1試合から第4試合は公式に番号表記がない。掲載順で番号を振った。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yushin-hatazawa",
+            "kuukai",
+            "master-wato"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yujiro-takahashi",
+            "yoshinobu-kanemaru",
+            "douki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "taisei-nakahara",
+            "nick-wayne",
+            "kushida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "gedo",
+            "robbie-x",
+            "taiji-ishimori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masatora-yasuda",
+            "yuya-uemura",
+            "taichi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "toru-yano",
+            "boltin-oleg",
+            "wolf-aron"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "lee-johnson",
+            "blake-christian"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dick-togo",
+            "sho"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hyo",
+            "yoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai",
+            "titan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kosei-fujita",
+            "robbie-eagles"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jacob-austin-young",
+            "francesco-akira"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+    }
+  ]
+}

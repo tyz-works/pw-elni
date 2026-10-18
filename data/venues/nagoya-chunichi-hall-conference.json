@@ -2,7 +2,10 @@
   "slug": "nagoya-chunichi-hall-conference",
   "name": "中日ホール＆カンファレンス",
   "nameEn": null,
-  "aliases": [],
+  "aliases": [
+    "中日ホール",
+    "愛知・中日ホール"
+  ],
   "city": "名古屋",
   "prefecture": "愛知県",
   "capacity": null,

@@ -1,0 +1,18 @@
+{
+  "slug": "matsuyama-item-ehime",
+  "name": "アイテムえひめ 小展示場",
+  "nameEn": null,
+  "aliases": [
+    "愛媛・アイテムえひめ 小展示場"
+  ],
+  "city": "松山",
+  "prefecture": "愛媛県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261114_matsuyama/",
+      "title": "〜タッグリーグ戦〜 in MATSUYAMA-EHIME | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

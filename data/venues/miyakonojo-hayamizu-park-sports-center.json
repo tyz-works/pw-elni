@@ -1,0 +1,18 @@
+{
+  "slug": "miyakonojo-hayamizu-park-sports-center",
+  "name": "都城市早水公園体育文化センター",
+  "nameEn": null,
+  "aliases": [
+    "宮崎・都城市早水公園体育文化センター"
+  ],
+  "city": "都城",
+  "prefecture": "宮崎県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

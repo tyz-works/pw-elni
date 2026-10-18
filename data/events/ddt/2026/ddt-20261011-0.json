@@ -9,13 +9,209 @@
   "venueSlug": "hokkaido-sapporo-sun-plaza",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e2add37f7b30002cfff1d",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-okatani"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 575
+      },
+      "confirmed": true,
+      "notes": "※串刺し式クレイモア 体固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "akito",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tomoya",
+            "danshoku-dieno",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 646
+      },
+      "confirmed": true,
+      "notes": "スリーパーホールド・ウィズ・アナル"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku",
+            "daichi-satoh",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "jun-akiyama",
+            "takashi-yoshida",
+            "tomomitsu-matsunaga"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 625
+      },
+      "confirmed": true,
+      "notes": "※PK 片エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "sunshine-clutch",
+        "durationSeconds": 640
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 737
+      },
+      "confirmed": true,
+      "notes": "※NOW OR NEVER 片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "praying-mantis-bomb",
+        "durationSeconds": 1278
+      },
+      "confirmed": true,
+      "notes": "※プレイングマンティスボム"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6acb14787985f900027c1c58",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a4e2add37f7b30002cfff1d",
       "title": "すみれ October Love 2026 | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6acb14787985f900027c1c58",
+      "title": "すみれ October Love 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

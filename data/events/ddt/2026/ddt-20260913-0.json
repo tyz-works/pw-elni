@@ -9,13 +9,285 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a1bf7413d733400029fb5cf",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "dark",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "minoru-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kuroshio-tokyo-japan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1516
+      },
+      "confirmed": true,
+      "notes": "エニウェアフォール5WAY。クリス・ブルックスの持ついつでもどこでも挑戦権が髙木三四郎に移った。 ラ・マヒストラル"
+    },
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 603
+      },
+      "confirmed": true,
+      "notes": "※正念場 体固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "super-sasadango-machine",
+            "super-systema-machine"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": "front-necklock",
+        "durationSeconds": 1070
+      },
+      "confirmed": true,
+      "notes": "＜＞内の数字は入場順。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hub",
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ilusion",
+            "daichi-satoh",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 693
+      },
+      "confirmed": true,
+      "notes": "※猛毒波布空爆。ノータッチルール。 片エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shinya-aoki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "harashima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 637
+      },
+      "confirmed": true,
+      "notes": "変形エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "yoshihiko"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kazuki-hirata",
+            "kaisei-takechi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 891
+      },
+      "confirmed": true,
+      "notes": "※旋回式ブレーンバスター 体固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita",
+            "to-y"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chihiro-hashimoto",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 898
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "wr",
+        "durationSeconds": 1366
+      },
+      "confirmed": true,
+      "notes": "※WR"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6aa5fcea5af77700026b9dd7",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a1bf7413d733400029fb5cf",
       "title": "上野勇希デビュー10周年記念興行- IN MY MIND \"10\" - | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6aa5fcea5af77700026b9dd7",
+      "title": "上野勇希デビュー10周年記念興行 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

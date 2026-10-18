@@ -1,0 +1,19 @@
+{
+  "slug": "shizuoka-twinmesse-north",
+  "name": "ツインメッセ静岡 北館",
+  "nameEn": null,
+  "aliases": [
+    "ツインメッセ静岡北館",
+    "静岡・ツインメッセ静岡 北館"
+  ],
+  "city": "静岡",
+  "prefecture": "静岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261004_shizuoka/",
+      "title": "STARDOM in SHIZUOKA 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

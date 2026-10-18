@@ -1,0 +1,252 @@
+{
+  "eventId": "stardom-20261002-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in SAKAE 2026 Oct. ～Day1～",
+  "series": null,
+  "date": "2026-10-02",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "nagoya-chunichi-hall-conference",
+  "attendance": 564,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261002_chu-nichi_day1/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261002_chu-nichi_day1/",
+      "title": "STARDOM in SAKAE 2026 Oct. ～Day1～ | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsupoi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 480
+      },
+      "confirmed": true,
+      "notes": "ぽいロック"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "5分37秒。月山和香と儛島エマのダブル首固め。公式は2名の勝利表示で、単一の勝者は記録しない。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "rina-yamashita",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "lariat",
+        "durationSeconds": 564
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saori-anou",
+            "anne-kanaya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 641
+      },
+      "confirmed": true,
+      "notes": "稲葉あずさの姉超→片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri",
+            "lady-c",
+            "ranna-yagami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "azm",
+            "miyu-amasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 676
+      },
+      "confirmed": true,
+      "notes": "あずみ寿司"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "maika",
+            "utami-hayashishita",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "momo-watanabe",
+            "konami",
+            "ruaka",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "death-valley-bomb",
+        "durationSeconds": 676
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "bea-priestley"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 922
+      },
+      "confirmed": true,
+      "notes": "クイーンズランディング"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "odawara-arena-sub",
+  "name": "小田原アリーナ・サブアリーナ",
+  "nameEn": null,
+  "aliases": [
+    "神奈川・小田原アリーナ・サブアリーナ",
+    "小田原アリーナ"
+  ],
+  "city": "小田原",
+  "prefecture": "神奈川県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a4f0fdfc4af8f00021e9f5e",
+      "title": "小田原プロレス実行委員会プレゼンツチャリティープロレス | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

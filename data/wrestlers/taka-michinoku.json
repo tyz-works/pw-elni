@@ -1,0 +1,25 @@
+{
+  "slug": "taka-michinoku",
+  "name": "TAKAみちのく",
+  "nameEn": "TAKA Michinoku",
+  "aliases": [
+    "TAKA Michinoku",
+    "TAKA みちのく"
+  ],
+  "realName": null,
+  "birthDate": "1973-10-26",
+  "birthplace": "千葉県四街道市",
+  "debutDate": "1992-09-04",
+  "heightCm": 175,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/710",
+      "title": "TAKAみちのく | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "okumura",
+  "name": "OKUMURA",
+  "nameEn": "OKUMURA",
+  "aliases": [
+    "オクムラ"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "大阪",
+  "debutDate": null,
+  "heightCm": 182,
+  "weightKg": 95,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/profile/416",
+      "title": "OKUMURA | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261206-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in KOBE 2026 Dec.",
+  "series": null,
+  "date": "2026-12-06",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "kobe-sanbo-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261206_kobe/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261206_kobe/",
+      "title": "STARDOM in KOBE 2026 Dec. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

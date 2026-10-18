@@ -9,13 +9,242 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6931480515bffe00027f46fb",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "naomi-yoshimura",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 261
+      },
+      "confirmed": true,
+      "notes": "※払腰。試合後のアイアンマンヘビーメタル級の移動は番号付きの試合ではないため未収録。 片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "to-y",
+            "kaisei-takechi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "danshoku-dieno",
+            "kazuki-hirata",
+            "super-sasadango-machine"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1
+      },
+      "confirmed": true,
+      "notes": "試合直後のアイアンマンヘビーメタル級の移動は番組表の別試合ではないため未収録。 逆エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shinya-aoki",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "aoki-clutch",
+        "durationSeconds": 512
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shunma-katsumata",
+            "yuni",
+            "kazuma-sumi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D6人タッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 609
+      },
+      "confirmed": true,
+      "notes": "※スク～ルボ～イを切り返す。第62代王者組が初防衛。 片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "shota"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-Dタッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 574
+      },
+      "confirmed": true,
+      "notes": "第91代王者組が初防衛。 エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT UNIVERSAL選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 770
+      },
+      "confirmed": true,
+      "notes": "第22代王者が4度目の防衛。 クロス式アンクルホールド"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yuki-iino",
+            "yukio-naya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kubi-gatame",
+        "durationSeconds": 1161
+      },
+      "confirmed": true,
+      "notes": "4対4のイリミネーション。最後はMAOがクリス・ブルックスを首固め。KIMIHIROとYUZUKIはセコンド。緊急決定試合（飯野雄貴対男色“ダンディ”ディーノ）はギミック名が未解決のため未収録。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6ad40cf3442a7c00029134e9",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6931480515bffe00027f46fb",
       "title": "WRESTLING HARVEST 2026～秋のプロレス収穫祭～ | ddt",
       "retrievedAt": "2026-09-03"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ad40cf3442a7c00029134e9",
+      "title": "WRESTLING HARVEST 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

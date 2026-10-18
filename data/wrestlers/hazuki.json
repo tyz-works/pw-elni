@@ -1,0 +1,26 @@
+{
+  "slug": "hazuki",
+  "name": "葉月",
+  "nameEn": "HAZUKI",
+  "aliases": [
+    "Hazuki"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "福岡県福岡市",
+  "debutDate": "2014-07-06",
+  "heightCm": 155,
+  "weightKg": 52,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/hazuki/",
+      "title": "葉月 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

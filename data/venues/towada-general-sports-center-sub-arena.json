@@ -1,0 +1,18 @@
+{
+  "slug": "towada-general-sports-center-sub-arena",
+  "name": "十和田市総合体育センター・サブアリーナ",
+  "nameEn": null,
+  "aliases": [
+    "青森・十和田市総合体育センター・サブアリーナ"
+  ],
+  "city": "十和田",
+  "prefecture": "青森県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

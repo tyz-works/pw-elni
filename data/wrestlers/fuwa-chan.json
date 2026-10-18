@@ -1,0 +1,27 @@
+{
+  "slug": "fuwa-chan",
+  "name": "フワちゃん",
+  "nameEn": "FUWA CHAN",
+  "aliases": [
+    "Fuwa-chan",
+    "Fuwa Chan"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": "東京都",
+  "debutDate": "2025-12-29",
+  "heightCm": 162,
+  "weightKg": 56,
+  "status": "active",
+  "promotionSlugs": [
+    "stardom"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/fighters/%e3%83%95%e3%83%af%e3%81%a1%e3%82%83%e3%82%93/",
+      "title": "フワちゃん | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

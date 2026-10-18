@@ -1,0 +1,22 @@
+{
+  "slug": "rey-pegasus",
+  "name": "レイ・ペガサス",
+  "nameEn": null,
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/660980",
+      "title": "LUCHA KINGDOM | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

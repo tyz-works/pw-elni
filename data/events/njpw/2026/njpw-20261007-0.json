@@ -7,7 +7,7 @@
   "doorsOpen": "17:30",
   "bellTime": "18:30",
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1014,
   "confirmed": true,
   "matches": [
     {
@@ -30,9 +30,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 10,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 423
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "逆エビ固め"
     },
     {
       "order": 2,
@@ -60,9 +65,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 647
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ピンプジュース→片エビ固め"
     },
     {
       "order": 3,
@@ -90,9 +100,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 606
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "横入り式エビ固め"
     },
     {
       "order": 4,
@@ -120,17 +135,23 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 630
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "シンゴタカギですライダー→片エビ固め"
     },
     {
       "order": 5,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
+            "ares",
             "yota-tsuji"
           ],
           "teamName": null
@@ -145,18 +166,24 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 690
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "変型アームバー"
     },
     {
       "order": 6,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
             "tatsuya-matsumoto",
+            "hechicero",
             "wolf-aron"
           ],
           "teamName": null
@@ -172,9 +199,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 783
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ロン・ミラー・スペシャル"
     },
     {
       "order": 7,
@@ -194,19 +226,29 @@
           "teamName": null
         }
       ],
-      "titleName": null,
+      "titleName": "IWGPジュニアヘビー級選手権試合",
       "timeLimitMinutes": 60,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "direct-drive",
+        "durationSeconds": 1501
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "YOHが3度目の防衛。"
     }
   ],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/654878",
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/654878",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/tournament/card/654878",
       "title": "Road to KING OF PRO-WRESTLING 2026 | njpw",
       "retrievedAt": "2026-09-24"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/654878",
+      "title": "Road to KING OF PRO-WRESTLING 2026 10.7 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

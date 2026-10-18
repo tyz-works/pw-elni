@@ -1,0 +1,218 @@
+{
+  "eventId": "stardom-20261010-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in CHIBA 2026 Oct.",
+  "series": null,
+  "date": "2026-10-10",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "chiba-tkp-garden-city-sinfonia",
+  "attendance": 375,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261010_chiba/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261010_chiba/",
+      "title": "STARDOM in CHIBA 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "lady-c"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akira-kurogane"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 561
+      },
+      "confirmed": true,
+      "notes": "ズギュウウウン→エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 533
+      },
+      "confirmed": true,
+      "notes": "3WAY。もう1人は小波。 葉・月ストラル"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian",
+            "koguma"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "saya-kamitani",
+            "ruaka",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 724
+      },
+      "confirmed": true,
+      "notes": "Pink♥Devil→体固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "lariat",
+        "durationSeconds": 764
+      },
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rina-yamashita",
+            "itsuki-aoki",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "mei-seira",
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 636
+      },
+      "confirmed": true,
+      "notes": "フロッグスプラッシュ→片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "utami-hayashishita",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "syuri",
+            "hina",
+            "ranna-yagami",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 571
+      },
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}

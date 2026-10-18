@@ -1,0 +1,21 @@
+{
+  "eventId": "ddt-20261203-0",
+  "promotionSlug": "ddt",
+  "name": "CHARISMANIA Ⅴ",
+  "series": null,
+  "date": "2026-12-03",
+  "doorsOpen": "18:00",
+  "bellTime": "19:00",
+  "venueSlug": "tokyo-shinkiba-1st-ring",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6aa91d27a3fead00021ccb4f",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6aa91d27a3fead00021ccb4f",
+      "title": "CHARISMANIA Ⅴ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

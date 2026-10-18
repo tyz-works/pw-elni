@@ -1,0 +1,18 @@
+{
+  "slug": "uonuma-horinouchi-gymnasium",
+  "name": "魚沼市堀之内体育館",
+  "nameEn": null,
+  "aliases": [
+    "新潟・魚沼市堀之内体育館"
+  ],
+  "city": "魚沼",
+  "prefecture": "新潟県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/662774",
+      "title": "Road to KING OF PRO-WRESTLING 2026 10.10 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

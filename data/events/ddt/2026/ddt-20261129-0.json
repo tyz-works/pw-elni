@@ -9,13 +9,43 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryusuke-taguchi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "to-y"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT UNIVERSAL選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "第22代王者の5度目の防衛戦。他の試合は未発表。"
+    }
+  ],
   "officialUrl": "https://www.ddtpro.jp/schedules/6931486a3cac4c0002a50f5e",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6931486a3cac4c0002a50f5e",
       "title": "BE AMBITIOUS 2026 〜晩秋決戦〜 | ddt",
       "retrievedAt": "2026-09-19"
+    },
+    {
+      "url": "https://www.ddtpro.jp/schedules/6931486a3cac4c0002a50f5e",
+      "title": "BE AMBITIOUS 2026 〜晩秋決戦〜 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

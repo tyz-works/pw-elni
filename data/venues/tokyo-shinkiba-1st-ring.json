@@ -1,0 +1,19 @@
+{
+  "slug": "tokyo-shinkiba-1st-ring",
+  "name": "新木場1stRING",
+  "nameEn": null,
+  "aliases": [
+    "東京・新木場1stRING",
+    "新木場1stRING"
+  ],
+  "city": "東京",
+  "prefecture": "東京都",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

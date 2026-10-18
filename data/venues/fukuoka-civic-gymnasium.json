@@ -1,0 +1,18 @@
+{
+  "slug": "fukuoka-civic-gymnasium",
+  "name": "福岡市民体育館",
+  "nameEn": null,
+  "aliases": [
+    "福岡・福岡市民体育館"
+  ],
+  "city": "福岡",
+  "prefecture": "福岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

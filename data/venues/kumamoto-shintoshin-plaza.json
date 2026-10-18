@@ -1,0 +1,18 @@
+{
+  "slug": "kumamoto-shintoshin-plaza",
+  "name": "森都心プラザ",
+  "nameEn": null,
+  "aliases": [
+    "熊本・森都心プラザ"
+  ],
+  "city": "熊本",
+  "prefecture": "熊本県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a96aeabc5a7990002d6dab1",
+      "title": "くまもとサンライズ | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "eventId": "njpw-20261213-0",
+  "promotionSlug": "njpw",
+  "name": "WORLD TAG LEAGUE 2026",
+  "series": "WORLD TAG LEAGUE 2026",
+  "date": "2026-12-13",
+  "doorsOpen": "13:30",
+  "bellTime": "15:00",
+  "venueSlug": "kumamoto-granmesse",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/schedule",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

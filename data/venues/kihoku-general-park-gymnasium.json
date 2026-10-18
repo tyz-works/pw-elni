@@ -1,0 +1,18 @@
+{
+  "slug": "kihoku-general-park-gymnasium",
+  "name": "鬼北総合公園体育館",
+  "nameEn": null,
+  "aliases": [
+    "愛媛・鬼北総合公園体育館"
+  ],
+  "city": "鬼北",
+  "prefecture": "愛媛県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

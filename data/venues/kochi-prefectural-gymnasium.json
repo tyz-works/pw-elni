@@ -1,0 +1,18 @@
+{
+  "slug": "kochi-prefectural-gymnasium",
+  "name": "高知県立県民体育館",
+  "nameEn": null,
+  "aliases": [
+    "高知・高知県立県民体育館"
+  ],
+  "city": "高知",
+  "prefecture": "高知県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/schedule",
+      "title": "スケジュール | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

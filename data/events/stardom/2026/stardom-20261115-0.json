@@ -1,0 +1,21 @@
+{
+  "eventId": "stardom-20261115-0",
+  "promotionSlug": "stardom",
+  "name": "〜タッグリーグ戦〜 in KOCHI",
+  "series": "第16回 ゴッデス・オブ・スターダム",
+  "date": "2026-11-15",
+  "doorsOpen": "15:15",
+  "bellTime": "16:00",
+  "venueSlug": "kochi-chres-series-gymnasium",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20261115_kochi/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/schedule/20261115_kochi/",
+      "title": "〜タッグリーグ戦〜 in KOCHI | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": []
+}

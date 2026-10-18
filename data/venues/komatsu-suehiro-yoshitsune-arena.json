@@ -1,0 +1,19 @@
+{
+  "slug": "komatsu-suehiro-yoshitsune-arena",
+  "name": "小松市末広体育館（義経アリーナ）",
+  "nameEn": null,
+  "aliases": [
+    "義経アリーナ",
+    "石川・小松市末広体育館（義経アリーナ）"
+  ],
+  "city": "小松",
+  "prefecture": "石川県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/662773",
+      "title": "Road to KING OF PRO-WRESTLING 2026 10.9 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
+    }
+  ]
+}

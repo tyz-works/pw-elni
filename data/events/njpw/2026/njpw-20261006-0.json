@@ -7,7 +7,7 @@
   "doorsOpen": "17:30",
   "bellTime": "18:30",
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1041,
   "confirmed": true,
   "matches": [
     {
@@ -38,9 +38,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 705
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "足4の字固め"
     },
     {
       "order": 2,
@@ -64,9 +69,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 369
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "Bone Lock"
     },
     {
       "order": 3,
@@ -92,9 +102,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 557
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "SKYFALL→体固め"
     },
     {
       "order": 4,
@@ -118,18 +133,24 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 399
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ツアー・オブ・ジ・アイランド→片エビ固め"
     },
     {
       "order": 5,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
             "masatora-yasuda",
+            "hechicero",
             "wolf-aron"
           ],
           "teamName": null
@@ -145,9 +166,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 690
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "Hyperion→片エビ固め"
     },
     {
       "order": 6,
@@ -171,9 +197,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 795
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "パンピングブラスター→片エビ固め"
     },
     {
       "order": 7,
@@ -195,19 +226,29 @@
           "teamName": null
         }
       ],
-      "titleName": null,
+      "titleName": "IWGPタッグ選手権試合",
       "timeLimitMinutes": 60,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 2061
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "OSKAR、Yuto-Ice組が王座を獲得。 K.O.B→片エビ固め"
     }
   ],
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/654877",
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/654877",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/tournament/card/654877",
       "title": "Road to KING OF PRO-WRESTLING 2026 | njpw",
       "retrievedAt": "2026-09-20"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/654877",
+      "title": "Road to KING OF PRO-WRESTLING 2026 10.6 | 新日本プロレス",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

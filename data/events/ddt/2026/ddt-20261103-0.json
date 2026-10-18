@@ -9,13 +9,335 @@
   "venueSlug": "tokyo-ryogoku-kokugikan",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "dark",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shibam",
+            "yuni"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "tomomitsu-matsunaga",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "masami-inahata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "harashima",
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表。ダークマッチ以外は公式掲載順（メイン先頭）を反転して番号を振った。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "toru-owashi",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "super-sasadango-machine",
+            "antonio-honda",
+            "akito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mansoor",
+            "mason-madden"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "shota"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mj-paul",
+            "demus"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "junta-miyawaki",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "to-y",
+            "kaisei-takechi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kanon",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hinata-kasai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "danshoku-dieno"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hideki-okatani",
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-Dタッグ選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 8,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-iino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yukio-naya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "飯野雄貴のDDT所属ラストマッチ。"
+    },
+    {
+      "order": 9,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ueno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT EXTREME選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "ルール未定。"
+    },
+    {
+      "order": 10,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shinya-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 11,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-D無差別級選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "第89代王者の6度目の防衛戦。"
+    }
+  ],
   "officialUrl": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
       "title": "Ultimate Party 2026 | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
+      "title": "Ultimate Party 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

@@ -9,13 +9,215 @@
   "venueSlug": "tokyo-shinjuku-face",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a322b20cf4ba90002967bd1",
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-akiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "公式に勝敗表示がない。11分20秒、片エビ固め（エクスプロイダー）。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tomomitsu-matsunaga",
+            "daichi-satoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ishida",
+            "kumadori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "mad-splash",
+        "durationSeconds": 530
+      },
+      "confirmed": true,
+      "notes": "※マッドスプラッシュ"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "soma-takao",
+            "kazuki-hirata",
+            "akito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sanshiro-takagi",
+            "ken-ohka",
+            "naomi-yoshimura"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "mad-splash",
+        "durationSeconds": 673
+      },
+      "confirmed": true,
+      "notes": "※マッドスプラッシュ。伊橋剛太はセコンド。高尾蒼馬と伊橋剛太の所属ラストマッチ。"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shunma-katsumata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryota-nakatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "DDT EXTREME選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 694
+      },
+      "confirmed": true,
+      "notes": "第65代王者が2度目の防衛。"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shinya-aoki",
+            "junta-miyawaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "yuya-koroku"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "KO-Dタッグ選手権",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1045
+      },
+      "confirmed": true,
+      "notes": "片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yukio-naya",
+            "viento-levante"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sasaki",
+            "hideki-okatani",
+            "mj-paul",
+            "ilusion"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "antonio-honda",
+            "hinata-kasai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "to-y",
+            "kazuma-sumi",
+            "yuni"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "4人ずつの4WAYイリミネーション。公式に勝利陣営の表示がない。26分15秒、最後の決まり手はキャノンボール450°。"
+    }
+  ],
+  "officialUrl": "https://www.ddtpro.jp/results/6ab8e3507f967a0002be18c1",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a322b20cf4ba90002967bd1",
       "title": "【SHINJUKU FACE COUNTDOWN SERIES】FACE FINAL〜さよなら新宿FACE！21年間の感謝を込めて！コレが俺達の新宿ドラマティックドリーム！〜 | ddt",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6ab8e3507f967a0002be18c1",
+      "title": "FACE FINAL | DDTプロレスリング",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

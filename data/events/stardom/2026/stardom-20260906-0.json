@@ -7,7 +7,7 @@
   "doorsOpen": null,
   "bellTime": null,
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1327,
   "confirmed": true,
   "matches": [
     {
@@ -32,12 +32,149 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 557
+      },
+      "confirmed": true,
+      "notes": "Pink♥Devil→片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "matoi-hamabe",
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 883
+      },
+      "confirmed": true,
+      "notes": "レッグロック式アンクルホールド"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hina"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "fukigen-death"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 374
+      },
+      "confirmed": true,
+      "notes": "にゅーさくらっち"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita",
+            "itsuki-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 617
+      },
+      "confirmed": true,
+      "notes": "羅紗鋏→片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saori-anou",
+            "hazuki",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "lady-c",
+            "hanako",
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "shining-wizard",
+        "durationSeconds": 569
+      },
       "confirmed": true,
       "notes": null
     },
     {
-      "order": 5,
+      "order": 6,
       "segment": "card",
       "matchType": "tag",
       "sides": [
@@ -58,12 +195,17 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 693
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ビートストライク→エビ固め"
     },
     {
-      "order": 6,
+      "order": 7,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -81,13 +223,18 @@
         }
       ],
       "titleName": "ハイスピード選手権試合",
-      "timeLimitMinutes": null,
-      "result": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": null,
+        "decision": "time-limit-draw",
+        "finishMoveSlug": null,
+        "durationSeconds": 900
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "15分時間切れ引き分け。水森由菜が5度目の防衛。"
     },
     {
-      "order": 7,
+      "order": 8,
       "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
@@ -110,7 +257,12 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "german-suplex-hold",
+        "durationSeconds": 690
+      },
       "confirmed": true,
       "notes": null
     }
@@ -121,6 +273,11 @@
       "url": "https://wwr-stardom.com/event/20260906_korakuen/",
       "title": "STARDOM in KORAKUEN 2026 Sep. | stardom",
       "retrievedAt": "2026-08-31"
+    },
+    {
+      "url": "https://wwr-stardom.com/event/20260906_korakuen/",
+      "title": "STARDOM in KORAKUEN 2026 Sep. | スターダム",
+      "retrievedAt": "2026-10-18"
     }
   ]
 }

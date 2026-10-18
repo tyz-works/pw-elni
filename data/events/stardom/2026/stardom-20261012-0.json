@@ -1,0 +1,241 @@
+{
+  "eventId": "stardom-20261012-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM in KOFU 2026 Oct.",
+  "series": null,
+  "date": "2026-10-12",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "kofu-aimesse-yamanashi",
+  "attendance": 474,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261012_kofu/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261012_kofu/",
+      "title": "STARDOM in KOFU 2026 Oct. | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "utami-hayashishita",
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "mei-seira"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 583
+      },
+      "confirmed": true,
+      "notes": "流星龍"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuna-mizumori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "akira-kurogane"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 583
+      },
+      "confirmed": true,
+      "notes": "熊本の不沈艦→エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "koguma",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "lady-c",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 697
+      },
+      "confirmed": true,
+      "notes": "ダイビングボディプレス→片エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hazuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 515
+      },
+      "confirmed": true,
+      "notes": "ダイビングセントーン→片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri",
+            "ranna-yagami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 623
+      },
+      "confirmed": true,
+      "notes": "ビートバスター→片エビ固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "utami-hayashishita",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "konami",
+            "ruaka",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 746
+      },
+      "confirmed": true,
+      "notes": "林下詩美は第1試合にも出場。 トーチャーラックボム→エビ固め"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "natsupoi",
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 789
+      },
+      "confirmed": true,
+      "notes": "MADE IN JAPOI→片エビ固め"
+    }
+  ]
+}

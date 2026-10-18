@@ -1,0 +1,72 @@
+{
+  "eventId": "stardom-20261029-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM CRIMSON NIGHTMARE 2026",
+  "series": null,
+  "date": "2026-10-29",
+  "doorsOpen": "17:50",
+  "bellTime": "19:00",
+  "venueSlug": "tokyo-ota-city-general-gymnasium",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20261029_otaku/",
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/event/20261029_otaku/",
+      "title": "STARDOM CRIMSON NIGHTMARE 2026 | スターダム",
+      "retrievedAt": "2026-10-18"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "shingo-takagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuna-mizumori",
+            "hirooki-goto"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "発表されているのは2試合。他は未発表。掲載順。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "ワールド・オブ・スターダム選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    }
+  ]
+}
