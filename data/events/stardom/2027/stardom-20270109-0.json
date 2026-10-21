@@ -1,0 +1,26 @@
+{
+  "eventId": "stardom-20270109-0",
+  "promotionSlug": "stardom",
+  "name": "大会名未定",
+  "series": null,
+  "date": "2027-01-09",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "kyoto-kbs-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/?ym=202701",
+  "sources": [
+    {
+      "url": "https://x.com/wwr_stardom/status/2112463135189975420",
+      "title": "スターダム公式X 2027年1月の日程",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/?ym=202701",
+      "title": "スターダム スケジュール 2027年1月",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": []
+}

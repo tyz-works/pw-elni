@@ -1,0 +1,19 @@
+{
+  "slug": "soka-akos-event-plaza",
+  "name": "アコスイベント広場",
+  "nameEn": null,
+  "aliases": [
+    "埼玉・草加 アコスイベント広場",
+    "草加市高砂2丁目アコス南館前"
+  ],
+  "city": "草加",
+  "prefecture": "埼玉県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a9fbbac9b70bf0002d7bad8",
+      "title": "埼玉・草加 アコスイベント広場「AKOS×DDT駅前プロレス Vol.4」 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "eventId": "njpw-20270104-0",
+  "promotionSlug": "njpw",
+  "name": "闘魂55年 WRESTLE KINGDOM 21 in 東京ドーム",
+  "series": null,
+  "date": "2027-01-04",
+  "doorsOpen": "14:30",
+  "bellTime": "16:30",
+  "venueSlug": "tokyo-tokyo-dome",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.njpw.co.jp/676247",
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/676247",
+      "title": "2027年1月4日 WRESTLE KINGDOM 21 チケット・大会情報 | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.njpw.co.jp/666196",
+      "title": "2027年1月4日東京ドーム大会タイトル決定 | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": []
+}

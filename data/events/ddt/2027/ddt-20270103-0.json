@@ -1,0 +1,26 @@
+{
+  "eventId": "ddt-20270103-0",
+  "promotionSlug": "ddt",
+  "name": "新春☆ドラマチックパレード2027",
+  "series": null,
+  "date": "2027-01-03",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": null,
+  "sources": [
+    {
+      "url": "https://x.com/ddtpro/status/2112000278862123476",
+      "title": "DDT公式X 新春☆ドラマチックパレード2027",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.ddtpro.jp/",
+      "title": "DDTプロレスリング公式サイト",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": []
+}

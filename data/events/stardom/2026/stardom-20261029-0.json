@@ -15,11 +15,151 @@
       "url": "https://wwr-stardom.com/event/20261029_otaku/",
       "title": "STARDOM CRIMSON NIGHTMARE 2026 | スターダム",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112868915839902172",
+      "title": "スターダム公式X 10月29日大田区の全カード",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261021card2-2/",
+      "title": "スターダム 10月29日大田区の全カード",
+      "retrievedAt": "2026-10-22"
     }
   ],
   "matches": [
     {
       "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "azm",
+            "miyu-amasaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "mei-seira",
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順は公式発表の掲載順。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "syuri",
+            "ami-sohrei",
+            "hina"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rina-yamashita",
+            "itsuki-aoki",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "3WAYトリオバトル。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "sayaka-kurara",
+            "saori-anou",
+            "anne-kanaya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "lady-c",
+            "tomoka-inaba",
+            "ranna-yagami",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "maika",
+            "utami-hayashishita",
+            "hanako",
+            "waka-tsukiyama",
+            "yuria-hime",
+            "matoi-hamabe"
+          ],
+          "teamName": "STARS"
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "momo-watanabe",
+            "konami",
+            "saya-kamitani",
+            "ruaka",
+            "rina",
+            "bea-priestley",
+            "azusa-inaba"
+          ],
+          "teamName": "H.A.T.E."
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "8対8のイリミネーションマッチ。"
+    },
+    {
+      "order": 5,
       "segment": "card",
       "matchType": "tag",
       "sides": [
@@ -42,10 +182,10 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": "発表されているのは2試合。他は未発表。掲載順。"
+      "notes": "スペシャルミックスドタッグ。"
     },
     {
-      "order": 2,
+      "order": 6,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -66,7 +206,7 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "王者鈴季すず、挑戦者スターライト・キッド。"
     }
   ]
 }

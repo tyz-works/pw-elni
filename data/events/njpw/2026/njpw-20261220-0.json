@@ -1,20 +1,30 @@
 {
   "eventId": "njpw-20261220-0",
   "promotionSlug": "njpw",
-  "name": "大会名未定",
+  "name": "Road to TOKYO DOME",
   "series": null,
   "date": "2026-12-20",
-  "doorsOpen": null,
-  "bellTime": null,
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "officialUrl": "https://www.njpw.co.jp/schedule",
+  "officialUrl": "https://www.njpw.co.jp/676936",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/schedule",
       "title": "スケジュール | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/676936",
+      "title": "12月20日・21日 Road to TOKYO DOME チケット概要 | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2112408472646291527",
+      "title": "新日本プロレス公式X Road to TOKYO DOME",
+      "retrievedAt": "2026-10-22"
     }
   ],
   "matches": []
