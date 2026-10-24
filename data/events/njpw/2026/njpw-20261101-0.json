@@ -15,6 +15,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/662780",
       "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 11.1 | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662780",
+      "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 11.1 | 新日本プロレス",
+      "retrievedAt": "2026-10-24"
     }
   ],
   "matches": [
@@ -42,7 +47,7 @@
       "timeLimitMinutes": 30,
       "result": null,
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。試合順未発表・掲載順。公式戦3試合のみ発表。"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。試合順は後日発表（公式カードの掲載順）。公式戦3試合のみ発表。"
     },
     {
       "order": 2,

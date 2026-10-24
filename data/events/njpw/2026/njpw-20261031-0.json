@@ -15,6 +15,16 @@
       "url": "https://www.njpw.co.jp/tournament/card/662783",
       "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.31 | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/677292",
+      "title": "『SUPER Jr. TAG LEAGUE 2026』対戦カード変更に関して | 新日本プロレス",
+      "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662783",
+      "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.31 | 新日本プロレス",
+      "retrievedAt": "2026-10-24"
     }
   ],
   "matches": [
@@ -44,7 +54,7 @@
       "timeLimitMinutes": 20,
       "result": null,
       "confirmed": true,
-      "notes": "公式に試合番号の表記がない。掲載順で番号を振った。"
+      "notes": "試合順は後日発表（公式カードの掲載順）。"
     },
     {
       "order": 2,
@@ -110,7 +120,7 @@
         {
           "wrestlerIds": [
             "taisei-nakahara",
-            "masatora-yasuda",
+            "satoshi-kojima",
             "yuya-uemura",
             "taichi"
           ],
@@ -130,7 +140,7 @@
       "timeLimitMinutes": 20,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "デスペラード欠場に伴うカード変更（10/23 公式発表）。"
     },
     {
       "order": 5,
@@ -139,8 +149,8 @@
       "sides": [
         {
           "wrestlerIds": [
-            "mistico",
-            "el-desperado"
+            "masatora-yasuda",
+            "mistico"
           ],
           "teamName": null
         },
@@ -156,7 +166,7 @@
       "timeLimitMinutes": 30,
       "result": null,
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。デスペラード欠場に伴うカード変更（10/23 公式発表）。"
     },
     {
       "order": 6,
