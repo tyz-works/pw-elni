@@ -7,9 +7,9 @@
   "doorsOpen": "16:00",
   "bellTime": "17:00",
   "venueSlug": "kumagaya-civic-gymnasium",
-  "attendance": null,
+  "attendance": 1112,
   "confirmed": true,
-  "officialUrl": "https://www.njpw.co.jp/tournament/card/662776",
+  "officialUrl": "https://www.njpw.co.jp/tournament/result/662776",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/tournament/card/662776",
@@ -25,6 +25,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/662776",
       "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.24 | 新日本プロレス",
       "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/662776",
+      "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.24 結果 | 新日本プロレス",
+      "retrievedAt": "2026-10-25"
     }
   ],
   "matches": [
@@ -48,9 +53,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 554
+      },
       "confirmed": true,
-      "notes": "デスペラード欠場に伴うカード変更（10/23 公式発表）。"
+      "notes": "デスペラード欠場に伴うカード変更（10/23 公式発表）。逆エビ固め"
     },
     {
       "order": 2,
@@ -74,9 +84,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 635
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。片エビ固め。アキラのファイヤーボールの直前にヤングがタッチしてフォールした。"
     },
     {
       "order": 3,
@@ -100,9 +115,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 576
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。前方回転エビ固め"
     },
     {
       "order": 4,
@@ -126,9 +146,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 632
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。Hyperion→片エビ固め"
     },
     {
       "order": 5,
@@ -152,9 +177,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 770
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。X EXPRESS→片エビ固め"
     },
     {
       "order": 6,
@@ -178,9 +208,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 726
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。ブレインロット→片エビ固め。ブレインロットはブレイク・クリスチャンのフットスタンプとリー・ジョンソンのデスバレーボムの合体技。"
     },
     {
       "order": 7,
@@ -204,9 +239,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 812
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。デスペラード欠場に伴うカード変更（10/23 公式発表）。"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。デスペラード欠場に伴うカード変更（10/23 公式発表）。デスヌカドーラオラシオン。決まり手名のみ公式発表。KUUKAIのパワーボムの体勢からマスター・ワトがジャーマン・スープレックスにつなぐ合体技。"
     }
   ]
 }
