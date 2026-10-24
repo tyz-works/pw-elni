@@ -183,8 +183,14 @@
     {
       "order": 6,
       "segment": "card",
-      "matchType": "singles",
+      "matchType": "multi-man",
       "sides": [
+        {
+          "wrestlerIds": [
+            "konosuke-takeshita"
+          ],
+          "teamName": null
+        },
         {
           "wrestlerIds": [
             "danshoku-dieno"
@@ -202,7 +208,7 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "スペシャル3WAY。10/24の横浜大会でKONOSUKE TAKESHITAの緊急来日が発表され、男色ディーノ対佐々木大輔のシングルから変更。"
     },
     {
       "order": 7,
@@ -343,6 +349,21 @@
       "url": "https://www.ddtpro.jp/news/6ad73807b3b6f8000253e5e8",
       "title": "両国大会 O-MENZ来場 | DDTプロレスリング",
       "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.ddtpro.jp/news/6adcaff2063b8e0002a18771",
+      "title": "11月3日両国国技館大会カード変更 | DDTプロレスリング",
+      "retrievedAt": "2026-10-25"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2113927728479289419",
+      "title": "DDT公式X 両国大会カード変更",
+      "retrievedAt": "2026-10-25"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2113927704840179716",
+      "title": "DDT公式X 両国大会3WAY",
+      "retrievedAt": "2026-10-25"
     }
   ]
 }

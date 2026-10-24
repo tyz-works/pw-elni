@@ -9,7 +9,7 @@
   "venueSlug": "yokohama-radiant-hall",
   "attendance": null,
   "confirmed": true,
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a4e2bb47b2fa100025b4cd6",
+  "officialUrl": "https://www.ddtpro.jp/results/6adc5068560b8c0002a073ea",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a4e2bb47b2fa100025b4cd6",
@@ -30,6 +30,21 @@
       "url": "https://x.com/ddtpro/status/2113557798269354425",
       "title": "DDT公式X ヨコハマ・プロレス・ラプソディ2026 メインイベント",
       "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6adc5068560b8c0002a073ea",
+      "title": "ヨコハマ・プロレス・ラプソディ2026 結果 | DDTプロレスリング",
+      "retrievedAt": "2026-10-25"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2113977922176585919",
+      "title": "DDT公式X 宮脇純太がアイアンマンヘビーメタル級を獲得",
+      "retrievedAt": "2026-10-25"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2113980463316688981",
+      "title": "DDT公式X クリス・ブルックスがMAOからギブアップ",
+      "retrievedAt": "2026-10-25"
     }
   ],
   "matches": [
@@ -59,9 +74,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 15,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "swanton-bomb",
+        "durationSeconds": 680
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "※スワントーンボム。体固め"
     },
     {
       "order": 2,
@@ -87,9 +107,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 15,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kojima-impact",
+        "durationSeconds": 870
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "※コジマインパクト。片エビ固め"
     },
     {
       "order": 3,
@@ -113,9 +138,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 481
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ノータッチルール。片エビ固め。スーパー・ササダンゴ・マシンの持つアイアンマンヘビーメタル級王座が移動し、宮脇純太が第1930代王者になった。"
     },
     {
       "order": 4,
@@ -139,9 +169,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 673
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "連結式押さえ込み。フォールした選手個人は公式に特定されていない。通常ルールに加え、パートナーの身体に触れていないと反則になる特別ルール。"
     },
     {
       "order": 5,
@@ -163,9 +198,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "lariat",
+        "durationSeconds": 853
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "※ラリアット。片エビ固め"
     },
     {
       "order": 6,
@@ -189,9 +229,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 1236
+      },
       "confirmed": true,
-      "notes": "YUZUKIはセコンド。"
+      "notes": "YUZUKIはセコンド。グラウンド・オクトパスストレッチ。クリス・ブルックスがMAOからギブアップを取った。"
     }
   ]
 }
