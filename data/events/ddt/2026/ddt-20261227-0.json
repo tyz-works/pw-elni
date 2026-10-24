@@ -1,0 +1,26 @@
+{
+  "eventId": "ddt-20261227-0",
+  "promotionSlug": "ddt",
+  "name": "RING FINALE 2026〜DDT年内最終興行〜",
+  "series": null,
+  "date": "2026-12-27",
+  "doorsOpen": "10:30",
+  "bellTime": "11:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/news/6adb115fb0cd05000201dc65",
+      "title": "RING FINALE 2026 | DDTプロレスリング",
+      "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2113586306412597548",
+      "title": "DDT公式X RING FINALE 2026",
+      "retrievedAt": "2026-10-24"
+    }
+  ],
+  "matches": []
+}

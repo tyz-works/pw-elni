@@ -154,7 +154,7 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "O-MENZが全員で来場し、隈取の入場時にパフォーマンスを行う。"
     },
     {
       "order": 5,
@@ -338,6 +338,11 @@
       "url": "https://www.ddtpro.jp/schedules/694d02fb967045000252f65c",
       "title": "Ultimate Party 2026 | DDTプロレスリング",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.ddtpro.jp/news/6ad73807b3b6f8000253e5e8",
+      "title": "両国大会 O-MENZ来場 | DDTプロレスリング",
+      "retrievedAt": "2026-10-24"
     }
   ]
 }
