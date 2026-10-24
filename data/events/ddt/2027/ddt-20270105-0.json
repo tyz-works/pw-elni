@@ -1,0 +1,26 @@
+{
+  "eventId": "ddt-20270105-0",
+  "promotionSlug": "ddt",
+  "name": "OSECHI FIGHTING 2027",
+  "series": null,
+  "date": "2027-01-05",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "yokohama-radiant-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": null,
+  "sources": [
+    {
+      "url": "https://x.com/ddtpro/status/2112000530486595779",
+      "title": "DDT公式X OSECHI FIGHTING 2027",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.ddtpro.jp/",
+      "title": "DDTプロレスリング公式サイト",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": []
+}

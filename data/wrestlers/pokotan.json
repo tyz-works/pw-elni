@@ -1,0 +1,24 @@
+{
+  "slug": "pokotan",
+  "name": "ポコたん",
+  "nameEn": null,
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [
+    "ddt"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a9fbbac9b70bf0002d7bad8",
+      "title": "埼玉・草加 アコスイベント広場「AKOS×DDT駅前プロレス Vol.4」 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    }
+  ]
+}

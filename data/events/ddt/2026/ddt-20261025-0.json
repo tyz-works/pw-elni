@@ -1,0 +1,113 @@
+{
+  "eventId": "ddt-20261025-0",
+  "promotionSlug": "ddt",
+  "name": "AKOS×DDT駅前プロレス Vol.4",
+  "series": null,
+  "date": "2026-10-25",
+  "doorsOpen": "12:00",
+  "bellTime": "13:00",
+  "venueSlug": "soka-akos-event-plaza",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6a9fbbac9b70bf0002d7bad8",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6a9fbbac9b70bf0002d7bad8",
+      "title": "埼玉・草加 アコスイベント広場「AKOS×DDT駅前プロレス Vol.4」 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2112489047709082069",
+      "title": "DDT公式X AKOS×DDT駅前プロレス Vol.4",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "takeshi-masada",
+            "daichi-satoh",
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "antonio-honda",
+            "yuni",
+            "pokotan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuki-ueno",
+            "shunma-katsumata",
+            "to-y",
+            "yuki-ishida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-akiyama",
+            "danshoku-dieno",
+            "junta-miyawaki",
+            "masami-inahata"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mao",
+            "kanon",
+            "yukio-naya"
+          ],
+          "teamName": "STRANGE LOVE CONNECTION"
+        },
+        {
+          "wrestlerIds": [
+            "chris-brookes",
+            "harashima",
+            "hinata-kasai"
+          ],
+          "teamName": "FANTÔMES DRAMATIC！"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "KIMIHIROはセコンド。"
+    }
+  ]
+}

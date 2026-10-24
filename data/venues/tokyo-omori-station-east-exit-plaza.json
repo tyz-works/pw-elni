@@ -1,0 +1,19 @@
+{
+  "slug": "tokyo-omori-station-east-exit-plaza",
+  "name": "JR大森駅東口前広場",
+  "nameEn": null,
+  "aliases": [
+    "東京・JR大森駅東口前広場",
+    "JR「大森」駅東口前広場"
+  ],
+  "city": "東京",
+  "prefecture": "東京都",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/news/6ad8789d9a5d3f0002f9d4c4",
+      "title": "UTANフェスタ2026 追加日程 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    }
+  ]
+}

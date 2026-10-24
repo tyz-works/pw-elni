@@ -1,0 +1,26 @@
+{
+  "eventId": "ddt-20270110-0",
+  "promotionSlug": "ddt",
+  "name": "お年投げ 2027",
+  "series": null,
+  "date": "2027-01-10",
+  "doorsOpen": "12:00",
+  "bellTime": "13:00",
+  "venueSlug": "osaka-azalea-taisho",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6acdc8a25be87b0002e171c7",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6acdc8a25be87b0002e171c7",
+      "title": "大阪・アゼリア大正「お年投げ 2027」 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2112801307329511598",
+      "title": "DDT公式X お年投げ 2027",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": []
+}

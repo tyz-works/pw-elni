@@ -15,11 +15,109 @@
       "url": "https://www.njpw.co.jp/tournament/card/660980",
       "title": "LUCHA KINGDOM | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/660980",
+      "title": "LUCHA KINGDOM | 新日本プロレス",
+      "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.njpw.co.jp/677237",
+      "title": "LUCHA KINGDOM 追加カード | 新日本プロレス",
+      "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.njpw1972.com/677213",
+      "title": "More massive matches set for Lucha Kingdom! | NEW JAPAN PRO-WRESTLING",
+      "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2113153746935189728",
+      "title": "新日本プロレス公式X LUCHA KINGDOM追加カード",
+      "retrievedAt": "2026-10-24"
     }
   ],
   "matches": [
     {
       "order": 1,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shoma-kato",
+            "yutani",
+            "black-tiger-cmll",
+            "kushida"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "furia-roja",
+            "barboza",
+            "difunto",
+            "zandokan-jr"
+          ],
+          "teamName": "ガレオン・ファンタスマ"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順は未定（公式カードの掲載順）。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "soberano-jr"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shota-umino"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hechicero"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "CMLL世界ヘビー級選手権",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "CMLL世界ヘビー級王者エチセロ、挑戦者ザック・セイバーJr.。"
+    },
+    {
+      "order": 4,
       "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
@@ -44,10 +142,10 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": "試合順未発表・掲載順。エチセロ対ザック・セイバーJr.は予定として触れられているが、カードには載っていない。"
+      "notes": null
     },
     {
-      "order": 2,
+      "order": 5,
       "segment": "card",
       "matchType": "tag",
       "sides": [
@@ -73,7 +171,7 @@
       "notes": null
     },
     {
-      "order": 3,
+      "order": 6,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -94,10 +192,10 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "第6代王者朱里の6度目の防衛戦。挑戦者はキラ。"
     },
     {
-      "order": 4,
+      "order": 7,
       "segment": "card",
       "matchType": "multi-man",
       "sides": [
@@ -130,7 +228,7 @@
       "notes": null
     },
     {
-      "order": 5,
+      "order": 8,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -150,8 +248,8 @@
       "titleName": null,
       "timeLimitMinutes": null,
       "result": null,
-      "confirmed": true,
-      "notes": null
+      "confirmed": false,
+      "notes": "デスペラードの負傷欠場（10/22 発表）により出場が不透明。公式カード上は変更なし。"
     }
   ]
 }

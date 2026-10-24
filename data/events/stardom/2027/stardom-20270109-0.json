@@ -1,0 +1,36 @@
+{
+  "eventId": "stardom-20270109-0",
+  "promotionSlug": "stardom",
+  "name": "NEW YEAR STARS 2027 in KYOTO",
+  "series": null,
+  "date": "2027-01-09",
+  "doorsOpen": "12:15",
+  "bellTime": "13:00",
+  "venueSlug": "kyoto-kbs-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20270109_kyoto/",
+  "sources": [
+    {
+      "url": "https://x.com/wwr_stardom/status/2112463135189975420",
+      "title": "スターダム公式X 2027年1月の日程",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/?ym=202701",
+      "title": "スターダム スケジュール 2027年1月",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/20270109_kyoto/",
+      "title": "NEW YEAR STARS 2027 in KYOTO | スターダム",
+      "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2113432674836910465",
+      "title": "スターダム公式X 2027年1月京都・名古屋の開始時刻",
+      "retrievedAt": "2026-10-24"
+    }
+  ],
+  "matches": []
+}

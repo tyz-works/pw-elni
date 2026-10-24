@@ -1,0 +1,26 @@
+{
+  "eventId": "ddt-20270109-0",
+  "promotionSlug": "ddt",
+  "name": "DDT新春ファン感謝デー！2027 in OSAKA",
+  "series": null,
+  "date": "2027-01-09",
+  "doorsOpen": "16:00",
+  "bellTime": "17:00",
+  "venueSlug": "osaka-azalea-taisho",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/schedules/6acdc80f4bbed5000224b40e",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/schedules/6acdc80f4bbed5000224b40e",
+      "title": "大阪・アゼリア大正「DDT新春ファン感謝デー！2027 in OSAKA」 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2112801059643261087",
+      "title": "DDT公式X 新春ファン感謝デー2027",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": []
+}

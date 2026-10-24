@@ -15,7 +15,217 @@
       "url": "https://wwr-stardom.com/schedule/20261027_korakuen/",
       "title": "STARDOM NIGHTER in KORAKUEN 2026 Oct.2 | スターダム",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112865083466678666",
+      "title": "スターダム公式X 10月27日後楽園の全カード",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261021card1/",
+      "title": "スターダム 10月27日後楽園の全カード",
+      "retrievedAt": "2026-10-22"
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "saya-iida",
+            "utami-hayashishita",
+            "waka-tsukiyama",
+            "yuria-hime"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "momo-watanabe",
+            "konami",
+            "ruaka",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順は公式発表の掲載順。10人タッグ。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rina-yamashita",
+            "itsuki-aoki",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maki-itoh",
+            "kian-furusawa",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sayaka-kurara",
+            "yuna-mizumori",
+            "anne-kanaya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "syuri",
+            "ami-sohrei",
+            "tomoka-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika",
+            "hanako",
+            "matoi-hamabe"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hina",
+            "lady-c",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "azm",
+            "miyu-amasaki",
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "3WAYトリオバトル。"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "saori-anou"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saya-kamitani",
+            "bea-priestley"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ranna-yagami"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "azusa-inaba"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "フューチャー・オブ・スターダム選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "王者八神蘭奈、挑戦者稲葉あずさ。"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "natsupoi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "suzu-suzuki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": false,
+      "notes": "鈴季すずのパートナーは X（未発表）。"
+    }
+  ]
 }

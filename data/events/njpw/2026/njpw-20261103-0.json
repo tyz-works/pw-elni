@@ -15,6 +15,11 @@
       "url": "https://www.njpw.co.jp/tournament/card/662785",
       "title": "POWER STRUGGLE ～SUPER Jr. TAG LEAGUE 2026～ | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/662785",
+      "title": "POWER STRUGGLE ～SUPER Jr. TAG LEAGUE 2026～ | 新日本プロレス",
+      "retrievedAt": "2026-10-24"
     }
   ],
   "matches": [
@@ -42,7 +47,7 @@
       "timeLimitMinutes": 30,
       "result": null,
       "confirmed": true,
-      "notes": "試合順未発表・掲載順。SUPER Jr. TAG LEAGUE 2026優勝決定戦（Aブロック1位対Bブロック1位）は選手が未確定のため未収録で、その位置は第4試合の欠番のまま。"
+      "notes": "試合順は後日発表（公式カードの掲載順）。SUPER Jr. TAG LEAGUE 2026優勝決定戦（Aブロック1位対Bブロック1位）は選手が未確定のため未収録で、その位置は第4試合の欠番のまま。"
     },
     {
       "order": 2,
@@ -98,7 +103,7 @@
       "timeLimitMinutes": 60,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "第113代王者組OSKAR＆Yuto-Iceの初防衛戦。挑戦者組はカラム・ニューマン＆ウィル・オスプレイ。"
     },
     {
       "order": 5,
@@ -122,7 +127,7 @@
       "timeLimitMinutes": 60,
       "result": null,
       "confirmed": true,
-      "notes": null
+      "notes": "第9代王者ゲイブ・キッドの3度目の防衛戦。挑戦者はタイチ。"
     }
   ]
 }

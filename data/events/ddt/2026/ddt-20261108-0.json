@@ -1,0 +1,51 @@
+{
+  "eventId": "ddt-20261108-0",
+  "promotionSlug": "ddt",
+  "name": "UTANフェスタ2026",
+  "series": null,
+  "date": "2026-11-08",
+  "doorsOpen": "11:00",
+  "bellTime": "13:00",
+  "venueSlug": "tokyo-omori-station-east-exit-plaza",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/news/6ad8789d9a5d3f0002f9d4c4",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/news/6ad8789d9a5d3f0002f9d4c4",
+      "title": "UTANフェスタ2026 追加日程 | DDTプロレスリング",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2112831270640349535",
+      "title": "DDT公式X UTANフェスタ2026",
+      "retrievedAt": "2026-10-22"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kazuki-hirata"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ilusion"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "世界大森級王座",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "第10代王座決定戦。試合順未発表。公式はメインを先頭に掲載しているため、掲載順を反転して番号を振った。次期挑戦者決定バトルロイヤルは出場者未定のため未収録。ほかの試合は未発表。"
+    }
+  ]
+}

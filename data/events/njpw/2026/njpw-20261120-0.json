@@ -9,13 +9,48 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "officialUrl": "https://www.njpw.co.jp/schedule",
+  "officialUrl": "https://www.njpw.co.jp/676902",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/schedule",
       "title": "スケジュール | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/676902",
+      "title": "11月20日 Bound for Unbound 第1弾カード | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2112106484993773856",
+      "title": "新日本プロレス公式X Bound for Unbound",
+      "retrievedAt": "2026-10-22"
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "drilla-moloney"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daiki-nagai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "スペシャルチャレンジマッチ。試合順未発表・掲載順。第1弾カード。"
+    }
+  ]
 }

@@ -1,0 +1,24 @@
+{
+  "slug": "okayama-convention-center",
+  "name": "岡山コンベンションセンター",
+  "nameEn": null,
+  "aliases": [
+    "岡山・岡山コンベンションセンター",
+    "岡山・コンベンションセンター3階コンベンションホール"
+  ],
+  "city": "岡山",
+  "prefecture": "岡山県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://x.com/wwr_stardom/status/2112463135189975420",
+      "title": "スターダム公式X 2027年1月の日程",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/20270117_okayama/",
+      "title": "NEW YEAR STARS 2027 in OKAYAMA | スターダム",
+      "retrievedAt": "2026-10-24"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "axe-wang",
+  "name": "アックス・ワン",
+  "nameEn": "Axe Wang",
+  "aliases": [
+    "Axe Wang"
+  ],
+  "realName": null,
+  "birthDate": "1996-12-09",
+  "birthplace": "台湾・台北",
+  "debutDate": "2016-03-19",
+  "heightCm": 183,
+  "weightKg": 93,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.njpw.co.jp/677061",
+      "title": "11月19日 TANAHASHI JAM 2 主要カード | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    }
+  ]
+}

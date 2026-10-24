@@ -1,0 +1,31 @@
+{
+  "eventId": "stardom-20270103-0",
+  "promotionSlug": "stardom",
+  "name": "STARDOM NEW YEAR DREAM 2027 〜ばいぽいロードFINAL〜",
+  "series": null,
+  "date": "2027-01-03",
+  "doorsOpen": "12:50",
+  "bellTime": "14:00",
+  "venueSlug": "yokohama-budokan",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/schedule/20270103_yokohama/",
+  "sources": [
+    {
+      "url": "https://x.com/wwr_stardom/status/2112463135189975420",
+      "title": "スターダム公式X 2027年1月の日程",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/?ym=202701",
+      "title": "スターダム スケジュール 2027年1月",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/20270103_yokohama/",
+      "title": "STARDOM NEW YEAR DREAM 2027 〜ばいぽいロードFINAL〜 | スターダム",
+      "retrievedAt": "2026-10-24"
+    }
+  ],
+  "matches": []
+}

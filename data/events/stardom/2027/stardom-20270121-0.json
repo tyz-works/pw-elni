@@ -1,0 +1,31 @@
+{
+  "eventId": "stardom-20270121-0",
+  "promotionSlug": "stardom",
+  "name": "NEW YEAR STARS 2027 in KORAKUEN～Day2～",
+  "series": null,
+  "date": "2027-01-21",
+  "doorsOpen": null,
+  "bellTime": null,
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://wwr-stardom.com/event/20270121_korakuen/",
+  "sources": [
+    {
+      "url": "https://x.com/wwr_stardom/status/2112463135189975420",
+      "title": "スターダム公式X 2027年1月の日程",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/schedule/?ym=202701",
+      "title": "スターダム スケジュール 2027年1月",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/event/20270121_korakuen/",
+      "title": "NEW YEAR STARS 2027 in KORAKUEN～Day2～ | スターダム",
+      "retrievedAt": "2026-10-24"
+    }
+  ],
+  "matches": []
+}

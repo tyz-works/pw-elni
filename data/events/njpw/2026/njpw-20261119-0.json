@@ -1,7 +1,7 @@
 {
   "eventId": "njpw-20261119-0",
   "promotionSlug": "njpw",
-  "name": "TANAHASHI JAM 2 by CS テレ朝チャンネル",
+  "name": "TANAHASHI JAM 2 by CSテレ朝チャンネル",
   "series": null,
   "date": "2026-11-19",
   "doorsOpen": "17:30",
@@ -9,13 +9,145 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "officialUrl": "https://www.njpw.co.jp/schedule",
+  "officialUrl": "https://www.njpw.co.jp/tournament/card/654881",
   "sources": [
     {
       "url": "https://www.njpw.co.jp/schedule",
       "title": "スケジュール | 新日本プロレス",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/654881",
+      "title": "TANAHASHI JAM 2 by CSテレ朝チャンネル | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.njpw.co.jp/677061",
+      "title": "11月19日 TANAHASHI JAM 2 主要カード | 新日本プロレス",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2112748725605179585",
+      "title": "新日本プロレス公式X TANAHASHI JAM 2",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2112748329037873577",
+      "title": "新日本プロレス公式X TANAHASHI JAM 2 カード",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2112751251624759520",
+      "title": "DDT公式X TANAHASHI JAM 2 参戦",
+      "retrievedAt": "2026-10-22"
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "zack-sabre-jr",
+            "kosei-fujita",
+            "takeshi-masada"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryohei-oiwa",
+            "hartley-jackson",
+            "kaito-kiyomiya"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表・掲載順。棚橋弘至プロデュースのスペシャル6人タッグ。モンスターランボーは出場者未定のため未収録。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shun-skywalker"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "toru-yano"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "NJPW WORLD認定TV選手権試合",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "王者シュン・スカイウォーカーの初防衛戦。挑戦者は矢野通。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "tatsumi-fujinami",
+            "yuya-uemura",
+            "wolf-aron",
+            "kaisei-takechi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ren-narita",
+            "sanada",
+            "yujiro-takahashi",
+            "yoshinobu-kanemaru"
+          ],
+          "teamName": "HOUSE OF TORTURE"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "棚橋弘至プロデュースのスペシャル8人タッグ。"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shota-umino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "axe-wang"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "棚橋弘至プロデュースの新日本プロレスデビュー戦。"
+    }
+  ]
 }

@@ -15,6 +15,66 @@
       "url": "https://wwr-stardom.com/event/20261020_kourakuen/",
       "title": "STARDOM NIGHTER in KORAKUEN 2026 Oct.1 | スターダム",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112152089900249548",
+      "title": "スターダム公式X コグマ欠場",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261019news/",
+      "title": "スターダム コグマ欠場のお知らせ",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112383193227862203",
+      "title": "スターダム公式X 10月20日カード変更",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261020news/",
+      "title": "スターダム 10月20日カード変更のお知らせ",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112481577972420912",
+      "title": "スターダム公式X 10月20日第1試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112485982062985608",
+      "title": "スターダム公式X 10月20日第2試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112492658233090247",
+      "title": "スターダム公式X 10月20日第3試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112495836001382567",
+      "title": "スターダム公式X 10月20日第4試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112501366317007032",
+      "title": "スターダム公式X 10月20日第5試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112509724369539577",
+      "title": "スターダム公式X 10月20日第6試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2112517234614825244",
+      "title": "スターダム公式X 10月20日第7試合",
+      "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/event/20261020_kourakuen/",
+      "title": "STARDOM NIGHTER in KORAKUEN 2026 Oct.1 | 試合結果 | スターダム✪STARDOM",
+      "retrievedAt": "2026-10-24"
     }
   ],
   "matches": [
@@ -38,9 +98,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "lariat",
+        "durationSeconds": 614
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ラリアット→片エビ固め"
     },
     {
       "order": 2,
@@ -64,23 +129,20 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 566
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "Pink❤︎Devil→片エビ固め"
     },
     {
       "order": 3,
       "segment": "card",
       "matchType": "multi-man",
       "sides": [
-        {
-          "wrestlerIds": [
-            "ami-sohrei",
-            "lady-c",
-            "kiyoka-kotatsu"
-          ],
-          "teamName": null
-        },
         {
           "wrestlerIds": [
             "rina-yamashita",
@@ -91,18 +153,31 @@
         },
         {
           "wrestlerIds": [
+            "ami-sohrei",
+            "lady-c",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
             "hazuki",
-            "koguma",
-            "fuwa-chan"
+            "fuwa-chan",
+            "waka-tsukiyama"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 527
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "コグマ欠場により、3組目は葉月＆フワちゃん＆月山和香。デスライダー→片エビ固め"
     },
     {
       "order": 4,
@@ -130,9 +205,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 655
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ビートストライク→片エビ固め"
     },
     {
       "order": 5,
@@ -156,39 +236,47 @@
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 652
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "俺の膝→エビ固め"
     },
     {
       "order": 6,
       "segment": "card",
-      "matchType": "eight-man-tag",
+      "matchType": "six-man-tag",
       "sides": [
         {
           "wrestlerIds": [
-            "hanan",
-            "maika",
-            "utami-hayashishita",
-            "waka-tsukiyama"
+            "konami",
+            "saya-kamitani",
+            "ruaka"
           ],
           "teamName": null
         },
         {
           "wrestlerIds": [
-            "natsuko-tora",
-            "konami",
-            "saya-kamitani",
-            "ruaka"
+            "hanan",
+            "maika",
+            "utami-hayashishita"
           ],
           "teamName": null
         }
       ],
       "titleName": null,
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 657
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "刀羅ナツコと月山和香が外れ、6人タッグに変更。フランケンシュタイナー→エビ固め"
     },
     {
       "order": 7,
@@ -212,9 +300,14 @@
       ],
       "titleName": "NEW BLOODタッグ選手権試合",
       "timeLimitMinutes": null,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 992
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "前王者組の防衛は3度目で止まった。古沢稀杏＆梨杏が第6代王者。玖麗さやかの復帰戦。ハナグルマ"
     }
   ]
 }
