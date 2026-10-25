@@ -7,7 +7,7 @@
   "doorsOpen": "17:30",
   "bellTime": "18:30",
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1181,
   "confirmed": true,
   "officialUrl": "https://www.njpw.co.jp/tournament/card/654879",
   "sources": [
@@ -25,6 +25,26 @@
       "url": "https://www.njpw.co.jp/tournament/card/654879",
       "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.25 | 新日本プロレス",
       "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/card/654879",
+      "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.25 結果 | 新日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.njpw.co.jp/677638",
+      "title": "SUPER Jr. TAG LEAGUE 2026 10.25後楽園の試合結果 | 新日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114329449009484287",
+      "title": "新日本プロレス公式X 10.25後楽園 メインと第6試合",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2114333675253100725",
+      "title": "DDT公式X KUUKAIがギブアップ",
+      "retrievedAt": "2026-10-26"
     }
   ],
   "matches": [
@@ -48,9 +68,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 406
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "逆エビ固め"
     },
     {
       "order": 2,
@@ -74,9 +99,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": "oh-my-and-garankle",
+        "durationSeconds": 711
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。オーマイ＆ガーアンクル"
     },
     {
       "order": 3,
@@ -100,9 +130,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "fireball",
+        "durationSeconds": 710
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。ファイヤーボール→片エビ固め"
     },
     {
       "order": 4,
@@ -126,9 +161,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 770
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。外道クラッチ"
     },
     {
       "order": 5,
@@ -152,9 +192,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 724
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。サムソンドライバー。試合後、SHOとディック東郷が豹のぬいぐるみを持ち帰った。"
     },
     {
       "order": 6,
@@ -178,9 +223,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "moonsault-press",
+        "durationSeconds": 678
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。デスペラード欠場に伴うカード変更（10/23 公式発表）。"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。デスペラード欠場に伴うカード変更（10/23 公式発表）。勝ち2点。ムーンサルトプレス→片エビ固め"
     },
     {
       "order": 7,
@@ -204,9 +254,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1281
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。The Interceptor→片エビ固め"
     }
   ]
 }
