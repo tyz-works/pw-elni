@@ -25,6 +25,16 @@
       "url": "https://wwr-stardom.com/news/261021card1/",
       "title": "スターダム 10月27日後楽園の全カード",
       "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261025news/",
+      "title": "10月27日後楽園のカード変更 | スターダム",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://x.com/wwr_stardom/status/2114226551961370933",
+      "title": "スターダム公式X 10月27日後楽園のカード変更",
+      "retrievedAt": "2026-10-26"
     }
   ],
   "matches": [
@@ -91,6 +101,36 @@
     {
       "order": 3,
       "segment": "card",
+      "matchType": "multi-man",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "lady-c"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ema-maishima"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "AZM・天咲光由の欠場により 3WAYトリオバトルから変更（10/25 発表）。"
+    },
+    {
+      "order": 4,
+      "segment": "card",
       "matchType": "six-man-tag",
       "sides": [
         {
@@ -117,13 +157,12 @@
       "notes": null
     },
     {
-      "order": 4,
+      "order": 5,
       "segment": "card",
-      "matchType": "multi-man",
+      "matchType": "tag",
       "sides": [
         {
           "wrestlerIds": [
-            "maika",
             "hanako",
             "matoi-hamabe"
           ],
@@ -132,16 +171,7 @@
         {
           "wrestlerIds": [
             "hina",
-            "lady-c",
             "kiyoka-kotatsu"
-          ],
-          "teamName": null
-        },
-        {
-          "wrestlerIds": [
-            "azm",
-            "miyu-amasaki",
-            "ema-maishima"
           ],
           "teamName": null
         }
@@ -150,10 +180,10 @@
       "timeLimitMinutes": null,
       "result": null,
       "confirmed": true,
-      "notes": "3WAYトリオバトル。"
+      "notes": "AZM・天咲光由の欠場により 3WAYトリオバトルから変更（10/25 発表）。"
     },
     {
-      "order": 5,
+      "order": 6,
       "segment": "card",
       "matchType": "tag",
       "sides": [
@@ -179,7 +209,7 @@
       "notes": null
     },
     {
-      "order": 6,
+      "order": 7,
       "segment": "card",
       "matchType": "singles",
       "sides": [
@@ -203,7 +233,7 @@
       "notes": "王者八神蘭奈、挑戦者稲葉あずさ。"
     },
     {
-      "order": 7,
+      "order": 8,
       "segment": "card",
       "matchType": "tag",
       "sides": [

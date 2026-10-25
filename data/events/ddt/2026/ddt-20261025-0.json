@@ -9,7 +9,7 @@
   "venueSlug": "soka-akos-event-plaza",
   "attendance": null,
   "confirmed": true,
-  "officialUrl": "https://www.ddtpro.jp/schedules/6a9fbbac9b70bf0002d7bad8",
+  "officialUrl": "https://www.ddtpro.jp/results/6add76a65464e80002da4fe1",
   "sources": [
     {
       "url": "https://www.ddtpro.jp/schedules/6a9fbbac9b70bf0002d7bad8",
@@ -20,6 +20,21 @@
       "url": "https://x.com/ddtpro/status/2112489047709082069",
       "title": "DDT公式X AKOS×DDT駅前プロレス Vol.4",
       "retrievedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.ddtpro.jp/results/6add76a65464e80002da4fe1",
+      "title": "AKOS×DDT駅前プロレス Vol.4 結果 | DDTプロレスリング",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2114212199485059304",
+      "title": "DDT公式X AKOS×DDT駅前プロレス Vol.4 第一試合",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2114242067006464385",
+      "title": "DDT公式X AKOS×DDT駅前プロレス Vol.4 第三試合",
+      "retrievedAt": "2026-10-26"
     }
   ],
   "matches": [
@@ -47,9 +62,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 721
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "片エビ固め。ダイビング・フィストドロップ。アントーニオ本多がポコたんの頭部をかぶって放った。"
     },
     {
       "order": 2,
@@ -77,9 +97,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 580
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "ウラカンラナ・インベルティダ。決まり手名のみ公式発表。"
     },
     {
       "order": 3,
@@ -105,9 +130,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "cannonball-450",
+        "durationSeconds": 1028
+      },
       "confirmed": true,
-      "notes": "KIMIHIROはセコンド。"
+      "notes": "KIMIHIROはセコンド。※キャノンボール450°。片エビ固め。雨の中で行われた。"
     }
   ]
 }
