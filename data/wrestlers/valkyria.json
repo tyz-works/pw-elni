@@ -1,0 +1,29 @@
+{
+  "slug": "valkyria",
+  "name": "バルキリア",
+  "nameEn": "Valkyria",
+  "aliases": [
+    "Valkyria"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "unknown",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://wwr-stardom.com/news/261026news/",
+      "title": "第16回ゴッデス・オブ・スターダム 公式戦の組み合わせ | スターダム",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://wwr-stardom.com/en/news/261026news/",
+      "title": "Goddesses of Stardom tag league pairings | STARDOM",
+      "retrievedAt": "2026-10-27"
+    }
+  ]
+}

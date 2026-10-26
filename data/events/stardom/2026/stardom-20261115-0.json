@@ -15,7 +15,169 @@
       "url": "https://wwr-stardom.com/schedule/20261115_kochi/",
       "title": "〜タッグリーグ戦〜 in KOCHI | スターダム",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261026news/",
+      "title": "第16回ゴッデス・オブ・スターダム 公式戦の組み合わせ | スターダム",
+      "retrievedAt": "2026-10-27"
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kian-furusawa",
+            "kiyoka-kotatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦。試合順未発表。公式発表の掲載順。出場選手は変更になる可能性あり。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "mei-seira",
+            "ema-maishima"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saori-anou",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hina",
+            "lady-c"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "rina-yamashita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ranna-yagami",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuna-mizumori",
+            "anne-kanaya"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "momo-watanabe",
+            "saya-kamitani"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    }
+  ]
 }

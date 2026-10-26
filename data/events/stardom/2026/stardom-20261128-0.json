@@ -15,7 +15,195 @@
       "url": "https://wwr-stardom.com/schedule/20261128_okazaki/",
       "title": "(公財)岡崎市スポーツ協会創立80周年記念 〜タッグリーグ戦〜 in OKAZAKI | スターダム",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261026news/",
+      "title": "第16回ゴッデス・オブ・スターダム 公式戦の組み合わせ | スターダム",
+      "retrievedAt": "2026-10-27"
     }
   ],
-  "matches": []
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "maika",
+            "hanako"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦。試合順未発表。公式発表の掲載順。出場選手は変更になる可能性あり。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "ruaka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saori-anou",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "maki-itoh"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "dark-silueta",
+            "valkyria"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hina",
+            "lady-c"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "sayaka-kurara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "momo-watanabe",
+            "saya-kamitani"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "rina-yamashita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "rian"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    }
+  ]
 }
