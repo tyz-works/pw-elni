@@ -9,7 +9,190 @@
   "venueSlug": "tokyo-korakuen-hall",
   "attendance": null,
   "confirmed": true,
-  "matches": [],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsupoi",
+            "rian"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ranna-yagami",
+            "akira-kurogane"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦。試合順未発表。公式発表の掲載順。出場選手は変更になる可能性あり。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hanan",
+            "waka-tsukiyama"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sakura-aya",
+            "sayaka-kurara"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "natsuko-tora",
+            "ruaka"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "konami",
+            "rina"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "maika",
+            "hanako"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "saori-anou",
+            "fuwa-chan"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suzu-suzuki",
+            "rina-yamashita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dark-silueta",
+            "valkyria"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "saya-iida",
+            "utami-hayashishita"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hazuki",
+            "koguma"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "ブルーゴッデス公式戦"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "starlight-kid",
+            "maki-itoh"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "momo-watanabe",
+            "saya-kamitani"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "レッドゴッデス公式戦"
+    }
+  ],
   "officialUrl": "https://wwr-stardom.com/event/20261111_korakuen/",
   "sources": [
     {
@@ -21,6 +204,11 @@
       "url": "https://wwr-stardom.com/schedule/20261111_korakuen/",
       "title": "〜タッグリーグ戦〜 in KORAKUEN vol.1 | スターダム",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://wwr-stardom.com/news/261026news/",
+      "title": "第16回ゴッデス・オブ・スターダム 公式戦の組み合わせ | スターダム",
+      "retrievedAt": "2026-10-27"
     }
   ]
 }

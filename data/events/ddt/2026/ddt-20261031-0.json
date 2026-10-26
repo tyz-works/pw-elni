@@ -1,0 +1,105 @@
+{
+  "eventId": "ddt-20261031-0",
+  "promotionSlug": "ddt",
+  "name": "おおたかの森発！『ルチャリブレ』プロレスイベント～エル・ナガーレも参上！～",
+  "series": null,
+  "date": "2026-10-31",
+  "doorsOpen": "13:00",
+  "bellTime": "13:30",
+  "venueSlug": "nagareyama-otakanomori-morinomachi-hiroba",
+  "attendance": null,
+  "confirmed": true,
+  "officialUrl": "https://www.ddtpro.jp/news/6adf025dd6cd800002a30b90",
+  "sources": [
+    {
+      "url": "https://www.ddtpro.jp/news/6adf025dd6cd800002a30b90",
+      "title": "おおたかの森発！ルチャリブレ・プロレスイベント | DDTプロレスリング",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/ddtpro/status/2114628154388341014",
+      "title": "DDT公式X おおたかの森ルチャリブレ",
+      "retrievedAt": "2026-10-27"
+    }
+  ],
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "noda-shoyuman"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jewel-bird"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "DDT監修のイベントプロレスで、DDT所属選手は出場しない。ジュエル・バードはJTO所属。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rappy-yoshikawa",
+            "princess-misato"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "sakura-hattori",
+            "ren-konatsu"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": null,
+      "confirmed": true,
+      "notes": "DDT監修のイベントプロレスで、DDT所属選手は出場しない。ハットリ桜と小夏れんは東京女子プロレス所属。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masaaki-mochizuki",
+            "toru-owashi",
+            "el-nagare"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "poison-sawada-julie",
+            "kashiwa-hardcore",
+            "matsudo-inferno"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "DDT監修のイベントプロレスで、DDT所属選手は出場しない。望月成晃はDRAGONGATE所属。"
+    }
+  ]
+}

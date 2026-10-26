@@ -7,7 +7,7 @@
   "doorsOpen": "17:30",
   "bellTime": "18:30",
   "venueSlug": "tokyo-korakuen-hall",
-  "attendance": null,
+  "attendance": 1132,
   "confirmed": true,
   "officialUrl": "https://www.njpw.co.jp/tournament/card/654880",
   "sources": [
@@ -25,6 +25,46 @@
       "url": "https://www.njpw.co.jp/tournament/card/654880",
       "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.26 | 新日本プロレス",
       "retrievedAt": "2026-10-24"
+    },
+    {
+      "url": "https://www.njpw.co.jp/tournament/result/654880",
+      "title": "SUPER Jr. TAG LEAGUE 2026 ～Road to POWER STRUGGLE～ 10.26 結果 | 新日本プロレス",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://www.njpw.co.jp/677649",
+      "title": "SUPER Jr. TAG LEAGUE 2026 10.26後楽園の試合結果 | 新日本プロレス",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114668867230535739",
+      "title": "新日本プロレス公式X 10.26後楽園 第2試合",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114669272064786757",
+      "title": "新日本プロレス公式X 10.26後楽園 第3試合",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114675764348194870",
+      "title": "新日本プロレス公式X 10.26後楽園 第4試合",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114677526094389497",
+      "title": "新日本プロレス公式X 10.26後楽園 第5試合",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114679796232032442",
+      "title": "新日本プロレス公式X 10.26後楽園 第6試合",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/njpw1972/status/2114690821962563999",
+      "title": "新日本プロレス公式X 10.26後楽園 メイン",
+      "retrievedAt": "2026-10-27"
     }
   ],
   "matches": [
@@ -48,9 +88,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 396
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "逆エビ固め"
     },
     {
       "order": 2,
@@ -74,9 +119,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 658
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。ブレインロット→片エビ固め。合体技ブレインロットで永井大貴をフォール。フォールした選手は公式結果では特定できない。ティタンと永井は3連敗で負け越し。"
     },
     {
       "order": 3,
@@ -100,9 +150,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 508
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。バックトゥザフューチャー"
     },
     {
       "order": 4,
@@ -126,9 +181,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": "kubi-gatame",
+        "durationSeconds": 634
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。首固め。ラリアットの誤爆から。アキラとヤングは初黒星。"
     },
     {
       "order": 5,
@@ -152,9 +212,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": "suplex-de-la-luna",
+        "durationSeconds": 747
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。勝ち2点。スープレックス・デ・ラ・ルナ。金丸義信の場外からのウイスキーミストの直後。"
     },
     {
       "order": 6,
@@ -178,9 +243,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 945
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Bブロック公式戦。勝ち2点。片エビ固め。SHOがぬいぐるみの黒みょんでハイペリオンを防ぎ、レフェリーがいない間に殴打してフォールした。"
     },
     {
       "order": 7,
@@ -204,9 +274,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "submission",
+        "finishMoveSlug": null,
+        "durationSeconds": 881
+      },
       "confirmed": true,
-      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。デスペラード欠場に伴うカード変更（10/23 公式発表）。"
+      "notes": "SUPER Jr. TAG LEAGUE 2026 Aブロック公式戦。デスペラード欠場に伴うカード変更（10/23 公式発表）。勝ち2点。ラ・ミスティカ。カナディアンデストロイヤーからギブアップ。ミスティコと安田優虎は3戦目で初勝利。この日終了時点のAブロックは石森太二＆ロビー・エックス、DOUKI＆金丸義信、KUSHIDA＆ニック・ウェインが各4点、田口隆祐＆須見和馬、マスター・ワト＆KUUKAI、ミスティコ＆安田優虎が各2点。Bブロックはロビー・イーグルス＆藤田晃生、YOH＆豹、フランシスコ・アキラ＆ジェイコブ・オースティン・ヤング、リー・ジョンソン＆ブレイク・クリスチャンが各4点、SHO＆ディック東郷が2点、ティタン＆永井大貴が0点。"
     }
   ]
 }

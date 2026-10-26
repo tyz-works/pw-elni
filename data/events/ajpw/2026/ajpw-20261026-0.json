@@ -7,7 +7,7 @@
   "doorsOpen": "17:45",
   "bellTime": "18:30",
   "venueSlug": "hokkaido-hakodate-oroshi-center-ryutsu-hall",
-  "attendance": null,
+  "attendance": 257,
   "confirmed": true,
   "matches": [
     {
@@ -30,9 +30,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 436
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "全日本プロレスTV認定6人タッグ選手権の前哨戦。決まり手: 豪腕ラリアット→片エビ固め"
     },
     {
       "order": 2,
@@ -56,9 +61,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 20,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 772
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "決まり手: ラ・マヒストラル"
     },
     {
       "order": 3,
@@ -82,9 +92,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 706
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "宮原健斗と小河彪のタッグ始動戦。世界最強タッグ決定リーグ戦に向けた一戦。決まり手: シャットダウン・スープレックス・ホールド"
     },
     {
       "order": 4,
@@ -108,9 +123,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 677
+      },
       "confirmed": true,
-      "notes": "世界最強タッグ決定リーグ戦2026に向けた一戦。"
+      "notes": "世界最強タッグ決定リーグ戦2026に向けた一戦。決まり手: ファイナルベント→片エビ固め"
     },
     {
       "order": 5,
@@ -134,9 +154,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 960
+      },
       "confirmed": true,
-      "notes": null
+      "notes": "決まり手: THE FOOL→エビ固め"
     },
     {
       "order": 6,
@@ -162,9 +187,14 @@
       ],
       "titleName": null,
       "timeLimitMinutes": 30,
-      "result": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 898
+      },
       "confirmed": true,
-      "notes": "世界タッグ選手権の前哨戦。"
+      "notes": "世界タッグ選手権の前哨戦。決まり手: 180BC→片エビ固め"
     }
   ],
   "officialUrl": "https://www.all-japan.co.jp/events/12789/",
@@ -183,6 +213,21 @@
       "url": "https://www.all-japan.co.jp/news/news/14522/",
       "title": "北海道ダイナマイトシリーズ2026 特別参戦選手 | 全日本プロレス",
       "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/events/12789/",
+      "title": "2026-10-26 北海道ダイナマイトシリーズ2026 結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14711/",
+      "title": "2026年10月26日 函館大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "url": "https://x.com/alljapan_pw/status/2114706792412491951",
+      "title": "全日本プロレス公式X 10.26函館",
+      "retrievedAt": "2026-10-27"
     }
   ]
 }
