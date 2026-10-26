@@ -1,0 +1,18 @@
+{
+  "slug": "numazu-kiramesse",
+  "name": "キラメッセぬまづ",
+  "nameEn": null,
+  "aliases": [
+    "静岡・キラメッセぬまづ"
+  ],
+  "city": "沼津",
+  "prefecture": "静岡県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/13699/",
+      "title": "2026年11月26日 沼津大会 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

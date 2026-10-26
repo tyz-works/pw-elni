@@ -1,0 +1,27 @@
+{
+  "slug": "go-shiozaki",
+  "name": "潮﨑豪",
+  "nameEn": "Go Shiozaki",
+  "aliases": [
+    "Go Shiozaki",
+    "潮崎豪"
+  ],
+  "realName": null,
+  "birthDate": "1982-01-21",
+  "birthplace": "熊本県熊本市",
+  "debutDate": "2004-07-24",
+  "heightCm": 183,
+  "weightKg": 110,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/shiozaki_go/",
+      "title": "潮﨑豪 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "hokkaido-iwamizawa-event-hall-akarenga",
+  "name": "イベントホール赤れんが",
+  "nameEn": null,
+  "aliases": [
+    "岩見沢イベントホール赤れんが",
+    "岩見沢市イベントホール赤れんが"
+  ],
+  "city": "北海道",
+  "prefecture": "北海道",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/12795/",
+      "title": "2026年11月2日 岩見沢大会 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

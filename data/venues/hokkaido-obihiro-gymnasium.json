@@ -4,10 +4,18 @@
   "nameEn": null,
   "aliases": [
     "よつ葉アリーナ十勝（帯広市総合体育館）",
-    "よつ葉アリーナ十勝"
+    "よつ葉アリーナ十勝",
+    "よつ葉アリーナ十勝 サブアリーナ（帯広）",
+    "よつ葉アリーナ十勝（帯広市総合体育館）サブアリーナ"
   ],
   "city": "北海道",
   "prefecture": "北海道",
   "capacity": null,
-  "sources": []
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/12792/",
+      "title": "2026年10月29日 帯広大会 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
 }

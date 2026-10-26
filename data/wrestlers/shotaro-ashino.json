@@ -1,0 +1,26 @@
+{
+  "slug": "shotaro-ashino",
+  "name": "芦野祥太郎",
+  "nameEn": "Shotaro Ashino",
+  "aliases": [
+    "Shotaro Ashino"
+  ],
+  "realName": null,
+  "birthDate": "1990-01-04",
+  "birthplace": "東京都西東京市",
+  "debutDate": "2015-02-13",
+  "heightCm": 174,
+  "weightKg": 107,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/shotaro-ashino/",
+      "title": "芦野祥太郎 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

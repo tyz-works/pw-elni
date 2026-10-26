@@ -1,0 +1,26 @@
+{
+  "slug": "ajpw",
+  "name": "全日本プロレス",
+  "nameEn": "All Japan Pro-Wrestling",
+  "shortName": "全日本プロレス",
+  "foundedDate": null,
+  "officialUrl": "https://www.all-japan.co.jp/",
+  "description": "1972 年 10 月 22 日に両国で旗揚げした日本のプロレス団体。三冠ヘビー級王座を頂点に王道を掲げる。",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/",
+      "title": "全日本プロレス公式サイト",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/about/",
+      "title": "会社概要 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14641/",
+      "title": "旗揚げ54周年・後楽園大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

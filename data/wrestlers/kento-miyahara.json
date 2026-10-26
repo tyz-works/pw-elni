@@ -1,0 +1,26 @@
+{
+  "slug": "kento-miyahara",
+  "name": "宮原健斗",
+  "nameEn": "Kento Miyahara",
+  "aliases": [
+    "Kento Miyahara"
+  ],
+  "realName": null,
+  "birthDate": "1989-02-27",
+  "birthplace": "福岡県福岡市",
+  "debutDate": "2008-02-11",
+  "heightCm": 186,
+  "weightKg": 105,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/kento-miyahara/",
+      "title": "宮原健斗 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

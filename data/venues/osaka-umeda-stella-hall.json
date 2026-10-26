@@ -2,9 +2,17 @@
   "slug": "osaka-umeda-stella-hall",
   "name": "梅田ステラホール",
   "nameEn": null,
-  "aliases": [],
+  "aliases": [
+    "梅田スカイビル ステラホール"
+  ],
   "city": "大阪",
   "prefecture": "大阪府",
   "capacity": null,
-  "sources": []
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/13700/",
+      "title": "2026年11月28日 大阪大会 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
 }

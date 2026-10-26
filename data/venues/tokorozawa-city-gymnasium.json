@@ -2,9 +2,18 @@
   "slug": "tokorozawa-city-gymnasium",
   "name": "所沢市民体育館",
   "nameEn": null,
-  "aliases": [],
+  "aliases": [
+    "バタフライアリーナ所沢",
+    "バタフライアリーナ所沢（所沢市民体育館）サブアリーナ"
+  ],
   "city": "所沢",
   "prefecture": "埼玉県",
   "capacity": null,
-  "sources": []
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/13702/",
+      "title": "2026年12月1日 所沢大会 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
 }

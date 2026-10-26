@@ -1,0 +1,26 @@
+{
+  "slug": "atsuki-aoyagi",
+  "name": "青柳亮生",
+  "nameEn": "Atsuki Aoyagi",
+  "aliases": [
+    "Atsuki Aoyagi"
+  ],
+  "realName": null,
+  "birthDate": "1999-12-07",
+  "birthplace": "長野県松本市",
+  "debutDate": "2019-01-02",
+  "heightCm": 175,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/atsuki-aoyagi/",
+      "title": "青柳亮生 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

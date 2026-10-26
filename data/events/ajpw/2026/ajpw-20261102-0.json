@@ -1,0 +1,188 @@
+{
+  "eventId": "ajpw-20261102-0",
+  "promotionSlug": "ajpw",
+  "name": "「オカモトグループ presents 北海道ダイナマイトシリーズ2026」",
+  "series": "オカモトグループ presents 北海道ダイナマイトシリーズ2026",
+  "date": "2026-11-02",
+  "doorsOpen": "17:45",
+  "bellTime": "18:30",
+  "venueSlug": "hokkaido-iwamizawa-event-hall-akarenga",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yasutaka-yano"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-suzuki",
+            "hokuto-omori",
+            "hyo-ogawa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey",
+            "hokkai-kumagoro"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "cal-bloom",
+            "shotaro-ashino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryuki-honda",
+            "masayuki-kono"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "世界最強タッグ決定リーグ戦2026に向けた一戦。"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "go-shiozaki",
+            "ren-ayabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": null
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "dan-tamura",
+            "seigo-tachibana"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rising-hayato",
+            "shota-kofuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "世界ジュニアヘビー級選手権の前哨戦。"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi",
+            "yuma-anzai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "musashi",
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "世界最強タッグ決定リーグ戦2026に向けた一戦。"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/events/12795/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/12795/",
+      "title": "2026-11-02 北海道ダイナマイトシリーズ2026 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14640/",
+      "title": "北海道ダイナマイトシリーズ2026 全カード | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14522/",
+      "title": "北海道ダイナマイトシリーズ2026 特別参戦選手 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

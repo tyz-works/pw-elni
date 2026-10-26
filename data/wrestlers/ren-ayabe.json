@@ -1,0 +1,26 @@
+{
+  "slug": "ren-ayabe",
+  "name": "綾部蓮",
+  "nameEn": "Ren Ayabe",
+  "aliases": [
+    "Ren Ayabe"
+  ],
+  "realName": null,
+  "birthDate": "1997-02-13",
+  "birthplace": "埼玉県志木市",
+  "debutDate": "2020-09-02",
+  "heightCm": 200,
+  "weightKg": 122,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/ren-ayabe/",
+      "title": "綾部蓮 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

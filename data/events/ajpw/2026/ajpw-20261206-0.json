@@ -1,0 +1,26 @@
+{
+  "eventId": "ajpw-20261206-0",
+  "promotionSlug": "ajpw",
+  "name": "「世界最強タッグ決定リーグ戦2026」【優勝決定戦】",
+  "series": "世界最強タッグ決定リーグ戦2026",
+  "date": "2026-12-06",
+  "doorsOpen": "10:30",
+  "bellTime": "11:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.all-japan.co.jp/events/13703/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/13703/",
+      "title": "2026-12-06 世界最強タッグ決定リーグ戦2026 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14633/",
+      "title": "世界最強タッグ決定リーグ戦2026 出場チーム | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

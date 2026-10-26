@@ -1,0 +1,26 @@
+{
+  "slug": "suwama",
+  "name": "諏訪魔",
+  "nameEn": "Suwama",
+  "aliases": [
+    "Suwama"
+  ],
+  "realName": null,
+  "birthDate": "1976-11-23",
+  "birthplace": "神奈川県藤沢市",
+  "debutDate": "2004-10-11",
+  "heightCm": 188,
+  "weightKg": 120,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/suwama/",
+      "title": "諏訪魔 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

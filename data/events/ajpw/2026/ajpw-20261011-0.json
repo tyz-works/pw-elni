@@ -1,0 +1,242 @@
+{
+  "eventId": "ajpw-20261011-0",
+  "promotionSlug": "ajpw",
+  "name": "「旗揚げ記念シリーズ2026」",
+  "series": "旗揚げ記念シリーズ2026",
+  "date": "2026-10-11",
+  "doorsOpen": "13:00",
+  "bellTime": "14:00",
+  "venueSlug": "sendai-sunplaza-hall",
+  "attendance": 2157,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "shota-kofuji"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kumaarashi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 562
+      },
+      "confirmed": true,
+      "notes": "全日本プロレスTV認定6人タッグ選手権の前哨戦。決まり手: ダイビングセントーン→体固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rising-hayato",
+            "hokuto-omori"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "aizawa-no1",
+            "masato-oishi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 492
+      },
+      "confirmed": true,
+      "notes": "決まり手: 横入り式エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suwama",
+            "go-shiozaki",
+            "masayuki-kono"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey",
+            "shotaro-ashino"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 590
+      },
+      "confirmed": true,
+      "notes": "決まり手: ジャーニーズ・エンド→体固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "masaaki-mochizuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yasutaka-yano"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "GAORA TVチャンピオンシップ",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 908
+      },
+      "confirmed": true,
+      "notes": "望月成晃が初防衛。決まり手: 片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara",
+            "hideki-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryuki-honda",
+            "ren-ayabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 980
+      },
+      "confirmed": true,
+      "notes": "三冠ヘビー級選手権の前哨戦。決まり手: シャットダウンスープレックスホールド"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "dan-tamura",
+            "seigo-tachibana"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "musashi",
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "アジアタッグ王座",
+      "timeLimitMinutes": null,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1520
+      },
+      "confirmed": true,
+      "notes": "王座決定戦。MUSASHIと吉岡世起が第133代王者になった。決まり手: 二天一流→体固め"
+    },
+    {
+      "order": 7,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi",
+            "yuma-anzai"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "世界タッグ王座",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1892
+      },
+      "confirmed": true,
+      "notes": "斉藤ジュンと斉藤レイが3度目の防衛。決まり手: 八木山サイクロン→片エビ固め"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/match/12223/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/12223/",
+      "title": "2026年10月11日 仙台サンプラザホール 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14423/",
+      "title": "2026年10月11日 仙台大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

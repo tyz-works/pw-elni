@@ -1,0 +1,26 @@
+{
+  "slug": "rising-hayato",
+  "name": "ライジングHAYATO",
+  "nameEn": "Rising HAYATO",
+  "aliases": [
+    "Rising HAYATO"
+  ],
+  "realName": null,
+  "birthDate": "1999-02-24",
+  "birthplace": "愛媛県松山市",
+  "debutDate": "2016-10-15",
+  "heightCm": 177,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/rising-hayato/",
+      "title": "ライジングHAYATO | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

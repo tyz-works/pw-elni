@@ -1,0 +1,26 @@
+{
+  "slug": "hideki-suzuki",
+  "name": "鈴木秀樹",
+  "nameEn": "Hideki Suzuki",
+  "aliases": [
+    "Hideki Suzuki"
+  ],
+  "realName": null,
+  "birthDate": "1980-02-28",
+  "birthplace": "北海道北広島市",
+  "debutDate": "2008-11-24",
+  "heightCm": 191,
+  "weightKg": 106,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/hideki-suzuki/",
+      "title": "鈴木秀樹 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

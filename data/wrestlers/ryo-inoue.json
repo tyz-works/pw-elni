@@ -1,0 +1,26 @@
+{
+  "slug": "ryo-inoue",
+  "name": "井上凌",
+  "nameEn": "Ryo Inoue",
+  "aliases": [
+    "Ryo Inoue"
+  ],
+  "realName": null,
+  "birthDate": "2002-08-18",
+  "birthplace": "福岡県久留米市",
+  "debutDate": "2022-01-02",
+  "heightCm": 177,
+  "weightKg": 85,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/ryo-inoue/",
+      "title": "井上凌 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

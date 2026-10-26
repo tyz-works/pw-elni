@@ -1,0 +1,26 @@
+{
+  "slug": "jun-saito",
+  "name": "斉藤ジュン",
+  "nameEn": "Jun Saito",
+  "aliases": [
+    "Jun Saito"
+  ],
+  "realName": null,
+  "birthDate": "1986-12-19",
+  "birthplace": "宮城県角田市",
+  "debutDate": "2021-06-09",
+  "heightCm": 193,
+  "weightKg": 115,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/jun-saito/",
+      "title": "斉藤ジュン | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

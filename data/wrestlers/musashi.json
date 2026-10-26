@@ -1,0 +1,24 @@
+{
+  "slug": "musashi",
+  "name": "MUSASHI",
+  "nameEn": "MUSASHI",
+  "aliases": [],
+  "realName": null,
+  "birthDate": "1990-07-06",
+  "birthplace": "岩手県滝沢市",
+  "debutDate": "2010-06-11",
+  "heightCm": 172,
+  "weightKg": 85,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/musashi/",
+      "title": "MUSASHI | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

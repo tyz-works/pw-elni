@@ -1,0 +1,26 @@
+{
+  "slug": "rei-saito",
+  "name": "斉藤レイ",
+  "nameEn": "Rei Saito",
+  "aliases": [
+    "Rei Saito"
+  ],
+  "realName": null,
+  "birthDate": "1986-12-19",
+  "birthplace": "宮城県角田市",
+  "debutDate": "2021-06-09",
+  "heightCm": 192,
+  "weightKg": 150,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/rei-saito/",
+      "title": "斉藤レイ | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

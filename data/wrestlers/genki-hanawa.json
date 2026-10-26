@@ -1,0 +1,26 @@
+{
+  "slug": "genki-hanawa",
+  "name": "塙元輝",
+  "nameEn": "Genki Hanawa",
+  "aliases": [
+    "Genki Hanawa"
+  ],
+  "realName": null,
+  "birthDate": "2000-12-26",
+  "birthplace": "佐賀県佐賀市",
+  "debutDate": null,
+  "heightCm": 180,
+  "weightKg": 110,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14615/",
+      "title": "塙元輝デビューのお知らせ | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

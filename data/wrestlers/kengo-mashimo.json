@@ -1,0 +1,29 @@
+{
+  "slug": "kengo-mashimo",
+  "name": "真霜拳號",
+  "nameEn": "Kengo Mashimo",
+  "aliases": [
+    "Kengo Mashimo"
+  ],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/12639/",
+      "title": "2026年10月3日 行田大会 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14243/",
+      "title": "真霜拳號の参戦に触れたお知らせ | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

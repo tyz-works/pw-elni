@@ -1,0 +1,27 @@
+{
+  "slug": "timothy-thatcher",
+  "name": "ティモシー・サッチャー",
+  "nameEn": null,
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/9597/",
+      "title": "2026年11月15日 後楽園ホール | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14633/",
+      "title": "世界最強タッグ決定リーグ戦2026 出場チーム | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

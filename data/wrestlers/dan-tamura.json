@@ -1,0 +1,26 @@
+{
+  "slug": "dan-tamura",
+  "name": "田村男児",
+  "nameEn": "Dan Tamura",
+  "aliases": [
+    "Dan Tamura"
+  ],
+  "realName": null,
+  "birthDate": "1999-06-14",
+  "birthplace": "茨城県鹿嶋市",
+  "debutDate": "2019-01-02",
+  "heightCm": 173,
+  "weightKg": 83,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/dan-tamura/",
+      "title": "田村男児 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}
