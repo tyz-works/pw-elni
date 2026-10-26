@@ -1,0 +1,26 @@
+{
+  "slug": "hokuto-omori",
+  "name": "大森北斗",
+  "nameEn": "Hokuto Omori",
+  "aliases": [
+    "Hokuto Omori"
+  ],
+  "realName": null,
+  "birthDate": "1995-06-28",
+  "birthplace": "北海道江別市",
+  "debutDate": "2018-11-17",
+  "heightCm": 177,
+  "weightKg": 102,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/hokuto-omori/",
+      "title": "大森北斗 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

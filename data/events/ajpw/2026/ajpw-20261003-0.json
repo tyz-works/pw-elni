@@ -1,0 +1,215 @@
+{
+  "eventId": "ajpw-20261003-0",
+  "promotionSlug": "ajpw",
+  "name": "「旗揚げ記念シリーズ2026」～ファイブイズホーム presents～",
+  "series": "旗揚げ記念シリーズ2026",
+  "date": "2026-10-03",
+  "doorsOpen": "14:00",
+  "bellTime": "15:00",
+  "venueSlug": "saitama-gyoda-green-arena",
+  "attendance": 867,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "daisuke-sekimoto",
+            "kengo-mashimo"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "kumaarashi",
+            "yuya-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 684
+      },
+      "confirmed": true,
+      "notes": "決まり手: バックブリーカー"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "rising-hayato",
+            "yasutaka-yano"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "musashi",
+            "hokuto-omori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 750
+      },
+      "confirmed": true,
+      "notes": "決まり手: シド・ヴィシャス→片エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-suzuki",
+            "masayuki-kono",
+            "nobuhiko-kimura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey",
+            "shotaro-ashino"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 489
+      },
+      "confirmed": true,
+      "notes": "決まり手: （セカンドロープからの）ボディスプラッシュ→片エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito",
+            "senor-saito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi",
+            "yuma-anzai",
+            "shota-kofuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 991
+      },
+      "confirmed": true,
+      "notes": "世界タッグ選手権の前哨戦。決まり手: THE FOOL→片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara",
+            "go-shiozaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryuki-honda",
+            "ren-ayabe"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1053
+      },
+      "confirmed": true,
+      "notes": "三冠ヘビー級選手権の前哨戦。決まり手: シャットダウンスープレックスホールド"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "dan-tamura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "世界ジュニアヘビー級王座",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1345
+      },
+      "confirmed": true,
+      "notes": "田村男児が2度目の防衛。決まり手: ラストライド→エビ固め"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/match/12639/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/12639/",
+      "title": "2026年10月3日 行田大会 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14314/",
+      "title": "2026年10月3日 行田大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "yuma-anzai",
+  "name": "安齊勇馬",
+  "nameEn": "Yuma Anzai",
+  "aliases": [
+    "Yuma Anzai"
+  ],
+  "realName": null,
+  "birthDate": "1999-05-15",
+  "birthplace": "群馬県安中市",
+  "debutDate": "2022-09-18",
+  "heightCm": 188,
+  "weightKg": 105,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/yuma-anzai/",
+      "title": "安齊勇馬 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

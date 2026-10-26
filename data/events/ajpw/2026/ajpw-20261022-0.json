@@ -1,0 +1,219 @@
+{
+  "eventId": "ajpw-20261022-0",
+  "promotionSlug": "ajpw",
+  "name": "「旗揚げ記念シリーズ2026」（ゼンニチ生誕祭）",
+  "series": "旗揚げ記念シリーズ2026",
+  "date": "2026-10-22",
+  "doorsOpen": "17:30",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-korakuen-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "shota-kofuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 15,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 317
+      },
+      "confirmed": true,
+      "notes": "結果ページでは小藤将太に敗戦の印が無い。詳報では鈴木秀樹の勝ち。決まり手: ダブルリストロック"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "dan-tamura",
+            "seigo-tachibana",
+            "hokuto-omori",
+            "yuya-aoki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "rising-hayato",
+            "musashi",
+            "seiki-yoshioka",
+            "yasutaka-yano"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 810
+      },
+      "confirmed": true,
+      "notes": "世界ジュニアヘビー級選手権の前哨戦。決まり手: ウラカン・ラナ→エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suwama",
+            "go-shiozaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sekimoto",
+            "kengo-mashimo"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 1055
+      },
+      "confirmed": true,
+      "notes": "決まり手: 無道"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "eight-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito",
+            "naruki-doi",
+            "senor-saito"
+          ],
+          "teamName": "斉藤ブラザーズ"
+        },
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey",
+            "shotaro-ashino",
+            "cal-bloom"
+          ],
+          "teamName": "HAVOC"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 580
+      },
+      "confirmed": true,
+      "notes": "決まり手: 180BC→片エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi",
+            "yuma-anzai",
+            "ren-ayabe"
+          ],
+          "teamName": "全日本プロレス"
+        },
+        {
+          "wrestlerIds": [
+            "madoka-kikuta",
+            "ishin",
+            "yoshiki-kato"
+          ],
+          "teamName": "我蛇髑髏"
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 45,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "disqualification",
+        "finishMoveSlug": null,
+        "durationSeconds": 929
+      },
+      "confirmed": true,
+      "notes": "レフェリーへの暴行による反則。決まり手: （レフェリー暴行により）反則勝ち"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryuki-honda"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "三冠ヘビー級王座",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1436
+      },
+      "confirmed": true,
+      "notes": "宮原健斗が10度目の防衛。決まり手: シャットダウン・スープレックスホールド"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/match/9596/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/9596/",
+      "title": "2026年10月22日 後楽園ホール 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14641/",
+      "title": "2026年10月22日 後楽園大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

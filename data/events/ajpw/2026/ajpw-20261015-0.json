@@ -1,0 +1,213 @@
+{
+  "eventId": "ajpw-20261015-0",
+  "promotionSlug": "ajpw",
+  "name": "「旗揚げ記念シリーズ2026」",
+  "series": "旗揚げ記念シリーズ2026",
+  "date": "2026-10-15",
+  "doorsOpen": "18:00",
+  "bellTime": "18:30",
+  "venueSlug": "tokyo-shinkiba-1st-ring",
+  "attendance": 334,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-anzai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "musashi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 658
+      },
+      "confirmed": true,
+      "notes": "決まり手: ギムレット→エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "oddyssey",
+            "shotaro-ashino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ren-ayabe",
+            "hokuto-omori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 523
+      },
+      "confirmed": true,
+      "notes": "決まり手: ジャーニーズ・エンド→片エビ固め"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito",
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "seigo-tachibana",
+            "hyo-ogawa",
+            "nobuhiko-kimura"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 840
+      },
+      "confirmed": true,
+      "notes": "決まり手: ラ・マヒストラル"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-suzuki",
+            "shota-kofuji",
+            "kengo-mashimo"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "go-shiozaki",
+            "yasutaka-yano",
+            "yuya-aoki"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 705
+      },
+      "confirmed": true,
+      "notes": "決まり手: 豪腕ラリアット→体固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "masayuki-kono"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 871
+      },
+      "confirmed": true,
+      "notes": "決まり手: エンドゲーム"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara",
+            "dan-tamura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryuki-honda",
+            "rising-hayato"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 914
+      },
+      "confirmed": true,
+      "notes": "三冠ヘビー級選手権と世界ジュニアヘビー級選手権の前哨戦。決まり手: 横入り式エビ固め"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/match/12743/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/12743/",
+      "title": "2026年10月15日 新木場1stRING 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14538/",
+      "title": "2026年10月15日 新木場大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

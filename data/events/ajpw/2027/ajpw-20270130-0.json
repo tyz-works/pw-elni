@@ -1,0 +1,26 @@
+{
+  "eventId": "ajpw-20270130-0",
+  "promotionSlug": "ajpw",
+  "name": "ニューイヤーウォーズ2027",
+  "series": "ニューイヤーウォーズ2027",
+  "date": "2027-01-30",
+  "doorsOpen": null,
+  "bellTime": "15:00",
+  "venueSlug": "hachioji-esforta-arena",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [],
+  "officialUrl": "https://www.all-japan.co.jp/events/14599/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/14599/",
+      "title": "2027-01-30 ニューイヤーウォーズ2027 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/schedule/14594/",
+      "title": "ニューイヤーウォーズ2027 日程 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

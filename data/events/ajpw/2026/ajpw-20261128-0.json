@@ -1,0 +1,131 @@
+{
+  "eventId": "ajpw-20261128-0",
+  "promotionSlug": "ajpw",
+  "name": "「世界最強タッグ決定リーグ戦2026」",
+  "series": "世界最強タッグ決定リーグ戦2026",
+  "date": "2026-11-28",
+  "doorsOpen": "13:15",
+  "bellTime": "14:00",
+  "venueSlug": "osaka-umeda-stella-hall",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara",
+            "hyo-ogawa"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "ryuki-honda",
+            "masayuki-kono"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表。公式ページは公式戦の掲載順だけで、第何試合かは示していない。この番号は掲載順。Aブロック公式戦。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "musashi",
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "Aブロック公式戦。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ren-ayabe",
+            "talos"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "dan-tamura",
+            "seigo-tachibana"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "Bブロック公式戦。"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi",
+            "yuma-anzai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "cal-bloom",
+            "shotaro-ashino"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "Bブロック公式戦。"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/events/13700/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/13700/",
+      "title": "2026-11-28 世界最強タッグ決定リーグ戦2026 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14633/",
+      "title": "世界最強タッグ決定リーグ戦2026 出場チーム | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

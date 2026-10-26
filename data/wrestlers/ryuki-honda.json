@@ -1,0 +1,26 @@
+{
+  "slug": "ryuki-honda",
+  "name": "本田竜輝",
+  "nameEn": "Ryuki Honda",
+  "aliases": [
+    "Ryuki Honda"
+  ],
+  "realName": null,
+  "birthDate": "2000-02-11",
+  "birthplace": "東京都町田市",
+  "debutDate": "2018-09-02",
+  "heightCm": 180,
+  "weightKg": 110,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/ryuki-honda/",
+      "title": "本田竜輝 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

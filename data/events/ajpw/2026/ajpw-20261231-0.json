@@ -1,0 +1,104 @@
+{
+  "eventId": "ajpw-20261231-0",
+  "promotionSlug": "ajpw",
+  "name": "ザ・リーヴpresents ゼンニチ大晦日2026",
+  "series": null,
+  "date": "2026-12-31",
+  "doorsOpen": "13:00",
+  "bellTime": "14:00",
+  "venueSlug": "tokyo-yoyogi-national-gymnasium-2",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "hideki-suzuki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "genki-hanawa"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表。公式の掲載順で番号を振った。塙元輝のデビュー戦。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-anzai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "madoka-kikuta"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "スペシャルシングルマッチ。試合順は未発表。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "三冠ヘビー級王座",
+      "timeLimitMinutes": null,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順は未発表。"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/events/9909/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/9909/",
+      "title": "2026年12月31日 ゼンニチ大晦日2026 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14680/",
+      "title": "ゼンニチ大晦日2026の追加カード | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14615/",
+      "title": "塙元輝デビューのお知らせ | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

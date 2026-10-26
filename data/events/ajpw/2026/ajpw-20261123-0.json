@@ -1,0 +1,105 @@
+{
+  "eventId": "ajpw-20261123-0",
+  "promotionSlug": "ajpw",
+  "name": "「世界最強タッグ決定リーグ戦2026」",
+  "series": "世界最強タッグ決定リーグ戦2026",
+  "date": "2026-11-23",
+  "doorsOpen": "14:15",
+  "bellTime": "15:00",
+  "venueSlug": "okayama-convention-center",
+  "attendance": null,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "試合順未発表。公式ページは公式戦の掲載順だけで、第何試合かは示していない。この番号は掲載順。Aブロック公式戦。"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "suwama",
+            "go-shiozaki"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "musashi",
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "Aブロック公式戦。"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "cal-bloom",
+            "shotaro-ashino"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "daisuke-sekimoto",
+            "kengo-mashimo"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": null,
+      "confirmed": true,
+      "notes": "Bブロック公式戦。"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/events/13697/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/13697/",
+      "title": "2026-11-23 世界最強タッグ決定リーグ戦2026 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14633/",
+      "title": "世界最強タッグ決定リーグ戦2026 出場チーム | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

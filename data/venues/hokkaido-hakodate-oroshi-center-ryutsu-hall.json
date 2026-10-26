@@ -1,0 +1,19 @@
+{
+  "slug": "hokkaido-hakodate-oroshi-center-ryutsu-hall",
+  "name": "函館総合卸センター 流通ホール（大ホール）",
+  "nameEn": null,
+  "aliases": [
+    "函館総合卸センター流通ホール（大ホール）",
+    "函館総合卸センター 流通ホール"
+  ],
+  "city": "北海道",
+  "prefecture": "北海道",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/12789/",
+      "title": "2026年10月26日 函館大会 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

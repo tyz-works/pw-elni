@@ -3,7 +3,8 @@
   "name": "大石真翔",
   "nameEn": null,
   "aliases": [
-    "Masato Oishi"
+    "Masato Oishi",
+    "Makoto Ohishi"
   ],
   "realName": null,
   "birthDate": "1979-02-16",
@@ -21,6 +22,11 @@
       "url": "https://www.ddtpro.jp/wrestlers/67bd669f9342b300022f3703",
       "title": "大石真翔 | DDTプロレスリング",
       "retrievedAt": "2026-10-18"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/match/12223/",
+      "title": "2026年10月11日 仙台サンプラザホール 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
     }
   ]
 }

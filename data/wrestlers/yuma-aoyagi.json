@@ -1,0 +1,26 @@
+{
+  "slug": "yuma-aoyagi",
+  "name": "青柳優馬",
+  "nameEn": "Yuma Aoyagi",
+  "aliases": [
+    "Yuma Aoyagi"
+  ],
+  "realName": null,
+  "birthDate": "1995-11-02",
+  "birthplace": "長野県松本市",
+  "debutDate": "2014-12-14",
+  "heightCm": 186,
+  "weightKg": 100,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/yuma-aoyagi/",
+      "title": "青柳優馬 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

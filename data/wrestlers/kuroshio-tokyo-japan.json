@@ -1,8 +1,10 @@
 {
   "slug": "kuroshio-tokyo-japan",
   "name": "黒潮TOKYOジャパン",
-  "nameEn": null,
-  "aliases": [],
+  "nameEn": "kuroshio tokyo japan",
+  "aliases": [
+    "kuroshio tokyo japan"
+  ],
   "realName": null,
   "birthDate": null,
   "birthplace": null,
@@ -12,5 +14,11 @@
   "status": "unknown",
   "promotionSlugs": [],
   "finishingMoveSlugs": [],
-  "sources": []
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/",
+      "title": "所属選手・主な参戦選手 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
 }

@@ -1,0 +1,31 @@
+{
+  "slug": "cal-bloom",
+  "name": "カル・ブルーム",
+  "nameEn": "Cal Bloom",
+  "aliases": [
+    "Cal Bloom",
+    "Von Wagner",
+    "フォン・ワグナー"
+  ],
+  "realName": null,
+  "birthDate": "1993-07-13",
+  "birthplace": "米国ミネソタ州ミネアポリス",
+  "debutDate": null,
+  "heightCm": 196,
+  "weightKg": 122,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14144/",
+      "title": "カル・ブルーム来日のお知らせ | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/match/9596/",
+      "title": "2026年10月22日 後楽園ホール 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

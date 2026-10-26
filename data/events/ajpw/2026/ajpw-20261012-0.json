@@ -1,0 +1,211 @@
+{
+  "eventId": "ajpw-20261012-0",
+  "promotionSlug": "ajpw",
+  "name": "「旗揚げ記念シリーズ2026」",
+  "series": "旗揚げ記念シリーズ2026",
+  "date": "2026-10-12",
+  "doorsOpen": "14:15",
+  "bellTime": "15:00",
+  "venueSlug": "iwate-kitakami-sunreck",
+  "attendance": 415,
+  "confirmed": true,
+  "matches": [
+    {
+      "order": 1,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ren-ayabe",
+            "musashi"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "xyon",
+            "oddyssey"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 878
+      },
+      "confirmed": true,
+      "notes": "決まり手: ジャーニーズ・エンド→片エビ固め"
+    },
+    {
+      "order": 2,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yasutaka-yano"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "aizawa-no1"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 20,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 385
+      },
+      "confirmed": true,
+      "notes": "決まり手: スリーパーホールド with シャンパン"
+    },
+    {
+      "order": 3,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-aoyagi",
+            "dan-tamura"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "go-shiozaki",
+            "seiki-yoshioka"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 1120
+      },
+      "confirmed": true,
+      "notes": "決まり手: ジャックナイフ式エビ固め"
+    },
+    {
+      "order": 4,
+      "segment": "card",
+      "matchType": "singles",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "yuma-anzai"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hokuto-omori"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 0,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 530
+      },
+      "confirmed": true,
+      "notes": "決まり手: ギムレット→エビ固め"
+    },
+    {
+      "order": 5,
+      "segment": "card",
+      "matchType": "tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "kento-miyahara",
+            "rising-hayato"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "jun-saito",
+            "rei-saito"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": null,
+      "timeLimitMinutes": 30,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "pinfall",
+        "finishMoveSlug": null,
+        "durationSeconds": 986
+      },
+      "confirmed": true,
+      "notes": "決まり手: BBQボム→体固め"
+    },
+    {
+      "order": 6,
+      "segment": "card",
+      "matchType": "six-man-tag",
+      "sides": [
+        {
+          "wrestlerIds": [
+            "ryuki-honda",
+            "kumaarashi",
+            "seigo-tachibana"
+          ],
+          "teamName": null
+        },
+        {
+          "wrestlerIds": [
+            "hideki-suzuki",
+            "masayuki-kono",
+            "shota-kofuji"
+          ],
+          "teamName": null
+        }
+      ],
+      "titleName": "全日本プロレスTV認定6人タッグ王座",
+      "timeLimitMinutes": 60,
+      "result": {
+        "winnerSideIndex": 1,
+        "decision": "unknown",
+        "finishMoveSlug": null,
+        "durationSeconds": 960
+      },
+      "confirmed": true,
+      "notes": "王者組が敗れ、鈴木秀樹、河野真幸、小藤将太が第14代王者組になった。決まり手: グラウンド卍固め"
+    }
+  ],
+  "officialUrl": "https://www.all-japan.co.jp/match/12640/",
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/12640/",
+      "title": "2026年10月12日 サンレック北上 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    },
+    {
+      "url": "https://www.all-japan.co.jp/news/news/14461/",
+      "title": "2026年10月12日 北上大会詳報 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

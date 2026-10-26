@@ -1,0 +1,26 @@
+{
+  "slug": "masanobu-fuchi",
+  "name": "渕正信",
+  "nameEn": "Masanobu Fuchi",
+  "aliases": [
+    "Masanobu Fuchi"
+  ],
+  "realName": null,
+  "birthDate": "1954-01-14",
+  "birthplace": "福岡県北九州市",
+  "debutDate": "1974-04-22",
+  "heightCm": 183,
+  "weightKg": 100,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/masanobu-fuchi/",
+      "title": "渕正信 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "saitama-gyoda-green-arena",
+  "name": "行田グリーンアリーナ（メインアリーナ）",
+  "nameEn": null,
+  "aliases": [
+    "行田グリーンアリーナ",
+    "行田グリーンアリーナ メインアリーナ",
+    "埼玉・行田グリーンアリーナ（メインアリーナ）"
+  ],
+  "city": "行田",
+  "prefecture": "埼玉県",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/12639/",
+      "title": "2026年10月3日 行田大会 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

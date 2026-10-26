@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-yoyogi-national-gymnasium-2",
+  "name": "国立代々木競技場 第二体育館",
+  "nameEn": null,
+  "aliases": [
+    "国立代々木競技場第二体育館",
+    "代々木第二体育館",
+    "東京・国立代々木競技場 第二体育館"
+  ],
+  "city": "東京",
+  "prefecture": "東京都",
+  "capacity": null,
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/events/9909/",
+      "title": "2026年12月31日 ゼンニチ大晦日2026 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

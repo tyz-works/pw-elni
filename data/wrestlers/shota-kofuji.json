@@ -1,0 +1,26 @@
+{
+  "slug": "shota-kofuji",
+  "name": "小藤将太",
+  "nameEn": "Shota Kofuji",
+  "aliases": [
+    "Shota Kofuji"
+  ],
+  "realName": null,
+  "birthDate": "2001-04-07",
+  "birthplace": "栃木県大田原市",
+  "debutDate": "2024-12-19",
+  "heightCm": 170,
+  "weightKg": 80,
+  "status": "active",
+  "promotionSlugs": [
+    "ajpw"
+  ],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/player/kofuji-shouta/",
+      "title": "小藤将太 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}

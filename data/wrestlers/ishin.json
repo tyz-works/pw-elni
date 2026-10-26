@@ -1,0 +1,22 @@
+{
+  "slug": "ishin",
+  "name": "ISHIN",
+  "nameEn": "ISHIN",
+  "aliases": [],
+  "realName": null,
+  "birthDate": null,
+  "birthplace": null,
+  "debutDate": null,
+  "heightCm": null,
+  "weightKg": null,
+  "status": "active",
+  "promotionSlugs": [],
+  "finishingMoveSlugs": [],
+  "sources": [
+    {
+      "url": "https://www.all-japan.co.jp/match/9596/",
+      "title": "2026年10月22日 後楽園ホール 試合結果 | 全日本プロレス",
+      "retrievedAt": "2026-10-26"
+    }
+  ]
+}
